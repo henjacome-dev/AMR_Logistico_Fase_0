@@ -29,3 +29,99 @@ proposed_csv:
   header: [x_m, y_m]
   reference_frame: map
 stations: [RECEPCION, ALMACENAMIENTO, EMPAQUE, DESPACHO]
+
+
+# F0.4.3 - Contratos operativos propuestos
+# Estos contratos requieren implementacion y validacion.
+# Este archivo no se carga automaticamente como parametros ROS 2.
+
+node_contracts:
+  emulador_sensores:
+    subscribes: [/scan]
+    publishes: [/rango_frontal, /rango_izq, /rango_der]
+
+  seguidor_ruta:
+    subscribes: [/odom]
+    publishes: [/cmd_vel_ruta]
+    external_input: waypoints_csv
+
+  controlador_difuso:
+    subscribes: [/rango_frontal, /rango_izq, /rango_der]
+    publishes: [/cmd_vel_difuso]
+
+  reconocedor_estacion:
+    subscribes: [/camera/image_raw]
+    publishes: [/estacion_detectada]
+
+  supervisor:
+    subscribes:
+      - /cmd_vel_ruta
+      - /cmd_vel_difuso
+      - /rango_frontal
+      - /rango_izq
+      - /rango_der
+      - /estacion_detectada
+      - /destino_solicitado
+    publishes: [/cmd_vel]
+
+control_policy:
+  autonomous_command_publisher: supervisor
+  candidate_topics: [/cmd_vel_ruta, /cmd_vel_difuso]
+  output_topic: /cmd_vel
+  simultaneous_manual_teleop: false
+  velocity_limits_source: robot
+  stop_on_invalid_inputs: true
+  stop_command:
+    linear_x: 0.0
+    angular_z: 0.0
+
+  # Pendientes de validacion:
+  missing_data_timeout_s: null
+  obstacle_threshold_m: null
+  replanning_timeout_s: null
+
+simulation_policy:
+  use_sim_time_required: true
+  robot_model: waffle_pi
+
+
+# F0.4.5 - Decisiones de integracion
+# Contratos de diseno; no son parametros ejecutables de ROS 2.
+
+integration_decisions:
+  destination_request:
+    topic: /destino_solicitado
+    type: std_msgs/msg/String
+    producer: operator_interface
+    valid_values:
+      - RECEPCION
+      - ALMACENAMIENTO
+      - EMPAQUE
+      - DESPACHO
+
+  station_detection:
+    topic: /estacion_detectada
+    type: std_msgs/msg/String
+    payload: station_identifier
+
+  arbitration:
+    controller: supervisor
+    priority:
+      - safe_stop
+      - obstacle_avoidance
+      - route_following
+    switching_threshold_m: null
+
+  waypoint_interface:
+    format: csv
+    header: [x_m, y_m]
+    reference_frame: map
+    coordinate_transform: pending_F1_2
+
+  safety_requirements:
+    stop_on_missing_sensor_data: true
+    stop_on_invalid_command: true
+    allow_parallel_teleoperation: false
+    sensor_timeout_s: null
+
+  implementation_status: proposed

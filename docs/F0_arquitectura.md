@@ -51,3 +51,50 @@ mapa_manual -> MATLAB A* -> puntos CSV -> seguidor_ruta -> /cmd_vel_ruta --+
 /camera/image_raw -> reconocedor_estacion -> /estacion_detectada -> supervisor
 orden de origen/destino ----------------------------------------------> supervisor
 ```
+
+
+## H. Contratos preliminares de comunicación
+
+Estado: diseño propuesto, pendiente de implementación y pruebas.
+
+### Responsabilidades
+- emulador_sensores: convierte /scan en tres distancias sectoriales.
+- seguidor_ruta: utiliza /odom y waypoints CSV para proponer velocidades.
+- controlador_difuso: utiliza distancias para proponer velocidades de evasión.
+- reconocedor_estacion: analiza imágenes y notifica estaciones detectadas.
+- supervisor: selecciona comandos, aplica límites y gestiona paradas.
+
+### Contratos de tópicos
+| Tópico | Publicador | Consumidor | Tipo |
+|---|---|---|---|
+| /scan | Gazebo/TurtleBot3 | emulador_sensores | sensor_msgs/msg/LaserScan |
+| /odom | TurtleBot3 | seguidor_ruta | nav_msgs/msg/Odometry |
+| /camera/image_raw | Gazebo/TurtleBot3 | reconocedor_estacion | sensor_msgs/msg/Image |
+| /rango_frontal | emulador_sensores | controlador_difuso, supervisor | sensor_msgs/msg/Range |
+| /rango_izq | emulador_sensores | controlador_difuso, supervisor | sensor_msgs/msg/Range |
+| /rango_der | emulador_sensores | controlador_difuso, supervisor | sensor_msgs/msg/Range |
+| /cmd_vel_ruta | seguidor_ruta | supervisor | geometry_msgs/msg/Twist |
+| /cmd_vel_difuso | controlador_difuso | supervisor | geometry_msgs/msg/Twist |
+| /estacion_detectada | reconocedor_estacion | supervisor | std_msgs/msg/String (propuesto) |
+| /cmd_vel | supervisor | TurtleBot3 | geometry_msgs/msg/Twist |
+
+### Reglas de integración
+1. Durante la operación autónoma, solo supervisor publica /cmd_vel.
+2. No ejecutar simultáneamente teleoperación directa y supervisor.
+3. Los controladores internos publican propuestas, no órdenes finales.
+4. Velocidad lineal máxima del proyecto: 0.20 m/s.
+5. Velocidad angular máxima del proyecto: 1.5 rad/s.
+6. Giro positivo: antihorario, conforme a REP-103.
+7. Sin entradas válidas o ante una parada solicitada, el supervisor
+   debe publicar velocidad cero.
+8. Todos los nodos simulados deben utilizar el mismo reloj de simulación.
+9. La ruta CSV utilizará x_m,y_m en el marco map; origen y
+   transformaciones pendientes de definición en F1.2.
+10. Los umbrales, tiempos de espera y criterios de replanificación
+    requieren validación antes de implementar el supervisor.
+
+### Restricciones de alcance
+- Los contratos internos son propuestas de diseño.
+- Los tópicos internos todavía deben implementarse y verificarse.
+- Este documento no sustituye config/interfaces.yaml.
+- Los parámetros definitivos se consolidarán tras su revisión.
