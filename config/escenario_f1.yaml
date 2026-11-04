@@ -1,0 +1,64 @@
+# F1.1 - Geometria propuesta del almacen
+# Unidades: metros y radianes
+# Pendiente de validacion en Gazebo
+
+world:
+  name: almacen_f1
+  size_m: [10.0, 8.0]
+  wall_thickness_m: 0.15
+  frame: world
+
+robot:
+  model: waffle_pi
+  start_xy_m: [-3.0, -2.8]
+  start_yaw_rad: 0.0
+
+racks:
+  - id: estante_sur
+    center_xy_m: [0.0, -1.35]
+    size_xy_m: [6.4, 0.6]
+    height_m: 1.0
+
+  - id: estante_norte
+    center_xy_m: [0.0, 1.35]
+    size_xy_m: [6.4, 0.6]
+    height_m: 1.0
+
+stations:
+  - id: RECEPCION
+    goal_xy_m: [-4.0, -2.8]
+    marker_color: blue
+
+  - id: ALMACENAMIENTO
+    goal_xy_m: [-4.0, 2.8]
+    marker_color: red
+
+  - id: EMPAQUE
+    goal_xy_m: [4.0, 2.8]
+    marker_color: green
+
+  - id: DESPACHO
+    goal_xy_m: [4.0, -2.8]
+    marker_color: yellow
+
+map:
+  source: manual_no_slam
+  frame: map
+  resolution_m: 0.05
+  inflation_radius_m: 0.21
+  minimum_corridor_width_m: 1.0
+  world_map_alignment: pending_F1_2
+
+status: proposed
+
+# Obstaculos estaticos de prueba
+obstacles:
+  - id: caja_prueba_1
+    center_xy_m: [0.8, 0.0]
+    size_xy_m: [0.45, 0.45]
+    height_m: 0.40
+
+  - id: caja_prueba_2
+    center_xy_m: [-1.5, 2.65]
+    size_xy_m: [0.50, 0.50]
+    height_m: 0.50

@@ -1,0 +1,108 @@
+=== VALIDACION TF2 - F1.1 ===
+2026-11-04T01:47:52-05:00
+=== NODOS ===
+/camera_driver
+/gazebo
+/robot_state_publisher
+/turtlebot3_diff_drive
+/turtlebot3_imu
+/turtlebot3_joint_state
+/turtlebot3_laserscan
+=== TF ESTATICO ===
+Type: tf2_msgs/msg/TFMessage
+Publisher count: 1
+Subscription count: 0
+=== ODOM A BASE_LINK ===
+At time 1635.852000000
+- Translation: [-2.812, -2.823, 0.018]
+- Rotation: in Quaternion (xyzw) [-0.002, 0.002, 0.699, 0.715]
+- Rotation: in RPY (radian) [-0.000, 0.006, 1.549]
+- Rotation: in RPY (degree) [-0.000, 0.361, 88.753]
+- Matrix:
+  0.022 -1.000  0.000 -2.812
+  1.000  0.022  0.006 -2.823
+ -0.006 -0.000  1.000  0.018
+  0.000  0.000  0.000  1.000
+At time 1637.246000000
+- Translation: [-2.812, -2.823, 0.018]
+- Rotation: in Quaternion (xyzw) [-0.002, 0.002, 0.699, 0.715]
+- Rotation: in RPY (radian) [0.000, 0.006, 1.549]
+- Rotation: in RPY (degree) [0.000, 0.361, 88.753]
+- Matrix:
+  0.022 -1.000  0.000 -2.812
+  1.000  0.022  0.006 -2.823
+ -0.006  0.000  1.000  0.018
+  0.000  0.000  0.000  1.000
+At time 1637.246000000
+- Translation: [-2.812, -2.823, 0.018]
+- Rotation: in Quaternion (xyzw) [-0.002, 0.002, 0.699, 0.715]
+- Rotation: in RPY (radian) [0.000, 0.006, 1.549]
+- Rotation: in RPY (degree) [0.000, 0.361, 88.753]
+- Matrix:
+  0.022 -1.000  0.000 -2.812
+  1.000  0.022  0.006 -2.823
+ -0.006  0.000  1.000  0.018
+  0.000  0.000  0.000  1.000
+At time 1638.232000000
+- Translation: [-2.812, -2.823, 0.018]
+- Rotation: in Quaternion (xyzw) [-0.002, 0.002, 0.699, 0.715]
+- Rotation: in RPY (radian) [-0.000, 0.006, 1.549]
+- Rotation: in RPY (degree) [-0.000, 0.361, 88.754]
+- Matrix:
+  0.022 -1.000  0.000 -2.812
+  1.000  0.022  0.006 -2.823
+ -0.006 -0.000  1.000  0.018
+  0.000  0.000  0.000  1.000
+At time 1639.252000000
+- Translation: [-2.812, -2.823, 0.018]
+- Rotation: in Quaternion (xyzw) [-0.002, 0.002, 0.699, 0.715]
+- Rotation: in RPY (radian) [0.000, 0.006, 1.549]
+- Rotation: in RPY (degree) [0.000, 0.361, 88.754]
+- Matrix:
+  0.022 -1.000  0.000 -2.812
+  1.000  0.022  0.006 -2.823
+ -0.006  0.000  1.000  0.018
+  0.000  0.000  0.000  1.000
+[INFO] [1793774880.479036202] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+=== BASE_FOOTPRINT A BASE_LINK ===
+At time 0.0
+- Translation: [0.000, 0.000, 0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000  0.010
+  0.000  0.000  0.000  1.000
+At time 0.0
+- Translation: [0.000, 0.000, 0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000  0.010
+  0.000  0.000  0.000  1.000
+At time 0.0
+- Translation: [0.000, 0.000, 0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000  0.010
+  0.000  0.000  0.000  1.000
+At time 0.0
+- Translation: [0.000, 0.000, 0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000  0.010
+  0.000  0.000  0.000  1.000
+[INFO] [1793774885.480684221] [rclcpp]: signal_handler(SIGINT/SIGTERM)
