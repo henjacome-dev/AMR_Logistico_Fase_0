@@ -1,0 +1,20 @@
+# ROS workspace
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+__pycache__/
+*.pyc
+# Big recordings and model caches
+*.db3
+*.mcap
+*.bag
+*.h5
+*.keras
+*.tflite
+# Some trained-model files are deliverables; force-add deliberately or use releases/LFS
+# Environment
+.env
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store

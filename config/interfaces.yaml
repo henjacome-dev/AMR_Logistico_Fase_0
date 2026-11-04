@@ -1,0 +1,31 @@
+# Interfaces centrales: parte exigida por el enunciado y parte propuesta.
+# Este archivo no es automáticamente un archivo de parámetros ROS 2.
+robot:
+  model: waffle_pi
+  max_linear_mps: 0.20
+  max_angular_radps: 1.5
+  inflated_radius_m: 0.21
+  map_resolution_m: 0.05
+  angular_positive_direction: left_ccw
+sensors:
+  lidar_sector_width_deg: 15
+  sectors_deg: {frontal: 0, izquierda: 45, derecha: -45}
+  range_max_m: 2.0
+  noise_sigma_m: 0.01
+specified_topics:
+  scan: {name: /scan, type: sensor_msgs/msg/LaserScan}
+  frontal: {name: /rango_frontal, type: sensor_msgs/msg/Range}
+  izquierda: {name: /rango_izq, type: sensor_msgs/msg/Range}
+  derecha: {name: /rango_der, type: sensor_msgs/msg/Range}
+  odometria: {name: /odom, type: nav_msgs/msg/Odometry}
+  camera: {name: /camera/image_raw, type: sensor_msgs/msg/Image}
+  cmd_vel: {name: /cmd_vel, type: geometry_msgs/msg/Twist}
+proposed_topics:
+  route_command: {name: /cmd_vel_ruta, type: geometry_msgs/msg/Twist}
+  fuzzy_command: {name: /cmd_vel_difuso, type: geometry_msgs/msg/Twist}
+  detected_station: {name: /estacion_detectada, type: std_msgs/msg/String}
+  requested_destination: {name: /destino_solicitado, type: std_msgs/msg/String}
+proposed_csv:
+  header: [x_m, y_m]
+  reference_frame: map
+stations: [RECEPCION, ALMACENAMIENTO, EMPAQUE, DESPACHO]
