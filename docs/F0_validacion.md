@@ -8,13 +8,13 @@
 - [ ] Alcance para mañana (Avance 1) asignado a responsables.
 
 ## F0.2 · Entorno
-- [ ] Ubuntu 22.04 validado.
-- [ ] ROS_DISTRO=humble.
-- [ ] Gazebo abre sin errores críticos.
-- [ ] TurtleBot3 Waffle Pi aparece y se mueve por teclado.
-- [ ] `/odom` publica mensajes.
-- [ ] `/scan` publica mensajes.
-- [ ] `/camera/image_raw` existe y publica imágenes.
+- [x] Ubuntu 22.04 validado.
+- [x] ROS_DISTRO=humble.
+- [x] Gazebo abre sin errores críticos.
+- [x] TurtleBot3 Waffle Pi aparece y se mueve por teclado.
+- [x] `/odom` publica mensajes.
+- [x] `/scan` publica mensajes.
+- [x] `/camera/image_raw` existe y publica imágenes.
 - [ ] MATLAB y toolboxes requeridas localizadas o alternativa institucional coordinada.
 
 ## F0.3 · Organización
@@ -42,4 +42,36 @@
 ## Registro de problemas
 | Fecha | Prueba | Resultado | Error | Responsable | Acción correctiva |
 |---|---|---|---|---|---|
-| Pendiente | TurtleBot3 en Gazebo | Por ejecutar | — | Líder | — |
+| 2026-11-04 | TurtleBot3 en Gazebo | Aprobado: 2 arranques consecutivos | Fallo inicial no reproducido | Lider | Continuar monitoreo |
+
+
+## Evidencias técnicas verificadas — entorno local
+
+### F0.2 — Entorno robótico
+- Sistema: Ubuntu 22.04 LTS sobre WSL2.
+- ROS 2: Humble.
+- Robot: TurtleBot3 Waffle Pi.
+- Gazebo Classic: escenario cargado correctamente.
+- Inserción automática: validada en dos arranques consecutivos.
+- Movimiento mediante teclado: comprobado.
+- Odometría: `/odom` operativo.
+- LiDAR: `/scan` operativo.
+- Cámara: `/camera/image_raw` operativo.
+
+### F0.3 — Organización del proyecto
+- Repositorio Git local inicializado en rama main.
+- Commit inicial: 9df1077.
+- Commit de automatización: c08d0c4.
+- Archivo .gitignore revisado.
+- Script `tools/activar_entorno.sh` probado.
+- Integración con `~/turtlebot3_ws` verificada.
+- Espacio `ros2_ws/src` preparado para código propio.
+
+### Observaciones y pendientes
+- El fallo inicial de inserción automática no se reprodujo
+  durante las dos pruebas posteriores.
+- MATLAB y toolboxes pendientes de validación.
+- Repositorio remoto y colaboración pendientes.
+- Verificaciones documentales e interfaces aún por completar.
+- Las capturas existen como evidencia de las pruebas,
+  pero todavía deben archivarse en el repositorio.
