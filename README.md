@@ -49,4 +49,28 @@ Si el paquete de simulación se instala en otra área de trabajo, cambie la ruta
 - Radio de inflado: `0.21 m`; resolución de mapa: `0.05 m` o más fina.
 - LiDAR se reduce a 3 sectores de 15° (`0°`, `+45°`, `−45°`), alcance de 2 m, ruido gaussiano `sigma=0.01 m`.
 
-**Estado actual:** plantilla creada; instalaciones y pruebas de usuario PENDIENTES. No confundir archivos con un sistema validado.
+**Estado actual (2026-11-04):** Ubuntu 22.04 sobre WSL2, ROS 2 Humble, Gazebo Classic y TurtleBot3 Waffle Pi verificados localmente. Odometria, LiDAR, camara y teleoperacion comprobados. Repositorio privado en GitHub sincronizado. Arquitectura F0.4 validada estaticamente. Algoritmos autonomos y MATLAB pendientes de validacion.
+
+## Entorno robotico validado en Fase 0
+
+Activar el entorno en una terminal Ubuntu:
+
+```bash
+source ~/AMR_Logistico_Fase_0/tools/activar_entorno.sh
+```
+
+Ejecutar la simulacion del escenario oficial:
+
+```bash
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
+
+Verificar topicos desde otra terminal con el entorno activado:
+
+```bash
+ros2 topic list
+ros2 topic hz /scan
+```
+
+Los nodos autonomos del proyecto aun no estan implementados.
+Las interfaces F0.4 representan contratos de diseno.

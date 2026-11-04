@@ -1,0 +1,36 @@
+Entorno AMR activado
+ROS 2: humble
+Robot: waffle_pi
+=================================
+DIAGNOSTICO FASE 0 - ENTORNO AMR
+=================================
+
+FECHA:
+2026-11-04T01:01:52-05:00
+
+SISTEMA OPERATIVO:
+Ubuntu 22.04.5 LTS
+
+ROS 2:
+Distribucion: humble
+CLI ROS 2 disponible
+
+TURTLEBOT3:
+Modelo: waffle_pi
+/home/enry/turtlebot3_ws/install/turtlebot3_gazebo
+/home/enry/turtlebot3_ws/install/turtlebot3_teleop
+
+GAZEBO:
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+
+
+PAQUETES DE SIMULACION:
+/opt/ros/humble
+
+=================================
+FIN DEL DIAGNOSTICO
+=================================

@@ -1,0 +1,45 @@
+=== EVIDENCIA ROS 2 - FASE 0 ===
+2026-11-04T01:04:35-05:00
+
+=== DISTRIBUCION ===
+humble
+
+=== TOPICOS DISPONIBLES ===
+/camera/camera_info [sensor_msgs/msg/CameraInfo]
+/camera/image_raw [sensor_msgs/msg/Image]
+/clock [rosgraph_msgs/msg/Clock]
+/cmd_vel [geometry_msgs/msg/Twist]
+/imu [sensor_msgs/msg/Imu]
+/joint_states [sensor_msgs/msg/JointState]
+/odom [nav_msgs/msg/Odometry]
+/parameter_events [rcl_interfaces/msg/ParameterEvent]
+/performance_metrics [gazebo_msgs/msg/PerformanceMetrics]
+/robot_description [std_msgs/msg/String]
+/rosout [rcl_interfaces/msg/Log]
+/scan [sensor_msgs/msg/LaserScan]
+/tf [tf2_msgs/msg/TFMessage]
+/tf_static [tf2_msgs/msg/TFMessage]
+
+=== VERIFICACION DE SENSORES ===
+
+TOPICO: /scan
+Type: sensor_msgs/msg/LaserScan
+Publisher count: 1
+Subscription count: 0
+
+TOPICO: /odom
+Type: nav_msgs/msg/Odometry
+Publisher count: 1
+Subscription count: 0
+
+TOPICO: /camera/image_raw
+Type: sensor_msgs/msg/Image
+Publisher count: 1
+Subscription count: 0
+
+TOPICO: /cmd_vel
+Type: geometry_msgs/msg/Twist
+Publisher count: 0
+Subscription count: 1
+
+=== FIN DEL REGISTRO ===

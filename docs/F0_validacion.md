@@ -19,8 +19,8 @@
 
 ## F0.3 · Organización
 - [ ] Repositorio Git iniciado y remoto compartido.
-- [ ] README actualizado con pasos reproducibles.
-- [ ] Estructura oficial de seis carpetas creada.
+- [x] README actualizado con pasos reproducibles.
+- [x] Estructura oficial de seis carpetas creada.
 - [ ] Todos los integrantes tienen permisos y pueden clonar.
 - [ ] Evitar subir datos pesados innecesarios o claves al Git.
 
@@ -28,7 +28,7 @@
 - [ ] Diagrama consensuado.
 - [ ] Nombres y tipos de tópicos fijados.
 - [ ] Convención de giro y ejes revisada con el grupo.
-- [ ] Responsable de publicación final `/cmd_vel` definido.
+- [x] Responsable de publicación final `/cmd_vel` definido.
 - [ ] CSV de waypoints definido antes de programar MATLAB/ROS.
 
 **Puerta F0 — Aprobación:** 100 % de verificaciones funcionales críticas (ROS, robot en Gazebo y tópicos) y acuerdos de arquitectura. El resto de tareas documentales puede avanzar en paralelo por urgencia del Avance 1.
@@ -75,3 +75,27 @@
 - Verificaciones documentales e interfaces aún por completar.
 - Las capturas existen como evidencia de las pruebas,
   pero todavía deben archivarse en el repositorio.
+
+## Evidencias archivadas - F0.5
+
+Fecha: 2026-11-04.
+
+- `resultados/F0_diagnostico.txt`: versiones y paquetes instalados.
+- `resultados/F0_ros_topics.txt`: interfaces ROS 2 y publicadores.
+- `resultados/F0_gazebo_waffle_pi.png`: captura de simulacion.
+
+### Resultados tecnicos
+
+- ROS 2 Humble y Gazebo Classic 11.10.2 disponibles.
+- TurtleBot3 Waffle Pi identificado.
+- `/scan`, `/odom` y `/camera/image_raw`: un publicador cada uno.
+- `/cmd_vel`: un suscriptor y cero publicadores durante la captura.
+- Movimiento y sensores comprobados en pruebas anteriores.
+
+### Limitaciones pendientes
+
+- Verificar visualmente el contenido de la imagen archivada.
+- MATLAB y toolboxes sin validacion.
+- Acuerdos y aprobaciones grupales pendientes.
+- Nodos autonomos propios pendientes de implementacion.
+- Umbrales de seguridad pendientes de calibracion.
