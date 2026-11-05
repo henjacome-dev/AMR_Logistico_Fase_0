@@ -49,7 +49,7 @@ Si el paquete de simulación se instala en otra área de trabajo, cambie la ruta
 - Radio de inflado: `0.21 m`; resolución de mapa: `0.05 m` o más fina.
 - LiDAR se reduce a 3 sectores de 15° (`0°`, `+45°`, `−45°`), alcance de 2 m, ruido gaussiano `sigma=0.01 m`.
 
-**Estado actual (2026-11-04):** Ubuntu 22.04 sobre WSL2, ROS 2 Humble, Gazebo Classic y TurtleBot3 Waffle Pi verificados localmente. Odometria, LiDAR, camara y teleoperacion comprobados. Repositorio privado en GitHub sincronizado. Arquitectura F0.4 validada estaticamente. Algoritmos autonomos y MATLAB pendientes de validacion.
+**Estado actual (2026-11-04):** Ubuntu 22.04 sobre WSL2, ROS 2 Humble, Gazebo Classic y TurtleBot3 Waffle Pi verificados localmente. Odometria, LiDAR, camara y teleoperacion comprobados. Repositorio privado en GitHub sincronizado. Arquitectura F0.4 validada estaticamente. Planificacion A* y seguimiento de rutas validados; integracion difusa y CNN pendientes.
 
 ## Entorno robotico validado en Fase 0
 
@@ -72,5 +72,28 @@ ros2 topic list
 ros2 topic hz /scan
 ```
 
-Los nodos autonomos del proyecto aun no estan implementados.
-Las interfaces F0.4 representan contratos de diseno.
+El seguidor proporcional y el supervisor de seguridad estan implementados y validados en simulacion.
+Las interfaces F0.4 combinan contratos implementados y otros pendientes de integracion.
+
+## Estado del proyecto — 2026-11-05
+
+### Implementado
+- Entorno ROS 2 Humble y Gazebo Classic.
+- Almacen simulado y mapa manual.
+- Planificacion A* en MATLAB y Python.
+- Seguimiento de rutas en TurtleBot3.
+- Supervisor de seguridad F1.3.3.
+- Validaciones S01-S12 y GI-01 a GI-03.
+
+### Pendiente para cerrar el Avance 1
+- Paneles verticales diferenciados de las estaciones.
+- Emulador de tres sensores sensor_msgs/Range.
+- Consolidar cotas, mapas y evidencias MATLAB.
+- Integracion y documentacion final.
+- Informe de dos paginas.
+- Etiqueta Git avance1.
+
+### Limitaciones
+- La seguridad verificada corresponde a simulacion.
+- El supervisor actual no incorpora enclavamiento de rearme manual.
+- El controlador difuso y la CNN no estan integrados.

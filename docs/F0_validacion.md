@@ -18,7 +18,7 @@
 - [ ] MATLAB y toolboxes requeridas localizadas o alternativa institucional coordinada.
 
 ## F0.3 · Organización
-- [ ] Repositorio Git iniciado y remoto compartido.
+- [x] Repositorio Git iniciado y remoto configurado.
 - [x] README actualizado con pasos reproducibles.
 - [x] Estructura oficial de seis carpetas creada.
 - [ ] Todos los integrantes tienen permisos y pueden clonar.
@@ -71,7 +71,7 @@
 - El fallo inicial de inserción automática no se reprodujo
   durante las dos pruebas posteriores.
 - MATLAB y toolboxes pendientes de validación.
-- Repositorio remoto y colaboración pendientes.
+- Repositorio remoto configurado; accesos de colaboradores pendientes de verificacion.
 - Verificaciones documentales e interfaces aún por completar.
 - Las capturas existen como evidencia de las pruebas,
   pero todavía deben archivarse en el repositorio.
@@ -97,5 +97,45 @@ Fecha: 2026-11-04.
 - Verificar visualmente el contenido de la imagen archivada.
 - MATLAB y toolboxes sin validacion.
 - Acuerdos y aprobaciones grupales pendientes.
-- Nodos autonomos propios pendientes de implementacion.
+- Seguidor proporcional y supervisor de seguridad implementados; otros modulos autonomos pendientes.
 - Umbrales de seguridad pendientes de calibracion.
+
+## Auditoria de cierre F0 — 2026-11-05
+
+### Estado del repositorio
+- Rama main sincronizada con origin/main.
+- Repositorio remoto operativo.
+- No existen etiquetas Git.
+- Existen registros experimentales locales pendientes de clasificacion.
+- No se eliminaran evidencias ni respaldos sin revision.
+
+### Estado de MATLAB
+- MATLAB no esta instalado en el entorno Ubuntu consultado.
+- Existen scripts de planificacion A* en matlab/F124_MATLAB/.
+- MATLAB Online se mantiene como entorno de trabajo.
+- Pendiente: consolidar evidencia de ejecucion y toolboxes.
+
+### Documentacion
+- Analisis, requisitos, arquitectura, entorno, roles y validacion disponibles.
+- Pendiente: actualizar estados de requisitos conforme a resultados.
+- Pendiente: confirmar asignacion y acceso de integrantes.
+- Pendiente: consolidar evidencias de la Etapa 1.
+
+### Condicion de cierre
+La Etapa 0 permanece en cierre documental.
+No se declara completada al 100 por ciento hasta resolver
+las verificaciones y acuerdos pendientes.
+
+## Consolidacion tecnica — 2026-11-05
+
+- GitHub sincronizado con la rama main.
+- Ultimo commit confirmado de GI-03: d616273.
+- Planificacion A* y seguimiento de rutas con evidencias.
+- Seguridad logica S01-S12: 12/12 aprobadas.
+- Pruebas integradas GI-01, GI-02 y GI-03 ejecutadas.
+- Las evidencias corresponden al entorno simulado.
+- MATLAB Online utilizado; disponibilidad local de toolboxes
+  pendiente de documentacion.
+- Acceso de integrantes y acuerdos grupales pendientes.
+
+La Etapa 0 conserva pendientes documentales y organizativos.

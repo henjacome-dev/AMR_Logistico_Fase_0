@@ -2,7 +2,7 @@
 
 **Proyecto:** AMR_Logistico_Fase_0 (ROS 2 Humble, Gazebo Classic, TurtleBot3 Waffle Pi)
 **Ámbito:** F1.3.3, prueba adicional interna. No sustituye los entregables oficiales del Avance 1.
-**Estado:** 12/12 pruebas lógicas aprobadas; GI-01 y GI-02 ejecutadas con resultados satisfactorios; GI-03 pendiente.
+**Estado:** 12/12 pruebas logicas aprobadas; GI-01, GI-02 y GI-03 ejecutadas satisfactoriamente en simulacion.
 
 ## 1. Objetivo
 
@@ -117,8 +117,13 @@ Tras aprobar S01–S12, ejecutar en un entorno controlado separado tres pruebas 
 
 **GI-03 — Recuperación**
 
-- Estado: pendiente de validación integrada.
-- No se declara recuperación autónoma verificada.
+- Estado: GI-03 aprobada (3/3 comprobaciones).
+- Inmovilidad sin propuestas: verificada.
+- Reanudacion con propuesta de 0,04 m/s: verificada.
+- Desplazamiento registrado: 0,0759 m.
+- Parada posterior: avance residual de 0,0163 m.
+- Evidencia: resultados/F133_GI03_20261105_150523/.
+- Limitacion: no se verifico un rearme manual ni un enclavamiento de falla.
 
 ### 8.3 Limitaciones
 

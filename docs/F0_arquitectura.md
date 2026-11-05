@@ -55,7 +55,7 @@ orden de origen/destino ----------------------------------------------> supervis
 
 ## H. Contratos preliminares de comunicación
 
-Estado: diseño propuesto, pendiente de implementación y pruebas.
+Estado al 2026-11-05: arquitectura parcialmente implementada; contratos restantes pendientes de integración.
 
 ### Responsabilidades
 - emulador_sensores: convierte /scan en tres distancias sectoriales.
@@ -95,6 +95,22 @@ Estado: diseño propuesto, pendiente de implementación y pruebas.
 
 ### Restricciones de alcance
 - Los contratos internos son propuestas de diseño.
-- Los tópicos internos todavía deben implementarse y verificarse.
+- Los tópicos internos están parcialmente implementados; los restantes requieren integración y verificación.
 - Este documento no sustituye config/interfaces.yaml.
 - Los parámetros definitivos se consolidarán tras su revisión.
+
+## I. Auditoria de implementacion — 2026-11-05
+
+| Modulo | Estado |
+|---|---|
+| Gazebo y TurtleBot3 Waffle Pi | Operativos |
+| Mapa y planificacion A* | Implementados con evidencias |
+| Seguidor proporcional | Implementado y validado |
+| Supervisor de seguridad F1.3.3 | Validado en simulacion |
+| Emulador de tres sensores Range | Pendiente |
+| Controlador difuso integrado | Pendiente |
+| Reconocedor visual CNN | Pendiente |
+
+La validacion del supervisor F1.3.3 corresponde a parada,
+limitacion de velocidad y recuperacion mediante nuevas propuestas.
+No demuestra todavia arbitraje completo entre ruta y controlador difuso.

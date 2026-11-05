@@ -1,22 +1,22 @@
 # F0.1 — Matriz de requisitos
 
-**Leyenda:** `DOC` obligación del enunciado; `PROP` decisión de ingeniería recomendada, no obligación oficial. Estado inicial: pendiente.
+**Leyenda:** `DOC` obligación del enunciado; `PROP` decisión de ingeniería recomendada, no obligación oficial. Estados auditados al 2026-11-05. Verificado = evidencia existente; Parcial = requiere cierre; Pendiente = requisito no satisfecho.
 
 | ID | Tipo | Requisito | Verificación objetiva | Entrega | Estado |
 |---|---|---|---|---|---|
-| R01 | DOC | Ubuntu 22.04 con ROS 2 Humble | `echo $ROS_DISTRO` indica `humble` | F0 | Pendiente |
-| R02 | DOC | Gazebo + TurtleBot3 Waffle Pi | Modelo visible y teleoperable | F0/F1 | Pendiente |
-| R03 | DOC | Mundo de al menos 4×4 m | Dimensiones y captura del mundo | A1 | Pendiente |
-| R04 | DOC | ≥3 pasillos con ≥1,0 m de ancho | Cotas del mundo | A1 | Pendiente |
+| R01 | DOC | Ubuntu 22.04 con ROS 2 Humble | `echo $ROS_DISTRO` indica `humble` | F0 | Verificado |
+| R02 | DOC | Gazebo + TurtleBot3 Waffle Pi | Modelo visible y teleoperable | F0/F1 | Verificado |
+| R03 | DOC | Mundo de al menos 4×4 m | Dimensiones y captura del mundo | A1 | Verificado |
+| R04 | DOC | ≥3 pasillos con ≥1,0 m de ancho | Cotas del mundo | A1 | Parcial |
 | R05 | DOC | Cuatro estaciones con marcadores diferenciados | Captura de cuatro paneles | A1 | Pendiente |
 | R06 | DOC | Tres sensores emulados `sensor_msgs/Range` | Echo de los 3 tópicos | A1 | Pendiente |
 | R07 | DOC | Sectores LiDAR de 15°: frontal/izq/der | Pruebas a 0° y ±45° | A1 | Pendiente |
 | R08 | DOC | Alcance 2 m y ruido gaussiano σ=0,01 m | Prueba y código del emulador | A1 | Pendiente |
-| R09 | DOC | Odometría y cámara disponibles | `ros2 topic list -t` y visualización | A1 | Pendiente |
-| R10 | DOC | Mapa manual sin SLAM | `binaryOccupancyMap`, coordenadas documentadas | A1 | Pendiente |
-| R11 | DOC | Resolución de mapa ≤0,05 m/celda e inflado de 0,21 m | Código y gráfica del mapa | A1 | Pendiente |
-| R12 | DOC | Tres órdenes A* distintas | CSV + tabla longitud/celdas/tiempo | A1 | Pendiente |
-| R13 | DOC | Seguidor proporcional completa ≥1 orden sin obstáculo | Video o registro ROS | A1 | Pendiente |
+| R09 | DOC | Odometría y cámara disponibles | `ros2 topic list -t` y visualización | A1 | Parcial |
+| R10 | DOC | Mapa manual sin SLAM | `binaryOccupancyMap`, coordenadas documentadas | A1 | Parcial |
+| R11 | DOC | Resolución de mapa ≤0,05 m/celda e inflado de 0,21 m | Código y gráfica del mapa | A1 | Parcial |
+| R12 | DOC | Tres órdenes A* distintas | CSV + tabla longitud/celdas/tiempo | A1 | Verificado |
+| R13 | DOC | Seguidor proporcional completa ≥1 orden sin obstáculo | Video o registro ROS | A1 | Verificado |
 | R14 | DOC | Reporte de 2 páginas + repositorio | Documentos y tag `avance1` | A1 | Pendiente |
 | R15 | DOC | Mamdani 3 entradas de 0–2 m, 2 salidas | Archivo .fis y reglas | A2 | Pendiente |
 | R16 | DOC | Cobertura de 27 combinaciones lingüísticas | Tabla de cobertura y ausencia de conflictos | A2 | Pendiente |
@@ -37,8 +37,8 @@
 | R31 | DOC | micro-ROS + 3 HC-SR04 + IR + TCS34725 | Lecturas y telemetría física | U4 | Pendiente |
 | R32 | DOC | eFLL verificado contra MATLAB y replanificación al bloquear aristas | Tablas, pruebas de rutas | U4 | Pendiente |
 | R33 | DOC | k-means k=4, MLP 3→8→4, regresión y KPIs | Resultados de experimentos | U4 | Pendiente |
-| R34 | PROP | Un único publicador final de `/cmd_vel` en modo autónomo | Gráfico de nodos y prueba de arbitraje | F0/F2 | Pendiente |
-| R35 | PROP | Convención única de coordenadas, signos y CSV | Contrato de interfaz y prueba | F0/F1 | Pendiente |
+| R34 | PROP | Un único publicador final de `/cmd_vel` en modo autónomo | Gráfico de nodos y prueba de arbitraje | F0/F2 | Verificado |
+| R35 | PROP | Convención única de coordenadas, signos y CSV | Contrato de interfaz y prueba | F0/F1 | Parcial |
 
 ## Hitos de evaluación del proyecto
 A1: 4 nov 2026 (20 %); A2: 9 nov 2026 (35 %); Final: 16 nov 2026 (45 %). La fase real de U4 se califica aparte. Las rúbricas internas de A2 son 35/35/30 y de final 30/30/40.
