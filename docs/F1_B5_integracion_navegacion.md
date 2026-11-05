@@ -66,9 +66,11 @@ sea responsable de /cmd_vel.
 Las pruebas previas no constituyen certificacion de
 seguridad fisica ni validan componentes aun no integrados.
 
-## 5. Verificacion pendiente
+## 5. Verificacion EX-02
 
-EX-02: validar el arranque reproducible del nuevo
-lanzamiento operativo.
+El arranque integrado fue satisfactorio en la ejecucion
+observada. El supervisor fue el unico publicador de
+/cmd_vel y envio velocidad cero sin ruta activa.
+Ver docs/F1_EX02_arranque_integrado.md.
 
 No se repiten los ensayos F1.3.1, F1.3.2 ni F1.3.3.

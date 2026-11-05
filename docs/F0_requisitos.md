@@ -8,16 +8,16 @@
 | R02 | DOC | Gazebo + TurtleBot3 Waffle Pi | Modelo visible y teleoperable | F0/F1 | Verificado |
 | R03 | DOC | Mundo de al menos 4×4 m | Dimensiones y captura del mundo | A1 | Verificado |
 | R04 | DOC | ≥3 pasillos con ≥1,0 m de ancho | Cotas del mundo | A1 | Parcial |
-| R05 | DOC | Cuatro estaciones con marcadores diferenciados | Captura de cuatro paneles | A1 | Pendiente |
-| R06 | DOC | Tres sensores emulados `sensor_msgs/Range` | Echo de los 3 tópicos | A1 | Pendiente |
-| R07 | DOC | Sectores LiDAR de 15°: frontal/izq/der | Pruebas a 0° y ±45° | A1 | Pendiente |
-| R08 | DOC | Alcance 2 m y ruido gaussiano σ=0,01 m | Prueba y código del emulador | A1 | Pendiente |
-| R09 | DOC | Odometría y cámara disponibles | `ros2 topic list -t` y visualización | A1 | Parcial |
-| R10 | DOC | Mapa manual sin SLAM | `binaryOccupancyMap`, coordenadas documentadas | A1 | Parcial |
-| R11 | DOC | Resolución de mapa ≤0,05 m/celda e inflado de 0,21 m | Código y gráfica del mapa | A1 | Parcial |
+| R05 | DOC | Cuatro estaciones con marcadores diferenciados | Captura de cuatro paneles | A1 | Parcial |
+| R06 | DOC | Tres sensores emulados `sensor_msgs/Range` | Echo de los 3 tópicos | A1 | Verificado |
+| R07 | DOC | Sectores LiDAR de 15°: frontal/izq/der | Pruebas a 0° y ±45° | A1 | Parcial |
+| R08 | DOC | Alcance 2 m y ruido gaussiano σ=0,01 m | Prueba y código del emulador | A1 | Parcial |
+| R09 | DOC | Odometría y cámara disponibles | `ros2 topic list -t` y visualización | A1 | Verificado |
+| R10 | DOC | Mapa manual sin SLAM | `binaryOccupancyMap`, coordenadas documentadas | A1 | Verificado |
+| R11 | DOC | Resolución de mapa ≤0,05 m/celda e inflado de 0,21 m | Código y gráfica del mapa | A1 | Verificado |
 | R12 | DOC | Tres órdenes A* distintas | CSV + tabla longitud/celdas/tiempo | A1 | Verificado |
 | R13 | DOC | Seguidor proporcional completa ≥1 orden sin obstáculo | Video o registro ROS | A1 | Verificado |
-| R14 | DOC | Reporte de 2 páginas + repositorio | Documentos y tag `avance1` | A1 | Pendiente |
+| R14 | DOC | Reporte de 2 páginas + repositorio | Documentos y tag `avance1` | A1 | Parcial |
 | R15 | DOC | Mamdani 3 entradas de 0–2 m, 2 salidas | Archivo .fis y reglas | A2 | Pendiente |
 | R16 | DOC | Cobertura de 27 combinaciones lingüísticas | Tabla de cobertura y ausencia de conflictos | A2 | Pendiente |
 | R17 | DOC | Límites 0≤v≤0,20 m/s y −1,5≤ω≤1,5 rad/s | Pruebas de saturación | A2 | Pendiente |

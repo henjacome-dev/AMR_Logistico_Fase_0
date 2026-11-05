@@ -73,6 +73,6 @@ Evidencias disponibles:
 - No se efectuaron nuevos cálculos en esta auditoría.
 - La comparación no demuestra trayectorias idénticas.
 - La correspondencia geométrica mundo-mapa se
-  comprobará en EX-01.
+  comprobó en EX-01, con dos advertencias de paso.
 - No se ha acreditado la disponibilidad de MATLAB
   y sus toolboxes en la instalación local de Ubuntu.
