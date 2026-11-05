@@ -99,7 +99,7 @@ def main():
             self.exitoso = False
             self.motivo = ''
             self.registros = []
-            self.salida = Path('resultados/F13_ruta_1_log.csv')
+            self.salida = Path("resultados") / f"F13_{ruta_archivo.stem.removeprefix('F12_')}_log.csv"
             self.pub = self.create_publisher(Twist, '/cmd_vel_ruta', 10)
             self.sub_odom = self.create_subscription(
                 Odometry, '/odom', self.cb_odom, qos_profile_sensor_data)
@@ -177,7 +177,14 @@ def main():
             comando = Twist()
             comando.angular.z = max(-WMAX, min(WMAX, 1.5*error))
             if abs(error) < math.radians(25):
-                comando.linear.x = min(VMAX, 0.45*d) * max(0.2, math.cos(error))
+                if self.indice == len(self.ruta) - 1:
+                    velocidad_base = 0.45 * d
+                else:
+                    velocidad_base = max(0.075, 0.45 * d)
+
+                comando.linear.x = min(VMAX, velocidad_base) * max(
+                    0.2, math.cos(error)
+                )
             self.pub.publish(comando)
             self.registros.append([round(ahora - self.inicio_ruta, 3), x, y, yaw,
                                    self.indice, objetivo[0], objetivo[1], d,

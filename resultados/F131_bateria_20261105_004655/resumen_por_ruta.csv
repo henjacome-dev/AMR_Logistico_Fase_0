@@ -1,0 +1,5 @@
+ruta,ensayos,exitos,tasa_exito_pct,error_final_prom_m,error_final_max_m,desviacion_max_m,tiempo_pared_prom_s
+1,1,1,100.0,0.0731,0.0731,0.0,14.307
+2,1,1,100.0,0.0728,0.0728,0.0001,77.915
+3,1,1,100.0,0.0722,0.0722,0.0121,111.461
+4,1,1,100.0,0.0726,0.0726,0.0,75.261

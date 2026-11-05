@@ -1,0 +1,17 @@
+[INFO] [1793857616.407247559] [supervisor_f13]: Supervisor activo: unico publicador de /cmd_vel; espera ruta y sensores.
+[WARN] [1793857616.422452157] [supervisor_f13]: Parada segura: esperando sensores
+[WARN] [1793857633.901541208] [supervisor_f13]: Parada segura: no hay propuesta reciente de ruta
+[WARN] [1793857638.931463273] [supervisor_f13]: Parada segura: no hay propuesta reciente de ruta
+[WARN] [1793857716.636606112] [supervisor_f13]: Parada segura: no hay propuesta reciente de ruta
+[WARN] [1793857834.741532499] [supervisor_f13]: Parada segura: no hay propuesta reciente de ruta
+[WARN] [1793857915.145672368] [supervisor_f13]: Parada segura: no hay propuesta reciente de ruta
+Traceback (most recent call last):
+  File "/home/enry/AMR_Logistico_Fase_0/tools/supervisor_f13.py", line 119, in <module>
+    main()
+  File "/home/enry/AMR_Logistico_Fase_0/tools/supervisor_f13.py", line 111, in main
+    nodo.parada()
+  File "/home/enry/AMR_Logistico_Fase_0/tools/supervisor_f13.py", line 96, in parada
+    self.pub.publish(Twist())
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 70, in publish
+    self.__publisher.publish(msg)
+rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389

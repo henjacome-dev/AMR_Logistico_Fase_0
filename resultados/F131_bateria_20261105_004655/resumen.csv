@@ -1,0 +1,5 @@
+ruta,repeticion,estado,motivo,retorno_seguidor,muestras,tiempo_pared_s,tiempo_sim_s,recorrido_real_m,longitud_planificada_m,error_final_m,desviacion_max_m,desviacion_rms_m,laser_min_m,muestras_proximidad,velocidad_max_abs_m_s,giro_max_abs_rad_s,cambios_sentido_giro,ruta_csv,directorio_evidencia
+1,1,OK,Meta alcanzada dentro de tolerancia,0,428,14.307,14.518,0.927,1.0,0.0731,0.0,0.0,0.985,0,0.075,0.0,0,resultados/F12_ruta_1.csv,resultados/F131_bateria_20261105_004655/ruta_01_rep_01
+2,1,OK,Meta alcanzada dentro de tolerancia,0,2306,77.915,78.37,5.528,5.6,0.0728,0.0001,0.0,0.7451,0,0.075,0.0001,0,resultados/F12_ruta_2.csv,resultados/F131_bateria_20261105_004655/ruta_02_rep_01
+3,1,OK,Meta alcanzada dentro de tolerancia,0,3301,111.461,112.2,8.162,8.249,0.0722,0.0121,0.0013,0.1969,329,0.075,0.7,3,resultados/F12_ruta_3.csv,resultados/F131_bateria_20261105_004655/ruta_03_rep_01
+4,1,OK,Meta alcanzada dentro de tolerancia,0,2229,75.261,75.752,5.528,5.6,0.0726,0.0,0.0,0.7882,0,0.075,0.0,0,resultados/F12_ruta_4.csv,resultados/F131_bateria_20261105_004655/ruta_04_rep_01
