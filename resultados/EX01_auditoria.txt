@@ -1,0 +1,11 @@
+[OK] Gazebo: paredes, estantes, obstaculos y 4 estaciones coinciden con YAML
+[OK] 4 paneles, 10 marcas, sin colisiones nuevas
+[OK] almacen_f1.pgm: 200x160, coherencia celda a celda
+[OK] almacen_f1_inflado.pgm: 200x160, coherencia celda a celda
+[OK] Las 4 metas siguen libres en el mapa inflado
+[OK] Pasillo sur: ancho nominal 2.200 m
+[OK] Pasillo central: ancho nominal 2.100 m
+[ADVERTENCIA] central junto a caja_prueba_1: paso lateral local maximo 0.825 m (<1.0 m)
+[OK] Pasillo norte: ancho nominal 2.200 m
+[ADVERTENCIA] norte junto a caja_prueba_2: paso lateral local maximo 0.950 m (<1.0 m)
+[EX-01] Consistencia estatica completada. Revisar advertencias de pasillos.
