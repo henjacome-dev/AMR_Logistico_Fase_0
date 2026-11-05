@@ -1,0 +1,8 @@
+{
+  "A_parada_sin_propuestas": true,
+  "B_orden_positiva": true,
+  "B_desplazamiento_odometrico": true,
+  "desplazamiento_m": 0.0759,
+  "C_parada_tras_retirar_propuesta": true,
+  "C_avance_residual_m": 0.0163
+}
