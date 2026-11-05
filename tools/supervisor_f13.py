@@ -7,9 +7,11 @@ Prueba de prototipo: no supone evitar obstaculos, solo detenerse.
 Ejecutar con --ros-args -p use_sim_time:=true.
 """
 import math
+import signal
 import time
 
 import rclpy
+from rclpy.signals import SignalHandlerOptions
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
@@ -97,7 +99,9 @@ class Supervisor(Node):
 
 
 def main():
-    rclpy.init()
+    rclpy.init(signal_handler_options=SignalHandlerOptions.NO)
+    signal.signal(signal.SIGINT, signal.default_int_handler)
+    signal.signal(signal.SIGTERM, signal.default_int_handler)
     nodo = Supervisor()
     try:
         param = nodo.get_parameter_or('use_sim_time', None)

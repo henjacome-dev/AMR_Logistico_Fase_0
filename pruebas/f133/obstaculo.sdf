@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="f133_obstaculo">
+    <static>true</static>
+    <link name="caja">
+      <collision name="colision">
+        <geometry>
+          <box>
+            <size>0.22 0.30 0.45</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.22 0.30 0.45</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,4 @@
+[INFO] [1793903093.553181265] [supervisor_f133_test]: Supervisor activo: unico publicador de /cmd_vel; espera ruta y sensores.
+[WARN] [1793903093.568208584] [supervisor_f133_test]: Parada segura: esperando sensores
+[WARN] [1793903098.572073372] [supervisor_f133_test]: Parada segura: Twist contiene NaN/inf
+[WARN] [1793903104.378170915] [supervisor_f133_test]: Parada segura: datos de sensores caducados

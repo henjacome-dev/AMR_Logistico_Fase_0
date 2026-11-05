@@ -1,0 +1,6 @@
+[INFO] [1793900129.812831230] [seguidor_ruta_f13]: Esperando /odom, /scan y supervisor suscrito a /cmd_vel_ruta.
+[INFO] [1793900129.970233539] [seguidor_ruta_f13]: Inicio aceptado; error: 0.072 m
+[ERROR] [1793900136.376464883] [seguidor_ruta_f13]: Obstaculo a 0.349 m; se requiere replanificacion.
+[RUTA] resultados/F12_ruta_1.csv | 21 puntos | 1.000 m
+[INICIO] (-2.975, -2.775) | [META] (-3.975, -2.775)
+[LOG] resultados/F13_ruta_1_log.csv | 64 muestras

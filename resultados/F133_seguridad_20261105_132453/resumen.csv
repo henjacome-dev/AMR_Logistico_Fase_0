@@ -1,0 +1,13 @@
+prueba,esperado,resultado,detalle
+S01_sin_propuesta,cero,OK,"v_final=0.0000, w_final=0.0000; muestras=4"
+S02_comando_valido,avance,OK,"v_final=0.0800, w_final=0.2000; muestras=4"
+S03_limites_velocidad,limitado,OK,"v_final=0.1200, w_final=0.7000; muestras=4"
+S04_obstaculo_frontal,cero,OK,"v_final=0.0000, w_final=0.0000; muestras=4"
+S05_lidar_invalido,cero,OK,"v_final=0.0000, w_final=0.0000; muestras=4"
+S06_twist_nan,cero,OK,"v_final=0.0000, w_final=0.0000; muestras=4"
+S07_comando_reversa,cero,OK,"v_final=0.0000, w_final=0.0000; muestras=4"
+S08_movimiento_lateral,cero,OK,"v_final=0.0000, w_final=0.0000; muestras=4"
+S09_comando_caducado,cero,OK,"v_final=0.0000, w_final=0.0000; muestras=4"
+S10_lidar_caducado,cero,OK,"v_final=0.0000, w_final=0.0000; muestras=4"
+S11_odom_caducada,cero,OK,"v_final=0.0000, w_final=0.0000; muestras=4"
+S12_interrupcion_ctrl_c,cero_final,OK,"pre_SIGINT=True; exit=0, muestras_post_SIGINT=10; v_final=0.0800, w_final=0.0000; muestras=4"
