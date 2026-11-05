@@ -276,5 +276,243 @@
         </visual>
       </link>
     </model>
+    <model name="panel_recepcion">
+      <static>true</static>
+      <pose>-4.7299999999999995 -2.8 0.6 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.04 0.9 0.72</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.05 0.25 1 1</ambient>
+            <diffuse>0.05 0.25 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_recepcion_marca_1">
+      <static>true</static>
+      <pose>-4.693 -2.8 0.62 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.09 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_almacenamiento">
+      <static>true</static>
+      <pose>-4.7299999999999995 2.8 0.6 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.04 0.9 0.72</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0.08 0.08 1</ambient>
+            <diffuse>1 0.08 0.08 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_almacenamiento_marca_1">
+      <static>true</static>
+      <pose>-4.693 2.71 0.62 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.09 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_almacenamiento_marca_2">
+      <static>true</static>
+      <pose>-4.693 2.8899999999999997 0.62 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.09 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_empaque">
+      <static>true</static>
+      <pose>4.7299999999999995 2.8 0.6 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.04 0.9 0.72</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.05 0.85 0.15 1</ambient>
+            <diffuse>0.05 0.85 0.15 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_empaque_marca_1">
+      <static>true</static>
+      <pose>4.693 2.6199999999999997 0.62 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.09 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_empaque_marca_2">
+      <static>true</static>
+      <pose>4.693 2.8 0.62 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.09 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_empaque_marca_3">
+      <static>true</static>
+      <pose>4.693 2.98 0.62 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.09 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_despacho">
+      <static>true</static>
+      <pose>4.7299999999999995 -2.8 0.6 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.04 0.9 0.72</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0.85 0.05 1</ambient>
+            <diffuse>1 0.85 0.05 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_despacho_marca_1">
+      <static>true</static>
+      <pose>4.693 -3.07 0.62 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.09 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_despacho_marca_2">
+      <static>true</static>
+      <pose>4.693 -2.8899999999999997 0.62 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.09 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_despacho_marca_3">
+      <static>true</static>
+      <pose>4.693 -2.71 0.62 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.09 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="panel_despacho_marca_4">
+      <static>true</static>
+      <pose>4.693 -2.53 0.62 0 0 0</pose>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.02 0.09 0.4</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
   </world>
 </sdf>

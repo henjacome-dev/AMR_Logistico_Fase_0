@@ -134,6 +134,43 @@ for estacion in cfg["stations"]:
         color, colision=False
     )
 
+
+# B2 - Paneles verticales de estaciones
+# Son elementos visuales sin colision para conservar el mapa.
+for numero, estacion in enumerate(cfg["stations"], start=1):
+    x, y = estacion["goal_xy_m"]
+    lado = -1 if x < 0 else 1
+    identificador = estacion["id"].lower()
+
+    # Colocar el panel junto al muro lateral.
+    x_panel = lado * (w / 2 - t - 0.12)
+    color = colores[estacion["marker_color"]]
+
+    crear_modelo(
+        "panel_" + identificador,
+        (x_panel, y, 0.60),
+        "box",
+        (0.04, 0.90, 0.72),
+        color,
+        colision=False
+    )
+
+    # Una, dos, tres o cuatro marcas blancas.
+    # Las marcas apuntan hacia el interior del almacen.
+    x_frente = x_panel - lado * 0.037
+
+    for indice in range(numero):
+        desplazamiento = (indice - (numero - 1) / 2) * 0.18
+
+        crear_modelo(
+            f"panel_{identificador}_marca_{indice + 1}",
+            (x_frente, y + desplazamiento, 0.62),
+            "box",
+            (0.02, 0.09, 0.40),
+            "1 1 1 1",
+            colision=False
+        )
+
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 ET.indent(sdf, space="  ")
 ET.ElementTree(sdf).write(
