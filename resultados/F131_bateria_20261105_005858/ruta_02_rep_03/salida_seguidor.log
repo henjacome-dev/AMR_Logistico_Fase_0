@@ -1,0 +1,6 @@
+[INFO] [1793858966.456115724] [seguidor_ruta_f13]: Esperando /odom, /scan y supervisor suscrito a /cmd_vel_ruta.
+[INFO] [1793858966.858489647] [seguidor_ruta_f13]: Inicio aceptado; error: 0.000 m
+[INFO] [1793859042.472141656] [seguidor_ruta_f13]: Meta alcanzada; error final 0.079 m
+[RUTA] /home/enry/AMR_Logistico_Fase_0/resultados/F12_ruta_2.csv | 113 puntos | 5.600 m
+[INICIO] (-3.975, -2.775) | [META] (-3.975, 2.825)
+[LOG] resultados/F13_ruta_2_log.csv | 740 muestras
