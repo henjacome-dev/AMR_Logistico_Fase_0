@@ -1,0 +1,11 @@
+=== ACTIVIDAD B: PARED OESTE ===
+Cara interior de pared: x = -4.85 m
+Muestras frontal + odometría: 63
+Posición inicial del tramo: x=-3.079 m
+Posición final del tramo: x=-3.931 m
+Acercamiento a pared: 0.852 m
+Range frontal inicial: 1.820 m
+Range frontal final: 0.977 m
+Disminución de lectura: 0.842 m
+[OK] Lectura disminuye con la aproximación
+[NOTA] Prueba de respuesta dinámica; no certifica ausencia de colisiones.

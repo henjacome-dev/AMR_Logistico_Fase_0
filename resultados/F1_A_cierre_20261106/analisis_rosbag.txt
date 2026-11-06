@@ -1,0 +1,28 @@
+=== REGISTRO ROS ===
+Odometrías: 9156
+Comandos: 3113
+Intervalo con movimiento: 275.03 s
+Velocidad lineal máxima real: 0.0750 m/s
+Velocidad angular máxima real: 0.7000 rad/s
+
+=== ESTACIONES: ODOMETRÍA COMPLETA ===
+RECEPCION: 0.0602 m | t=17.83 s
+ALMACENAMIENTO: 0.0317 m | t=92.76 s
+EMPAQUE: 0.0075 m | t=201.28 s
+DESPACHO: 0.0992 m | t=275.22 s
+
+=== POSICIÓN FINAL ===
+Robot: (4.0246, -2.7039)
+Waypoint final: 0.0711 m
+Centro DESPACHO: 0.0992 m
+Cota geométrica derivada: 0.1154 m
+Waypoint dentro de tolerancia: True
+Centro dentro de cota geométrica: True
+
+=== SENSORES RANGE ===
+/rango_frontal: n=1374 mín=0.905 m máx=2.000 m rango_de_variación=1.095 m
+/rango_izq: n=1374 mín=0.866 m máx=2.000 m rango_de_variación=1.134 m
+/rango_der: n=1374 mín=0.382 m máx=2.000 m rango_de_variación=1.618 m
+
+[OK] Análisis del ROS bag completado
+[NOTA] Los rangos no certifican ausencia de colisiones

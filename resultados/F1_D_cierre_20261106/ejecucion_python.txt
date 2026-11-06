@@ -1,0 +1,22 @@
+=== F1.2.2 - CONECTIVIDAD A* ===
+Mapa: 200 x 160 | Resolucion: 0.05 m
+[OK] ROBOT -> RECEPCION | 21 celdas | 1.00 m | 0.16 ms
+[OK] RECEPCION -> ALMACENAMIENTO | 113 celdas | 5.60 m | 0.78 ms
+[OK] ALMACENAMIENTO -> EMPAQUE | 161 celdas | 8.00 m | 1.15 ms
+[OK] EMPAQUE -> DESPACHO | 113 celdas | 5.60 m | 0.74 ms
+
+=== RESULTADO FINAL ===
+F1.2.2 APROBADO: 4 rutas conectadas
+CSV generados en resultados/
+
+=== F1.2.3 - COMPARACION DE ORDENES ===
+[OK] Orden A: 20.20 m | 405 celdas | 2.68 ms
+[OK] Orden B: 32.92 m | 613 celdas | 105.87 ms
+[OK] Orden C: 26.20 m | 525 celdas | 3.49 ms
+
+=== MEJOR ORDEN EVALUADO ===
+Orden: A
+Distancia: 20.200 m
+Celdas: 405
+
+F1.2.3: COMPARACION COMPLETADA

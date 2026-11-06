@@ -1,0 +1,6 @@
+[RUTA] resultados/R04_astar_mapa_corregido/resultados/F12_orden_A.csv | 405 puntos | 20.200 m
+[INICIO] (-2.975, -2.775) | [META] (4.025, -2.775)
+[INFO] [1793945017.372989876] [seguidor_ruta_f13]: Esperando /odom, /scan y supervisor suscrito a /cmd_vel_ruta.
+[INFO] [1793945017.374409041] [seguidor_ruta_f13]: Inicio aceptado; error: 0.037 m
+[INFO] [1793945292.478402886] [seguidor_ruta_f13]: Meta alcanzada; error final 0.077 m
+[LOG] /home/enry/AMR_Logistico_Fase_0/resultados/F1_A_cierre_20261106/seguimiento_orden_A.csv | 2750 muestras

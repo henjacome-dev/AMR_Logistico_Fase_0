@@ -1,0 +1,4 @@
+orden,matlab_m,python_m,diferencia_m,diferencia_pct,nodos_matlab,celdas_python,tiempo_matlab_ms,tiempo_python_ms
+A,20.1,20.2,0.1,0.4975,403,405,23.599,2.681
+B,32.702438661764,32.92,0.217561,0.6653,607,613,10.65,105.874
+C,26.1,26.2,0.1,0.3831,523,525,1.981,3.488

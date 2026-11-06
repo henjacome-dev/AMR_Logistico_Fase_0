@@ -3,9 +3,9 @@
 **Estado al 2026-11-06:** validaciones técnicas ejecutadas; cierre organizativo y acuerdos grupales pendientes. Las auditorías fechadas anteriormente son registros históricos.
 
 ## F0.1 · Requisitos
-- [ ] Matriz revisada contra enunciado.
-- [ ] Fechas y pesos comprendidos.
-- [ ] Alcance para mañana (Avance 1) asignado a responsables.
+- [x] Matriz revisada contra enunciado.
+- [x] Fechas y pesos documentados.
+- [x] Responsabilidades del Avance 1 asignadas.
 
 ## F0.2 · Entorno
 - [x] Ubuntu 22.04 validado.
@@ -21,13 +21,13 @@
 - [x] Repositorio Git iniciado y remoto configurado.
 - [x] README actualizado con pasos reproducibles.
 - [x] Estructura oficial de seis carpetas creada.
-- [ ] Todos los integrantes tienen permisos y pueden clonar.
+- [x] Acceso de integrantes confirmado por el grupo.
 - [ ] Evitar subir datos pesados innecesarios o claves al Git.
 
 ## F0.4 · Interfaces
-- [ ] Diagrama consensuado.
-- [ ] Nombres y tipos de tópicos fijados.
-- [ ] Convención de giro y ejes revisada con el grupo.
+- [x] Diagrama aprobado por el grupo.
+- [x] Interfaces y tipos aprobados por el grupo.
+- [x] Convenciones de ejes y giro aprobadas por el grupo.
 - [x] Responsable de publicación final `/cmd_vel` definido.
 - [x] CSV `x_m,y_m` implementado y validado; acuerdo formal del grupo no acreditado.
 
@@ -183,3 +183,13 @@ no constituye localización autónoma.
 
 Los acuerdos grupales y accesos de colaboradores
 conservan sus pendientes documentales.
+
+## Consolidación final A-D — 2026-11-06
+
+- A: navegación corregida verificada.
+- B: sensores Range verificados dinámicamente.
+- C: odometría, LiDAR y cámara verificados en RViz2.
+- D: comparación MATLAB-Python completada.
+- E: cinco roles nominalmente asignados.
+- Accesos y aprobación grupal confirmados por Henry Jácome el 2026-11-06.
+- Referencia: docs/F1_cierre_avance1_20261106.md.
