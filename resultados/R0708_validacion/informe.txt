@@ -1,0 +1,10 @@
+R07/R08 - Ensayo aislado del callback real del emulador
+ROS 2 Humble; LiDAR sintetico, sin Gazebo ni movimiento
+Angulos centrales: 0, +45, -45 grados; apertura 15 grados
+Rango maximo: 2.0 m; ruido normal sigma=0.01 m
+Muestras por sensor: 600; semilla del emulador: 20261105
+SHA256 emulador: 88ffc3afca5b638b7570d4d284d464d604018a1f0e70895a78f827e0c4d15e41
+Criterios: |media-base| <=0.003; 0.008<=sigma_muestral<=0.012
+Limite: este ensayo no mide rendimiento fisico ni errores de
+posicionamiento de obstaculos en Gazebo.
+Resultado: OK

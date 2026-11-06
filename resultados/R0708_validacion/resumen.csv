@@ -1,0 +1,4 @@
+sensor,distancia_base_m,media_m,sigma_muestral_m,muestras,estado
+/rango_frontal,0.7,0.700508,0.010093,600,OK
+/rango_izq,1.1,1.100382,0.010029,600,OK
+/rango_der,1.4,1.399916,0.010117,600,OK

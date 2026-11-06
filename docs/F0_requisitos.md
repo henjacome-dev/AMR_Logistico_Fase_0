@@ -10,8 +10,8 @@
 | R04 | DOC | ≥3 pasillos con ≥1,0 m de ancho | Cotas del mundo | A1 | Verificado |
 | R05 | DOC | Cuatro estaciones con marcadores diferenciados | Captura de cuatro paneles | A1 | Verificado |
 | R06 | DOC | Tres sensores emulados `sensor_msgs/Range` | Echo de los 3 tópicos | A1 | Verificado |
-| R07 | DOC | Sectores LiDAR de 15°: frontal/izq/der | Pruebas a 0° y ±45° | A1 | Parcial |
-| R08 | DOC | Alcance 2 m y ruido gaussiano σ=0,01 m | Prueba y código del emulador | A1 | Parcial |
+| R07 | DOC | Sectores LiDAR de 15°: frontal/izq/der | Ensayo sintetico del emulador; ver docs/F1_R0708_validacion_emulador.md | A1 | Verificado |
+| R08 | DOC | Alcance 2 m y ruido gaussiano σ=0,01 m | Ensayo sintetico del emulador; ver docs/F1_R0708_validacion_emulador.md | A1 | Verificado |
 | R09 | DOC | Odometría y cámara disponibles | `ros2 topic list -t` y visualización | A1 | Verificado |
 | R10 | DOC | Mapa manual sin SLAM | `binaryOccupancyMap`, coordenadas documentadas | A1 | Verificado |
 | R11 | DOC | Resolución de mapa ≤0,05 m/celda e inflado de 0,21 m | Mapas de 0,05 m y validación de inflate en MATLAB/Python; ver docs/F1_R11_inflado_matlab.md | A1 | Verificado |

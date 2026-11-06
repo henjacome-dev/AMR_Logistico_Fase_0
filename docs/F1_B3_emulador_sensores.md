@@ -42,3 +42,18 @@ Los centros sectoriales y el ruido se verificaron en el codigo.
 Las muestras individuales no acreditan estadisticamente
 la distribucion de ruido ni prueban todas las orientaciones.
 El nodo no genera comandos de movimiento.
+
+## Validacion adicional R07-R08
+
+Posteriormente se realizo un ensayo aislado con
+LaserScan sintetico, utilizando el callback real.
+
+- Orientaciones y limites sectoriales: verificados.
+- Saturacion maxima: verificada.
+- Ruido: 600 muestras por sensor.
+- Sigma muestral: entre 0.010029 y 0.010117 m.
+- Resultado: satisfactorio.
+
+El ensayo no acredita rendimiento fisico en Gazebo.
+
+Ver docs/F1_R0708_validacion_emulador.md.
