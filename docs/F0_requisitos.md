@@ -14,7 +14,7 @@
 | R08 | DOC | Alcance 2 m y ruido gaussiano σ=0,01 m | Prueba y código del emulador | A1 | Parcial |
 | R09 | DOC | Odometría y cámara disponibles | `ros2 topic list -t` y visualización | A1 | Verificado |
 | R10 | DOC | Mapa manual sin SLAM | `binaryOccupancyMap`, coordenadas documentadas | A1 | Verificado |
-| R11 | DOC | Resolución de mapa ≤0,05 m/celda e inflado de 0,21 m | Código y gráfica del mapa | A1 | Verificado |
+| R11 | DOC | Resolución de mapa ≤0,05 m/celda e inflado de 0,21 m | Mapas de 0,05 m y validación de inflate en MATLAB/Python; ver docs/F1_R11_inflado_matlab.md | A1 | Verificado |
 | R12 | DOC | Tres órdenes A* distintas | CSV + tabla longitud/celdas/tiempo | A1 | Verificado |
 | R13 | DOC | Seguidor proporcional completa ≥1 orden sin obstáculo | Video o registro ROS | A1 | Verificado |
 | R14 | DOC | Reporte de 2 páginas + repositorio | Documentos y tag `avance1` | A1 | Parcial |
