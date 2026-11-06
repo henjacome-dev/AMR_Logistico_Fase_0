@@ -31,7 +31,10 @@ proposed_csv:
 stations: [RECEPCION, ALMACENAMIENTO, EMPAQUE, DESPACHO]
 
 
-# F0.4.3 - Contratos operativos propuestos
+# F0.4.3 - Contratos de diseno parcialmente implementados
+# En F1 el supervisor consume /scan, /odom y /cmd_vel_ruta.
+# No consume aun /rango_* ni /cmd_vel_difuso.
+# La CNN y el arbitraje difuso completo siguen pendientes.
 # Estos contratos requieren implementacion y validacion.
 # Este archivo no se carga automaticamente como parametros ROS 2.
 

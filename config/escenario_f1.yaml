@@ -1,6 +1,6 @@
-# F1.1 - Geometria propuesta del almacen
+# F1.1 - Geometria corregida y validada estaticamente
 # Unidades: metros y radianes
-# Pendiente de validacion en Gazebo
+# Visualizado en Gazebo; coherencia SDF/mapas validada
 
 world:
   name: almacen_f1
@@ -47,9 +47,9 @@ map:
   resolution_m: 0.05
   inflation_radius_m: 0.21
   minimum_corridor_width_m: 1.0
-  world_map_alignment: pending_F1_2
+  world_map_alignment: pending_F1_2  # coherencia estatica validada; TF dinamica pendiente
 
-status: proposed
+status: validated_static
 
 # Obstaculos estaticos de prueba
 obstacles:

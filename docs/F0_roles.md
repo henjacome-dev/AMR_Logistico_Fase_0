@@ -11,3 +11,16 @@ El enunciado fija **cinco roles**, pero no asigna personas: completar durante F0
 | 5. Datos y documentación | Por asignar | Matriz de evidencia, reporte A1 | Pruebas, KPI, informes y sensores físicos |
 
 **Regla de defensa:** cada integrante debe saber explicar al menos un módulo ajeno al propio.
+
+## Estado de asignación — 2026-11-06
+
+La estructura de cinco roles está documentada,
+pero no se dispone de evidencia suficiente para
+asignar titulares ni confirmar los permisos
+de todos los colaboradores en GitHub.
+
+Las contribuciones técnicas del repositorio
+no constituyen por sí solas una asignación
+formal de responsabilidades.
+
+Estado: pendiente de confirmación grupal.

@@ -107,10 +107,38 @@ Estado al 2026-11-05: arquitectura parcialmente implementada; contratos restante
 | Mapa y planificacion A* | Implementados con evidencias |
 | Seguidor proporcional | Implementado y validado |
 | Supervisor de seguridad F1.3.3 | Validado en simulacion |
-| Emulador de tres sensores Range | Pendiente |
+| Emulador de tres sensores Range | Implementado; R07/R08 validados con LiDAR sintético |
 | Controlador difuso integrado | Pendiente |
 | Reconocedor visual CNN | Pendiente |
 
 La validacion del supervisor F1.3.3 corresponde a parada,
 limitacion de velocidad y recuperacion mediante nuevas propuestas.
 No demuestra todavia arbitraje completo entre ruta y controlador difuso.
+
+## J. Estado operativo — 2026-11-06
+
+Los contratos de las secciones precedentes incluyen
+interfaces propuestas para etapas posteriores.
+
+Implementado y comprobado en F1:
+- LiDAR y cámara del robot simulado.
+- Emulador /scan -> tres tópicos Range.
+- Seguidor proporcional basado en CSV y /odom.
+- Supervisor F1.3 que consume /cmd_vel_ruta,
+  /scan y /odom y publica /cmd_vel.
+- Parada preventiva ante obstáculo o datos inválidos.
+
+No implementado todavía:
+- Arbitraje efectivo entre ruta y controlador difuso.
+- Publicación del controlador en /cmd_vel_difuso.
+- Detección CNN y /estacion_detectada.
+- Replanificación autónoma integrada.
+
+El supervisor F1.3 utiliza /scan directamente;
+no consume los tres tópicos /rango_*.
+El contrato A2 del supervisor no debe confundirse
+con el comportamiento actual del prototipo.
+
+La alineación geométrica mundo-mapa fue verificada
+estáticamente. R35 conserva validación parcial
+de transformaciones y convenciones operativas.

@@ -1,6 +1,6 @@
 # Fase 0 — Protocolo de validación
 
-**Estado:** pendiente hasta ejecutarse en el equipo del grupo.
+**Estado al 2026-11-06:** validaciones técnicas ejecutadas; cierre organizativo y acuerdos grupales pendientes. Las auditorías fechadas anteriormente son registros históricos.
 
 ## F0.1 · Requisitos
 - [ ] Matriz revisada contra enunciado.
@@ -15,7 +15,7 @@
 - [x] `/odom` publica mensajes.
 - [x] `/scan` publica mensajes.
 - [x] `/camera/image_raw` existe y publica imágenes.
-- [ ] MATLAB y toolboxes requeridas localizadas o alternativa institucional coordinada.
+- [x] MATLAB Online utilizado para ejecutar `binaryOccupancyMap`, `inflate` y `plannerAStarGrid`; instalación local no acreditada.
 
 ## F0.3 · Organización
 - [x] Repositorio Git iniciado y remoto configurado.
@@ -29,7 +29,7 @@
 - [ ] Nombres y tipos de tópicos fijados.
 - [ ] Convención de giro y ejes revisada con el grupo.
 - [x] Responsable de publicación final `/cmd_vel` definido.
-- [ ] CSV de waypoints definido antes de programar MATLAB/ROS.
+- [x] CSV `x_m,y_m` implementado y validado; acuerdo formal del grupo no acreditado.
 
 **Puerta F0 — Aprobación:** 100 % de verificaciones funcionales críticas (ROS, robot en Gazebo y tópicos) y acuerdos de arquitectura. El resto de tareas documentales puede avanzar en paralelo por urgencia del Avance 1.
 
@@ -139,3 +139,29 @@ las verificaciones y acuerdos pendientes.
 - Acceso de integrantes y acuerdos grupales pendientes.
 
 La Etapa 0 conserva pendientes documentales y organizativos.
+
+## Actualización técnica — 2026-11-06
+
+Las afirmaciones de auditorías anteriores corresponden
+a sus respectivas fechas y no al estado actual.
+
+- Existen las etiquetas `avance1` y `avance1-v2`.
+- La rama de corrección contiene las mejoras R04,
+  R05, R07, R08 y R11.
+- MATLAB Online ejecutó la planificación y el inflado.
+- R04: geometría corregida y validada estáticamente.
+- R05: texturas de estaciones verificadas en Gazebo.
+- R07/R08: ensayo sintético del emulador satisfactorio.
+- R11: inflado MATLAB y planificación A* ejecutados.
+- Tarea 1.7: protocolo y 600 capturas planificadas;
+  ninguna captura real acreditada todavía.
+- R22/R23: pendientes.
+- R14: pendiente de confirmar la entrega del informe.
+- Responsables, accesos y acuerdos grupales:
+  pendientes de acreditación.
+
+La geometría corregida no cuenta todavía con una
+nueva batería completa de navegación dinámica.
+
+La Fase 0 mantiene pendientes organizativos.
+No se declara cerrada al 100 %.
