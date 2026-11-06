@@ -1,0 +1,8 @@
+tipo,identificador,original_m,corregido_m,diferencia_m,celdas_originales,celdas_nuevas
+ruta,ROBOT -> RECEPCION,1.000,1.000,+0.000,21,21
+ruta,RECEPCION -> ALMACENAMIENTO,5.600,5.600,+0.000,113,113
+ruta,ALMACENAMIENTO -> EMPAQUE,8.249,8.000,-0.249,161,161
+ruta,EMPAQUE -> DESPACHO,5.600,5.600,+0.000,113,113
+orden,A,20.449,20.200,-0.249,405,405
+orden,B,32.817,32.568,-0.249,601,601
+orden,C,26.449,26.200,-0.249,525,525

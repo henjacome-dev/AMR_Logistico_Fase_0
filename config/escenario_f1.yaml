@@ -54,11 +54,11 @@ status: proposed
 # Obstaculos estaticos de prueba
 obstacles:
   - id: caja_prueba_1
-    center_xy_m: [0.8, 0.0]
+    center_xy_m: [0.0, -0.7]
     size_xy_m: [0.45, 0.45]
     height_m: 0.40
 
   - id: caja_prueba_2
-    center_xy_m: [-1.5, 2.65]
+    center_xy_m: [-1.5, 2.25]
     size_xy_m: [0.50, 0.50]
     height_m: 0.50
