@@ -1,6 +1,6 @@
 # F0.1 — Matriz de requisitos
 
-**Leyenda:** `DOC` obligación del enunciado; `PROP` decisión de ingeniería recomendada, no obligación oficial. Estados auditados al 2026-11-05. Verificado = evidencia existente; Parcial = requiere cierre; Pendiente = requisito no satisfecho.
+**Leyenda:** `DOC` obligación del enunciado; `PROP` decisión de ingeniería recomendada, no obligación oficial. Estados del Avance 1 auditados al 2026-11-05; R15–R17 actualizados con pruebas MATLAB del 2026-11-06. Verificado = evidencia existente; Parcial = requiere cierre; Pendiente = requisito no satisfecho.
 
 | ID | Tipo | Requisito | Verificación objetiva | Entrega | Estado |
 |---|---|---|---|---|---|
@@ -18,9 +18,9 @@
 | R12 | DOC | Tres órdenes A* distintas | CSV + tabla longitud/celdas/tiempo | A1 | Verificado |
 | R13 | DOC | Seguidor proporcional completa ≥1 orden sin obstáculo | Video o registro ROS | A1 | Verificado |
 | R14 | DOC | Reporte de 2 páginas + repositorio | Informe entregado en Blackboard según confirmación del estudiante; repositorio y tag `avance1` verificados | A1 | Verificado |
-| R15 | DOC | Mamdani 3 entradas de 0–2 m, 2 salidas | Archivo .fis y reglas | A2 | Pendiente |
-| R16 | DOC | Cobertura de 27 combinaciones lingüísticas | Tabla de cobertura y ausencia de conflictos | A2 | Pendiente |
-| R17 | DOC | Límites 0≤v≤0,20 m/s y −1,5≤ω≤1,5 rad/s | Pruebas de saturación | A2 | Pendiente |
+| R15 | DOC | Mamdani 3 entradas de 0–2 m, 2 salidas | `.fis` validado en MATLAB (3 entradas, 2 salidas, 27 reglas); falta integración ROS 2 | A2 | Validado numéricamente; integración pendiente |
+| R16 | DOC | Cobertura de 27 combinaciones lingüísticas | Antecedentes únicos 27/27 y validación con `A2_F1_verificacion_auditoria.m` | A2 | Verificado en MATLAB |
+| R17 | DOC | Límites 0≤v≤0,20 m/s y −1,5≤ω≤1,5 rad/s | Rango evaluado en 1.331 casos + diez críticos; falta prueba operativa de saturación y supervisor | A2 | Parcial |
 | R18 | DOC | Concordancia MATLAB vs scikit-fuzzy en 10 casos | Tabla de error menor al 2 % | A2 | Pendiente |
 | R19 | DOC | Supervisor conmuta ruta/difuso a umbrales indicados | Logs de modos y tópicos | A2 | Pendiente |
 | R20 | DOC | 4 escenarios de navegación × 5 repeticiones | Rosbags y métricas | A2 | Pendiente |

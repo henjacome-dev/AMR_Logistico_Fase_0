@@ -9,7 +9,7 @@
 
 Desarrollar un prototipo de robot móvil autónomo para tareas logísticas en un almacén simulado. El Avance 1 comprende escenario Gazebo, estaciones, sensores, mapa manual, planificación A* y seguimiento de rutas. El proyecto completo contempla posteriormente control difuso, reconocimiento visual CNN e implementación física con ESP32.
 
-**Estado del Avance 1:** infraestructura y componentes de navegación demostrados en simulación; verificaciones EX-01 y EX-02 realizadas. Las observaciones técnicas R04, R05, R07, R08 y R11 fueron regularizadas e integradas en `main`. Las actividades de cierre A–E quedaron verificadas. Los componentes del Avance 2 y posteriores siguen pendientes. **No equivale a la conclusión del proyecto completo.**
+**Estado del Avance 1:** infraestructura y componentes de navegación demostrados en simulación; verificaciones EX-01 y EX-02 realizadas. Las observaciones técnicas R04, R05, R07, R08 y R11 fueron regularizadas e integradas en `main`. Las actividades de cierre A–E quedaron verificadas. La Fase 1 del Avance 2 (controlador Mamdani) está validada numéricamente en MATLAB Online; la integración ROS 2, las pruebas operativas y los componentes posteriores siguen pendientes. **No equivale a la conclusión del proyecto completo.**
 
 ## 2. Inicio rápido del sistema integrado
 
@@ -164,7 +164,8 @@ Documentos de consulta: `docs/F0_requisitos.md`, `docs/F1_B4_mapa_planificacion.
 - **R35:** verificado en simulación; CSV, mapa y odometría compatibles, con TF estática identidad `map → odom` integrada. Ver `docs/F1_R35_marcos_tf.md`.
 - **R14:** informe entregado al docente mediante Blackboard, según confirmación del estudiante. No se incorpora a GitHub.
 - **Fase 0 organizativa:** cinco roles asignados; accesos y acuerdos confirmados por el grupo el 2026-11-06, según declaración del responsable.
-- **Próximos hitos:** control Mamdani y evaluación difusa; luego CNN e integración, y finalmente plataforma física. Estos módulos no se presentan como terminados.
+- **Avance 2, Fase 1:** diseño Mamdani validado en MATLAB Online (3 entradas, 2 salidas, 27 reglas, 1.331 pruebas de barrido y diez casos críticos). Nueve evidencias PNG reparadas en `desarrollo-avance2`, commit `6b46367`.
+- **Próximos hitos:** validación operativa, integración ROS 2 y comparación MATLAB/Python; después CNN y plataforma física. Ninguno se presenta como terminado.
 
 Hitos según el enunciado: Avance 1 (**4 nov. 2026**, 20 %), Avance 2 (**9 nov. 2026**, 35 %), final de simulación (**16 nov. 2026**, 45 %). La fase física se evalúa por separado.
 
@@ -189,3 +190,11 @@ Ver `docs/F1_cierre_avance1_20261106.md`.
 La Fase 0 cuenta con responsables y acuerdos grupales
 confirmados. R14: entrega informada en Blackboard.
 R35: verificado para la configuración de simulación.
+
+## 10. Estado de la Fase 1 del Avance 2 (2026-11-06)
+
+El controlador `matlab/A2_MAMDANI/AMR_Mamdani_A2_v01.fis` emplea tres entradas de distancia `df`, `di`, `dd` (0–2 m), dos salidas `v` (0–0,20 m/s) y `omega` (−1,5–1,5 rad/s), y 27 reglas Mamdani. El script `A2_F1_verificacion_auditoria.m` comprobó en MATLAB Online la carga de tres archivos `.mat`, la reproducción de 1.331 evaluaciones y diez casos críticos (error máximo mostrado: 0) y la integridad de nueve imágenes PNG.
+
+**Alcance:** diseño, integridad de archivos y reproducibilidad numérica del FIS. La Fase 1 no certifica integración ROS 2, colisiones, saturación física ni equivalencia Python. Para `df=di=dd=0,2 m`, el Mamdani entrega `v≈0,011815589 m/s`: se requiere parada estricta en el supervisor.
+
+**Trazabilidad:** `matlab/A2_MAMDANI/A2_F1_acta_auditoria_20261106.md`, `matlab/A2_MAMDANI/A2_F1_resumen_tecnico.md`, `matlab/A2_MAMDANI/evidencias/` y commit `6b46367`. Las pruebas históricas del Avance 1 permanecen sin redefinirse.
