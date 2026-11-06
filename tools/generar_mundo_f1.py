@@ -32,7 +32,7 @@ for uri in ["model://ground_plane", "model://sun"]:
     ET.SubElement(include, "uri").text = uri
 
 def crear_modelo(nombre, xyz, forma, dimensiones,
-                 color, colision=True):
+                 color, colision=True, material_script=None):
     modelo = ET.SubElement(world, "model", name=nombre)
     ET.SubElement(modelo, "static").text = "true"
     ET.SubElement(modelo, "pose").text = (
@@ -64,8 +64,18 @@ def crear_modelo(nombre, xyz, forma, dimensiones,
 
         if tipo == "visual":
             material = ET.SubElement(nodo, "material")
-            ET.SubElement(material, "ambient").text = color
-            ET.SubElement(material, "diffuse").text = color
+            if material_script is not None:
+                script = ET.SubElement(material, "script")
+                ET.SubElement(script, "uri").text = (
+                    "model://senales_almacen/materials/scripts"
+                )
+                ET.SubElement(script, "uri").text = (
+                    "model://senales_almacen/materials/textures"
+                )
+                ET.SubElement(script, "name").text = material_script
+            else:
+                ET.SubElement(material, "ambient").text = color
+                ET.SubElement(material, "diffuse").text = color
 
 # Paredes perimetrales
 altura = 1.6
@@ -152,7 +162,8 @@ for numero, estacion in enumerate(cfg["stations"], start=1):
         "box",
         (0.04, 0.90, 0.72),
         color,
-        colision=False
+        colision=False,
+        material_script=f"AMR/{identificador.upper()}"
     )
 
     # Una, dos, tres o cuatro marcas blancas.

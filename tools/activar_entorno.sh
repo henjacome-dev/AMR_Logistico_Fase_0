@@ -17,3 +17,8 @@ export TURTLEBOT3_MODEL=waffle_pi
 echo "Entorno AMR activado"
 echo "ROS 2: $ROS_DISTRO"
 echo "Robot: $TURTLEBOT3_MODEL"
+
+# R05 - Recursos OGRE de paneles con texturas para Gazebo Classic.
+_AMR_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export GAZEBO_MODEL_PATH="${_AMR_ROOT}/modelos${GAZEBO_MODEL_PATH:+:${GAZEBO_MODEL_PATH}}"
+unset _AMR_ROOT

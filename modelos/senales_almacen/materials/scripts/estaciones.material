@@ -1,0 +1,63 @@
+material AMR/RECEPCION
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture recepcion.png
+      }
+    }
+  }
+}
+
+material AMR/ALMACENAMIENTO
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture almacenamiento.png
+      }
+    }
+  }
+}
+
+material AMR/EMPAQUE
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture empaque.png
+      }
+    }
+  }
+}
+
+material AMR/DESPACHO
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      lighting off
+      texture_unit
+      {
+        texture despacho.png
+      }
+    }
+  }
+}
