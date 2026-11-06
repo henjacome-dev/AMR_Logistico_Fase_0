@@ -75,6 +75,16 @@ for k = 1:numel(nombres)
     xlabel(entradaNombres(pares{k}(1))+" (m)");
     ylabel(entradaNombres(pares{k}(2))+" (m)");
 
+    f = figure("Name",nombres(k), "Color","w");
+
+    surf(X,Y,Z);
+    grid on;
+    colorbar;
+    view(45,30);
+
+    xlabel(entradaNombres(pares{k}(1))+" (m)");
+    ylabel(entradaNombres(pares{k}(2))+" (m)");
+
     if salidas(k)==1
         zlabel("v (m/s)");
     else
@@ -83,9 +93,12 @@ for k = 1:numel(nombres)
 
     title(strrep(nombres(k),"_"," "));
 
-    exportgraphics(f, ...
+    drawnow;
+    pause(0.2);
+
+    exportgraphics(gca, ...
         fullfile("evidencias",nombres(k)+".png"), ...
-        Resolution=160);
+        "Resolution",160);
 
     fprintf("[OK] %s\n",nombres(k));
     fprintf("     Salida minima: %.6f\n",min(Z(:)));

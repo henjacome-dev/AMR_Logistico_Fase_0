@@ -81,7 +81,9 @@ resumen = [
 
 archivoResumen = "A2_F1_resumen_tecnico.md";
 
-if ~isfile(archivoResumen)
+assert(~isfile(archivoResumen), ...
+    "El resumen ya existe; no se sobrescribira.");
+
 fid = fopen(archivoResumen,"w");
 assert(fid>0);
 
@@ -89,7 +91,6 @@ for linea = resumen.'
     fprintf(fid,"%s\n",char(linea));
 end
 fclose(fid);
-end
 
 % Incorporar evidencias
 archivos{end+1} = archivoResumen;
@@ -109,7 +110,7 @@ nombreZIP = "A2_F1_cierre_20261106.zip";
 assert(~isfile(nombreZIP), ...
     "El ZIP ya existe; no se sobrescribira.");
 
-zip(char(nombreZIP), cellfun(@char, archivos, "UniformOutput", false));
+zip(char(nombreZIP),cellstr(string(archivos)));
 
 disp("=== CIERRE FASE 1 ===")
 fprintf("[OK] Reglas: %d/27\n",numel(fis.Rules));

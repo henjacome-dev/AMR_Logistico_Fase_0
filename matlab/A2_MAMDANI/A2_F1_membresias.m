@@ -103,25 +103,35 @@ if ~isfolder("evidencias")
 end
 
 for k = 1:3
-    f = figure("Name","Entrada "+entradas(k));
+    f = figure("Name","Entrada "+entradas(k), "Color","w");
     plotmf(fis,"input",k);
     grid on;
     title("Membresias de "+entradas(k));
 
-    exportgraphics(f,fullfile("evidencias", ...
-        "entrada_"+entradas(k)+".png"),Resolution=160);
+    drawnow;
+    pause(0.2);
+
+    exportgraphics(gca, fullfile("evidencias", ...
+        "entrada_"+entradas(k)+".png"), ...
+        "Resolution",160);
+    close(f);
 end
 
 salidas = ["v", "omega"];
 
 for k = 1:2
-    f = figure("Name","Salida "+salidas(k));
+    f = figure("Name","Salida "+salidas(k), "Color","w");
     plotmf(fis,"output",k);
     grid on;
     title("Membresias de "+salidas(k));
 
-    exportgraphics(f,fullfile("evidencias", ...
-        "salida_"+salidas(k)+".png"),Resolution=160);
+    drawnow;
+    pause(0.2);
+
+    exportgraphics(gca, fullfile("evidencias", ...
+        "salida_"+salidas(k)+".png"), ...
+        "Resolution",160);
+    close(f);
 end
 
 save("A2_F1_membresias_base.mat","fis");
