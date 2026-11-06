@@ -9,7 +9,7 @@
 
 Desarrollar un prototipo de robot móvil autónomo para tareas logísticas en un almacén simulado. El Avance 1 comprende escenario Gazebo, estaciones, sensores, mapa manual, planificación A* y seguimiento de rutas. El proyecto completo contempla posteriormente control difuso, reconocimiento visual CNN e implementación física con ESP32.
 
-**Estado del Avance 1:** infraestructura y componentes de navegación demostrados en simulación; verificaciones EX-01 y EX-02 realizadas. Las observaciones técnicas R04, R05, R07, R08 y R11 se regularizaron posteriormente en la rama de corrección. Persisten pendientes documentales y de entregas posteriores. **No equivale a la conclusión del proyecto completo.**
+**Estado del Avance 1:** infraestructura y componentes de navegación demostrados en simulación; verificaciones EX-01 y EX-02 realizadas. Las observaciones técnicas R04, R05, R07, R08 y R11 fueron regularizadas e integradas en `main`. Las actividades de cierre A–E quedaron verificadas. Los componentes del Avance 2 y posteriores siguen pendientes. **No equivale a la conclusión del proyecto completo.**
 
 ## 2. Inicio rápido del sistema integrado
 
@@ -60,7 +60,7 @@ El seguidor real se ejecuta por separado únicamente cuando el robot se encuentr
 - Configuración común: `config/escenario_f1.yaml`.
 - Generadores: `tools/generar_mundo_f1.py` y `tools/generar_mapa_f1.py`.
 
-EX-01 confirmó la correspondencia estática entre configuración, SDF y mapas, así como las cuatro metas libres en el mapa inflado. **R04 corregido:** se reposicionaron dos obstáculos de prueba. La auditoría estática actual no presenta advertencias de ancho; los anchos nominales son 2,20 m, 2,10 m y 2,20 m. Las rutas históricas se comprobaron sobre el mapa nuevo sin conflictos de ocupación. No se repitió la batería completa de navegación dinámica. Ver `docs/F1_R04_correccion_geometrica.md`.
+EX-01 confirmó la correspondencia estática entre configuración, SDF y mapas, así como las cuatro metas libres en el mapa inflado. **R04 corregido:** se reposicionaron dos obstáculos de prueba. La auditoría estática actual no presenta advertencias de ancho; los anchos nominales son 2,20 m, 2,10 m y 2,20 m. Las rutas históricas se comprobaron sobre el mapa nuevo sin conflictos de ocupación. Posteriormente se validó una orden logística integral sobre el escenario corregido: cuatro estaciones alcanzadas, 275,03 s y error final al waypoint de 0,0711 m. No se repitió la batería histórica completa. Ver `docs/F1_R04_correccion_geometrica.md`.
 
 ## 4. Interfaces ROS 2
 
@@ -155,7 +155,7 @@ Documentos de consulta: `docs/F0_requisitos.md`, `docs/F1_B4_mapa_planificacion.
 
 ## 8. Pendientes y alcance de la entrega
 
-- **R04:** corregido y validado estáticamente; ensayos dinámicos históricos conservados.
+- **R04:** corregido y validado estática y dinámicamente; orden A integral satisfactoria y registros históricos conservados.
 - **R05:** cuatro texturas y capturas verificadas y archivadas en GitHub.
 - **R07–R08:** sectores y ruido validados con LiDAR sintético; no se afirma una prueba formal de normalidad.
 - **R11:** inflado y planificación MATLAB ejecutados sobre el mapa corregido.
@@ -163,7 +163,7 @@ Documentos de consulta: `docs/F0_requisitos.md`, `docs/F1_B4_mapa_planificacion.
 - **R22–R23:** dataset real y primer entrenamiento CNN pendientes.
 - **R35:** verificado en simulación; CSV, mapa y odometría compatibles, con TF estática identidad `map → odom` integrada. Ver `docs/F1_R35_marcos_tf.md`.
 - **R14:** informe entregado al docente mediante Blackboard, según confirmación del estudiante. No se incorpora a GitHub.
-- **Fase 0 organizativa:** accesos y acuerdos del equipo pendientes de confirmación documental.
+- **Fase 0 organizativa:** cinco roles asignados; accesos y acuerdos confirmados por el grupo el 2026-11-06, según declaración del responsable.
 - **Próximos hitos:** control Mamdani y evaluación difusa; luego CNN e integración, y finalmente plataforma física. Estos módulos no se presentan como terminados.
 
 Hitos según el enunciado: Avance 1 (**4 nov. 2026**, 20 %), Avance 2 (**9 nov. 2026**, 35 %), final de simulación (**16 nov. 2026**, 45 %). La fase física se evalúa por separado.
@@ -181,9 +181,11 @@ Las etiquetas anteriores no se han modificado.
 La rama de corrección no se presenta como una nueva
 etiqueta oficial de entrega ni como proyecto finalizado.
 
-Los resultados F1.2/F1.3 históricos se obtuvieron sobre
-el escenario original. La geometría vigente corregida
-no cuenta todavía con una nueva batería dinámica integral.
+Los resultados F1.2/F1.3 históricos corresponden al
+escenario original. Sobre la geometría corregida se
+ejecutó satisfactoriamente la orden A integral.
+Ver `docs/F1_cierre_avance1_20261106.md`.
 
-La Fase 0 conserva verificaciones organizativas pendientes;
-R14 verificado por entrega informada en Blackboard; R35 verificado para la configuración de simulación.
+La Fase 0 cuenta con responsables y acuerdos grupales
+confirmados. R14: entrega informada en Blackboard.
+R35: verificado para la configuración de simulación.

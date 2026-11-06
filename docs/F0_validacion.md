@@ -1,6 +1,6 @@
 # Fase 0 — Protocolo de validación
 
-**Estado al 2026-11-06:** validaciones técnicas ejecutadas; cierre organizativo y acuerdos grupales pendientes. Las auditorías fechadas anteriormente son registros históricos.
+**Estado vigente al 2026-11-06:** verificaciones técnicas del Avance 1 completadas; responsables asignados y acuerdos grupales confirmados por Henry Jácome. Las observaciones de auditorías anteriores son registros históricos y no describen el estado vigente.
 
 ## F0.1 · Requisitos
 - [x] Matriz revisada contra enunciado.
@@ -22,14 +22,14 @@
 - [x] README actualizado con pasos reproducibles.
 - [x] Estructura oficial de seis carpetas creada.
 - [x] Acceso de integrantes confirmado por el grupo.
-- [ ] Evitar subir datos pesados innecesarios o claves al Git.
+**Política permanente:** evitar archivos pesados y credenciales en Git. El ROS bag binario se conserva localmente con SHA-256 documentado; no se ha realizado una auditoría exhaustiva de secretos.
 
 ## F0.4 · Interfaces
 - [x] Diagrama aprobado por el grupo.
 - [x] Interfaces y tipos aprobados por el grupo.
 - [x] Convenciones de ejes y giro aprobadas por el grupo.
 - [x] Responsable de publicación final `/cmd_vel` definido.
-- [x] CSV `x_m,y_m` implementado y validado; acuerdo formal del grupo no acreditado.
+- [x] CSV `x_m,y_m` implementado y validado; convención aprobada por el grupo según confirmación.
 
 **Puerta F0 — Aprobación:** 100 % de verificaciones funcionales críticas (ROS, robot en Gazebo y tópicos) y acuerdos de arquitectura. El resto de tareas documentales puede avanzar en paralelo por urgencia del Avance 1.
 
@@ -184,7 +184,7 @@ no constituye localización autónoma.
 Los acuerdos grupales y accesos de colaboradores
 conservan sus pendientes documentales.
 
-## Consolidación final A-D — 2026-11-06
+## Consolidación final A–E — 2026-11-06
 
 - A: navegación corregida verificada.
 - B: sensores Range verificados dinámicamente.
