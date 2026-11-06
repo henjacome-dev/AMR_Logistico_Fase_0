@@ -1,0 +1,51 @@
+[INFO] [1793942949.365563218] [tf2_echo]: Waiting for transform map ->  base_footprint: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+At time 26.911000000
+- Translation: [-3.001, -2.800, 0.008]
+- Rotation: in Quaternion (xyzw) [0.000, 0.003, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, 0.006, 0.000]
+- Rotation: in RPY (degree) [0.000, 0.361, 0.002]
+- Matrix:
+  1.000 -0.000  0.006 -3.001
+  0.000  1.000 -0.000 -2.800
+ -0.006  0.000  1.000  0.008
+  0.000  0.000  0.000  1.000
+At time 27.897000000
+- Translation: [-3.001, -2.800, 0.008]
+- Rotation: in Quaternion (xyzw) [0.000, 0.003, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, 0.006, 0.000]
+- Rotation: in RPY (degree) [0.000, 0.361, 0.002]
+- Matrix:
+  1.000 -0.000  0.006 -3.001
+  0.000  1.000 -0.000 -2.800
+ -0.006  0.000  1.000  0.008
+  0.000  0.000  0.000  1.000
+At time 28.917000000
+- Translation: [-3.001, -2.800, 0.008]
+- Rotation: in Quaternion (xyzw) [-0.000, 0.003, 0.000, 1.000]
+- Rotation: in RPY (radian) [-0.000, 0.006, 0.000]
+- Rotation: in RPY (degree) [-0.000, 0.361, 0.002]
+- Matrix:
+  1.000 -0.000  0.006 -3.001
+  0.000  1.000  0.000 -2.800
+ -0.006 -0.000  1.000  0.008
+  0.000  0.000  0.000  1.000
+At time 29.903000000
+- Translation: [-3.001, -2.800, 0.008]
+- Rotation: in Quaternion (xyzw) [-0.000, 0.003, 0.000, 1.000]
+- Rotation: in RPY (radian) [-0.000, 0.006, 0.000]
+- Rotation: in RPY (degree) [-0.000, 0.361, 0.002]
+- Matrix:
+  1.000 -0.000  0.006 -3.001
+  0.000  1.000  0.000 -2.800
+ -0.006 -0.000  1.000  0.008
+  0.000  0.000  0.000  1.000
+At time 30.923000000
+- Translation: [-3.001, -2.800, 0.008]
+- Rotation: in Quaternion (xyzw) [0.000, 0.003, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, 0.006, 0.000]
+- Rotation: in RPY (degree) [0.001, 0.361, 0.002]
+- Matrix:
+  1.000 -0.000  0.006 -3.001
+  0.000  1.000 -0.000 -2.800
+ -0.006  0.000  1.000  0.008
+  0.000  0.000  0.000  1.000

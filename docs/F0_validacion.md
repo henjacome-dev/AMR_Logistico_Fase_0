@@ -156,7 +156,7 @@ a sus respectivas fechas y no al estado actual.
 - Tarea 1.7: protocolo y 600 capturas planificadas;
   ninguna captura real acreditada todavía.
 - R22/R23: pendientes.
-- R14: pendiente de confirmar la entrega del informe.
+- R14: entrega del informe confirmada por el estudiante a través de Blackboard.
 - Responsables, accesos y acuerdos grupales:
   pendientes de acreditación.
 
@@ -165,3 +165,21 @@ nueva batería completa de navegación dinámica.
 
 La Fase 0 mantiene pendientes organizativos.
 No se declara cerrada al 100 %.
+
+## Actualización R14 y R35 — 2026-11-06
+
+- R14: informe entregado mediante Blackboard,
+  conforme a la confirmación del estudiante.
+  El informe no se publica en GitHub.
+- R35: coordenadas, rutas y transformaciones
+  verificadas en el escenario simulado.
+- TF map-odom: identidad publicada por el
+  lanzamiento integrado del prototipo.
+- Referencia: docs/F1_R35_marcos_tf.md.
+
+La transformación identidad es una hipótesis
+válida para este escenario de referencia fija;
+no constituye localización autónoma.
+
+Los acuerdos grupales y accesos de colaboradores
+conservan sus pendientes documentales.

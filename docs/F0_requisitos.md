@@ -17,7 +17,7 @@
 | R11 | DOC | Resolución de mapa ≤0,05 m/celda e inflado de 0,21 m | Mapas de 0,05 m y validación de inflate en MATLAB/Python; ver docs/F1_R11_inflado_matlab.md | A1 | Verificado |
 | R12 | DOC | Tres órdenes A* distintas | CSV + tabla longitud/celdas/tiempo | A1 | Verificado |
 | R13 | DOC | Seguidor proporcional completa ≥1 orden sin obstáculo | Video o registro ROS | A1 | Verificado |
-| R14 | DOC | Reporte de 2 páginas + repositorio | Documentos y tag `avance1` | A1 | Parcial |
+| R14 | DOC | Reporte de 2 páginas + repositorio | Informe entregado en Blackboard según confirmación del estudiante; repositorio y tag `avance1` verificados | A1 | Verificado |
 | R15 | DOC | Mamdani 3 entradas de 0–2 m, 2 salidas | Archivo .fis y reglas | A2 | Pendiente |
 | R16 | DOC | Cobertura de 27 combinaciones lingüísticas | Tabla de cobertura y ausencia de conflictos | A2 | Pendiente |
 | R17 | DOC | Límites 0≤v≤0,20 m/s y −1,5≤ω≤1,5 rad/s | Pruebas de saturación | A2 | Pendiente |
@@ -38,7 +38,7 @@
 | R32 | DOC | eFLL verificado contra MATLAB y replanificación al bloquear aristas | Tablas, pruebas de rutas | U4 | Pendiente |
 | R33 | DOC | k-means k=4, MLP 3→8→4, regresión y KPIs | Resultados de experimentos | U4 | Pendiente |
 | R34 | PROP | Un único publicador final de `/cmd_vel` en modo autónomo | Gráfico de nodos y prueba de arbitraje | F0/F2 | Verificado |
-| R35 | PROP | Convención única de coordenadas, signos y CSV | Contrato de interfaz y prueba | F0/F1 | Parcial |
+| R35 | PROP | Convención única de coordenadas, signos y CSV | SDF/YAML/mapa y 7 CSV verificados; TF map-odom identidad probada e integrada; ver docs/F1_R35_marcos_tf.md | F0/F1 | Verificado |
 
 ## Hitos de evaluación del proyecto
 A1: 4 nov 2026 (20 %); A2: 9 nov 2026 (35 %); Final: 16 nov 2026 (45 %). La fase real de U4 se califica aparte. Las rúbricas internas de A2 son 35/35/30 y de final 30/30/40.

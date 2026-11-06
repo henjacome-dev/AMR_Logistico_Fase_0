@@ -140,5 +140,6 @@ El contrato A2 del supervisor no debe confundirse
 con el comportamiento actual del prototipo.
 
 La alineación geométrica mundo-mapa fue verificada
-estáticamente. R35 conserva validación parcial
-de transformaciones y convenciones operativas.
+estáticamente. R35 fue verificado posteriormente con la transformación
+estática identidad map-odom integrada al lanzamiento.
+Ver docs/F1_R35_marcos_tf.md.

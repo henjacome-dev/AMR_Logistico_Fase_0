@@ -47,7 +47,7 @@ map:
   resolution_m: 0.05
   inflation_radius_m: 0.21
   minimum_corridor_width_m: 1.0
-  world_map_alignment: pending_F1_2  # coherencia estatica validada; TF dinamica pendiente
+  world_map_alignment: static_identity_map_odom_sim # referencia fija; no es localizacion real
 
 status: validated_static
 

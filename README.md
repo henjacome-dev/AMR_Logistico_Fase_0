@@ -161,8 +161,8 @@ Documentos de consulta: `docs/F0_requisitos.md`, `docs/F1_B4_mapa_planificacion.
 - **R11:** inflado y planificación MATLAB ejecutados sobre el mapa corregido.
 - **Tarea 1.7:** protocolo y 600 registros de adquisición planificados; no constituye un dataset capturado.
 - **R22–R23:** dataset real y primer entrenamiento CNN pendientes.
-- **R35:** comprobación integral de transformaciones y convenciones todavía parcial.
-- **R14:** el informe de dos páginas fue elaborado por el equipo, pero no se encontró como PDF/DOCX en la rama `main` durante esta auditoría; puede entregarse por separado.
+- **R35:** verificado en simulación; CSV, mapa y odometría compatibles, con TF estática identidad `map → odom` integrada. Ver `docs/F1_R35_marcos_tf.md`.
+- **R14:** informe entregado al docente mediante Blackboard, según confirmación del estudiante. No se incorpora a GitHub.
 - **Fase 0 organizativa:** accesos y acuerdos del equipo pendientes de confirmación documental.
 - **Próximos hitos:** control Mamdani y evaluación difusa; luego CNN e integración, y finalmente plataforma física. Estos módulos no se presentan como terminados.
 
@@ -186,4 +186,4 @@ el escenario original. La geometría vigente corregida
 no cuenta todavía con una nueva batería dinámica integral.
 
 La Fase 0 conserva verificaciones organizativas pendientes;
-R14 y R35 no deben considerarse cerrados sin evidencia.
+R14 verificado por entrega informada en Blackboard; R35 verificado para la configuración de simulación.

@@ -119,7 +119,7 @@ integration_decisions:
     format: csv
     header: [x_m, y_m]
     reference_frame: map
-    coordinate_transform: pending_F1_2
+    coordinate_transform: static_identity_map_odom_sim
 
   safety_requirements:
     stop_on_missing_sensor_data: true

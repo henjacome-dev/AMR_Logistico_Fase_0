@@ -1,0 +1,16 @@
+[OK] Mapa 200x160, resolucion 0.05 m
+[OK] Origen de rejilla (-5,-4), yaw 0
+[OK] Cuatro estaciones: SDF, YAML y mapa coherentes
+[OK] Dos obstaculos: SDF y YAML coherentes
+[OK] CSV x_m,y_m en marco map
+[OK] Giro positivo antihorario (REP-103)
+[OK] F12_ruta_1.csv: 21 puntos; sin celdas ocupadas ni cortes diagonales
+[OK] F12_ruta_2.csv: 113 puntos; sin celdas ocupadas ni cortes diagonales
+[OK] F12_ruta_3.csv: 161 puntos; sin celdas ocupadas ni cortes diagonales
+[OK] F12_ruta_4.csv: 113 puntos; sin celdas ocupadas ni cortes diagonales
+[OK] F12_orden_A.csv: 405 puntos; sin celdas ocupadas ni cortes diagonales
+[OK] F12_orden_B.csv: 601 puntos; sin celdas ocupadas ni cortes diagonales
+[OK] F12_orden_C.csv: 525 puntos; sin celdas ocupadas ni cortes diagonales
+[R35] COHERENCIA ESTATICA SATISFACTORIA
+[PENDIENTE] Transformacion dinamica map/world/odom
+[ESTADO] R35 permanece Parcial
