@@ -171,5 +171,5 @@ for indice, archivo in enumerate(rutas):
     )
 
 print("[R35] COHERENCIA ESTATICA SATISFACTORIA")
-print("[PENDIENTE] Transformacion dinamica map/world/odom")
-print("[ESTADO] R35 permanece Parcial")
+print("[ALCANCE] Ensayo estatico: no comprueba TF en ROS 2")
+print("[REFERENCIA] Validacion TF independiente en docs/F1_R35_marcos_tf.md")
