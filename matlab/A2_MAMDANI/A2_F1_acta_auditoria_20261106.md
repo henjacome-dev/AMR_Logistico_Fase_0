@@ -43,9 +43,9 @@ El archivo `AMR_Mamdani_A2_v01.fis` debe conservarse sin modificaciones.
 
 Este anexo documenta actividades posteriores sin alterar el dictamen histórico del 6 de noviembre:
 
-- **AC-02, completada:** las dos copias de `A2_F1_membresias_base.mat` (GitHub y ZIP) presentan SHA-256 distintos, pero se verificó equivalencia técnica de variables, operadores, rangos y membresías. La diferencia de nombre `AMR_Mamdani_A2` versus `AMR_Mamdani_A2_v01` responde al versionado. No se reemplazaron binarios.
-- **AC-01, validada en MATLAB:** se regeneraron nueve PNG candidatos de 900 × 650 píxeles mediante `getframe`/`imwrite`, se comprobó su lectura y se confirmó su inspección visual. **Pendiente:** incorporar scripts definitivos al repositorio.
-- **AC-05, validada en MATLAB:** cuatro superficies candidatas incluyen explícitamente la entrada fija (`dd=1.7 m`, `df=0.2 m`, `df=1.7 m`, `di=0.9 m`). **Pendiente:** publicar las cuatro imágenes actualizadas en GitHub.
-- **AC-03, validación local:** paquete definitivo de 25 archivos, con acta, cuatro superficies etiquetadas y cinco membresías legibles. Los archivos técnicos conservan los contenidos verificados; la publicación remota continúa pendiente.
+- **AC-02, completada:** las dos copias originales de `A2_F1_membresias_base.mat` tenían SHA-256 distintos, pero coincidían técnicamente en MATLAB. El ZIP final incorporó la copia versionada en GitHub para asegurar identidad binaria de paquete y repositorio (`54abfd3`); la copia local alternativa no se alteró.
+- **AC-01, completada y publicada:** nueve PNG de 900 × 650 píxeles, legibles, inspeccionados visualmente y generados con `getframe`/`imwrite`. Los generadores y las evidencias oficiales actualizadas se publicaron en el commit `36ce917`.
+- **AC-05, completada y publicada:** cuatro superficies incluyen explícitamente la entrada fija (`dd=1.7 m`, `df=0.2 m`, `df=1.7 m`, `di=0.9 m`); se publicaron en el commit `36ce917`.
+- **AC-03, completada y publicada:** ZIP definitivo de 25 archivos, con esta acta y manifiesto SHA-256. Reconciliación binaria con el repositorio en `54abfd3`; GitHub Actions `validar-avance2` aprobó ambos verificadores (run `42426641603`).
 
-Los resultados AC-01/AC-05 corresponden a **candidatos de prueba**; no se presentan como imágenes ya publicadas. El FIS `AMR_Mamdani_A2_v01.fis` continúa sin modificaciones.
+Las evidencias AC-01/AC-05 dejaron de ser candidatas y están publicadas en GitHub. Esta actualización documental sincroniza el acta, el README y el ZIP sin modificar el FIS `AMR_Mamdani_A2_v01.fis`, los MAT, las reglas ni los PNG. La validación corresponde al diseño numérico; R18–R21 y la seguridad operativa continúan pendientes.
