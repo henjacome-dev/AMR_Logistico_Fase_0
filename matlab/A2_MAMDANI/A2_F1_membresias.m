@@ -1,4 +1,3 @@
-
 %% Avance 2 - Fase 1.2
 % Controlador Mamdani: definicion de variables y membresias
 % Aun no se agregan reglas; se incorporaran en Fase 1.3.
@@ -96,45 +95,50 @@ fprintf("Salidas: %d\n",numel(fis.Outputs));
 fprintf("Reglas actuales: %d\n",numel(fis.Rules));
 disp("[OK] Universos y membresias validados.");
 
-%% Generacion de evidencias
+close all; % cerrar figuras generadas por las pruebas plotmf
 
-if ~isfolder("evidencias")
-    mkdir("evidencias");
+%% Generacion segura de evidencias (AC-01)
+% NO escribe en evidencias/ ni sobrescribe A2_F1_membresias_base.mat.
+carpeta = "evidencias_AC01_prueba";
+if ~isfolder(carpeta)
+    mkdir(carpeta);
 end
 
-for k = 1:3
-    f = figure("Name","Entrada "+entradas(k), "Color","w");
-    plotmf(fis,"input",k);
+nombres = ["entrada_df.png"; "entrada_di.png"; "entrada_dd.png"; ...
+           "salida_v.png"; "salida_omega.png"];
+
+for k = 1:5
+    if k <= 3
+        tipo = "input";
+        indice = k;
+        etiqueta = entradas(k);
+    else
+        tipo = "output";
+        indice = k - 3;
+        salidas = ["v", "omega"];
+        etiqueta = salidas(indice);
+    end
+
+    ruta = fullfile(carpeta, nombres(k));
+    assert(~isfile(ruta), "AC-01: ya existe %s. Conservelo o retirelo antes de repetir.", ruta);
+
+    f = figure("Name", nombres(k), "Color", "w", ...
+        "Position", [100 100 900 650]);
+    plotmf(fis, tipo, indice);
     grid on;
-    title("Membresias de "+entradas(k));
-
+    title("Membresias de " + etiqueta);
     drawnow;
-    pause(0.2);
 
-    exportgraphics(gca, fullfile("evidencias", ...
-        "entrada_"+entradas(k)+".png"), ...
-        "Resolution",160);
+    captura = getframe(f);
+    assert(~isempty(captura.cdata), "Figura vacia: %s", nombres(k));
+    imwrite(captura.cdata, ruta, "png");
+    meta = imfinfo(ruta);
+    imagen = imread(ruta);
+    assert(~isempty(imagen) && meta.Width>0 && meta.Height>0, ...
+        "PNG invalido: %s", ruta);
+    fprintf("[OK] AC01 %s: %d x %d\n", nombres(k), meta.Width, meta.Height);
     close(f);
 end
 
-salidas = ["v", "omega"];
-
-for k = 1:2
-    f = figure("Name","Salida "+salidas(k), "Color","w");
-    plotmf(fis,"output",k);
-    grid on;
-    title("Membresias de "+salidas(k));
-
-    drawnow;
-    pause(0.2);
-
-    exportgraphics(gca, fullfile("evidencias", ...
-        "salida_"+salidas(k)+".png"), ...
-        "Resolution",160);
-    close(f);
-end
-
-save("A2_F1_membresias_base.mat","fis");
-
-disp("[OK] Cinco figuras guardadas en evidencias/");
-disp("[OK] Modelo base guardado en archivo MAT.");
+disp("=== AC01 MEMBRESIAS: 5 PNG GENERADOS Y LEIBLES ===");
+disp("[OK] Sin modificaciones al FIS, MAT base ni evidencias oficiales.");

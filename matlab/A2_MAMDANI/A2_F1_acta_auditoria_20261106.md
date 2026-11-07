@@ -35,6 +35,17 @@ Esta auditoría no acredita saturación física de actuadores, ejecución integr
 
 ## Dictamen
 
-**Fase 1 validada en diseño numérico, reproducción MATLAB e integridad de evidencias.** El paso posterior es fortalecer y versionar el cierre documental. R15 y R16 quedan validados a nivel de diseño; R17 se mantiene parcial por la validación operacional pendiente. R18–R21 continúan pendientes.
+**Fase 1 validada en diseño numérico, reproducción MATLAB e integridad de evidencias.** El cierre documental robustecido fue probado en MATLAB Online y versionado posteriormente en el commit `3f0acc7`: nueve PNG legibles y un ZIP verificado de 24 archivos. Las auditorías posteriores se registran en el anexo cronológico siguiente. R15 y R16 quedan validados a nivel de diseño; R17 se mantiene parcial por la validación operacional pendiente. R18–R21 continúan pendientes.
 
 El archivo `AMR_Mamdani_A2_v01.fis` debe conservarse sin modificaciones.
+
+## Anexo de seguimiento — 7 de noviembre de 2026
+
+Este anexo documenta actividades posteriores sin alterar el dictamen histórico del 6 de noviembre:
+
+- **AC-02, completada:** las dos copias de `A2_F1_membresias_base.mat` (GitHub y ZIP) presentan SHA-256 distintos, pero se verificó equivalencia técnica de variables, operadores, rangos y membresías. La diferencia de nombre `AMR_Mamdani_A2` versus `AMR_Mamdani_A2_v01` responde al versionado. No se reemplazaron binarios.
+- **AC-01, validada en MATLAB:** se regeneraron nueve PNG candidatos de 900 × 650 píxeles mediante `getframe`/`imwrite`, se comprobó su lectura y se confirmó su inspección visual. **Pendiente:** incorporar scripts definitivos al repositorio.
+- **AC-05, validada en MATLAB:** cuatro superficies candidatas incluyen explícitamente la entrada fija (`dd=1.7 m`, `df=0.2 m`, `df=1.7 m`, `di=0.9 m`). **Pendiente:** publicar las cuatro imágenes actualizadas en GitHub.
+- **AC-03, validación local:** paquete definitivo de 25 archivos, con acta, cuatro superficies etiquetadas y cinco membresías legibles. Los archivos técnicos conservan los contenidos verificados; la publicación remota continúa pendiente.
+
+Los resultados AC-01/AC-05 corresponden a **candidatos de prueba**; no se presentan como imágenes ya publicadas. El FIS `AMR_Mamdani_A2_v01.fis` continúa sin modificaciones.

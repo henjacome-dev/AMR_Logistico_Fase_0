@@ -1,0 +1,19 @@
+name: Validacion Avance 2
+on:
+  push:
+    branches: [desarrollo-avance2]
+  pull_request:
+    branches: [main, desarrollo-avance2]
+permissions:
+  contents: read
+jobs:
+  validar-avance2:
+    name: validar-avance2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v4
+      - name: Validar FIS y evidencias publicadas
+        run: python3 tools/verificar_publicacion_a2.py
+      - name: Validar ZIP AC03 y manifiesto SHA256
+        run: python3 tools/verificar_paquete_ac03.py

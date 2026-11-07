@@ -1,24 +1,20 @@
-
-%% AVANCE 2 - FASE 1.5
-% Superficies de control sobre el FIS validado v01.
-% No modifica funciones de membresia ni reglas.
+%% AC-05 - TRAZABILIDAD DE LAS CUATRO SUPERFICIES
+% Solo crea PNG candidatos en evidencias_AC05_prueba/.
+% No modifica el FIS v01 ni evidencias/ ni evidencias_AC01_prueba/.
+% Reutiliza los parametros de calculo validados en AC-01.
 
 clearvars; clc; close all;
 
 fis = readfis("AMR_Mamdani_A2_v01.fis");
-
+assert(numel(fis.Inputs)==3 && numel(fis.Outputs)==2);
 assert(numel(fis.Rules)==27);
 
-if ~isfolder("evidencias")
-    mkdir("evidencias");
+carpeta = "evidencias_AC05_prueba";
+if ~isfolder(carpeta)
+    mkdir(carpeta);
 end
 
-% Cada superficie representa 2 entradas variables.
-% La tercera entrada se fija en un valor documentado.
-%
-% Entradas: 1=df, 2=di, 3=dd
-% Salidas: 1=v, 2=omega
-
+% Entradas: 1=df, 2=di, 3=dd. Salidas: 1=v, 2=omega.
 pares = {
     [1 2]
     [2 3]
@@ -26,8 +22,7 @@ pares = {
     [1 3]
 };
 
-salidas = [1; 2; 2; 1];
-
+indicesSalida = [1; 2; 2; 1];
 referencias = {
     [NaN NaN 1.7]
     [0.2 NaN NaN]
@@ -42,73 +37,83 @@ nombres = [
     "superficie_v_df_dd_di_media"
 ];
 
-entradaNombres = ["df","di","dd"];
-salidaNombres = ["v","omega"];
+nombreEntrada = ["df", "di", "dd"];
+nombreSalida  = ["v", "omega"];
+
+% Verificar que no se sobreescribiran PNG candidatos anteriores.
+for k = 1:numel(nombres)
+    ruta = fullfile(carpeta,nombres(k)+".png");
+    assert(~isfile(ruta), ...
+        "AC-05: ya existe %s. Cambie el nombre de la carpeta anterior antes de repetir.",ruta);
+end
+
+disp("=== AC-05: SUPERFICIES CON ENTRADA FIJA EXPLICITA ===");
 
 for k = 1:numel(nombres)
+    ref = referencias{k};
+    par = pares{k};
+    indiceFijo = setdiff(1:3,par);
+
+    assert(numel(indiceFijo)==1);
+    assert(all(isnan(ref(par))) && isfinite(ref(indiceFijo)));
+    valorFijo = ref(indiceFijo);
 
     opt = gensurfOptions;
-    opt.InputIndex = pares{k};
-    opt.OutputIndex = salidas(k);
-    opt.ReferenceInputs = referencias{k};
+    opt.InputIndex = par;
+    opt.OutputIndex = indicesSalida(k);
+    opt.ReferenceInputs = ref;
     opt.NumGridPoints = 31;
     opt.NumSamplePoints = 1001;
 
     [X,Y,Z] = gensurf(fis,opt);
+    assert(all(isfinite(Z),"all"), "Superficie con valores no finitos.");
 
-    assert(all(isfinite(Z),"all"), ...
-        "La superficie tiene resultados invalidos.");
-
-    if salidas(k)==1
+    if indicesSalida(k)==1
         assert(all(Z>=-1e-9 & Z<=0.20+1e-9,"all"));
+        etiquetaSalida = "Velocidad lineal v";
+        etiquetaZ = "v (m/s)";
     else
         assert(all(abs(Z)<=1.5+1e-9,"all"));
+        etiquetaSalida = "Velocidad angular omega";
+        etiquetaZ = "omega (rad/s)";
     end
 
-    f = figure("Name",nombres(k));
+    f = figure("Name",nombres(k),"Color","w", ...
+        "Position",[100 100 900 650]);
+    ax = axes("Parent",f);
+    surf(ax,X,Y,Z);
+    grid(ax,"on");
+    colorbar(ax);
+    view(ax,45,30);
 
-    surf(X,Y,Z);
-    grid on;
-    colorbar;
-    view(45,30);
+    xlabel(ax,nombreEntrada(par(1))+" (m)");
+    ylabel(ax,nombreEntrada(par(2))+" (m)");
+    zlabel(ax,etiquetaZ);
 
-    xlabel(entradaNombres(pares{k}(1))+" (m)");
-    ylabel(entradaNombres(pares{k}(2))+" (m)");
-
-    f = figure("Name",nombres(k), "Color","w");
-
-    surf(X,Y,Z);
-    grid on;
-    colorbar;
-    view(45,30);
-
-    xlabel(entradaNombres(pares{k}(1))+" (m)");
-    ylabel(entradaNombres(pares{k}(2))+" (m)");
-
-    if salidas(k)==1
-        zlabel("v (m/s)");
-    else
-        zlabel("omega (rad/s)");
-    end
-
-    title(strrep(nombres(k),"_"," "));
-
+    titulo1 = sprintf("%s frente a %s y %s", ...
+        char(etiquetaSalida),char(nombreEntrada(par(1))), ...
+        char(nombreEntrada(par(2))));
+    titulo2 = sprintf("Entrada fija: %s = %.1f m", ...
+        char(nombreEntrada(indiceFijo)),valorFijo);
+    title(ax,{titulo1,titulo2},"Interpreter","none","FontSize",11);
     drawnow;
-    pause(0.2);
 
-    exportgraphics(gca, ...
-        fullfile("evidencias",nombres(k)+".png"), ...
-        "Resolution",160);
+    captura = getframe(f);
+    assert(~isempty(captura.cdata),"No se pudo capturar %s",nombres(k));
 
-    fprintf("[OK] %s\n",nombres(k));
-    fprintf("     Salida minima: %.6f\n",min(Z(:)));
-    fprintf("     Salida maxima: %.6f\n",max(Z(:)));
+    ruta = fullfile(carpeta,nombres(k)+".png");
+    imwrite(captura.cdata,ruta,"png");
 
+    info = imfinfo(ruta);
+    img = imread(ruta);
+    assert(info.Width>=600 && info.Height>=400 && ~isempty(img));
+    assert(any(img(:)~=img(1)),"Imagen uniforme: %s",ruta);
+
+    fprintf("[OK] %-46s %s=%.1f m; Z=[%.6f, %.6f]; %d x %d\n", ...
+        nombres(k),char(nombreEntrada(indiceFijo)),valorFijo, ...
+        min(Z(:)),max(Z(:)),info.Width,info.Height);
     close(f);
 end
 
-disp("=== ETAPA 1.5: SUPERFICIES GENERADAS ===");
-disp("[OK] Cuatro superficies calculadas.");
-disp("[OK] Sin valores invalidos.");
-disp("[OK] Limites de salida respetados.");
-disp("[OK] Cuatro imagenes PNG guardadas.");
+disp("=== AC-05: CUATRO IMAGENES CANDIDATAS GENERADAS ===");
+disp("[OK] FIS y evidencias oficiales sin modificaciones.");

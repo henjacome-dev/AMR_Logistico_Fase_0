@@ -2,7 +2,7 @@
 
 **Universidad ECOTEC · Ingeniería Mecatrónica**  
 **Proyecto 1:** Robot móvil autónomo para logística en almacén  
-**Hito:** Avance 1 · corte técnico y documental del 5 de noviembre de 2026  
+**Hitos documentados:** Avance 1 (corte técnico y documental de noviembre de 2026) y Avance 2, Fase 1 (auditoría numérica MATLAB del 6 de noviembre de 2026; revisión de evidencias del 7 de noviembre de 2026)
 **Plataforma:** Ubuntu 22.04 (WSL2), ROS 2 Humble, Gazebo Classic y TurtleBot3 Waffle Pi
 
 ## 1. Objetivo y alcance
@@ -198,3 +198,12 @@ El controlador `matlab/A2_MAMDANI/AMR_Mamdani_A2_v01.fis` emplea tres entradas d
 **Alcance:** diseño, integridad de archivos y reproducibilidad numérica del FIS. La Fase 1 no certifica integración ROS 2, colisiones, saturación física ni equivalencia Python. Para `df=di=dd=0,2 m`, el Mamdani entrega `v≈0,011815589 m/s`: se requiere parada estricta en el supervisor.
 
 **Trazabilidad:** `matlab/A2_MAMDANI/A2_F1_acta_auditoria_20261106.md`, `matlab/A2_MAMDANI/A2_F1_resumen_tecnico.md`, `matlab/A2_MAMDANI/evidencias/` y commit `6b46367`. Las pruebas históricas del Avance 1 permanecen sin redefinirse.
+
+### Seguimiento de observaciones gráficas y documentales (2026-11-07)
+
+- **AC-02 — Equivalencia MAT:** las versiones de `A2_F1_membresias_base.mat` obtenidas de GitHub y del ZIP tienen distintos SHA-256, pero la comparación en MATLAB Online confirmó igualdad de variables, operadores, universos y funciones de membresía. El nombre del FIS final añade `_v01`; no se modificó ninguna versión.
+- **AC-01 — Reproducción gráfica:** nueve PNG candidatos de 900 × 650 píxeles regenerados y legibles mediante `getframe` e `imwrite`; inspección visual confirmada. La sustitución de generadores y su publicación aún están pendientes.
+- **AC-05 — Identificación de entradas fijas:** cuatro superficies candidatas verificadas con `dd=1.7 m`, `df=0.2 m`, `df=1.7 m` y `di=0.9 m`, respectivamente; todavía no sustituyen las cuatro imágenes oficiales de GitHub.
+- **AC-04:** revisión documental validada localmente; **AC-03:** paquete definitivo de 25 archivos validado localmente; publicación remota pendiente.
+
+El commit `6b46367` reparó los nueve PNG originales publicados; el commit `3f0acc7` incorporó el cierre robustecido y la auditoría numérica. Esto es independiente de los archivos candidatos AC-01/AC-05 aún no publicados. La integración ROS 2, las pruebas de seguridad operativa y la comparación MATLAB/Python continúan pendientes.
