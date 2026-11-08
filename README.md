@@ -272,3 +272,23 @@ Evidencias: `resultados/A2_E236A_gazebo_headless_canal_cero/evidencia_publicada/
 experimentales 0,60/0,80 m con el enunciado, integrar el supervisor operativo
 y demostrar detenciones bajo movimiento. GitHub Actions verifica registros
 capturados en Ubuntu, no ejecuta Gazebo.
+
+## 13. Avance 2 — consolidación experimental (8 de noviembre de 2026)
+
+Esta sección **actualiza la situación posterior** a las secciones históricas 10–12.
+La evidencia local auditada aprobó R19 experimentalmente (siete etapas),
+R20 (20/20 navegaciones), R21 (20 comparaciones numéricas A/B),
+R22 (600 imágenes) y R23 (CNN inicial entrenada; test sintético 90/90).
+Los códigos de reproducción están en `tools/a2_bancos/` y las evidencias
+ligeras y su manifiesto en `docs/evidencias_A2/`.
+
+**Reservas explícitas:** R19 emplea umbrales provisionales 0,60/0,80 m
+y un lanzamiento experimental; R20 interpreta cuatro rutas A* como cuatro
+escenarios, pero no tuvo comandos DIFUSO; R21 muestra aumentos de variación
+angular ante obstáculos laterales y carece de comparación operacional en
+Gazebo; R23 no acredita generalización a cámaras o mundos distintos.
+
+Los veinte rosbags R20 y los 600 PNG originales se conservan en Ubuntu.
+El dataset completo y el modelo `.keras` se empaquetan aparte para
+transferencia académica; **no se consideran subidos por su mera existencia
+local**. Véase `docs/A2_cierre_experimental_20261108.md`.

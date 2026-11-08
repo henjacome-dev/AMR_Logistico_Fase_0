@@ -1,0 +1,42 @@
+{
+  "estado": "R23_PRIMER_ENTRENAMIENTO_EJECUTADO",
+  "modelo": "CNN ligera propia (NO MobileNetV2 final)",
+  "entradas": "RGB 224x224 mediante padding; originales PNG 640x360 conservados",
+  "muestras": {
+    "train": 420,
+    "val": 90,
+    "test": 90
+  },
+  "epocas": 8,
+  "accuracy_test": 1.0,
+  "loss_test": 0.0819106325507164,
+  "matriz_confusion": [
+    [
+      18,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      24,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      24,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      24
+    ]
+  ],
+  "n_parametros": 28004,
+  "advertencia": "R23 primer entrenamiento; R24-R25 corresponden a entrega final; datos sinteticos Gazebo",
+  "sha256_modelo": "9e0ff8e9b350e0538b755e68559f05039096e15de8d037febf6f8c1cd90f8add"
+}

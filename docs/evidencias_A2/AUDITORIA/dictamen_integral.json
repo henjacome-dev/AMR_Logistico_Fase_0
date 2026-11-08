@@ -1,0 +1,315 @@
+{
+  "estado": "AUDITORIA_TECNICA_FAVORABLE_CON_RESERVAS",
+  "fecha": "2026-11-08T01:06:41",
+  "repo_base": "82ba1d98a4201b01e7eaaa42146c163808dcffec",
+  "resumen": {
+    "verificaciones": 57,
+    "fallos_criticos": 0,
+    "alertas": 1,
+    "evidencias_indexadas": 662
+  },
+  "sesiones": {
+    "R19": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_R19_integral_gazebo/20261107_222843",
+    "R20": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_R20_integral_4x5/20261107_224326",
+    "R21": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_R21_comparacion_Mamdani_AB/20261108_010146",
+    "R22_R23": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_R22_R23_CNN_integral_v6_contexto/20261108_004923"
+  },
+  "verificaciones": [
+    {
+      "ok": true,
+      "mensaje": "Repositorio Git disponible",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "HEAD es la base auditada E2.3.6A",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Rama desarrollo-avance2",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "FIS oficial v01 mantiene integridad de Git",
+      "critico": true
+    },
+    {
+      "ok": false,
+      "mensaje": "Sin cambios PREEXISTENTES en archivos rastreados (no se modifica ninguno)",
+      "critico": false
+    },
+    {
+      "ok": true,
+      "mensaje": "Evidencia completa R19 localizada",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Estado R19: prevalidacion experimental aprobada",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Siete transiciones/etapas R19 observadas",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Sin fallos de seguridad declarados por R19",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R19 conserva advertencia: no acreditado formalmente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Evidencia completa R20 localizada",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R20: resultado experimental 20/20",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "20 filas CSV con estado OK",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Matriz de rutas y repeticiones completa y sin duplicados",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "20 errores de meta <=0.10m",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Conteos positivos por ensayo de /cmd_vel, /odom y /scan",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "20 carpetas rosbag2 con metadatos y bases SQLite presentes (20/20)",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R20 se ejecutó sin comandos DIFUSO; no prueba mejoras de evasión",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Evidencia completa R21 localizada",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R21: resumen_R21.json presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R21: comparacion_20_ensayos.csv presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R21: resumen_4_escenarios.csv presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R21: observaciones_AB.csv presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R21: panel_R21.html presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R21: informe_R21.md presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R21: AMR_Mamdani_A2_v02_experimental.fis presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "20 pares, 1.440 inferencias y tabla de 20 comparaciones",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Referencia del FIS v01 coincide",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "SHA256 del FIS v02 experimental conforme",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "20 pares únicos por escenario y repetición",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "A/B sin violaciones numéricas de parada ni límites",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R21: aumento de variación angular lateral reconocido (resultado mixto)",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Evidencia completa R22/R23 v6 localizada",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Dataset: resumen_dataset.json presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Dataset: manifiesto.csv presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Dataset: configuracion_optica.json presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "600 registros dataset y resumen de adquisición",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "4 clases x 150 imágenes",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Partición 420/90/90",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "100 grupos; ninguna pose compartida entre particiones",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "600 IDs únicos",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "600 PNG íntegros 640x360 (raster y CRC) (600/600)",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "SHA256 por imagen correcto y sin duplicados exactos",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Hash del manifiesto coincide con resumen",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Hash de configuracion optica verificado",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R23: reporte_entrenamiento.json presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R23: modelo_cnn_a2.keras presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R23: reporte_visual.html presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R23: matriz_confusion.csv presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R23: historial.csv presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "R23: mosaico_control_calidad.png presente",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "CNN preliminar entrenada",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Entrenamiento usó 420/90/90",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Al menos una época completada",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Modelo .keras y hashes de reportes coinciden",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Matriz de confusión 4x4, 90 muestras test",
+      "critico": true
+    },
+    {
+      "ok": true,
+      "mensaje": "Exactitud test consistente con matriz de confusión",
+      "critico": true
+    }
+  ],
+  "observaciones": [
+    "R19: umbrales 0.60/0.80 m provisionales; contrastar el enunciado y formalizar el lanzamiento operativo.",
+    "R20: la auditoria constata archivos, conteos del CSV y tamaños; NO reproduce los rosbags ni verifica internamente cada evento.",
+    "R20: 4 rutas A* empleadas como escenarios; verificar equivalencia con la rubrica oficial. DIFUSO=0 en 20 ensayos.",
+    "R21 giro_medio: A=0.46687, B=0.42296, cambio=-9.41%.",
+    "R21 variacion: A=47.66207, B=46.79914, cambio=-1.81%.",
+    "R21: cambios positivos y negativos documentados; no existe prueba de mejora de navegación real en Gazebo.",
+    "R23: aciertos test=90/90, accuracy declarada=100.00%; solo dominio sintético.",
+    "R22/R23: auditar visualmente mosaico_control_calidad.png; partición por pose no equivale a validación en otro mundo/cámara."
+  ],
+  "alcance": "Inspeccion de archivos locales; no se repite Gazebo, no se publica Git, no revisa video manualmente."
+}

@@ -18,15 +18,15 @@
 | R12 | DOC | Tres órdenes A* distintas | CSV + tabla longitud/celdas/tiempo | A1 | Verificado |
 | R13 | DOC | Seguidor proporcional completa ≥1 orden sin obstáculo | Video o registro ROS | A1 | Verificado |
 | R14 | DOC | Reporte de 2 páginas + repositorio | Informe entregado en Blackboard según confirmación del estudiante; repositorio y tag `avance1` verificados | A1 | Verificado |
-| R15 | DOC | Mamdani 3 entradas de 0–2 m, 2 salidas | `.fis` validado en MATLAB (3 entradas, 2 salidas, 27 reglas); falta integración ROS 2 | A2 | Validado numéricamente; integración pendiente |
-| R16 | DOC | Cobertura de 27 combinaciones lingüísticas | Antecedentes únicos 27/27 y validación con `A2_F1_verificacion_auditoria.m` | A2 | Verificado en MATLAB |
-| R17 | DOC | Límites 0≤v≤0,20 m/s y −1,5≤ω≤1,5 rad/s | Rango evaluado en 1.331 casos + diez críticos; falta prueba operativa de saturación y supervisor | A2 | Parcial |
-| R18 | DOC | Concordancia MATLAB vs scikit-fuzzy en 10 casos | Tabla de error menor al 2 % | A2 | Verificado: 10/10 casos Python vs MATLAB, error <2%; ver docs/A2_R18_concordancia_MATLAB_Python.md |
-| R19 | DOC | Supervisor conmuta ruta/difuso a umbrales indicados | Logs de modos y tópicos | A2 | Pendiente |
-| R20 | DOC | 4 escenarios de navegación × 5 repeticiones | Rosbags y métricas | A2 | Pendiente |
-| R21 | DOC | Rediseño difuso documentado antes/después | Tabla comparativa de métricas | A2 | Pendiente |
-| R22 | DOC | Dataset ≥150 imágenes por estación (600 total) | Conteo, etiquetas y metadatos | A2/F | Pendiente |
-| R23 | DOC | Adelanto CNN: captura, 224×224, 70/15/15 y primer entrenamiento | Archivos y entrenamiento ejecutado; si falta: −10/100 en A2 | A2 | Pendiente |
+| R15 | DOC | Mamdani 3 entradas de 0–2 m, 2 salidas | `.fis` validado en MATLAB (3 entradas, 2 salidas, 27 reglas); falta integración ROS 2 | A2 | Validado MATLAB y ROS experimental; launch operativo definitivo pendiente |
+| R16 | DOC | Cobertura de 27 combinaciones lingüísticas | Antecedentes únicos 27/27 y validación con `A2_F1_verificacion_auditoria.m` | A2 | Verificado (27/27) |
+| R17 | DOC | Límites 0≤v≤0,20 m/s y −1,5≤ω≤1,5 rad/s | Rango evaluado en 1.331 casos + diez críticos; falta prueba operativa de saturación y supervisor | A2 | Validado numéricamente y con barrera ROS experimental; integración permanente pendiente |
+| R18 | DOC | Concordancia MATLAB vs scikit-fuzzy en 10 casos | Tabla de error menor al 2 % | A2 | Verificado: 10/10 MATLAB-Python (<2 %) |
+| R19 | DOC | Supervisor conmuta ruta/difuso a umbrales indicados | Logs de modos y tópicos | A2 | Prevalidado: 7 etapas Gazebo; umbrales 0,60/0,80 m y launch por confirmar |
+| R20 | DOC | 4 escenarios de navegación × 5 repeticiones | Rosbags y métricas | A2 | Validado experimentalmente: 4 rutas × 5 = 20/20; escenarios por cotejar |
+| R21 | DOC | Rediseño difuso documentado antes/después | Tabla comparativa de métricas | A2 | 20 ensayos A/B numéricos; resultados mixtos; no validación de mejora en Gazebo |
+| R22 | DOC | Dataset ≥150 imágenes por estación (600 total) | Conteo, etiquetas y metadatos | A2/F | 600/600 PNG íntegros; inspección visual y publicación de dataset pendientes |
+| R23 | DOC | Adelanto CNN: captura, 224×224, 70/15/15 y primer entrenamiento | Archivos y entrenamiento ejecutado; si falta: −10/100 en A2 | A2 | CNN inicial entrenada 8 épocas; 420/90/90; 90/90 test sintético; publicación pendiente |
 | R24 | DOC | CNN MobileNetV2 y cabeza especificada | Resumen/modelo Keras | Final | Pendiente |
 | R25 | DOC | Exactitud CNN ≥90 % | Métricas sobre test y matriz 4×4 | Final | Pendiente |
 | R26 | DOC | 10 órdenes consecutivas, 0 colisiones | Logs y tabla de órdenes | Final | Pendiente |
@@ -39,6 +39,8 @@
 | R33 | DOC | k-means k=4, MLP 3→8→4, regresión y KPIs | Resultados de experimentos | U4 | Pendiente |
 | R34 | PROP | Un único publicador final de `/cmd_vel` en modo autónomo | Gráfico de nodos y prueba de arbitraje | F0/F2 | Verificado |
 | R35 | PROP | Convención única de coordenadas, signos y CSV | SDF/YAML/mapa y 7 CSV verificados; TF map-odom identidad probada e integrada; ver docs/F1_R35_marcos_tf.md | F0/F1 | Verificado |
+
+**Actualización experimental A2 (2026-11-08):** las filas R15–R23 reflejan evidencias locales auditadas; no equivalen por sí solas a entrega oficial. Detalle en `docs/A2_cierre_experimental_20261108.md`.
 
 ## Hitos de evaluación del proyecto
 A1: 4 nov 2026 (20 %); A2: 9 nov 2026 (35 %); Final: 16 nov 2026 (45 %). La fase real de U4 se califica aparte. Las rúbricas internas de A2 son 35/35/30 y de final 30/30/40.

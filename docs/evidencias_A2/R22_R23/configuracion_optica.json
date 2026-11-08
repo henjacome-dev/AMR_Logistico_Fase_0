@@ -1,0 +1,12 @@
+{
+  "hfov_horizontal_deg": 145.0,
+  "offset_frontal_camara_m": 0.076,
+  "cam_pitch_deg": 12.0,
+  "fuente_modelo_sha256": "06bfc21118a2e97730a9f4b4145ae41b9544b1825dce321cac391c0efe1c3da4",
+  "advertencia": "Configuracion optica temporal de simulacion; no valida una camara fisica",
+  "huella_teorica_a_0_30_m": [
+    1.902956881417928,
+    1.0704132457975846
+  ],
+  "campo_horizontal_previo": "Valor original SDF archivado en el modelo instalado, sin modificarlo"
+}

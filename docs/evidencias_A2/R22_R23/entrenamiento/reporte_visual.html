@@ -1,0 +1,57 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>R22-R23 AMR CNN</title>
+    <style>body{font:16px system-ui;margin:35px auto;max-width:1100px;line-height:1.5;color:#1a2535}
+    table{border-collapse:collapse}td,th{border:1px solid #aaa;padding:6px 12px}img{max-width:100%}
+    .numbers{display:flex;gap:20px}.numbers strong{font-size:32px}</style>
+    <h1>Dataset y primera CNN · AMR logístico</h1><p>R22: 600 imágenes RGB; R23: primer entrenamiento ejecutado.</p>
+    <div class="numbers"><div><strong>600</strong><p>imágenes</p></div>
+    <div><strong>420/90/90</strong><p>train / val / test</p></div>
+    <div><strong>100.00%</strong><p>exactitud test</p></div></div>
+    <p><b>Modelo:</b> CNN ligera de referencia (no MobileNetV2 final).</p>
+    <p><b>Épocas:</b> 8. <b>Parámetros:</b> 28004.</p>
+    <h2>Matriz de confusión (filas real, columnas predicción)</h2><table><tr><th>Real\Pred</th><th>RECEPCION</th><th>ALMACENAMIENTO</th><th>EMPAQUE</th><th>DESPACHO</th></tr><tr><th>RECEPCION</th><td>18</td><td>0</td><td>0</td><td>0</td></tr><tr><th>ALMACENAMIENTO</th><td>0</td><td>24</td><td>0</td><td>0</td></tr><tr><th>EMPAQUE</th><td>0</td><td>0</td><td>24</td><td>0</td></tr><tr><th>DESPACHO</th><td>0</td><td>0</td><td>0</td><td>24</td></tr></table>
+    <h2>Imágenes de evaluación, inspección visual</h2><img src="mosaico_control_calidad.png">
+    <h2>Curvas de entrenamiento</h2><p>Disponibles en <code>historial.csv</code>. Valores:</p>
+    <pre>{
+  "train_accuracy": [
+    0.380952388048172,
+    0.6071428656578064,
+    0.6928571462631226,
+    0.8238095045089722,
+    0.8714285492897034,
+    0.9119047522544861,
+    0.9142857193946838,
+    0.961904764175415
+  ],
+  "val_accuracy": [
+    0.800000011920929,
+    0.3444444537162781,
+    0.6000000238418579,
+    0.9333333373069763,
+    0.9333333373069763,
+    0.9555555582046509,
+    0.9444444179534912,
+    1.0
+  ],
+  "train_loss": [
+    1.369909405708313,
+    1.1420750617980957,
+    0.7797133922576904,
+    0.5544396638870239,
+    0.3945310413837433,
+    0.29104459285736084,
+    0.25402992963790894,
+    0.182826429605484
+  ],
+  "val_loss": [
+    1.2981640100479126,
+    0.9880561232566833,
+    0.7603103518486023,
+    0.34879374504089355,
+    0.2649359703063965,
+    0.21579813957214355,
+    0.20966829359531403,
+    0.12021694332361221
+  ]
+}</pre>
+    <p>Nota: evaluaciones sobre dataset sintético. La exactitud es preliminar;
+    R24/R25 corresponden a la entrega final.</p></html>

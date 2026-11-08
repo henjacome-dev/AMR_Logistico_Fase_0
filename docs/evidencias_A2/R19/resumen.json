@@ -1,0 +1,149 @@
+{
+  "etapa": "R19_BANCO_INTEGRAL",
+  "estado": "APROBADA_PREVALIDACION_EXPERIMENTAL",
+  "repo_commit_base": "82ba1d98a4201b01e7eaaa42146c163808dcffec",
+  "solo_gazebo": true,
+  "r19_oficial_acreditado": false,
+  "umbrales_provisionales": {
+    "stop_m": 0.35,
+    "fuzzy_in_m": 0.6,
+    "route_out_m": 0.8
+  },
+  "limites_pasarela": {
+    "ruta_v_mps": 0.04,
+    "difuso_v_mps": 0.025,
+    "omega_rps": 0.2,
+    "frontal_guard_scan_m": 0.43,
+    "desplazamiento_max_m": 0.18
+  },
+  "etapas": [
+    {
+      "etapa": "RUTA con desplazamiento controlado",
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "scan_m": 2.530102014541626,
+      "frontal_m": 2.0,
+      "pose_xy": [
+        -2.993439938420092,
+        -2.7999996961945857
+      ],
+      "comandos_movimiento_nuevos": 3,
+      "modo_salida": "RUTA",
+      "tiempo_s": 0.326
+    },
+    {
+      "etapa": "Conmutacion en movimiento: RUTA a DIFUSO",
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "scan_m": 0.49892547726631165,
+      "frontal_m": 0.5050439238548279,
+      "pose_xy": [
+        -2.979796522495755,
+        -2.7999945169767853
+      ],
+      "comandos_movimiento_nuevos": 4,
+      "modo_salida": "DIFUSO",
+      "tiempo_s": 0.418
+    },
+    {
+      "etapa": "Parada estricta por LiDAR",
+      "estado": "DETENIDO|PARADA_SCAN_ESTRICTA",
+      "scan_m": 0.2884390354156494,
+      "frontal_m": 0.29514411091804504,
+      "pose_xy": [
+        -2.969759234520516,
+        -2.799498428670115
+      ],
+      "comandos_movimiento_nuevos": 2,
+      "modo_salida": "CERO",
+      "tiempo_s": 0.239
+    },
+    {
+      "etapa": "Recuperacion DIFUSO con movimiento",
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "scan_m": 0.4984487295150757,
+      "frontal_m": 0.4984833002090454,
+      "pose_xy": [
+        -2.9681348247188217,
+        -2.799339578998936
+      ],
+      "comandos_movimiento_nuevos": 2,
+      "modo_salida": "DIFUSO",
+      "tiempo_s": 0.492
+    },
+    {
+      "etapa": "Retorno a RUTA con movimiento",
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "scan_m": 2.0958645343780518,
+      "frontal_m": 2.0,
+      "pose_xy": [
+        -2.9581646793169862,
+        -2.797917217651577
+      ],
+      "comandos_movimiento_nuevos": 4,
+      "modo_salida": "RUTA",
+      "tiempo_s": 0.389
+    },
+    {
+      "etapa": "Fail-safe por perdida de propuesta RUTA",
+      "estado": "DETENIDO|PROPUESTA_RUTA_AUSENTE_O_CADUCADA",
+      "scan_m": 2.085203170776367,
+      "frontal_m": 2.0,
+      "pose_xy": [
+        -2.9526245088804544,
+        -2.7969830355438146
+      ],
+      "comandos_movimiento_nuevos": 0,
+      "modo_salida": "CERO",
+      "tiempo_s": 0.449
+    },
+    {
+      "etapa": "Recuperacion de propuesta sin movimiento",
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "scan_m": 2.0976898670196533,
+      "frontal_m": 2.0,
+      "pose_xy": [
+        -2.95263661601449,
+        -2.7969850364224778
+      ],
+      "comandos_movimiento_nuevos": 0,
+      "modo_salida": "CERO",
+      "tiempo_s": 0.005
+    }
+  ],
+  "mensajes_por_topico": {
+    "scan": 40,
+    "odom": 236,
+    "df": 43,
+    "di": 43,
+    "dd": 43,
+    "fuzzy": 42,
+    "fuzzy_state": 42,
+    "candidate": 92,
+    "candidate_state": 91,
+    "cmd_vel": 91
+  },
+  "comandos_enviados": {
+    "RUTA": 8,
+    "DIFUSO": 9,
+    "CERO": 74
+  },
+  "comandos_recibidos": {
+    "RUTA": 8,
+    "DIFUSO": 9,
+    "CERO": 74
+  },
+  "movimientos_transmitidos": 16,
+  "movimientos_recibidos": 16,
+  "cola_pendiente_cmd_vel": 0,
+  "desplazamiento_neto_m": 0.04731027967427312,
+  "recorrido_aproximado_m": 0.0480836402776396,
+  "pose_inicial": [
+    -2.9999339465599233,
+    -2.7999994948955154
+  ],
+  "pose_final": [
+    -2.952718926698398,
+    -2.7969987512653947
+  ],
+  "fallos": [],
+  "nota": "Prueba en Gazebo con un unico /cmd_vel; los valores 0.60/0.80 no estan confirmados por la rubrica oficial."
+}

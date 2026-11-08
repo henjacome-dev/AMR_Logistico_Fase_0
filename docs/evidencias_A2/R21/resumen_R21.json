@@ -1,0 +1,130 @@
+{
+  "estado": "COMPARACION_NUMERICA_EJECUTADA_PENDIENTE_VALIDACION_GAZEBO",
+  "modelo_original": "AMR_Mamdani_A2_v01.fis",
+  "blob_original": "6c7dfdd083728d49c64dd1c90a59b19d63222063",
+  "modelo_experimental": "AMR_Mamdani_A2_v02_experimental.fis",
+  "sha256_v02": "7cce98e12f7f4bd4d050f2e21a2a47816b4d8dcd703c614394b4623c5e5e0293",
+  "escenarios": 4,
+  "repeticiones_por_escenario": 5,
+  "parejas": 20,
+  "instantes_por_pareja": 36,
+  "inferencias_total": 1440,
+  "semilla": 20261108,
+  "desviacion_ruido_m": 0.01,
+  "umbrales_experimentales": {
+    "parada_m": 0.35,
+    "entrada_difuso_m": 0.6,
+    "salida_ruta_m": 0.8
+  },
+  "suavidad_numerica_mejorada_en_ambas_metricas": true,
+  "metricas": {
+    "A": {
+      "muestras": 720,
+      "v_media_m_s": 0.06070217375000001,
+      "omega_abs_medio_rad_s": 0.466868411527775,
+      "variacion_omega_rad_s": 47.662073,
+      "salto_omega_max_rad_s": 0.7,
+      "v_media_cerca_m_s": 0.03806320775193796,
+      "n_lecturas_cerca": 258,
+      "n_paradas_frontal": 20,
+      "violaciones_parada": 0,
+      "violaciones_limites": 0,
+      "retroceso": 0
+    },
+    "B": {
+      "muestras": 720,
+      "v_media_m_s": 0.05295089958333328,
+      "omega_abs_medio_rad_s": 0.4229577738888872,
+      "variacion_omega_rad_s": 46.7991386,
+      "salto_omega_max_rad_s": 0.7,
+      "v_media_cerca_m_s": 0.031945462403100755,
+      "n_lecturas_cerca": 258,
+      "n_paradas_frontal": 20,
+      "violaciones_parada": 0,
+      "violaciones_limites": 0,
+      "retroceso": 0
+    }
+  },
+  "comparacion_por_escenario": [
+    {
+      "escenario": "APROXIMACION_FRONTAL",
+      "parejas": 5,
+      "omega_abs_media_A": 0.20116703,
+      "omega_abs_media_B": 0.167228185,
+      "cambio_omega_pct": -16.870977813809745,
+      "variacion_omega_A": 3.5247669999999998,
+      "variacion_omega_B": 3.3509820399999994,
+      "cambio_variacion_pct": -4.930395682891957,
+      "v_media_A": 0.07898171444444448,
+      "v_media_B": 0.07431829333333335
+    },
+    {
+      "escenario": "OBSTACULO_IZQUIERDO",
+      "parejas": 5,
+      "omega_abs_media_A": 0.6701173461111107,
+      "omega_abs_media_B": 0.6268640805555552,
+      "cambio_omega_pct": -6.454580799402826,
+      "variacion_omega_A": 0.9515591999999998,
+      "variacion_omega_B": 1.1438496399999998,
+      "cambio_variacion_pct": 20.207932412402716,
+      "v_media_A": 0.04946342388888889,
+      "v_media_B": 0.041368827222222224
+    },
+    {
+      "escenario": "OBSTACULO_DERECHO",
+      "parejas": 5,
+      "omega_abs_media_A": 0.6721987588888886,
+      "omega_abs_media_B": 0.6282630594444442,
+      "cambio_omega_pct": -6.536117311056623,
+      "variacion_omega_A": 0.6261271599999999,
+      "variacion_omega_B": 0.79859812,
+      "cambio_variacion_pct": 27.5456761850101,
+      "v_media_A": 0.04950546222222222,
+      "v_media_B": 0.041470128888888895
+    },
+    {
+      "escenario": "PASILLO_CAMBIANTE",
+      "parejas": 5,
+      "omega_abs_media_A": 0.32399051111111105,
+      "omega_abs_media_B": 0.26947577055555555,
+      "cambio_omega_pct": -16.826029987297968,
+      "variacion_omega_A": 4.429961239999999,
+      "variacion_omega_B": 4.06639792,
+      "cambio_variacion_pct": -8.20691875850361,
+      "v_media_A": 0.06485809444444444,
+      "v_media_B": 0.054646348888888883
+    }
+  ],
+  "cambios_fis": [
+    {
+      "antes": "Name='AMR_Mamdani_A2_v01'",
+      "despues": "Name='AMR_Mamdani_A2_v02'"
+    },
+    {
+      "antes": "MF2='Lenta':'trimf',[0.02 0.07 0.12]",
+      "despues": "MF2='Lenta':'trimf',[0.02 0.055 0.1]"
+    },
+    {
+      "antes": "MF3='Rapida':'trapmf',[0.1 0.15 0.2 0.2]",
+      "despues": "MF3='Rapida':'trapmf',[0.11 0.17 0.2 0.2]"
+    },
+    {
+      "antes": "MF1='DerechaFuerte':'trapmf',[-1.5 -1.5 -1.05 -0.65]",
+      "despues": "MF1='DerechaFuerte':'trapmf',[-1.25 -1.25 -0.9 -0.6]"
+    },
+    {
+      "antes": "MF2='DerechaSuave':'trimf',[-0.9 -0.5 -0.15]",
+      "despues": "MF2='DerechaSuave':'trimf',[-0.75 -0.38 -0.14]"
+    },
+    {
+      "antes": "MF4='IzquierdaSuave':'trimf',[0.15 0.5 0.9]",
+      "despues": "MF4='IzquierdaSuave':'trimf',[0.14 0.38 0.75]"
+    },
+    {
+      "antes": "MF5='IzquierdaFuerte':'trapmf',[0.65 1.05 1.5 1.5]",
+      "despues": "MF5='IzquierdaFuerte':'trapmf',[0.6 0.9 1.25 1.25]"
+    }
+  ],
+  "alcance": "Sin ROS/Gazebo; no se infiere mejoria en navegación ni acreditacion R19/R20",
+  "integridad_git": "No se realizan escrituras en archivos versionados"
+}
