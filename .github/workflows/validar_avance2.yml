@@ -35,3 +35,5 @@ jobs:
         run: python tools/A2_E23_validar_evidencias.py
       - name: Validar evidencias Gazebo E2.3.4-E2.3.5 (modo sombra)
         run: python tools/A2_E2345_validar_evidencias_gazebo.py
+      - name: Validar E2.3.6A canal /cmd_vel exclusivamente cero (evidencias Ubuntu)
+        run: python tools/A2_E236A_validar_evidencia_canal_cero.py

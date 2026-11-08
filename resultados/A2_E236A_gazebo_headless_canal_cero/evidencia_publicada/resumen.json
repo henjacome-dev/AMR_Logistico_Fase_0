@@ -1,0 +1,86 @@
+{
+  "etapa": "E2.3.6A",
+  "estado": "APROBADO_CANAL_CERO",
+  "domain_id": "224",
+  "umbral_ruta_difuso_m": [
+    0.6,
+    0.8
+  ],
+  "umbrales_provisionales": true,
+  "comandos_ruta_todos_cero": true,
+  "publicacion_cmd_vel": true,
+  "cmd_vel_siempre_cero": true,
+  "cmd_vel_publicadores_esperados": 1,
+  "desplazamiento_odom_m": 0.00042501700972476735,
+  "topic_counts": {
+    "scan": 51,
+    "odom": 301,
+    "df": 51,
+    "di": 51,
+    "dd": 51,
+    "fuzzy": 52,
+    "fuzzy_state": 52,
+    "candidate": 110,
+    "candidate_state": 110,
+    "cmd_vel": 110
+  },
+  "route_zero_count": 110,
+  "cmd_vel_zero_sent": 110,
+  "cmd_vel_zero_period_s": 0.1,
+  "cmd_vel_frecuencia_hz_medida": 9.386899987332814,
+  "cmd_vel_observados_todos_cero": true,
+  "transiciones": [
+    {
+      "etapa": "Pasillo libre, ruta cero",
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "scan_m": 2.565534830093384,
+      "range_m": 2.0,
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "etapa": "Obstaculo medio: difuso",
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "scan_m": 0.5106204152107239,
+      "range_m": 0.517695963382721,
+      "v": 0.04964729548311749,
+      "omega": 0.7
+    },
+    {
+      "etapa": "Obstaculo cercano: parada",
+      "estado": "DETENIDO|PARADA_SCAN_ESTRICTA",
+      "scan_m": 0.2960723042488098,
+      "range_m": 0.29605239629745483,
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "etapa": "Obstaculo medio: recupera difuso",
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "scan_m": 0.5102407336235046,
+      "range_m": 0.5042685270309448,
+      "v": 0.047376784141157646,
+      "omega": 0.7
+    },
+    {
+      "etapa": "Pasillo despejado: retorna ruta",
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "scan_m": 2.557098627090454,
+      "range_m": 2.0,
+      "v": 0.0,
+      "omega": 0.0
+    }
+  ],
+  "estados_vistos": [
+    "DETENIDO|PROPUESTA_RUTA_AUSENTE_O_CADUCADA",
+    "RUTA|PROPUESTA_RUTA_VALIDA",
+    "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+    "DETENIDO|PARADA_SCAN_ESTRICTA",
+    "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+    "RUTA|PROPUESTA_RUTA_VALIDA",
+    "DETENIDO|PROPUESTA_RUTA_AUSENTE_O_CADUCADA",
+    "DETENIDO|CADUCADO_df",
+    "RUTA|PROPUESTA_RUTA_VALIDA"
+  ],
+  "nota": "Gazebo con cajas temporales y propuesta RUTA cero; canal real solo a cero, sin autorizacion de movimiento ni cierre R19."
+}

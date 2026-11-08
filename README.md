@@ -253,3 +253,22 @@ activo en `/cmd_vel` durante el ensayo**. Véase
 
 **Alcance:** pruebas en sombra, sin desplazamiento autónomo. Los umbrales
 0,60/0,80 m son propuestas de ingeniería; **R19 operativo NO está cerrado**.
+
+
+### Avance 2 — E2.3.6A: canal operativo /cmd_vel limitado a cero
+
+En Gazebo Classic headless (ROS_DOMAIN_ID=224) se verificaron insercion
+`waffle_pi`, diez topicos, cinco transiciones RUTA–DIFUSO–DETENIDO–DIFUSO–RUTA
+y **un solo publicador** en `/cmd_vel`. El publicador autorizado emitio
+exclusivamente `Twist()` de cero: 110 enviados, 110 recibidos, 9,39 Hz;
+ninguna orden no nula. El desplazamiento por odometria fue inferior a 5 cm.
+
+El supervisor candidato continuo enviando sus propuestas no nulas unicamente
+a `/cmd_vel_integrado_prueba`. No se reenvio al robot ninguna propuesta no nula.
+Evidencias: `resultados/A2_E236A_gazebo_headless_canal_cero/evidencia_publicada/`, validador
+`python3 tools/A2_E236A_validar_evidencia_canal_cero.py` y `docs/A2_E236A_canal_cero_gazebo.md`.
+
+**No es navegacion autonoma ni cierra R19:** falta cotejar los umbrales
+experimentales 0,60/0,80 m con el enunciado, integrar el supervisor operativo
+y demostrar detenciones bajo movimiento. GitHub Actions verifica registros
+capturados en Ubuntu, no ejecuta Gazebo.

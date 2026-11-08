@@ -1,0 +1,29 @@
+[OK] Sonda en dominio 224 aislado
+=== E2.3.6A - GAZEBO: RUTA -> DIFUSO -> DETENIDO -> RUTA (SOMBRA) ===
+[SEGURIDAD] /cmd_vel tiene un solo publicador, restringido a Twist() cero.
+[SEGURIDAD] Las propuestas del candidato NO se reenvian al robot.
+[INFO] Observando Gazebo/sensores: scan=0, odom=0, df=0, di=0, dd=0, fuzzy=0, fuzzy_state=0, candidate=1, candidate_state=0, cmd_vel=0
+[OK] 10 topicos activos con Gazebo, incluido /cmd_vel
+[OK] Odometria presente
+[OK] Entorno inicial libre por LiDAR (>=0.85 m)
+[OK] Pasillo libre, ruta cero: RUTA|PROPUESTA_RUTA_VALIDA; v=0.0000, w=+0.0000; scan=2.565534830093384; Range=2.0
+[OK] Servicio Gazebo: spawn a2_e236a_caja_media
+[OK] Obstaculo medio: difuso: DIFUSO|PROPUESTA_DIFUSO_VALIDA; v=0.0496, w=+0.7000; scan=0.5106204152107239; Range=0.517695963382721
+[OK] Servicio Gazebo: spawn a2_e236a_caja_cerca
+[OK] Obstaculo cercano: parada: DETENIDO|PARADA_SCAN_ESTRICTA; v=0.0000, w=+0.0000; scan=0.2960723042488098; Range=0.29605239629745483
+[OK] Servicio Gazebo: delete a2_e236a_caja_cerca
+[OK] Obstaculo medio: recupera difuso: DIFUSO|PROPUESTA_DIFUSO_VALIDA; v=0.0474, w=+0.7000; scan=0.5102407336235046; Range=0.5042685270309448
+[OK] Servicio Gazebo: delete a2_e236a_caja_media
+[OK] Pasillo despejado: retorna ruta: RUTA|PROPUESTA_RUTA_VALIDA; v=0.0000, w=+0.0000; scan=2.557098627090454; Range=2.0
+[OK] Exactamente un publicador autorizado de /cmd_vel
+[INFO] Cinco transiciones correctas; completando observacion de /cmd_vel a 10 Hz...
+[MEDICION] /cmd_vel enviados=110; recibidos=110; frecuencia=9.39 Hz; lapso=11.61 s; no_cero=False
+[OK] Mas de 100 mensajes /cmd_vel recibidos, todos cero y sin duplicacion
+[OK] Frecuencia de emision /cmd_vel medida dentro de 8-12 Hz (nominal 10 Hz)
+[OK] Temporizador 10 Hz: ruta y /cmd_vel recibieron los mismos envios cero
+[OK] Robot sin desplazamiento apreciable (menos de 5 cm en odom)
+[OK] Propuesta final es cero
+[OK] Ruta cero publicada de forma continua
+=== E2.3.6A: UNICO /cmd_vel CERO Y ARBITRAJE SOMBRA APROBADOS; R19 PENDIENTE ===
+[EVIDENCIA] /home/enry/AMR_Logistico_Fase_0/resultados/A2_E236A_gazebo_headless_canal_cero/20261107_214700/resumen.json
+[EVIDENCIA] /home/enry/AMR_Logistico_Fase_0/resultados/A2_E236A_gazebo_headless_canal_cero/20261107_214700/observaciones.csv

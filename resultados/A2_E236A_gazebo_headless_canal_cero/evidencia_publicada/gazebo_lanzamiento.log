@@ -1,0 +1,53 @@
+[INFO] [launch]: All log files can be found below /home/enry/.ros/log/2026-11-07-21-47-05-157508-DESKTOP-10LRG3J-7738
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [7757]
+[INFO] [spawn_entity.py-2]: process started with pid [7759]
+[INFO] [python3-3]: process started with pid [7761]
+[INFO] [python-4]: process started with pid [7763]
+[INFO] [python-5]: process started with pid [7765]
+[robot_state_publisher-1] [INFO] [1794106025.404826359] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-1] [INFO] [1794106025.404918398] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1794106025.404923716] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-1] [INFO] [1794106025.404926477] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-1] [INFO] [1794106025.404928624] [robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-1] [INFO] [1794106025.404930670] [robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-1] [INFO] [1794106025.404932817] [robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-1] [INFO] [1794106025.404934760] [robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-1] [INFO] [1794106025.404936601] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-1] [INFO] [1794106025.404938544] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-1] [INFO] [1794106025.404940487] [robot_state_publisher]: got segment wheel_right_link
+[python-5] [OK] Contrato previo E2.3.1: histéresis y saturaciones verificadas.
+[python3-3] [INFO] [1794106025.737663251] [emulador_sensores]: B3 activo: /scan -> /rango_frontal, /rango_izq, /rango_der (sectores 15 deg; centros 0/+45/-45; max 2 m; sigma 0.01 m)
+[python-5] [INFO] [1794106025.814690345] [supervisor_integrado_e233_prueba]: Supervisor de prueba: publica SOLO /cmd_vel_integrado_prueba
+[spawn_entity.py-2] [INFO] [1794106025.822013475] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-2] [INFO] [1794106025.822216677] [spawn_entity]: Loading entity XML from file /home/enry/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models/turtlebot3_waffle_pi/model.sdf
+[spawn_entity.py-2] [INFO] [1794106025.830456925] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-2] [INFO] [1794106025.830648672] [spawn_entity]: Waiting for service /spawn_entity
+[spawn_entity.py-2] [INFO] [1794106025.847222331] [spawn_entity]: Calling service /spawn_entity
+[python-5] [INFO] [1794106025.881526886] [supervisor_integrado_e233_prueba]: DETENIDO|SCAN_AUSENTE_O_CADUCADO: v=0.000 w=0.000
+[spawn_entity.py-2] [INFO] [1794106026.120473613] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [waffle_pi]
+[python-5] [INFO] [1794106026.181551277] [supervisor_integrado_e233_prueba]: DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA: v=0.000 w=0.000
+[INFO] [spawn_entity.py-2]: process has finished cleanly [pid 7759]
+[python-4] [OK] FIS: 3 entradas, 2 salidas, 27 reglas AND=min; operadores Mamdani verificados.
+[python-5] [INFO] [1794106026.681463926] [supervisor_integrado_e233_prueba]: DETENIDO|PROPUESTA_RUTA_AUSENTE_O_CADUCADA: v=0.000 w=0.000
+[python-4] [INFO] [1794106027.065333964] [controlador_difuso_a2]: E2.2 activo (5 Hz). SOLO propuestas en /cmd_vel_difuso; sin salida /cmd_vel. No existe arbitraje con supervisor.
+[python-4] [INFO] [1794106027.118554671] [controlador_difuso_a2]: Estado difuso: SIN_DATO_df
+[python-5] [INFO] [1794106027.181658726] [supervisor_integrado_e233_prueba]: RUTA|PROPUESTA_RUTA_VALIDA: v=0.000 w=0.000
+[python-4] [INFO] [1794106027.234781565] [controlador_difuso_a2]: Estado difuso: ACTIVO
+[python-5] [INFO] [1794106027.481517037] [supervisor_integrado_e233_prueba]: DIFUSO|PROPUESTA_DIFUSO_VALIDA: v=0.050 w=0.700
+[python-5] [INFO] [1794106027.681673334] [supervisor_integrado_e233_prueba]: DETENIDO|PARADA_SCAN_ESTRICTA: v=0.000 w=0.000
+[python-5] [INFO] [1794106028.081951360] [supervisor_integrado_e233_prueba]: DIFUSO|PROPUESTA_DIFUSO_VALIDA: v=0.047 w=0.700
+[python-5] [INFO] [1794106028.481496961] [supervisor_integrado_e233_prueba]: RUTA|PROPUESTA_RUTA_VALIDA: v=0.000 w=0.000
+[python3-3] [INFO] [1794106036.401343064] [emulador_sensores]: Rangos: frente=2.000, izq=1.439, der=1.323 m
+[python-5] [INFO] [1794106037.082365493] [supervisor_integrado_e233_prueba]: DETENIDO|PROPUESTA_RUTA_AUSENTE_O_CADUCADA: v=0.000 w=0.000
+[python-5] [INFO] [1794106037.182783961] [supervisor_integrado_e233_prueba]: DETENIDO|CADUCADO_df: v=0.000 w=0.000
+[python-5] [INFO] [1794106037.782682252] [supervisor_integrado_e233_prueba]: RUTA|PROPUESTA_RUTA_VALIDA: v=0.000 w=0.000
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-1] [INFO] [1794106038.233901599] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[python-4] [ERROR E2.2] Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[python-5] [ERROR E2.3.3] Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[python-5] [INFO] No se tocó supervisor_f13.py ni se publicó en /cmd_vel.
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 7757]
+[INFO] [python3-3]: process has finished cleanly [pid 7761]
+[ERROR] [python-5]: process has died [pid 7765, exit code 1, cmd '/home/enry/.venvs/amr-a2-r18/bin/python -u /home/enry/AMR_Logistico_Fase_0/tools/A2_E233_supervisor_integrado_aislado.py --nodo-aislado'].
+[ERROR] [python-4]: process has died [pid 7763, exit code 1, cmd '/home/enry/.venvs/amr-a2-r18/bin/python -u /home/enry/AMR_Logistico_Fase_0/tools/A2_E22_nodo_difuso.py --ros --ros-args -p use_sim_time:=true'].
