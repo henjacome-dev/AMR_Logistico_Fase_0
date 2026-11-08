@@ -1,0 +1,8 @@
+[OK] FIS: 3 entradas, 2 salidas, 27 reglas AND=min; operadores Mamdani verificados.
+[INFO] [1794097530.254702496] [controlador_difuso_a2]: E2.2 activo (5 Hz). SOLO propuestas en /cmd_vel_difuso; sin salida /cmd_vel. No existe arbitraje con supervisor.
+[INFO] [1794097530.433788639] [controlador_difuso_a2]: Estado difuso: SIN_DATO_df
+[INFO] [1794097531.264806572] [controlador_difuso_a2]: Estado difuso: ACTIVO
+[INFO] [1794097533.637747553] [controlador_difuso_a2]: Estado difuso: CADUCADO_df
+[INFO] [1794097534.265005799] [controlador_difuso_a2]: Estado difuso: ACTIVO
+[INFO] [1794097535.437783253] [controlador_difuso_a2]: Estado difuso: INVALIDO_df
+[ERROR E2.2] Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389

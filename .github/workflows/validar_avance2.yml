@@ -25,3 +25,7 @@ jobs:
         run: python -m pip install -r tools/requirements_a2_r18.txt
       - name: Concordancia MATLAB-Python R18
         run: python tools/A2_E21_equivalencia_MATLAB_Python.py --worker
+      - name: Autoprueba motor E2.2 (sin ROS ni Gazebo)
+        run: python tools/A2_E22_nodo_difuso.py --self-test
+      - name: Validar evidencia ROS E2.2 (ensayo realizado en Ubuntu)
+        run: python tools/A2_E22_validar_evidencia.py

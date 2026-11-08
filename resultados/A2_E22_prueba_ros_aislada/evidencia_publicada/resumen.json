@@ -1,0 +1,20 @@
+{
+  "aprobado": true,
+  "fecha": "2026-11-07T19:25:38",
+  "duracion_s": 7.199,
+  "ros_domain_id": "150",
+  "fis_git_blob": "6c7dfdd083728d49c64dd1c90a59b19d63222063",
+  "checks": {
+    "interfaces_ros": "OK",
+    "sin_publicador_cmd_vel": "OK",
+    "sin_sensores": "OK",
+    "tres_sensores_activo": "OK",
+    "caducidad": "OK",
+    "recuperacion": "OK",
+    "nan_frontal": "OK",
+    "aislamiento_confirmado": "OK"
+  },
+  "muestras_estado": 31,
+  "muestras_cmd_vel_difuso": 31,
+  "nota": "Prueba aislada: no equivale a integracion con el supervisor ni a navegacion segura."
+}

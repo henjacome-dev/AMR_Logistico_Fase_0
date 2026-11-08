@@ -211,3 +211,16 @@ El commit `6b46367` reparó los nueve PNG originales; `3f0acc7` incorporó la au
 ## 11. Equivalencia MATLAB–Python: R18
 
 La etapa E2.1/R18 aprobó 10/10 casos con `scikit-fuzzy` 0.5.0; errores relativos máximos: `v=0.502821%` y `omega=0.145568%` (umbral <2%). El código y las evidencias reproducibles se documentan en `docs/A2_R18_concordancia_MATLAB_Python.md`. La integración ROS 2 y el supervisor de parada estricta continúan pendientes.
+
+## 11. Avance 2 — E2.2: nodo ROS 2 de propuestas difusas (2026-11-07)
+
+El nodo `tools/A2_E22_nodo_difuso.py` reutiliza el motor Mamdani de R18,
+consume los tres tópicos `Range` y publica propuestas únicamente en
+`/cmd_vel_difuso` y estados en `/estado_difuso`. Se verificó en Ubuntu/ROS 2
+Humble, mediante un dominio aislado sin Gazebo, el funcionamiento con
+entradas válidas, ausencia de datos, caducidad, recuperación y rechazo de
+`NaN`. No existen emisiones en `/cmd_vel` desde este nodo.
+
+**Alcance:** E2.2 corresponde a validación de nodo aislado. La integración
+con el supervisor, el arbitraje y las pruebas en Gazebo corresponden a E2.3
+y E2.4. Ver `docs/A2_E22_validacion_nodo_difuso.md`.
