@@ -1,0 +1,75 @@
+{
+  "etapa": "E2.3.5",
+  "estado": "APROBADA_SOMBRA",
+  "domain_id": "224",
+  "umbral_ruta_difuso_m": [
+    0.6,
+    0.8
+  ],
+  "umbrales_provisionales": true,
+  "comandos_ruta_todos_cero": true,
+  "publicacion_cmd_vel": false,
+  "topic_counts": {
+    "scan": 7,
+    "odom": 41,
+    "df": 7,
+    "di": 7,
+    "dd": 7,
+    "fuzzy": 7,
+    "fuzzy_state": 7,
+    "candidate": 32,
+    "candidate_state": 32
+  },
+  "route_zero_count": 186,
+  "transiciones": [
+    {
+      "etapa": "Pasillo libre, ruta cero",
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "scan_m": 2.572779655456543,
+      "range_m": 2.0,
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "etapa": "Obstaculo medio: difuso",
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "scan_m": 0.5204827785491943,
+      "range_m": 0.532414972782135,
+      "v": 0.12,
+      "omega": 0.1697442281923871
+    },
+    {
+      "etapa": "Obstaculo cercano: parada",
+      "estado": "DETENIDO|PARADA_SCAN_ESTRICTA",
+      "scan_m": 0.2989277243614197,
+      "range_m": 0.30692532658576965,
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "etapa": "Obstaculo medio: recupera difuso",
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "scan_m": 0.5173516273498535,
+      "range_m": 0.5063161849975586,
+      "v": 0.013435778222923194,
+      "omega": 0.7
+    },
+    {
+      "etapa": "Pasillo despejado: retorna ruta",
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "scan_m": 2.5440361499786377,
+      "range_m": 2.0,
+      "v": 0.0,
+      "omega": 0.0
+    }
+  ],
+  "estados_vistos": [
+    "DETENIDO|SCAN_AUSENTE_O_CADUCADO",
+    "RUTA|PROPUESTA_RUTA_VALIDA",
+    "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+    "DETENIDO|PARADA_SCAN_ESTRICTA",
+    "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+    "RUTA|PROPUESTA_RUTA_VALIDA"
+  ],
+  "nota": "Gazebo con cajas temporales y propuesta RUTA cero; sin validacion de movimiento ni cierre R19."
+}

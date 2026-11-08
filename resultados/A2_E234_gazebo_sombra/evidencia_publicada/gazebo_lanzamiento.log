@@ -1,0 +1,100 @@
+[INFO] [launch]: All log files can be found below /home/enry/.ros/log/2026-11-07-20-47-24-750424-DESKTOP-10LRG3J-503
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [572]
+[INFO] [gzclient-2]: process started with pid [574]
+[INFO] [robot_state_publisher-3]: process started with pid [576]
+[INFO] [spawn_entity.py-4]: process started with pid [578]
+[INFO] [python3-5]: process started with pid [580]
+[INFO] [python-6]: process started with pid [582]
+[INFO] [python-7]: process started with pid [584]
+[python-7] [OK] Contrato previo E2.3.1: histéresis y saturaciones verificadas.
+[python-7] [INFO] [1794102445.733848595] [supervisor_integrado_e233_prueba]: Supervisor de prueba: publica SOLO /cmd_vel_integrado_prueba
+[python-7] [INFO] [1794102445.825659625] [supervisor_integrado_e233_prueba]: DETENIDO|SCAN_AUSENTE_O_CADUCADO: v=0.000 w=0.000
+[robot_state_publisher-3] [INFO] [1794102445.838640813] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1794102445.838727196] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1794102445.838733703] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-3] [INFO] [1794102445.838736005] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1794102445.838737907] [robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-3] [INFO] [1794102445.838740109] [robot_state_publisher]: got segment camera_rgb_optical_frame
+[robot_state_publisher-3] [INFO] [1794102445.838742111] [robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-3] [INFO] [1794102445.838744013] [robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-3] [INFO] [1794102445.838745814] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-3] [INFO] [1794102445.838747816] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-3] [INFO] [1794102445.838749718] [robot_state_publisher]: got segment wheel_right_link
+[python3-5] [INFO] [1794102446.442231308] [emulador_sensores]: B3 activo: /scan -> /rango_frontal, /rango_izq, /rango_der (sectores 15 deg; centros 0/+45/-45; max 2 m; sigma 0.01 m)
+[spawn_entity.py-4] [INFO] [1794102446.519612221] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-4] [INFO] [1794102446.519893208] [spawn_entity]: Loading entity XML from file /home/enry/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models/turtlebot3_waffle_pi/model.sdf
+[spawn_entity.py-4] [INFO] [1794102446.542703205] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-4] [INFO] [1794102446.542905684] [spawn_entity]: Waiting for service /spawn_entity
+[gzclient-2] Gazebo multi-robot simulator, version 11.10.2
+[gzclient-2] Copyright (C) 2012 Open Source Robotics Foundation.
+[gzclient-2] Released under the Apache 2 License.
+[gzclient-2] http://gazebosim.org
+[gzclient-2]
+[gzserver-1] Gazebo multi-robot simulator, version 11.10.2
+[gzserver-1] Copyright (C) 2012 Open Source Robotics Foundation.
+[gzserver-1] Released under the Apache 2 License.
+[gzserver-1] http://gazebosim.org
+[gzserver-1]
+[gzserver-1] [1;33m[Wrn] [gazebo_ros_init.cpp:178] [0m[1;33m
+[gzserver-1] #     # ####### ####### ###  #####  #######
+[gzserver-1] ##    # #     #    #     #  #     # #
+[gzserver-1] # #   # #     #    #     #  #       #
+[gzserver-1] #  #  # #     #    #     #  #       #####
+[gzserver-1] #   # # #     #    #     #  #       #
+[gzserver-1] #    ## #     #    #     #  #     # #
+[gzserver-1] #     # #######    #    ###  #####  #######
+[gzserver-1]
+[gzserver-1] This version of Gazebo, now called Gazebo classic, reaches end-of-life
+[gzserver-1] in January 2025. Users are highly encouraged to migrate to the new Gazebo
+[gzserver-1] using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration?utm_source=gazebo_ros_pkgs&utm_medium=cli)
+[gzserver-1]
+[gzserver-1] [0m[1;33m
+[python-6] [OK] FIS: 3 entradas, 2 salidas, 27 reglas AND=min; operadores Mamdani verificados.
+[python-6] [INFO] [1794102447.839052276] [controlador_difuso_a2]: E2.2 activo (5 Hz). SOLO propuestas en /cmd_vel_difuso; sin salida /cmd_vel. No existe arbitraje con supervisor.
+[spawn_entity.py-4] [INFO] [1794102448.814682682] [spawn_entity]: Calling service /spawn_entity
+[gzserver-1] [0m[1;33m[0m[1;33m[0m[INFO] [1794102448.977193042] [turtlebot3_imu]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[spawn_entity.py-4] [INFO] [1794102449.032146862] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [waffle_pi]
+[INFO] [spawn_entity.py-4]: process has finished cleanly [pid 578]
+[gzclient-2] [1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[gzclient-2] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[gzclient-2] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m172.31.201.154[0m[1;32m
+[gzclient-2] [1;31m[Err] [InsertModelWidget.cc:403] [0m[1;31mMissing [0m[1;31mmodel.config[0m[1;31m for model [0m[1;31m"/home/enry/turtlebot3_ws/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/../ament_index"[0m[1;31m
+[gzclient-2] [0m[1;31m[Err] [InsertModelWidget.cc:403] [0m[1;31mMissing [0m[1;31mmodel.config[0m[1;31m for model [0m[1;31m"/home/enry/turtlebot3_ws/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/../colcon-core"[0m[1;31m
+[gzclient-2] [0m[1;31m[Err] [InsertModelWidget.cc:403] [0m[1;31mMissing [0m[1;31mmodel.config[0m[1;31m for model [0m[1;31m"/home/enry/turtlebot3_ws/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/../turtlebot3_manipulation_gazebo"[0m[1;31m
+[gzclient-2] [0m[1;31m[Err] [InsertModelWidget.cc:403] [0m[1;31mMissing [0m[1;31mmodel.config[0m[1;31m for model [0m[1;31m"/home/enry/turtlebot3_ws/install/turtlebot3_manipulation_gazebo/share/turtlebot3_manipulation_gazebo/models/turtlebot3_home_service_challenge"[0m[1;31m
+[gzclient-2] [0m[1;31m[Err] [InsertModelWidget.cc:403] [0m[1;31mMissing [0m[1;31mmodel.config[0m[1;31m for model [0m[1;31m"/home/enry/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models/turtlebot3_autorace_2020"[0m[1;31m
+[gzserver-1] [1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m172.31.201.154[0m[1;32m
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/home/enry/AMR_Logistico_Fase_0/modelos/almacen_f1.world[0m[1;32m][0m[1;32m
+[gzserver-1] [1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[gzclient-2] [0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[gzserver-1] [0m[INFO] [1794102449.806474215] [camera_driver]: Publishing camera info to [/camera/camera_info]
+[gzserver-1] [INFO] [1794102449.848684979] [turtlebot3_diff_drive]: Wheel pair 1 separation set to [0.287000m]
+[gzserver-1] [INFO] [1794102449.848733792] [turtlebot3_diff_drive]: Wheel pair 1 diameter set to [0.066000m]
+[gzserver-1] [INFO] [1794102449.849485746] [turtlebot3_diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1794102449.852683606] [turtlebot3_diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1794102449.854397404] [turtlebot3_diff_drive]: Publishing odom transforms between [odom] and [base_footprint]
+[gzserver-1] [INFO] [1794102449.864006118] [turtlebot3_joint_state]: Going to publish joint [wheel_left_joint]
+[gzserver-1] [INFO] [1794102449.864049519] [turtlebot3_joint_state]: Going to publish joint [wheel_right_joint]
+[python-6] [INFO] [1794102449.905523264] [controlador_difuso_a2]: Estado difuso: SIN_DATO_df
+[python-6] [INFO] [1794102450.122364334] [controlador_difuso_a2]: Estado difuso: ACTIVO
+[python-7] [INFO] [1794102450.125530085] [supervisor_integrado_e233_prueba]: DETENIDO|PROPUESTA_RUTA_AUSENTE_O_CADUCADA: v=0.000 w=0.000
+[python3-5] [INFO] [1794102459.874807252] [emulador_sensores]: Rangos: frente=2.000, izq=1.456, der=1.330 m
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[gzclient-2] [0m[1;33m[Wrn] [Event.cc:61] [0m[1;33mWarning: Deleting a connection right after creation. [0m[1;33mMake sure to save the ConnectionPtr from a Connect call
+[python-7] [ERROR E2.3.3] Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[python-7] [INFO] No se tocó supervisor_f13.py ni se publicó en /cmd_vel.
+[python-6] [ERROR E2.2] Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[robot_state_publisher-3] [INFO] [1794102468.767337303] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 576]
+[INFO] [python3-5]: process has finished cleanly [pid 580]
+[ERROR] [python-7]: process has died [pid 584, exit code 1, cmd '/home/enry/.venvs/amr-a2-r18/bin/python -u /home/enry/AMR_Logistico_Fase_0/tools/A2_E233_supervisor_integrado_aislado.py --nodo-aislado'].
+[ERROR] [python-6]: process has died [pid 582, exit code 1, cmd '/home/enry/.venvs/amr-a2-r18/bin/python -u /home/enry/AMR_Logistico_Fase_0/tools/A2_E22_nodo_difuso.py --ros --ros-args -p use_sim_time:=true'].
+[INFO] [gzclient-2]: process has finished cleanly [pid 574]
+[gzclient-2] [0m[1;32m[0m[1;32m[0m[1;36m[0m[1;32m[0m
+[gzclient-2] [0m[1;33m[0m[1;31m[0m
+[INFO] [gzserver-1]: process has finished cleanly [pid 572]
+[gzserver-1] [0m[1;32m[0m[1;32m[0m[1;36m[0m[1;32m[0m
+[gzserver-1] [1;33m[0m[1;31m[0m

@@ -1,0 +1,148 @@
+seg,topico,valor
+0.98,candidate,v=0.00000 w=+0.00000
+0.98,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+1.079,candidate,v=0.00000 w=+0.00000
+1.08,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+1.18,candidate,v=0.00000 w=+0.00000
+1.181,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+1.28,candidate,v=0.00000 w=+0.00000
+1.28,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+1.38,candidate,v=0.00000 w=+0.00000
+1.381,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+1.48,candidate,v=0.00000 w=+0.00000
+1.48,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+1.579,candidate,v=0.00000 w=+0.00000
+1.58,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+1.68,candidate,v=0.00000 w=+0.00000
+1.68,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+1.78,candidate,v=0.00000 w=+0.00000
+1.78,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+1.879,candidate,v=0.00000 w=+0.00000
+1.88,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+1.98,candidate,v=0.00000 w=+0.00000
+1.98,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+2.08,candidate,v=0.00000 w=+0.00000
+2.08,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+2.18,candidate,v=0.00000 w=+0.00000
+2.18,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+2.28,candidate,v=0.00000 w=+0.00000
+2.28,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+2.38,candidate,v=0.00000 w=+0.00000
+2.38,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+2.48,candidate,v=0.00000 w=+0.00000
+2.48,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+2.579,candidate,v=0.00000 w=+0.00000
+2.58,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+2.597,odom,-3.0
+2.607,fuzzy,v=0.00000 w=+0.00000
+2.607,fuzzy_state,SIN_DATO_df
+2.631,odom,-3.0
+2.665,odom,-3.0
+2.68,candidate,v=0.00000 w=+0.00000
+2.68,candidate_state,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+2.699,odom,-3.0
+2.733,odom,-3.0
+2.763,scan,2.573
+2.764,df,2.0
+2.764,di,1.4891
+2.764,dd,1.3372
+2.767,odom,-3.0
+2.779,candidate,v=0.00000 w=+0.00000
+2.78,candidate_state,RUTA|PROPUESTA_RUTA_VALIDA
+2.801,odom,-3.0
+2.825,fuzzy,v=0.15698 w=+0.16974
+2.825,fuzzy_state,ACTIVO
+2.836,odom,-3.0
+2.87,odom,-3.0
+2.879,candidate,v=0.00000 w=+0.00000
+2.88,candidate_state,RUTA|PROPUESTA_RUTA_VALIDA
+2.904,odom,-3.0
+2.98,candidate,v=0.00000 w=+0.00000
+2.98,candidate_state,RUTA|PROPUESTA_RUTA_VALIDA
+3.028,odom,-3.0
+3.055,scan,0.52
+3.055,df,0.5324
+3.055,di,1.4794
+3.055,dd,1.3387
+3.062,odom,-3.0
+3.079,candidate,v=0.12000 w=+0.16974
+3.08,candidate_state,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+3.096,odom,-3.0
+3.118,fuzzy,v=0.05191 w=+0.79943
+3.118,fuzzy_state,ACTIVO
+3.141,odom,-3.0
+3.175,odom,-3.0
+3.18,candidate,v=0.05191 w=+0.70000
+3.18,candidate_state,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+3.209,odom,-3.0
+3.243,odom,-3.0
+3.265,scan,0.299
+3.266,df,0.3069
+3.266,di,1.4541
+3.266,dd,1.3482
+3.277,odom,-3.0
+3.279,candidate,v=0.00000 w=+0.00000
+3.28,candidate_state,DETENIDO|PARADA_SCAN_ESTRICTA
+3.311,odom,-3.0
+3.326,fuzzy,v=0.01341 w=+1.13352
+3.326,fuzzy_state,ACTIVO
+3.345,odom,-3.0
+3.379,odom,-3.0
+3.379,candidate,v=0.00000 w=+0.00000
+3.379,candidate_state,DETENIDO|PARADA_SCAN_ESTRICTA
+3.413,odom,-3.0
+3.447,odom,-3.0
+3.465,scan,0.297
+3.465,df,0.3044
+3.466,di,1.4729
+3.466,dd,1.3461
+3.48,candidate,v=0.00000 w=+0.00000
+3.48,candidate_state,DETENIDO|PARADA_SCAN_ESTRICTA
+3.48,odom,-3.0
+3.515,odom,-3.0
+3.529,fuzzy,v=0.01344 w=+1.13306
+3.529,fuzzy_state,ACTIVO
+3.549,odom,-3.0
+3.58,candidate,v=0.00000 w=+0.00000
+3.58,candidate_state,DETENIDO|PARADA_SCAN_ESTRICTA
+3.582,odom,-3.0
+3.617,odom,-3.0
+3.651,odom,-3.0
+3.665,scan,0.517
+3.666,df,0.5063
+3.666,di,1.4578
+3.666,dd,1.2991
+3.68,candidate,v=0.01344 w=+0.70000
+3.68,candidate_state,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+3.685,odom,-3.0
+3.719,odom,-3.0
+3.729,fuzzy,v=0.04774 w=+0.82933
+3.729,fuzzy_state,ACTIVO
+3.753,odom,-3.0
+3.78,candidate,v=0.04774 w=+0.70000
+3.78,candidate_state,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+3.787,odom,-3.0
+3.821,odom,-3.0
+3.855,odom,-3.0
+3.866,scan,0.522
+3.866,df,0.5296
+3.866,di,1.472
+3.867,dd,1.3382
+3.88,candidate,v=0.04774 w=+0.70000
+3.88,candidate_state,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+3.889,odom,-3.0
+3.923,odom,-3.0
+3.926,fuzzy,v=0.05150 w=+0.80560
+3.927,fuzzy_state,ACTIVO
+3.957,odom,-3.0
+3.98,candidate,v=0.05150 w=+0.70000
+3.98,candidate_state,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+3.991,odom,-3.0
+4.025,odom,-3.0
+4.059,odom,-3.0
+4.065,scan,2.544
+4.066,df,2.0
+4.066,di,1.4713
+4.066,dd,1.3221
+4.079,candidate,v=0.00000 w=+0.00000
+4.08,candidate_state,RUTA|PROPUESTA_RUTA_VALIDA

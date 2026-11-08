@@ -1,0 +1,13 @@
+[OK] Nueve tópicos con datos reales de Gazebo/nodos E2.2 y E2.3.3.
+[OK] scan: 90 mensajes
+[OK] odom: 535 mensajes
+[OK] df: 90 mensajes
+[OK] di: 90 mensajes
+[OK] dd: 90 mensajes
+[OK] fuzzy: 91 mensajes
+[OK] fuzzy_state: 91 mensajes
+[OK] candidate: 223 mensajes
+[OK] candidate_state: 223 mensajes
+[ESTADOS] Difuso=SIN_DATO_df, ACTIVO | Supervisor=DETENIDO|SCAN_AUSENTE_O_CADUCADO, DETENIDO|PROPUESTA_RUTA_AUSENTE_O_CADUCADA
+[EVIDENCIA] /home/enry/AMR_Logistico_Fase_0/resultados/A2_E234_gazebo_sombra/20261107_204724/resumen.json
+[EVIDENCIA] /home/enry/AMR_Logistico_Fase_0/resultados/A2_E234_gazebo_sombra/20261107_204724/observaciones.csv

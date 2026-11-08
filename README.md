@@ -238,3 +238,18 @@ controlador `AMR_Mamdani_A2_v01.fis` no fueron modificados.
 prueba dinámica con Gazebo; los umbrales de cambio 0,60 y 0,80 m son
 provisionales y requieren cotejo con el enunciado. Detalles y evidencias
 en `docs/A2_E23_preintegracion_aislada.md`.
+
+
+### Avance 2 — E2.3.4 y E2.3.5: Gazebo en modo sombra
+
+E2.3.4: comunicación entre Gazebo, LiDAR, odometría, emulador de tres sensores,
+control Mamdani y supervisor candidato: nueve tópicos registrados.
+E2.3.5: secuencia RUTA → DIFUSO → DETENIDO → DIFUSO → RUTA mediante
+obstáculos temporales en Gazebo; la propuesta de ruta fue siempre cero.
+El candidato solo publicó `/cmd_vel_integrado_prueba`: **ningún publicador
+activo en `/cmd_vel` durante el ensayo**. Véase
+`docs/A2_E2345_gazebo_sombra.md` y el validador
+`python3 tools/A2_E2345_validar_evidencias_gazebo.py`.
+
+**Alcance:** pruebas en sombra, sin desplazamiento autónomo. Los umbrales
+0,60/0,80 m son propuestas de ingeniería; **R19 operativo NO está cerrado**.

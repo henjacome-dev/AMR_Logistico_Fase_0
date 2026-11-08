@@ -1,0 +1,22 @@
+[OK] Sonda en dominio 224 aislado
+=== E2.3.5 - GAZEBO: RUTA -> DIFUSO -> DETENIDO -> RUTA (SOMBRA) ===
+[SEGURIDAD] Ruta propuesta siempre CERO; sin /cmd_vel y sin movimiento ordenado.
+[INFO] Observando Gazebo/sensores: scan=0, odom=0, df=0, di=0, dd=0, fuzzy=0, fuzzy_state=0, candidate=0, candidate_state=0
+[OK] 9 topicos activos con Gazebo
+[OK] Odometria presente
+[OK] Entorno inicial libre por LiDAR (>=0.85 m)
+[OK] Pasillo libre, ruta cero: RUTA|PROPUESTA_RUTA_VALIDA; v=0.0000, w=+0.0000; scan=2.572779655456543; Range=2.0
+[OK] Servicio Gazebo: spawn a2_e235_caja_media
+[OK] Obstaculo medio: difuso: DIFUSO|PROPUESTA_DIFUSO_VALIDA; v=0.1200, w=+0.1697; scan=0.5204827785491943; Range=0.532414972782135
+[OK] Servicio Gazebo: spawn a2_e235_caja_cerca
+[OK] Obstaculo cercano: parada: DETENIDO|PARADA_SCAN_ESTRICTA; v=0.0000, w=+0.0000; scan=0.2989277243614197; Range=0.30692532658576965
+[OK] Servicio Gazebo: delete a2_e235_caja_cerca
+[OK] Obstaculo medio: recupera difuso: DIFUSO|PROPUESTA_DIFUSO_VALIDA; v=0.0134, w=+0.7000; scan=0.5173516273498535; Range=0.5063161849975586
+[OK] Servicio Gazebo: delete a2_e235_caja_media
+[OK] Pasillo despejado: retorna ruta: RUTA|PROPUESTA_RUTA_VALIDA; v=0.0000, w=+0.0000; scan=2.5440361499786377; Range=2.0
+[OK] No hay publicador de /cmd_vel
+[OK] Propuesta final es cero
+[OK] Ruta cero publicada de forma continua
+=== E2.3.5: TRANSICIONES GAZEBO EN SOMBRA APROBADAS; R19 PENDIENTE ===
+[EVIDENCIA] /home/enry/AMR_Logistico_Fase_0/resultados/A2_E235_gazebo_transiciones_sombra/20261107_210809/resumen.json
+[EVIDENCIA] /home/enry/AMR_Logistico_Fase_0/resultados/A2_E235_gazebo_transiciones_sombra/20261107_210809/observaciones.csv

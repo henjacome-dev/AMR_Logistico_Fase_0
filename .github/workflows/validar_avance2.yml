@@ -33,3 +33,5 @@ jobs:
         run: python tools/A2_E23_arbitraje_sombra.py --self-test
       - name: Validar evidencias E2.3.1-E2.3.3 (ensayos Ubuntu aislados)
         run: python tools/A2_E23_validar_evidencias.py
+      - name: Validar evidencias Gazebo E2.3.4-E2.3.5 (modo sombra)
+        run: python tools/A2_E2345_validar_evidencias_gazebo.py

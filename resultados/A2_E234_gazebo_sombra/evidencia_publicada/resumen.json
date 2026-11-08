@@ -1,0 +1,34 @@
+{
+  "etapa": "E2.3.4",
+  "estado": "APROBADA_SOMBRA",
+  "domain_id": "223",
+  "solo_loopback": true,
+  "gazebo": true,
+  "publication_cmd_vel": false,
+  "topic_counts": {
+    "scan": 90,
+    "odom": 535,
+    "df": 90,
+    "di": 90,
+    "dd": 90,
+    "fuzzy": 91,
+    "fuzzy_state": 91,
+    "candidate": 223,
+    "candidate_state": 223
+  },
+  "initial_states": {
+    "fuzzy": [
+      "SIN_DATO_df",
+      "ACTIVO"
+    ],
+    "candidate": [
+      "DETENIDO|SCAN_AUSENTE_O_CADUCADO",
+      "DETENIDO|PROPUESTA_RUTA_AUSENTE_O_CADUCADA"
+    ]
+  },
+  "max_shadow_v": 0.0,
+  "min_shadow_v": 0.0,
+  "seconds_monitored": 23.384,
+  "errors": [],
+  "note": "Ni el lanzamiento ni el monitor publican en /cmd_vel. R19 operativo sigue pendiente. Umbrales .60/.80 provisionales."
+}
