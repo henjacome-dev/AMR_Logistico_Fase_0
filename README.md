@@ -206,4 +206,8 @@ El controlador `matlab/A2_MAMDANI/AMR_Mamdani_A2_v01.fis` emplea tres entradas d
 - **AC-05 — Identificación de entradas fijas:** cuatro superficies publicadas con las condiciones `dd=1.7 m`, `df=0.2 m`, `df=1.7 m` y `di=0.9 m`, respectivamente (`36ce917`).
 - **AC-04:** corrección documental publicada; **AC-03:** paquete definitivo de 25 archivos y manifiesto SHA-256 publicados y reconciliados con el árbol remoto (`36ce917`, `54abfd3`). GitHub Actions `validar-avance2` aprobó ese cierre (run `42426641603`).
 
-El commit `6b46367` reparó los nueve PNG originales; `3f0acc7` incorporó la auditoría numérica; `36ce917` publicó las correcciones AC-01/AC-05 y AC-04; `54abfd3` reconcilió el ZIP definitivo con GitHub. Las imágenes oficiales actualizadas están en `matlab/A2_MAMDANI/evidencias/`. La integración ROS 2, las pruebas de seguridad operativa y la comparación MATLAB/Python continúan pendientes.
+El commit `6b46367` reparó los nueve PNG originales; `3f0acc7` incorporó la auditoría numérica; `36ce917` publicó las correcciones AC-01/AC-05 y AC-04; `54abfd3` reconcilió el ZIP definitivo con GitHub. Las imágenes oficiales actualizadas están en `matlab/A2_MAMDANI/evidencias/`. La integración ROS 2 y las pruebas de seguridad operativa continúan pendientes. La comparación MATLAB/Python se aprobó posteriormente en R18.
+
+## 11. Equivalencia MATLAB–Python: R18
+
+La etapa E2.1/R18 aprobó 10/10 casos con `scikit-fuzzy` 0.5.0; errores relativos máximos: `v=0.502821%` y `omega=0.145568%` (umbral <2%). El código y las evidencias reproducibles se documentan en `docs/A2_R18_concordancia_MATLAB_Python.md`. La integración ROS 2 y el supervisor de parada estricta continúan pendientes.

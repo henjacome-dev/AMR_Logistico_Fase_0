@@ -21,7 +21,7 @@
 | R15 | DOC | Mamdani 3 entradas de 0–2 m, 2 salidas | `.fis` validado en MATLAB (3 entradas, 2 salidas, 27 reglas); falta integración ROS 2 | A2 | Validado numéricamente; integración pendiente |
 | R16 | DOC | Cobertura de 27 combinaciones lingüísticas | Antecedentes únicos 27/27 y validación con `A2_F1_verificacion_auditoria.m` | A2 | Verificado en MATLAB |
 | R17 | DOC | Límites 0≤v≤0,20 m/s y −1,5≤ω≤1,5 rad/s | Rango evaluado en 1.331 casos + diez críticos; falta prueba operativa de saturación y supervisor | A2 | Parcial |
-| R18 | DOC | Concordancia MATLAB vs scikit-fuzzy en 10 casos | Tabla de error menor al 2 % | A2 | Pendiente |
+| R18 | DOC | Concordancia MATLAB vs scikit-fuzzy en 10 casos | Tabla de error menor al 2 % | A2 | Verificado: 10/10 casos Python vs MATLAB, error <2%; ver docs/A2_R18_concordancia_MATLAB_Python.md |
 | R19 | DOC | Supervisor conmuta ruta/difuso a umbrales indicados | Logs de modos y tópicos | A2 | Pendiente |
 | R20 | DOC | 4 escenarios de navegación × 5 repeticiones | Rosbags y métricas | A2 | Pendiente |
 | R21 | DOC | Rediseño difuso documentado antes/después | Tabla comparativa de métricas | A2 | Pendiente |
