@@ -1,0 +1,155 @@
+{
+  "estado": "APROBADO",
+  "total": 17,
+  "aprobados": 17,
+  "umbrales": {
+    "stop_m": 0.35,
+    "enter_fuzzy_m": 0.6,
+    "exit_fuzzy_m": 0.8,
+    "sensor_age_s": 0.8,
+    "odom_age_s": 1.5,
+    "command_age_s": 0.4,
+    "max_v_mps": 0.12,
+    "max_w_rps": 0.7
+  },
+  "advertencia": "0.60/0.80 m son umbrales de ingeniería propuestos, sujetos a verificación con enunciado.",
+  "alcance": "Modo sombra sin ROS, sin publicar /cmd_vel; NO acredita R19 operativo.",
+  "pruebas": [
+    {
+      "prueba": "Sin frontal",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "SIN_DATO_df",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Frontal NaN",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "INVALIDO_df",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Derecho fuera de rango",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "INVALIDO_dd",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Sensor caducado",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "CADUCADO_df",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Odometria caducada",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "ODOMETRIA_AUSENTE_O_CADUCADA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Parada frontal inferior al limite",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "PARADA_FRONTAL_ESTRICTA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Parada frontal en el limite",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "PARADA_FRONTAL_ESTRICTA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Libre usa ruta",
+      "aprobado": true,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA",
+      "v": 0.1,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Conmutacion a difuso",
+      "aprobado": true,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA",
+      "v": 0.12,
+      "omega": 0.2
+    },
+    {
+      "prueba": "Faltan datos de propuesta difusa",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Propuesta difusa caducada",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Propuesta ruta caducada",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "PROPUESTA_RUTA_AUSENTE_O_CADUCADA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Propuesta no finita",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "PROPUESTA_DIFUSO_INVALIDA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Marcha atras rechazada",
+      "aprobado": true,
+      "modo": "DETENIDO",
+      "motivo": "MARCHA_ATRAS_NO_AUTORIZADA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "prueba": "Saturacion velocidad y giro",
+      "aprobado": true,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA",
+      "v": 0.12,
+      "omega": 0.7
+    },
+    {
+      "prueba": "Histeresis 0.60-0.80",
+      "aprobado": true,
+      "modo": "DIFUSO>DIFUSO>RUTA",
+      "motivo": "",
+      "v": 0,
+      "omega": 0
+    },
+    {
+      "prueba": "Parada y recuperacion",
+      "aprobado": true,
+      "modo": "DIFUSO>DETENIDO>DIFUSO",
+      "motivo": "",
+      "v": 0,
+      "omega": 0
+    }
+  ]
+}

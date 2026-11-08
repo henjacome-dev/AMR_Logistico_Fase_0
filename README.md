@@ -224,3 +224,17 @@ entradas válidas, ausencia de datos, caducidad, recuperación y rechazo de
 **Alcance:** E2.2 corresponde a validación de nodo aislado. La integración
 con el supervisor, el arbitraje y las pruebas en Gazebo corresponden a E2.3
 y E2.4. Ver `docs/A2_E22_validacion_nodo_difuso.md`.
+
+## 12. Avance 2 — E2.3: arbitraje y supervisor en preintegración (2026-11-07)
+
+Se verificó un árbitro RUTA/DIFUSO en modo sombra (E2.3.1: 17/17),
+su comunicación mediante ROS 2 Humble aislado (E2.3.2: 14/14) y un
+candidato de supervisor con barrera LiDAR adicional (E2.3.3: 20/20).
+Las propuestas se publicaron solamente en tópicos de prueba; **no** en
+`/cmd_vel`. El supervisor operativo `tools/supervisor_f13.py` y el
+controlador `AMR_Mamdani_A2_v01.fis` no fueron modificados.
+
+**R19 sigue pendiente:** no existe todavía integración operativa ni
+prueba dinámica con Gazebo; los umbrales de cambio 0,60 y 0,80 m son
+provisionales y requieren cotejo con el enunciado. Detalles y evidencias
+en `docs/A2_E23_preintegracion_aislada.md`.

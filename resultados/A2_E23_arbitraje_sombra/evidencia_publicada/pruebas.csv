@@ -1,0 +1,18 @@
+prueba,aprobado,modo,motivo,v,omega
+Sin frontal,True,DETENIDO,SIN_DATO_df,0.0,0.0
+Frontal NaN,True,DETENIDO,INVALIDO_df,0.0,0.0
+Derecho fuera de rango,True,DETENIDO,INVALIDO_dd,0.0,0.0
+Sensor caducado,True,DETENIDO,CADUCADO_df,0.0,0.0
+Odometria caducada,True,DETENIDO,ODOMETRIA_AUSENTE_O_CADUCADA,0.0,0.0
+Parada frontal inferior al limite,True,DETENIDO,PARADA_FRONTAL_ESTRICTA,0.0,0.0
+Parada frontal en el limite,True,DETENIDO,PARADA_FRONTAL_ESTRICTA,0.0,0.0
+Libre usa ruta,True,RUTA,PROPUESTA_RUTA_VALIDA,0.1,0.0
+Conmutacion a difuso,True,DIFUSO,PROPUESTA_DIFUSO_VALIDA,0.12,0.2
+Faltan datos de propuesta difusa,True,DETENIDO,PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA,0.0,0.0
+Propuesta difusa caducada,True,DETENIDO,PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA,0.0,0.0
+Propuesta ruta caducada,True,DETENIDO,PROPUESTA_RUTA_AUSENTE_O_CADUCADA,0.0,0.0
+Propuesta no finita,True,DETENIDO,PROPUESTA_DIFUSO_INVALIDA,0.0,0.0
+Marcha atras rechazada,True,DETENIDO,MARCHA_ATRAS_NO_AUTORIZADA,0.0,0.0
+Saturacion velocidad y giro,True,DIFUSO,PROPUESTA_DIFUSO_VALIDA,0.12,0.7
+Histeresis 0.60-0.80,True,DIFUSO>DIFUSO>RUTA,,0,0
+Parada y recuperacion,True,DIFUSO>DETENIDO>DIFUSO,,0,0

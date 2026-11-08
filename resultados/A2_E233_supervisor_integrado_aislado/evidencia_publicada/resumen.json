@@ -1,0 +1,167 @@
+{
+  "estado": "APROBADO",
+  "fecha_local": "2026-11-07T20:02:24",
+  "duracion_s": 18.188,
+  "dominio_ros": 222,
+  "umbrales": {
+    "parada_m": 0.35,
+    "ingreso_difuso_m": 0.6,
+    "retorno_ruta_m": 0.8
+  },
+  "restricciones": "NO Gazebo; NO /cmd_vel; NO modificación supervisor_f13.py; ensayos sintéticos",
+  "alcance": "Preintegración ROS 2; no acredita aún el despliegue operativo R19",
+  "pruebas": [
+    {
+      "caso": "Descubrimiento y aislamiento",
+      "aprobado": true
+    },
+    {
+      "caso": "Sin datos: parada",
+      "aprobado": true,
+      "estado": "DETENIDO|SCAN_AUSENTE_O_CADUCADO",
+      "esperado": "DETENIDO|SCAN_AUSENTE_O_CADUCADO",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "Range sin LiDAR: parada",
+      "aprobado": true,
+      "estado": "DETENIDO|SCAN_AUSENTE_O_CADUCADO",
+      "esperado": "DETENIDO|SCAN_AUSENTE_O_CADUCADO",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "Pasillo libre: ruta",
+      "aprobado": true,
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "esperado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "v": 0.1,
+      "omega": 0.0
+    },
+    {
+      "caso": "Distancia .55: difuso",
+      "aprobado": true,
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "esperado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "v": 0.12,
+      "omega": 0.2
+    },
+    {
+      "caso": "Histeresis .70: conserva difuso",
+      "aprobado": true,
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "esperado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "v": 0.12,
+      "omega": 0.2
+    },
+    {
+      "caso": "Retorno .80: ruta",
+      "aprobado": true,
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "esperado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "v": 0.1,
+      "omega": 0.0
+    },
+    {
+      "caso": "Parada Range exactamente .35",
+      "aprobado": true,
+      "estado": "DETENIDO|PARADA_FRONTAL_ESTRICTA",
+      "esperado": "DETENIDO|PARADA_FRONTAL_ESTRICTA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "LiDAR peligro aunque Range libre",
+      "aprobado": true,
+      "estado": "DETENIDO|PARADA_SCAN_ESTRICTA",
+      "esperado": "DETENIDO|PARADA_SCAN_ESTRICTA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "Parada LiDAR exactamente .35",
+      "aprobado": true,
+      "estado": "DETENIDO|PARADA_SCAN_ESTRICTA",
+      "esperado": "DETENIDO|PARADA_SCAN_ESTRICTA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "LiDAR invalido: parada",
+      "aprobado": true,
+      "estado": "DETENIDO|SCAN_INVALIDO",
+      "esperado": "DETENIDO|SCAN_INVALIDO",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "LiDAR caducado: parada",
+      "aprobado": true,
+      "estado": "DETENIDO|SCAN_AUSENTE_O_CADUCADO",
+      "esperado": "DETENIDO|SCAN_AUSENTE_O_CADUCADO",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "Range caducado: parada",
+      "aprobado": true,
+      "estado": "DETENIDO|CADUCADO_df",
+      "esperado": "DETENIDO|CADUCADO_df",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "Odometria caducada: parada",
+      "aprobado": true,
+      "estado": "DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA",
+      "esperado": "DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "Propuesta difusa caducada",
+      "aprobado": true,
+      "estado": "DETENIDO|PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA",
+      "esperado": "DETENIDO|PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "NaN frontal Range: parada",
+      "aprobado": true,
+      "estado": "DETENIDO|INVALIDO_df",
+      "esperado": "DETENIDO|INVALIDO_df",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "Recuperacion tras NaN",
+      "aprobado": true,
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "esperado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "v": 0.12,
+      "omega": 0.2
+    },
+    {
+      "caso": "Twist lateral no autorizado",
+      "aprobado": true,
+      "estado": "DETENIDO|PROPUESTA_RUTA_INVALIDA",
+      "esperado": "DETENIDO|PROPUESTA_RUTA_INVALIDA",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    {
+      "caso": "Saturacion de limites",
+      "aprobado": true,
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "esperado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "v": 0.12,
+      "omega": 0.7
+    },
+    {
+      "caso": "/cmd_vel sin publicadores",
+      "aprobado": true
+    }
+  ]
+}

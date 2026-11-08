@@ -1,0 +1,65 @@
+caso,tipo,valor
+"Sin sensores, parada cero",estado,DETENIDO|SIN_DATO_df
+"Sin sensores, parada cero",estado,DETENIDO|SIN_DATO_df
+"Sin sensores, parada cero",twist,v=0.000000;w=0.000000
+"Sin sensores, parada cero",twist,v=0.000000;w=0.000000
+Pasillo libre: RUTA,estado,RUTA|PROPUESTA_RUTA_VALIDA
+Pasillo libre: RUTA,estado,RUTA|PROPUESTA_RUTA_VALIDA
+Pasillo libre: RUTA,estado,RUTA|PROPUESTA_RUTA_VALIDA
+Pasillo libre: RUTA,twist,v=0.100000;w=0.000000
+Pasillo libre: RUTA,twist,v=0.100000;w=0.000000
+Pasillo libre: RUTA,twist,v=0.100000;w=0.000000
+Frontal .55 m: DIFUSO,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Frontal .55 m: DIFUSO,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Frontal .55 m: DIFUSO,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Frontal .55 m: DIFUSO,twist,v=0.120000;w=0.200000
+Frontal .55 m: DIFUSO,twist,v=0.120000;w=0.200000
+Frontal .55 m: DIFUSO,twist,v=0.120000;w=0.200000
+Histeresis .70 m: conserva DIFUSO,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Histeresis .70 m: conserva DIFUSO,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Histeresis .70 m: conserva DIFUSO,twist,v=0.120000;w=0.200000
+Histeresis .70 m: conserva DIFUSO,twist,v=0.120000;w=0.200000
+Histeresis .70 m: conserva DIFUSO,twist,v=0.120000;w=0.200000
+Frontal .80 m: retorna RUTA,estado,RUTA|PROPUESTA_RUTA_VALIDA
+Frontal .80 m: retorna RUTA,estado,RUTA|PROPUESTA_RUTA_VALIDA
+Frontal .80 m: retorna RUTA,twist,v=0.100000;w=0.000000
+Frontal .80 m: retorna RUTA,twist,v=0.100000;w=0.000000
+Parada estricta a .35 m,estado,DETENIDO|PARADA_FRONTAL_ESTRICTA
+Parada estricta a .35 m,estado,DETENIDO|PARADA_FRONTAL_ESTRICTA
+Parada estricta a .35 m,estado,DETENIDO|PARADA_FRONTAL_ESTRICTA
+Parada estricta a .35 m,twist,v=0.000000;w=0.000000
+Parada estricta a .35 m,twist,v=0.000000;w=0.000000
+Parada estricta a .35 m,twist,v=0.000000;w=0.000000
+Caducidad de Range: parada,estado,DETENIDO|CADUCADO_df
+Caducidad de Range: parada,estado,DETENIDO|CADUCADO_df
+Caducidad de Range: parada,estado,DETENIDO|CADUCADO_df
+Caducidad de Range: parada,twist,v=0.000000;w=0.000000
+Caducidad de Range: parada,twist,v=0.000000;w=0.000000
+Caducidad de Range: parada,twist,v=0.000000;w=0.000000
+Recuperacion con tres Range,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Recuperacion con tres Range,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Recuperacion con tres Range,twist,v=0.120000;w=0.200000
+Recuperacion con tres Range,twist,v=0.120000;w=0.200000
+Recuperacion con tres Range,twist,v=0.120000;w=0.200000
+NaN frontal: parada,estado,DETENIDO|INVALIDO_df
+NaN frontal: parada,estado,DETENIDO|INVALIDO_df
+NaN frontal: parada,twist,v=0.000000;w=0.000000
+NaN frontal: parada,twist,v=0.000000;w=0.000000
+Propuesta DIFUSO caducada,estado,DETENIDO|PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA
+Propuesta DIFUSO caducada,estado,DETENIDO|PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA
+Propuesta DIFUSO caducada,estado,DETENIDO|PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA
+Propuesta DIFUSO caducada,twist,v=0.000000;w=0.000000
+Propuesta DIFUSO caducada,twist,v=0.000000;w=0.000000
+Propuesta DIFUSO caducada,twist,v=0.000000;w=0.000000
+Odometria caducada,estado,DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA
+Odometria caducada,estado,DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA
+Odometria caducada,estado,DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA
+Odometria caducada,twist,v=0.000000;w=0.000000
+Odometria caducada,twist,v=0.000000;w=0.000000
+Odometria caducada,twist,v=0.000000;w=0.000000
+Odometria caducada,twist,v=0.000000;w=0.000000
+Twist lateral no autorizado,estado,DETENIDO|PROPUESTA_RUTA_INVALIDA
+Twist lateral no autorizado,estado,DETENIDO|PROPUESTA_RUTA_INVALIDA
+Twist lateral no autorizado,twist,v=0.000000;w=0.000000
+Twist lateral no autorizado,twist,v=0.000000;w=0.000000
+Twist lateral no autorizado,twist,v=0.000000;w=0.000000

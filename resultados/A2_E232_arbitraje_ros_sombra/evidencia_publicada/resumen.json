@@ -1,0 +1,121 @@
+{
+  "aprobado": true,
+  "fecha": "2026-11-07T19:43:58",
+  "duracion_s": 13.561,
+  "ros_domain_id": 213,
+  "fis_blob": "6c7dfdd083728d49c64dd1c90a59b19d63222063",
+  "alcance": "ROS 2 real con mensajes sinteticos, sin Gazebo, sin /cmd_vel; NO acredita R19 operativo.",
+  "umbrales": {
+    "stop_m": 0.35,
+    "enter_fuzzy_m": 0.6,
+    "exit_fuzzy_m": 0.8
+  },
+  "tests": [
+    {
+      "caso": "Interfaces ROS y aislamiento",
+      "aprobado": true
+    },
+    {
+      "caso": "Sin sensores, parada cero",
+      "aprobado": true,
+      "estado": "DETENIDO|SIN_DATO_df",
+      "v": 0.0,
+      "omega": 0.0,
+      "esperado": "DETENIDO|SIN_DATO_df"
+    },
+    {
+      "caso": "Pasillo libre: RUTA",
+      "aprobado": true,
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "v": 0.1,
+      "omega": 0.0,
+      "esperado": "RUTA|PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "caso": "Frontal .55 m: DIFUSO",
+      "aprobado": true,
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "v": 0.12,
+      "omega": 0.2,
+      "esperado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "caso": "Histeresis .70 m: conserva DIFUSO",
+      "aprobado": true,
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "v": 0.12,
+      "omega": 0.2,
+      "esperado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "caso": "Frontal .80 m: retorna RUTA",
+      "aprobado": true,
+      "estado": "RUTA|PROPUESTA_RUTA_VALIDA",
+      "v": 0.1,
+      "omega": 0.0,
+      "esperado": "RUTA|PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "caso": "Parada estricta a .35 m",
+      "aprobado": true,
+      "estado": "DETENIDO|PARADA_FRONTAL_ESTRICTA",
+      "v": 0.0,
+      "omega": 0.0,
+      "esperado": "DETENIDO|PARADA_FRONTAL_ESTRICTA"
+    },
+    {
+      "caso": "Caducidad de Range: parada",
+      "aprobado": true,
+      "estado": "DETENIDO|CADUCADO_df",
+      "v": 0.0,
+      "omega": 0.0,
+      "esperado": "DETENIDO|CADUCADO_df"
+    },
+    {
+      "caso": "Recuperacion con tres Range",
+      "aprobado": true,
+      "estado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA",
+      "v": 0.12,
+      "omega": 0.2,
+      "esperado": "DIFUSO|PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "caso": "NaN frontal: parada",
+      "aprobado": true,
+      "estado": "DETENIDO|INVALIDO_df",
+      "v": 0.0,
+      "omega": 0.0,
+      "esperado": "DETENIDO|INVALIDO_df"
+    },
+    {
+      "caso": "Propuesta DIFUSO caducada",
+      "aprobado": true,
+      "estado": "DETENIDO|PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA",
+      "v": 0.0,
+      "omega": 0.0,
+      "esperado": "DETENIDO|PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA"
+    },
+    {
+      "caso": "Odometria caducada",
+      "aprobado": true,
+      "estado": "DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA",
+      "v": 0.0,
+      "omega": 0.0,
+      "esperado": "DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA"
+    },
+    {
+      "caso": "Twist lateral no autorizado",
+      "aprobado": true,
+      "estado": "DETENIDO|PROPUESTA_RUTA_INVALIDA",
+      "v": 0.0,
+      "omega": 0.0,
+      "esperado": "DETENIDO|PROPUESTA_RUTA_INVALIDA"
+    },
+    {
+      "caso": "Ausencia de /cmd_vel al final",
+      "aprobado": true
+    }
+  ],
+  "muestras_estado": 129,
+  "muestras_sombra": 130
+}

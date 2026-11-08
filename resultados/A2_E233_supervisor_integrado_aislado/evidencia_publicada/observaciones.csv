@@ -1,0 +1,82 @@
+caso,tipo,valor
+Sin datos: parada,estado,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+Sin datos: parada,estado,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+Sin datos: parada,twist,v=0.000000;w=0.000000
+Sin datos: parada,twist,v=0.000000;w=0.000000
+Range sin LiDAR: parada,estado,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+Range sin LiDAR: parada,estado,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+Range sin LiDAR: parada,twist,v=0.000000;w=0.000000
+Range sin LiDAR: parada,twist,v=0.000000;w=0.000000
+Pasillo libre: ruta,estado,RUTA|PROPUESTA_RUTA_VALIDA
+Pasillo libre: ruta,estado,RUTA|PROPUESTA_RUTA_VALIDA
+Pasillo libre: ruta,twist,v=0.100000;w=0.000000
+Pasillo libre: ruta,twist,v=0.100000;w=0.000000
+Pasillo libre: ruta,twist,v=0.100000;w=0.000000
+Distancia .55: difuso,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Distancia .55: difuso,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Distancia .55: difuso,twist,v=0.120000;w=0.200000
+Distancia .55: difuso,twist,v=0.120000;w=0.200000
+Histeresis .70: conserva difuso,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Histeresis .70: conserva difuso,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Histeresis .70: conserva difuso,twist,v=0.120000;w=0.200000
+Histeresis .70: conserva difuso,twist,v=0.120000;w=0.200000
+Retorno .80: ruta,estado,RUTA|PROPUESTA_RUTA_VALIDA
+Retorno .80: ruta,estado,RUTA|PROPUESTA_RUTA_VALIDA
+Retorno .80: ruta,twist,v=0.100000;w=0.000000
+Retorno .80: ruta,twist,v=0.100000;w=0.000000
+Retorno .80: ruta,twist,v=0.100000;w=0.000000
+Parada Range exactamente .35,estado,DETENIDO|PARADA_FRONTAL_ESTRICTA
+Parada Range exactamente .35,estado,DETENIDO|PARADA_FRONTAL_ESTRICTA
+Parada Range exactamente .35,twist,v=0.000000;w=0.000000
+Parada Range exactamente .35,twist,v=0.000000;w=0.000000
+LiDAR peligro aunque Range libre,estado,DETENIDO|PARADA_SCAN_ESTRICTA
+LiDAR peligro aunque Range libre,estado,DETENIDO|PARADA_SCAN_ESTRICTA
+LiDAR peligro aunque Range libre,twist,v=0.000000;w=0.000000
+LiDAR peligro aunque Range libre,twist,v=0.000000;w=0.000000
+Parada LiDAR exactamente .35,estado,DETENIDO|PARADA_SCAN_ESTRICTA
+Parada LiDAR exactamente .35,estado,DETENIDO|PARADA_SCAN_ESTRICTA
+Parada LiDAR exactamente .35,twist,v=0.000000;w=0.000000
+Parada LiDAR exactamente .35,twist,v=0.000000;w=0.000000
+Parada LiDAR exactamente .35,twist,v=0.000000;w=0.000000
+LiDAR invalido: parada,estado,DETENIDO|SCAN_INVALIDO
+LiDAR invalido: parada,estado,DETENIDO|SCAN_INVALIDO
+LiDAR invalido: parada,twist,v=0.000000;w=0.000000
+LiDAR invalido: parada,twist,v=0.000000;w=0.000000
+LiDAR caducado: parada,estado,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+LiDAR caducado: parada,estado,DETENIDO|SCAN_AUSENTE_O_CADUCADO
+LiDAR caducado: parada,twist,v=0.000000;w=0.000000
+LiDAR caducado: parada,twist,v=0.000000;w=0.000000
+Range caducado: parada,estado,DETENIDO|CADUCADO_df
+Range caducado: parada,estado,DETENIDO|CADUCADO_df
+Range caducado: parada,estado,DETENIDO|CADUCADO_df
+Range caducado: parada,twist,v=0.000000;w=0.000000
+Range caducado: parada,twist,v=0.000000;w=0.000000
+Range caducado: parada,twist,v=0.000000;w=0.000000
+Odometria caducada: parada,estado,DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA
+Odometria caducada: parada,estado,DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA
+Odometria caducada: parada,estado,DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA
+Odometria caducada: parada,twist,v=0.000000;w=0.000000
+Odometria caducada: parada,twist,v=0.000000;w=0.000000
+Odometria caducada: parada,twist,v=0.000000;w=0.000000
+Propuesta difusa caducada,estado,DETENIDO|PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA
+Propuesta difusa caducada,estado,DETENIDO|PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA
+Propuesta difusa caducada,twist,v=0.000000;w=0.000000
+Propuesta difusa caducada,twist,v=0.000000;w=0.000000
+Propuesta difusa caducada,twist,v=0.000000;w=0.000000
+NaN frontal Range: parada,estado,DETENIDO|INVALIDO_df
+NaN frontal Range: parada,estado,DETENIDO|INVALIDO_df
+NaN frontal Range: parada,twist,v=0.000000;w=0.000000
+NaN frontal Range: parada,twist,v=0.000000;w=0.000000
+Recuperacion tras NaN,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Recuperacion tras NaN,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Recuperacion tras NaN,twist,v=0.120000;w=0.200000
+Recuperacion tras NaN,twist,v=0.120000;w=0.200000
+Twist lateral no autorizado,estado,DETENIDO|PROPUESTA_RUTA_INVALIDA
+Twist lateral no autorizado,estado,DETENIDO|PROPUESTA_RUTA_INVALIDA
+Twist lateral no autorizado,twist,v=0.000000;w=0.000000
+Twist lateral no autorizado,twist,v=0.000000;w=0.000000
+Twist lateral no autorizado,twist,v=0.000000;w=0.000000
+Saturacion de limites,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Saturacion de limites,estado,DIFUSO|PROPUESTA_DIFUSO_VALIDA
+Saturacion de limites,twist,v=0.120000;w=0.700000
+Saturacion de limites,twist,v=0.120000;w=0.700000

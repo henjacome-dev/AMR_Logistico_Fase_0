@@ -29,3 +29,7 @@ jobs:
         run: python tools/A2_E22_nodo_difuso.py --self-test
       - name: Validar evidencia ROS E2.2 (ensayo realizado en Ubuntu)
         run: python tools/A2_E22_validar_evidencia.py
+      - name: Autoprueba arbitraje E2.3.1 (sin ROS ni Gazebo)
+        run: python tools/A2_E23_arbitraje_sombra.py --self-test
+      - name: Validar evidencias E2.3.1-E2.3.3 (ensayos Ubuntu aislados)
+        run: python tools/A2_E23_validar_evidencias.py

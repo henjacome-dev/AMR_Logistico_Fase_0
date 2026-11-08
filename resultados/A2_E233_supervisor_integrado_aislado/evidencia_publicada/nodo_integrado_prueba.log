@@ -1,0 +1,22 @@
+[OK] Contrato previo E2.3.1: histéresis y saturaciones verificadas.
+[INFO] [1794099726.841719995] [supervisor_integrado_e233_prueba]: Supervisor de prueba: publica SOLO /cmd_vel_integrado_prueba
+[INFO] [1794099726.934439927] [supervisor_integrado_e233_prueba]: DETENIDO|SCAN_AUSENTE_O_CADUCADO: v=0.000 w=0.000
+[INFO] [1794099728.437111027] [supervisor_integrado_e233_prueba]: RUTA|PROPUESTA_RUTA_VALIDA: v=0.100 w=0.000
+[INFO] [1794099729.334747467] [supervisor_integrado_e233_prueba]: DIFUSO|PROPUESTA_DIFUSO_VALIDA: v=0.120 w=0.200
+[INFO] [1794099731.038805962] [supervisor_integrado_e233_prueba]: RUTA|PROPUESTA_RUTA_VALIDA: v=0.100 w=0.000
+[INFO] [1794099731.935895756] [supervisor_integrado_e233_prueba]: DETENIDO|PARADA_FRONTAL_ESTRICTA: v=0.000 w=0.000
+[INFO] [1794099732.734887619] [supervisor_integrado_e233_prueba]: DETENIDO|PARADA_SCAN_ESTRICTA: v=0.000 w=0.000
+[INFO] [1794099734.537730718] [supervisor_integrado_e233_prueba]: DETENIDO|SCAN_INVALIDO: v=0.000 w=0.000
+[INFO] [1794099736.734319042] [supervisor_integrado_e233_prueba]: DETENIDO|SCAN_AUSENTE_O_CADUCADO: v=0.000 w=0.000
+[INFO] [1794099737.237965627] [supervisor_integrado_e233_prueba]: RUTA|PROPUESTA_RUTA_VALIDA: v=0.100 w=0.000
+[INFO] [1794099737.935897660] [supervisor_integrado_e233_prueba]: DETENIDO|CADUCADO_df: v=0.000 w=0.000
+[INFO] [1794099738.436525205] [supervisor_integrado_e233_prueba]: RUTA|PROPUESTA_RUTA_VALIDA: v=0.100 w=0.000
+[INFO] [1794099739.838097343] [supervisor_integrado_e233_prueba]: DETENIDO|ODOMETRIA_AUSENTE_O_CADUCADA: v=0.000 w=0.000
+[INFO] [1794099740.339453461] [supervisor_integrado_e233_prueba]: DIFUSO|PROPUESTA_DIFUSO_VALIDA: v=0.120 w=0.200
+[INFO] [1794099740.635469632] [supervisor_integrado_e233_prueba]: DETENIDO|PROPUESTA_DIFUSO_AUSENTE_O_CADUCADA: v=0.000 w=0.000
+[INFO] [1794099741.239541685] [supervisor_integrado_e233_prueba]: DETENIDO|INVALIDO_df: v=0.000 w=0.000
+[INFO] [1794099742.034327635] [supervisor_integrado_e233_prueba]: DIFUSO|PROPUESTA_DIFUSO_VALIDA: v=0.120 w=0.200
+[INFO] [1794099742.935424555] [supervisor_integrado_e233_prueba]: DETENIDO|PROPUESTA_RUTA_INVALIDA: v=0.000 w=0.000
+[INFO] [1794099743.836229425] [supervisor_integrado_e233_prueba]: DIFUSO|PROPUESTA_DIFUSO_VALIDA: v=0.120 w=0.700
+[ERROR E2.3.3] Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389
+[INFO] No se tocó supervisor_f13.py ni se publicó en /cmd_vel.
