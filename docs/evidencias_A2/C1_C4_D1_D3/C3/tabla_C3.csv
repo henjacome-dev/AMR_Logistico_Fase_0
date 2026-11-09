@@ -1,0 +1,10 @@
+indicador,antes,despues_media,despues_min,despues_max,delta,delta_pct
+Distancia minima geometrica de corrida (m),0.2601,0.3133,0.3124,0.3153,0.053200000000000025,20.453671664744345
+Tiempo para 0.60m posteriores al spawn (s),8.7804,10.456339999999999,10.3791,10.5676,1.6759399999999989,19.0872853172976
+Giro absoluto medio en ventana (rad/s),0.131452,0.1144768,0.111465,0.117304,-0.01697520000000001,-12.913611051942919
+Indice de variacion angular por tiempo,0.46474,0.15338,0.14747,0.16444,-0.31135999999999997,-66.99660024960193
+Tiempo de A3 en DIFUSO (%),16.314,6.135,3.818,7.756,-10.179,-62.39426259654285
+Cambios de A3 muestreados en ventana,3.0,2.4,2.0,4.0,-0.6000000000000001,-20.000000000000007
+Comandos de asistencia geometrica en ventana,0.0,41.2,40.0,43.0,41.2,
+Conmutaciones A3 registradas en corrida,12.0,5.8,5.0,7.0,-6.2,-51.66666666666666
+Recorrido de corrida completa (m),1.0,2.38996,2.3822,2.3946,1.3899599999999999,138.99599999999998

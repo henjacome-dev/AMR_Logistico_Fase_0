@@ -1,0 +1,400 @@
+{
+  "actividad": "B4 PASILLO ANGOSTO 0.60M",
+  "estado": "B4_LLEGADA_Y_ROSBAG_VALIDOS_CONTACTOS_NO_MEDIDOS",
+  "evasion_completa_demostrada": false,
+  "pasillo_angosto_atravesado": true,
+  "contactos_gazebo_verificados": false,
+  "ancho_pasillo_m": 0.6,
+  "ancho_libre_inflado_m": 0.18,
+  "advertencia_contactos": "No se dispone de sensor Gazebo de contacto; distancia geometrica es una estimacion",
+  "tipo_control": "B4_CENTRADO_GEOMETRICO_ASISTIDO_A3_A4_FIS_EN_SOMBRA",
+  "control_difuso_actuacion_directa_demostrada": false,
+  "justificacion": "En pasillo 0.60m, paredes laterales pueden activar DIFUSO en A3 y no es seguro aplicar giro difuso; se usa centrado asistido con protecciones geometricas y LiDAR.",
+  "mundo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B4_pasillo_angosto_v03/20261108_204150/B4_pasillo_060m.world",
+  "sha256_mundo": "8312540a49e584699309c1f52c4f660179c5aa96dad7731c5fc94a93b093f262",
+  "ruta": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B4_pasillo_angosto_v03/20261108_204150/B4_ruta_astar_centro.csv",
+  "sha256_ruta": "d93df2187189262cd5afc42620a39118c53faa2f7734df9943c702b4a89701bf",
+  "ruta_puntos": 41,
+  "dominio_ros": "120",
+  "inicio_utc": "2026-11-09T01:41:57.154842+00:00",
+  "interpretacion_lidar": "scan ±25° incluye paredes; comprobacion inicial eje ±7.5°; guarda geometrica 0.265m intacta",
+  "meta_m": [
+    -3.975,
+    -2.775
+  ],
+  "modos_a3": [
+    {
+      "t_s": 0.14,
+      "modo": "CERO",
+      "motivo": "SIN_DF"
+    },
+    {
+      "t_s": 0.24,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 0.44,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 0.64,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 2.04,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 2.24,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 3.64,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 3.86,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 4.24,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 4.44,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 4.64,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 4.84,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 8.84,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 9.04,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 13.44,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 13.64,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 15.44,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 15.64,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 21.04,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 21.34,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 22.94,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 23.14,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 24.94,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 25.14,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 25.34,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 25.54,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    }
+  ],
+  "eventos_a4": [
+    {
+      "t_s": 0.18,
+      "estado": "PARADA_SUPERVISOR",
+      "progreso_m": 0.0
+    },
+    {
+      "t_s": 0.28,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.0
+    },
+    {
+      "t_s": 0.48,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.0
+    },
+    {
+      "t_s": 0.68,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.0
+    },
+    {
+      "t_s": 2.08,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.07858133990813299
+    },
+    {
+      "t_s": 2.28,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.09489237237072201
+    },
+    {
+      "t_s": 2.38,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.10100892032774444
+    },
+    {
+      "t_s": 3.68,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.1744089949828047
+    },
+    {
+      "t_s": 3.88,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.19071996770321098
+    },
+    {
+      "t_s": 3.98,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.19683672858499168
+    },
+    {
+      "t_s": 4.28,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.20906999097179835
+    },
+    {
+      "t_s": 4.48,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.22741999103559207
+    },
+    {
+      "t_s": 4.58,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.23353667101348163
+    },
+    {
+      "t_s": 4.68,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.23353667101348163
+    },
+    {
+      "t_s": 4.88,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.2518866274425715
+    },
+    {
+      "t_s": 4.98,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.25800337158552367
+    },
+    {
+      "t_s": 8.88,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.48431945286587297
+    },
+    {
+      "t_s": 9.08,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.5026693817085008
+    },
+    {
+      "t_s": 9.18,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.5087861044188333
+    },
+    {
+      "t_s": 13.48,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.7616076291028953
+    },
+    {
+      "t_s": 13.68,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.7779186425153326
+    },
+    {
+      "t_s": 13.78,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.7840352819954042
+    },
+    {
+      "t_s": 15.48,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.8798628654747573
+    },
+    {
+      "t_s": 15.68,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.8982126521650233
+    },
+    {
+      "t_s": 15.78,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.9043294509061206
+    },
+    {
+      "t_s": 21.08,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 1.2162782676238848
+    },
+    {
+      "t_s": 21.38,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 1.240744906011594
+    },
+    {
+      "t_s": 21.48,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 1.2468615951489674
+    },
+    {
+      "t_s": 22.98,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 1.3304557034091147
+    },
+    {
+      "t_s": 23.18,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 1.348805609443656
+    },
+    {
+      "t_s": 23.28,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 1.3549223813942701
+    },
+    {
+      "t_s": 24.98,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 1.4507498280183388
+    },
+    {
+      "t_s": 25.18,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 1.4670608593584094
+    },
+    {
+      "t_s": 25.28,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 1.4731774795648276
+    },
+    {
+      "t_s": 25.38,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 1.4731774795648276
+    },
+    {
+      "t_s": 25.58,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 1.4915273801616462
+    },
+    {
+      "t_s": 25.68,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 1.4976441129127207
+    }
+  ],
+  "fallos": [],
+  "barreras": {},
+  "mensajes_controlador_difuso": 158,
+  "lecturas_iniciales_m": {
+    "scan_ancho_25deg": 0.7371105551719666,
+    "scan_central_7p5deg": 2.9209957122802734,
+    "frontal_emulado": 2.0,
+    "lateral_izquierdo": 0.3932190537452698,
+    "lateral_derecho": 0.3907678723335266
+  },
+  "tiempo_desde_armado_s": 30.905,
+  "n_publicaciones_cmd_vel": 316,
+  "n_propuestas_ruta_a4": 315,
+  "n_ordenes_activas": 310,
+  "distancia_recorrida_m": 1.8534,
+  "distancia_minima_a_colisiones_sdf_m": 0.3,
+  "desviacion_max_a_ruta_m": 0.0,
+  "distancia_final_meta_m": 0.1467,
+  "num_publicadores_cmd_vel_max": 1,
+  "muestras_centrado_asistido_por_modo_a3": {
+    "RUTA": 286,
+    "DIFUSO": 24
+  },
+  "fallos_controlador_difuso": 0,
+  "cambios_de_signo_omega_n": 0,
+  "variacion_angular_acumulada_rad_s": 2e-05,
+  "velocidad_lineal_maxima_m_s": 0.06,
+  "parada_por_barrera": false,
+  "inicio": [
+    -1.975,
+    -2.775,
+    3.141592653589793
+  ],
+  "fin_utc": "2026-11-09T01:42:28.826820+00:00",
+  "rosbag_conteos": {
+    "/clock": 342,
+    "/cmd_vel": 332,
+    "/cmd_vel_a3_prueba": 316,
+    "/cmd_vel_difuso": 158,
+    "/cmd_vel_ruta": 315,
+    "/cmd_vel_ruta_a4_prueba": 315,
+    "/estado_a3_prueba": 315,
+    "/estado_a4_prueba": 315,
+    "/odom": 1005,
+    "/rango_der": 171,
+    "/rango_frontal": 171,
+    "/rango_izq": 171,
+    "/scan": 171
+  },
+  "rosbag_valido": true,
+  "head_git": "a604f02dd89c03145d3c253693c656aca47ae1e7",
+  "hashes_sha256": {
+    "tools/A2_A3_supervisor_rubrica_v03_v2_float32.py": "2c820de906497080e84e9ff37c458d8787a290438d6651cf38bdc22e9bcd4e92",
+    "tools/A2_A4_seguidor_reincorporacion_v02_evento.py": "5f03cfaea0ee52769e33b32924441ea72761d4c8300f778290b17dc57db5e02d",
+    "matlab/A2_MAMDANI/A2_v03_rubrica/AMR_Mamdani_A2_v03_rubrica.fis": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "etapa": "C3",
+  "fecha_utc": "2026-11-09T02:15:41.475233+00:00",
+  "resultado": {
+    "n_antes": 1,
+    "n_despues": 5,
+    "llegadas_antes": 0,
+    "llegadas_despues": 5,
+    "detenciones_por_colision_proyectada_antes": 1,
+    "detenciones_por_colision_proyectada_despues": 0,
+    "despeje_preventivo_m": 0.255,
+    "despeje_minimo_despues_m": 0.3124,
+    "asistencia_geometrica_n_comandos_por_ensayo": [
+      389,
+      388,
+      393,
+      389,
+      387
+    ],
+    "metricas": {
+      "despeje_min_corrida_m": {
+        "descripcion": "Distancia minima geometrica de corrida (m)",
+        "antes": 0.2601,
+        "despues_media": 0.3133,
+        "despues_min": 0.3124,
+        "despues_max": 0.3153,
+        "delta_absoluta": 0.053200000000000025,
+        "delta_porcentual": 20.453671664744345
+      },
+      "ventana_duracion_s": {
+        "descripcion": "Tiempo para 0.60m posteriores al spawn (s)",
+        "antes": 8.7804,
+        "despues_media": 10.456339999999999,
+        "despues_min": 10.3791,
+        "despues_max": 10.5676,
+        "delta_absoluta": 1.6759399999999989,
+        "delta_porcentual": 19.0872853172976
+      },
+      "ventana_giro_abs_medio_ponderado_radps": {
+        "descripcion": "Giro absoluto medio en ventana (rad/s)",
+        "antes": 0.131452,
+        "despues_media": 0.1144768,
+        "despues_min": 0.111465,
+        "despues_max": 0.117304,
+        "delta_absoluta": -0.01697520000000001,
+        "delta_porcentual": -12.913611051942919
+      },
+      "ventana_variacion_angular_normalizada_por_s": {
+        "descripcion": "Indice de variacion angular por tiempo",
+        "antes": 0.46474,
+        "despues_media": 0.15338,
+        "despues_min": 0.14747,
+        "despues_max": 0.16444,
+        "delta_absoluta": -0.31135999999999997,
+        "delta_porcentual": -66.99660024960193
+      },
+      "ventana_porcentaje_tiempo_difuso": {
+        "descripcion": "Tiempo de A3 en DIFUSO (%)",
+        "antes": 16.314,
+        "despues_media": 6.135,
+        "despues_min": 3.818,
+        "despues_max": 7.756,
+        "delta_absoluta": -10.179,
+        "delta_porcentual": -62.39426259654285
+      },
+      "ventana_cambios_modo_a3_muestreados": {
+        "descripcion": "Cambios de A3 muestreados en ventana",
+        "antes": 3.0,
+        "despues_media": 2.4,
+        "despues_min": 2.0,
+        "despues_max": 4.0,
+        "delta_absoluta": -0.6000000000000001,
+        "delta_porcentual": -20.000000000000007
+      },
+      "ventana_comandos_asistencia_geom": {
+        "descripcion": "Comandos de asistencia geometrica en ventana",
+        "antes": 0.0,
+        "despues_media": 41.2,
+        "despues_min": 40.0,
+        "despues_max": 43.0,
+        "delta_absoluta": 41.2,
+        "delta_porcentual": null
+      },
+      "eventos_a3_cambios": {
+        "descripcion": "Conmutaciones A3 registradas en corrida",
+        "antes": 12.0,
+        "despues_media": 5.8,
+        "despues_min": 5.0,
+        "despues_max": 7.0,
+        "delta_absoluta": -6.2,
+        "delta_porcentual": -51.66666666666666
+      },
+      "recorrido_total_m": {
+        "descripcion": "Recorrido de corrida completa (m)",
+        "antes": 1.0,
+        "despues_media": 2.38996,
+        "despues_min": 2.3822,
+        "despues_max": 2.3946,
+        "delta_absoluta": 1.3899599999999999,
+        "delta_porcentual": 138.99599999999998
+      }
+    },
+    "resultado": "REDISENO_HIBRIDO_ASISTIDO_OBSERVADO_CON_RESERVAS",
+    "atribuible_al_FIS_aisladamente": false,
+    "comparacion_pareada": false,
+    "contactos_fisicos_medidos": false,
+    "rosbags_reproducidos": false
+  },
+  "fuentes_C1_C2": [
+    "/home/enry/AMR_A2_entrega_local/C1_auditoria_20261109_015809_UTC/dictamen_C1.json",
+    "/home/enry/AMR_A2_entrega_local/C2_linea_base_20261109_021010_UTC/dictamen_C2.json"
+  ]
+}

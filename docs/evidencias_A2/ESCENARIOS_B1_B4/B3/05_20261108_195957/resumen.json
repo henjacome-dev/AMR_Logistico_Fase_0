@@ -1,0 +1,270 @@
+{
+  "actividad": "B3 APARICION DE OBSTACULO 1M",
+  "estado": "B3_PILOTO_HIBRIDO_ASISTIDO_APROBADO_CONTACTOS_NO_MEDIDOS",
+  "evasion_completa_demostrada": false,
+  "evasion_reactiva_demostrada": false,
+  "obstaculo_dinamico_insertado": true,
+  "distancia_a_superficie_esperada_m": 1.0,
+  "contactos_gazebo_verificados": false,
+  "advertencia_contactos": "No se dispone de sensor Gazebo de contacto; distancia geometrica es una estimacion",
+  "mundo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195957/B3_mundo_inicial_sin_obstaculo_sorpresa.world",
+  "ruta": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195957/B3_ruta_Astar_sin_obstaculo.csv",
+  "ruta_puntos": 41,
+  "dominio_ros": "120",
+  "inicio_utc": "2026-11-09T01:00:03.687833+00:00",
+  "meta_m": [
+    -3.975,
+    -2.775
+  ],
+  "modos_a3": [
+    {
+      "t_s": 0.14,
+      "modo": "CERO",
+      "motivo": "SIN_DF"
+    },
+    {
+      "t_s": 0.24,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 10.34,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 10.74,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 17.74,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 17.94,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 18.34,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 20.54,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    }
+  ],
+  "eventos_a4": [
+    {
+      "t_s": 0.18,
+      "estado": "PARADA_SUPERVISOR",
+      "progreso_m": 0.0
+    },
+    {
+      "t_s": 0.28,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.0
+    },
+    {
+      "t_s": 10.38,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.6809324967811059
+    },
+    {
+      "t_s": 10.78,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.700820204619613
+    },
+    {
+      "t_s": 10.88,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.700820204619613
+    },
+    {
+      "t_s": 17.78,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.8438846502346959
+    },
+    {
+      "t_s": 17.98,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.8514443887974674
+    },
+    {
+      "t_s": 18.08,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.8539644366356218
+    },
+    {
+      "t_s": 18.38,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.8590028760188271
+    },
+    {
+      "t_s": 20.58,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.8985832268788982
+    },
+    {
+      "t_s": 20.68,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.8986468680785173
+    }
+  ],
+  "fallos": [],
+  "barreras": {},
+  "mensajes_controlador_difuso": 252,
+  "modalidad": "HIBRIDA_ASISTIDA_NO_MAMDANI_PURO",
+  "politica_arbitraje": "RETENCION_LIDAR_SUBOBJETIVOS_TEMPORALES_Y_FIS_VELOCIDAD",
+  "eventos_arbitraje_b3": [
+    {
+      "t_s": 10.442,
+      "evento": "RETENCION_EVASION",
+      "modo_a3_inicial": "DIFUSO",
+      "scan_m": 0.6101,
+      "df_m": 0.5992,
+      "pose": [
+        -2.6657200735593265,
+        -2.7749994183741467
+      ],
+      "lado": "SUR",
+      "subobjetivos": [
+        [
+          -2.905555159217103,
+          -3.225
+        ],
+        [
+          -3.765555159217103,
+          -3.225
+        ],
+        [
+          -3.845555159217103,
+          -2.775
+        ]
+      ],
+      "despeje_min_predicho_m": 0.35,
+      "desviacion_max_predicha_m": 0.45
+    },
+    {
+      "t_s": 19.733,
+      "evento": "SUBOBJETIVO_ALCANZADO",
+      "indice": 1,
+      "pose": [
+        -2.870111245948679,
+        -3.154481008742394
+      ]
+    },
+    {
+      "t_s": 40.239,
+      "evento": "SUBOBJETIVO_ALCANZADO",
+      "indice": 2,
+      "pose": [
+        -3.690258511850088,
+        -3.219863150164142
+      ]
+    },
+    {
+      "t_s": 49.133,
+      "evento": "SUBOBJETIVO_ALCANZADO",
+      "indice": 3,
+      "pose": [
+        -3.821139310880168,
+        -2.850840014148757
+      ]
+    },
+    {
+      "t_s": 49.46,
+      "evento": "REINCORPORACION_A4",
+      "pose": [
+        -3.821926705639939,
+        -2.848396764288012
+      ],
+      "modo_a3": "RUTA",
+      "scan_m": 0.9166,
+      "df_m": 0.9468
+    }
+  ],
+  "bypass_completado": true,
+  "obstaculo_evento": {
+    "t_s": 4.221,
+    "pose_robot": [
+      -2.2255551592226226,
+      -2.7749995038559585
+    ],
+    "pose_caja": [
+      -3.32556,
+      -2.775
+    ],
+    "desplazamiento_antes_de_insertar_m": 0.2531,
+    "distancia_centro_robot_a_superficie_caja_m": 1.0,
+    "scan_previo_m": 1.9532365798950195,
+    "respuesta_gazebo": "SpawnEntity: Successfully spawned entity [a2_b3_obstaculo_sorpresa]",
+    "pausa_movimiento_durante_spawn": true,
+    "scan_despues_m": 1.0461,
+    "df_despues_m": 1.0508
+  },
+  "comandos_difuso_activos_despues_spawn": 28,
+  "comandos_ruta_despues_difuso": 10,
+  "evasion_hibrida_asistida_demostrada": true,
+  "n_publicaciones_cmd_vel": 504,
+  "n_propuestas_ruta_a4": 504,
+  "n_ordenes_activas": 494,
+  "distancia_recorrida_m": 2.3822,
+  "distancia_minima_a_colisiones_sdf_m": 0.3132,
+  "desviacion_max_a_ruta_m": 0.4452,
+  "distancia_final_meta_m": 0.1459,
+  "num_publicadores_cmd_vel_max": 1,
+  "subobjetivos_desvio": [
+    [
+      -2.905555159217103,
+      -3.225
+    ],
+    [
+      -3.765555159217103,
+      -3.225
+    ],
+    [
+      -3.845555159217103,
+      -2.775
+    ]
+  ],
+  "comandos_evasion_asistida": 387,
+  "ciclos_giro_en_sitio": 40,
+  "intervenciones_v_cero": 0,
+  "ciclos_mezcla_difusa": 75,
+  "ciclos_a3_difuso_tras_spawn": 28,
+  "min_proyeccion_geometrica_m": 0.31317,
+  "fallos_controlador_difuso": 0,
+  "inicio": [
+    -1.975,
+    -2.775,
+    3.141592653589793
+  ],
+  "fin_utc": "2026-11-09T01:00:54.195820+00:00",
+  "rosbag_conteos": {
+    "/clock": 534,
+    "/cmd_vel": 520,
+    "/cmd_vel_a3_prueba": 504,
+    "/cmd_vel_difuso": 252,
+    "/cmd_vel_ruta": 504,
+    "/cmd_vel_ruta_a4_prueba": 504,
+    "/estado_a3_prueba": 504,
+    "/estado_a4_prueba": 504,
+    "/odom": 1569,
+    "/rango_der": 267,
+    "/rango_frontal": 267,
+    "/rango_izq": 267,
+    "/scan": 267
+  },
+  "rosbag_valido": true,
+  "head_git": "a604f02dd89c03145d3c253693c656aca47ae1e7",
+  "hashes_sha256": {
+    "tools/A2_A3_supervisor_rubrica_v03_v2_float32.py": "2c820de906497080e84e9ff37c458d8787a290438d6651cf38bdc22e9bcd4e92",
+    "tools/A2_A4_seguidor_reincorporacion_v02_evento.py": "5f03cfaea0ee52769e33b32924441ea72761d4c8300f778290b17dc57db5e02d",
+    "matlab/A2_MAMDANI/A2_v03_rubrica/AMR_Mamdani_A2_v03_rubrica.fis": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+  }
+}

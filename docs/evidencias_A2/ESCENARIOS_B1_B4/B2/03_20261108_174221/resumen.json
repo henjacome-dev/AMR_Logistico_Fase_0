@@ -1,0 +1,81 @@
+{
+  "actividad": "B2.3 RESCATE INTEGRADO",
+  "estado": "LLEGADA_Y_ROSBAG_VALIDADOS_CONTACTOS_NO_MEDIDOS",
+  "evasion_completa_demostrada": false,
+  "evasion_geometrica_demostrada": true,
+  "contactos_gazebo_verificados": false,
+  "advertencia_contactos": "No se dispone de sensor Gazebo de contacto; distancia geometrica es una estimacion",
+  "mundo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B2_rescate_obstaculo_central.world",
+  "ruta": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B2_rescate_ruta_astar.csv",
+  "ruta_puntos": 35,
+  "dominio_ros": "120",
+  "inicio_utc": "2026-11-08T22:42:27.451425+00:00",
+  "meta_m": [
+    -3.975,
+    -2.775
+  ],
+  "modos_a3": [
+    {
+      "t_s": 0.14,
+      "modo": "CERO",
+      "motivo": "SIN_DF"
+    },
+    {
+      "t_s": 0.24,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    }
+  ],
+  "eventos_a4": [
+    {
+      "t_s": 0.18,
+      "estado": "PARADA_SUPERVISOR",
+      "progreso_m": 0.0
+    },
+    {
+      "t_s": 0.28,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.0
+    }
+  ],
+  "fallos": [],
+  "barreras": {},
+  "mensajes_controlador_difuso": 161,
+  "n_publicaciones_cmd_vel": 321,
+  "n_propuestas_ruta_a4": 320,
+  "n_ordenes_activas": 315,
+  "distancia_recorrida_m": 2.2148,
+  "distancia_minima_a_colisiones_sdf_m": 0.3447,
+  "desviacion_max_a_ruta_m": 0.031,
+  "distancia_final_meta_m": 0.1444,
+  "num_publicadores_cmd_vel_max": 1,
+  "fallos_controlador_difuso": 0,
+  "inicio": [
+    -1.975,
+    -2.775,
+    3.141592653589793
+  ],
+  "fin_utc": "2026-11-08T22:43:00.127750+00:00",
+  "rosbag_conteos": {
+    "/clock": 351,
+    "/cmd_vel": 337,
+    "/cmd_vel_a3_prueba": 321,
+    "/cmd_vel_difuso": 161,
+    "/cmd_vel_ruta": 320,
+    "/cmd_vel_ruta_a4_prueba": 320,
+    "/estado_a3_prueba": 321,
+    "/estado_a4_prueba": 320,
+    "/odom": 1034,
+    "/rango_der": 176,
+    "/rango_frontal": 176,
+    "/rango_izq": 176,
+    "/scan": 176
+  },
+  "rosbag_valido": true,
+  "head_git": "a604f02dd89c03145d3c253693c656aca47ae1e7",
+  "hashes_sha256": {
+    "tools/A2_A3_supervisor_rubrica_v03_v2_float32.py": "2c820de906497080e84e9ff37c458d8787a290438d6651cf38bdc22e9bcd4e92",
+    "tools/A2_A4_seguidor_reincorporacion_v02_evento.py": "5f03cfaea0ee52769e33b32924441ea72761d4c8300f778290b17dc57db5e02d",
+    "matlab/A2_MAMDANI/A2_v03_rubrica/AMR_Mamdani_A2_v03_rubrica.fis": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+  }
+}

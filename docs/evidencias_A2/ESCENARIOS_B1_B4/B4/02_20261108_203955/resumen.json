@@ -1,0 +1,205 @@
+{
+  "actividad": "B4 PASILLO ANGOSTO 0.60M",
+  "estado": "B4_LLEGADA_Y_ROSBAG_VALIDOS_CONTACTOS_NO_MEDIDOS",
+  "evasion_completa_demostrada": false,
+  "pasillo_angosto_atravesado": true,
+  "contactos_gazebo_verificados": false,
+  "ancho_pasillo_m": 0.6,
+  "ancho_libre_inflado_m": 0.18,
+  "advertencia_contactos": "No se dispone de sensor Gazebo de contacto; distancia geometrica es una estimacion",
+  "tipo_control": "B4_CENTRADO_GEOMETRICO_ASISTIDO_A3_A4_FIS_EN_SOMBRA",
+  "control_difuso_actuacion_directa_demostrada": false,
+  "justificacion": "En pasillo 0.60m, paredes laterales pueden activar DIFUSO en A3 y no es seguro aplicar giro difuso; se usa centrado asistido con protecciones geometricas y LiDAR.",
+  "mundo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B4_pasillo_angosto_v03/20261108_203955/B4_pasillo_060m.world",
+  "sha256_mundo": "8312540a49e584699309c1f52c4f660179c5aa96dad7731c5fc94a93b093f262",
+  "ruta": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B4_pasillo_angosto_v03/20261108_203955/B4_ruta_astar_centro.csv",
+  "sha256_ruta": "d93df2187189262cd5afc42620a39118c53faa2f7734df9943c702b4a89701bf",
+  "ruta_puntos": 41,
+  "dominio_ros": "120",
+  "inicio_utc": "2026-11-09T01:40:04.016922+00:00",
+  "interpretacion_lidar": "scan ±25° incluye paredes; comprobacion inicial eje ±7.5°; guarda geometrica 0.265m intacta",
+  "meta_m": [
+    -3.975,
+    -2.775
+  ],
+  "modos_a3": [
+    {
+      "t_s": 0.15,
+      "modo": "CERO",
+      "motivo": "SIN_DF"
+    },
+    {
+      "t_s": 0.25,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 2.05,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 2.25,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 3.45,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 3.65,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 24.45,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 24.65,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    },
+    {
+      "t_s": 27.85,
+      "modo": "DIFUSO",
+      "motivo": "PROPUESTA_DIFUSO_VALIDA"
+    },
+    {
+      "t_s": 28.05,
+      "modo": "RUTA",
+      "motivo": "PROPUESTA_RUTA_VALIDA"
+    }
+  ],
+  "eventos_a4": [
+    {
+      "t_s": 0.18,
+      "estado": "PARADA_SUPERVISOR",
+      "progreso_m": 0.0
+    },
+    {
+      "t_s": 0.28,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.0
+    },
+    {
+      "t_s": 2.08,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.0785666437630339
+    },
+    {
+      "t_s": 2.28,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.09487762553374468
+    },
+    {
+      "t_s": 2.38,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.10099443225839666
+    },
+    {
+      "t_s": 3.48,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 0.16216091302705626
+    },
+    {
+      "t_s": 3.68,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 0.18051091638601013
+    },
+    {
+      "t_s": 3.78,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.18458861183568187
+    },
+    {
+      "t_s": 24.48,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 1.4201517670250912
+    },
+    {
+      "t_s": 24.68,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 1.4385016141471039
+    },
+    {
+      "t_s": 24.78,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 1.4446183361934843
+    },
+    {
+      "t_s": 27.88,
+      "estado": "CEDER_CONTROL_DIFUSO",
+      "progreso_m": 1.6240398139567596
+    },
+    {
+      "t_s": 28.08,
+      "estado": "REINCORPORANDO",
+      "progreso_m": 1.6423896854664641
+    },
+    {
+      "t_s": 28.18,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 1.6464675150101642
+    }
+  ],
+  "fallos": [],
+  "barreras": {},
+  "mensajes_controlador_difuso": 158,
+  "lecturas_iniciales_m": {
+    "scan_ancho_25deg": 0.7133731842041016,
+    "scan_central_7p5deg": 2.9141738414764404,
+    "frontal_emulado": 2.0,
+    "lateral_izquierdo": 0.36269158124923706,
+    "lateral_derecho": 0.3647095263004303
+  },
+  "tiempo_desde_armado_s": 30.91,
+  "n_publicaciones_cmd_vel": 315,
+  "n_propuestas_ruta_a4": 315,
+  "n_ordenes_activas": 310,
+  "distancia_recorrida_m": 1.8534,
+  "distancia_minima_a_colisiones_sdf_m": 0.3,
+  "desviacion_max_a_ruta_m": 0.0001,
+  "distancia_final_meta_m": 0.1467,
+  "num_publicadores_cmd_vel_max": 1,
+  "muestras_centrado_asistido_por_modo_a3": {
+    "RUTA": 302,
+    "DIFUSO": 8
+  },
+  "fallos_controlador_difuso": 0,
+  "cambios_de_signo_omega_n": 0,
+  "variacion_angular_acumulada_rad_s": 2e-05,
+  "velocidad_lineal_maxima_m_s": 0.06,
+  "parada_por_barrera": false,
+  "inicio": [
+    -1.975,
+    -2.775,
+    3.141592653589793
+  ],
+  "fin_utc": "2026-11-09T01:40:35.684017+00:00",
+  "rosbag_conteos": {
+    "/clock": 351,
+    "/cmd_vel": 331,
+    "/cmd_vel_a3_prueba": 315,
+    "/cmd_vel_difuso": 158,
+    "/cmd_vel_ruta": 315,
+    "/cmd_vel_ruta_a4_prueba": 315,
+    "/estado_a3_prueba": 315,
+    "/estado_a4_prueba": 315,
+    "/odom": 1033,
+    "/rango_der": 176,
+    "/rango_frontal": 176,
+    "/rango_izq": 176,
+    "/scan": 176
+  },
+  "rosbag_valido": true,
+  "head_git": "a604f02dd89c03145d3c253693c656aca47ae1e7",
+  "hashes_sha256": {
+    "tools/A2_A3_supervisor_rubrica_v03_v2_float32.py": "2c820de906497080e84e9ff37c458d8787a290438d6651cf38bdc22e9bcd4e92",
+    "tools/A2_A4_seguidor_reincorporacion_v02_evento.py": "5f03cfaea0ee52769e33b32924441ea72761d4c8300f778290b17dc57db5e02d",
+    "matlab/A2_MAMDANI/A2_v03_rubrica/AMR_Mamdani_A2_v03_rubrica.fis": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+  }
+}

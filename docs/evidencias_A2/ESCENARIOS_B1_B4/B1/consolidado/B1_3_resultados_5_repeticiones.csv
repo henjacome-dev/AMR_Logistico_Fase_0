@@ -1,0 +1,6 @@
+repeticion,tiempo_llegada_s_simulado,tiempo_llegada_s_reloj_real,desviacion_maxima_m,distancia_minima_robot_obstaculo_m,oscilaciones_omega,colisiones_geometricas_estimadas,colisiones_por_contacto_gazebo,error_final_m
+1,16.932,16.947,6e-05,0.2,0,0,,0.07724
+2,16.932,16.95,6e-05,0.2,0,0,,0.07724
+3,16.932,16.945,6e-05,0.2,0,0,,0.07747
+4,16.966,16.951,5e-05,0.2,0,0,,0.07637
+5,16.932,16.948,6e-05,0.2,0,0,,0.07732

@@ -1,0 +1,21 @@
+{
+  "etapa": "D3",
+  "fecha_utc": "2026-11-09T02:55:57.215700+00:00",
+  "estado": "D3_INTEGRACION_DOCUMENTAL_CON_RESERVAS",
+  "fuentes": {
+    "C4": "/home/enry/AMR_A2_entrega_local/C4_cierre_20261109_022639_UTC/dictamen_C4.json",
+    "D1": "/home/enry/AMR_A2_entrega_local/D1_auditoria_integral_20261109_024440_006886_UTC/dictamen_D1.json"
+  },
+  "fuentes_C4_sha256_verificadas": 32,
+  "llegadas_B1_B4": 20,
+  "llegadas_B3_antes": 0,
+  "ensayos_B3_antes": 1,
+  "llegadas_B3_despues": 5,
+  "ensayos_B3_despues": 5,
+  "comparacion_pareada": false,
+  "mejora_atribuible_solo_Mamdani": false,
+  "contactos_gazebo_medidos": false,
+  "rosbags_reproducidos": false,
+  "reservas": "Evasion hibrida asistida; n=1 vs n=5; tiempo de ventana aumenta; giro medio disminuye; B4 centrado asistido.",
+  "accion_siguiente": "D4, informe final de exactamente dos paginas"
+}

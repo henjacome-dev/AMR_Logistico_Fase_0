@@ -1,0 +1,42 @@
+{
+  "etapa": "D1",
+  "generado_utc": "2026-11-09T02:44:40.512208+00:00",
+  "repo": "/home/enry/AMR_Logistico_Fase_0",
+  "entrega": "/home/enry/AMR_A2_entrega_local",
+  "ensayos_b1_b4_individualmente_acreditados": 20,
+  "ensayos_previstos": 20,
+  "por_escenario": {
+    "B1": 5,
+    "B2": 5,
+    "B3": 5,
+    "B4": 5
+  },
+  "cierres_C": {
+    "C1": true,
+    "C2": true,
+    "C3": true,
+    "C4": true
+  },
+  "rosbags_db3_presentes_numero_ejecuciones": 21,
+  "rosbags_reproducidos": false,
+  "contactos_gazebo_medidos": false,
+  "nota_rosbags": "Incluye el intento B1 NO_APROBADA, no equivale a 21 éxitos",
+  "comparacion_B3_pareada": false,
+  "b3_b4_control_exclusivamente_difuso": false,
+  "fuentes_hash_generado_n": 78,
+  "bloqueos": [],
+  "revisiones_manuales": [
+    "B1-B4/contactos: Los ensayos reportan despeje geométrico; no hay auditoría directa de contactos",
+    "CNN/revision_visual: Abrir mosaico_control_calidad.png; no se acredita inspección visual automáticamente",
+    "CNN/distribucion: ZIP local no implica que el docente pueda descargarlo; adjuntar o publicar enlace verificable",
+    "GIT/estado_local: Cambios locales detectados: 90 entradas; revisar antes de commit",
+    "GIT/tag_local: No existe tag local avance2",
+    "GIT/scripts_de_prueba: Comprobar que ejecutores B2–B4 y scripts C1–C4 usados realmente estén añadidos al repositorio, no solo en Descargas",
+    "GIT/readme: Reconciliar descripciones antiguas de CNN pendiente y resultados B1–B4 con la evidencia actual",
+    "GIT/push_y_tag_remoto: No se hacen conexiones ni pushes: D5/D6 requieren verificación posterior en GitHub",
+    "ENTREGA/informe_2_paginas: D4: verificar que exista y tenga exactamente dos páginas y se corresponda con las evidencias",
+    "ENTREGA/blackboard: D7: pendiente de cargar archivos y comprobar acuse Blackboard"
+  ],
+  "dictamen": "D1_EVIDENCIA_VERIFICADA_CON_RESERVAS",
+  "alcance": "Auditoría local estática: NO confirma push/tag remoto, entrega Blackboard, pruebas de contactos ni replay de rosbag."
+}

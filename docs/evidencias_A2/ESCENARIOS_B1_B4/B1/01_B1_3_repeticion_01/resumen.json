@@ -1,0 +1,94 @@
+{
+  "estado": "APROBADA_B1_NAVEGACION_GEOMETRIA",
+  "inicio_utc": "2026-11-08T15:42:15.273933+00:00",
+  "fis_v03_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "a3_sha256": "2c820de906497080e84e9ff37c458d8787a290438d6651cf38bdc22e9bcd4e92",
+  "a4_sha256": "5f03cfaea0ee52769e33b32924441ea72761d4c8300f778290b17dc57db5e02d",
+  "gazebo": true,
+  "domain_id": "230",
+  "escenario_oficial": "B1_pasillo_libre_1m",
+  "repeticion": 1,
+  "es_prueba_oficial_4x5": false,
+  "fases": [
+    {
+      "fase": "B1 RUTA con desplazamiento real",
+      "t_s": 1.806,
+      "pose": [
+        -3.0209508987267224,
+        -2.7750003779039267
+      ],
+      "df": 1.8875623941421509
+    },
+    {
+      "fase": "B1 meta completada sobre A*",
+      "t_s": 17.877,
+      "pose": [
+        -3.897756462065176,
+        -2.774999566157583
+      ],
+      "df": 1.0249128341674805
+    }
+  ],
+  "eventos": [
+    {
+      "t_s": 0.177,
+      "estado": "PARADA_SUPERVISOR",
+      "progreso_m": 0.0,
+      "desviacion_m": null
+    },
+    {
+      "t_s": 0.277,
+      "estado": "SEGUIR_RUTA",
+      "progreso_m": 0.0,
+      "desviacion_m": 3.3834920894100906e-05
+    },
+    {
+      "t_s": 17.877,
+      "estado": "META_COMPLETADA",
+      "progreso_m": 0.922756462065176,
+      "desviacion_m": 4.3384241710242577e-07
+    }
+  ],
+  "cambios_modo": [
+    {
+      "t_s": 0.141,
+      "modo": "CERO"
+    },
+    {
+      "t_s": 0.271,
+      "modo": "RUTA"
+    }
+  ],
+  "fallos": [],
+  "comandos": {
+    "RUTA": 170,
+    "DIFUSO": 0,
+    "CERO": 9
+  },
+  "meta_error_m": 0.077244,
+  "distancia_neta_m": 0.92281,
+  "metricas": {
+    "colisiones_geometricas_estimadas": 0,
+    "colisiones_por_contacto_gazebo": null,
+    "metodo_colisiones": "cota de huella circular conservadora 0.30m; contactar Gazebo separado",
+    "distancia_minima_centro_obstaculo_m": 0.5,
+    "distancia_minima_robot_obstaculo_m": 0.2,
+    "margen_geometrico_minimo_m": 0.2,
+    "tiempo_llegada_s_reloj_real": 16.947,
+    "desviacion_maxima_m": 6e-05,
+    "oscilaciones_omega": 0,
+    "variacion_total_omega_rad_s": 0.00016,
+    "error_final_m": 0.07724,
+    "muestras_odometria": 525,
+    "muestras_comandos": 178,
+    "modelos_colision_no_caja": [],
+    "tipo_tiempo": "simulado desde primera orden RUTA hasta META; wall-monotonic complementario",
+    "tiempo_llegada_s_simulado": 16.932,
+    "escenario": "B1_pasillo_libre_1m",
+    "repeticion": 1,
+    "nota_colisiones": "Indicador geometrico; evento de contacto Gazebo se analiza al finalizar"
+  },
+  "fin_utc": "2026-11-08T15:42:33.230889+00:00",
+  "n_muestras_odom": 526,
+  "n_comandos_registrados": 179
+}

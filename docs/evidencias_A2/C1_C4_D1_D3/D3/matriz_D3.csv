@@ -1,0 +1,6 @@
+indicador,antes_n1,despues_n5,cambio
+Llegadas documentadas,0/1,5/5,No comparable estadisticamente
+Paradas preventivas,1,0 observadas,Intervencion compuesta
+Despeje minimo por corrida,"0,2601 m","0,3133 m (media)","0,0532 m"
+"Tiempo, ventana comun 0,60 m","8,7804 s","10,4563 s","+19,09%"
+"Giro absoluto medio, ventana comun","0,1315 rad/s","0,1145 rad/s","-12,91%"

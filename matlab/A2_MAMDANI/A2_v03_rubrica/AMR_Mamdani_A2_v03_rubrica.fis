@@ -1,0 +1,83 @@
+[System]
+Name='AMR_Mamdani_A2_v03_rubrica'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=2
+NumRules=27
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='df'
+Range=[0 2]
+NumMFs=3
+MF1='Cerca':'trapmf',[0 0 0.3 0.7]
+MF2='Media':'trimf',[0.4 0.9 1.4]
+MF3='Lejos':'trapmf',[1.1 1.5 2 2]
+
+[Input2]
+Name='di'
+Range=[0 2]
+NumMFs=3
+MF1='Cerca':'trapmf',[0 0 0.3 0.7]
+MF2='Media':'trimf',[0.4 0.9 1.4]
+MF3='Lejos':'trapmf',[1.1 1.5 2 2]
+
+[Input3]
+Name='dd'
+Range=[0 2]
+NumMFs=3
+MF1='Cerca':'trapmf',[0 0 0.3 0.7]
+MF2='Media':'trimf',[0.4 0.9 1.4]
+MF3='Lejos':'trapmf',[1.1 1.5 2 2]
+
+[Output1]
+Name='v'
+Range=[0 0.2]
+NumMFs=3
+MF1='Lenta':'trapmf',[0 0 0.03 0.07]
+MF2='Media':'trimf',[0.045 0.105 0.165]
+MF3='Rapida':'trapmf',[0.13 0.17 0.2 0.2]
+
+[Output2]
+Name='omega'
+Range=[-1.5 1.5]
+NumMFs=5
+MF1='DerechaFuerte':'trapmf',[-1.5 -1.5 -1.05 -0.65]
+MF2='DerechaSuave':'trimf',[-0.9 -0.5 -0.15]
+MF3='Recto':'trimf',[-0.22 0 0.22]
+MF4='IzquierdaSuave':'trimf',[0.15 0.5 0.9]
+MF5='IzquierdaFuerte':'trapmf',[0.65 1.05 1.5 1.5]
+
+[Rules]
+1 1 1, 1 3 (1) : 1
+1 1 2, 1 1 (1) : 1
+1 1 3, 1 1 (1) : 1
+1 2 1, 1 5 (1) : 1
+1 2 2, 1 5 (1) : 1
+1 2 3, 1 1 (1) : 1
+1 3 1, 1 5 (1) : 1
+1 3 2, 1 5 (1) : 1
+1 3 3, 1 5 (1) : 1
+2 1 1, 1 3 (1) : 1
+2 1 2, 1 2 (1) : 1
+2 1 3, 1 2 (1) : 1
+2 2 1, 1 4 (1) : 1
+2 2 2, 2 3 (1) : 1
+2 2 3, 2 2 (1) : 1
+2 3 1, 1 4 (1) : 1
+2 3 2, 2 4 (1) : 1
+2 3 3, 2 3 (1) : 1
+3 1 1, 1 3 (1) : 1
+3 1 2, 1 2 (1) : 1
+3 1 3, 1 2 (1) : 1
+3 2 1, 1 4 (1) : 1
+3 2 2, 2 3 (1) : 1
+3 2 3, 2 2 (1) : 1
+3 3 1, 1 4 (1) : 1
+3 3 2, 2 4 (1) : 1
+3 3 3, 3 3 (1) : 1

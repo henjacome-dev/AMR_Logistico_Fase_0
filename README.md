@@ -1,5 +1,18 @@
 # AMR logístico para almacén — Autómatas y Expertos (MEC451)
 
+<!-- INICIO ESTADO VIGENTE AVANCE 2 2026-11-09 -->
+> **Estado vigente — Avance 2 (9 de noviembre de 2026):** B1–B4: **20/20 llegadas registradas**
+> (5 por escenario, un intento B1 fallido excluido). B2: A* con desvio preplanificado;
+> B3: evasion **hibrida asistida** con subobjetivos; B4: centrado geometrico asistido,
+> A3/A4/Mamdani en sombra. C1–C4: cierre descriptivo **con reservas**; NO existe prueba
+> A/B pareada de una mejora aislada del FIS. CNN: 600 imagenes, entrenamiento inicial
+> completado, ZIP completo distribuido por separado. Contactos Gazebo sin medicion directa;
+> rosbags conservados localmente sin replay. Ver [estado y fuentes auditadas](docs/A2_estado_vigente_20261109.md).
+> Los estados cronologicos anteriores que aparecen debajo describen cortes historicos,
+> **no** el avance vigente. El proyecto completo y MobileNetV2 final siguen pendientes.
+<!-- FIN ESTADO VIGENTE AVANCE 2 2026-11-09 -->
+
+
 **Universidad ECOTEC · Ingeniería Mecatrónica**  
 **Proyecto 1:** Robot móvil autónomo para logística en almacén  
 **Hitos documentados:** Avance 1 (corte técnico y documental de noviembre de 2026) y Avance 2, Fase 1 (auditoría numérica MATLAB del 6 de noviembre de 2026; revisión de evidencias del 7 de noviembre de 2026)

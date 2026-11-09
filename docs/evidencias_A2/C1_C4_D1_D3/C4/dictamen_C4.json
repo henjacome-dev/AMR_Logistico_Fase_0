@@ -1,0 +1,112 @@
+{
+  "etapa": "C4",
+  "fecha_utc": "2026-11-09T02:26:39.932944+00:00",
+  "dictamen": "CIERRE_DESCRIPTIVO_HIBRIDO_ASISTIDO_CON_RESERVAS",
+  "escenario": "B3",
+  "comparacion_pareada": false,
+  "atribucion_aislada_Mamdani": false,
+  "guia_geometrica_asistida": true,
+  "contactos_gazebo_verificados": false,
+  "rosbags_reproducidos": false,
+  "n_antes": 1,
+  "n_despues": 5,
+  "llegadas_antes": 0,
+  "llegadas_despues": 5,
+  "paradas_preventivas_antes": 1,
+  "paradas_preventivas_despues": 0,
+  "barrera_m": 0.255,
+  "despeje_minimo_posterior_m": 0.3124,
+  "horizonte_odometrico_comun_m": 0.6,
+  "metricas": [
+    {
+      "id": "despeje_min_corrida_m",
+      "indicador": "Despeje minimo por corrida",
+      "unidad": "m",
+      "antes_n1": 0.2601,
+      "despues_media_n5": 0.3133,
+      "despues_min": 0.3124,
+      "despues_max": 0.3153,
+      "delta_absoluta": 0.053200000000000025,
+      "delta_porcentual": 20.453671664744345
+    },
+    {
+      "id": "ventana_duracion_s",
+      "indicador": "Duracion ventana odometrica comun de 0.60 m",
+      "unidad": "s",
+      "antes_n1": 8.7804,
+      "despues_media_n5": 10.456339999999999,
+      "despues_min": 10.3791,
+      "despues_max": 10.5676,
+      "delta_absoluta": 1.6759399999999989,
+      "delta_porcentual": 19.0872853172976
+    },
+    {
+      "id": "ventana_giro_abs_medio_ponderado_radps",
+      "indicador": "Giro absoluto medio en ventana comun",
+      "unidad": "rad/s",
+      "antes_n1": 0.131452,
+      "despues_media_n5": 0.1144768,
+      "despues_min": 0.111465,
+      "despues_max": 0.117304,
+      "delta_absoluta": -0.01697520000000001,
+      "delta_porcentual": -12.913611051942919
+    },
+    {
+      "id": "ventana_variacion_angular_normalizada_por_s",
+      "indicador": "Variacion angular por tiempo en ventana",
+      "unidad": "indice",
+      "antes_n1": 0.46474,
+      "despues_media_n5": 0.15338,
+      "despues_min": 0.14747,
+      "despues_max": 0.16444,
+      "delta_absoluta": -0.31135999999999997,
+      "delta_porcentual": -66.99660024960193
+    },
+    {
+      "id": "ventana_porcentaje_tiempo_difuso",
+      "indicador": "Tiempo A3 DIFUSO en ventana",
+      "unidad": "%",
+      "antes_n1": 16.314,
+      "despues_media_n5": 6.135,
+      "despues_min": 3.818,
+      "despues_max": 7.756,
+      "delta_absoluta": -10.179,
+      "delta_porcentual": -62.39426259654285
+    },
+    {
+      "id": "ventana_cambios_modo_a3_muestreados",
+      "indicador": "Cambios muestreados A3 en ventana",
+      "unidad": "eventos",
+      "antes_n1": 3.0,
+      "despues_media_n5": 2.4,
+      "despues_min": 2.0,
+      "despues_max": 4.0,
+      "delta_absoluta": -0.6000000000000001,
+      "delta_porcentual": -20.000000000000007
+    },
+    {
+      "id": "eventos_a3_cambios",
+      "indicador": "Conmutaciones A3 por corrida completa",
+      "unidad": "eventos",
+      "antes_n1": 12.0,
+      "despues_media_n5": 5.8,
+      "despues_min": 5.0,
+      "despues_max": 7.0,
+      "delta_absoluta": -6.2,
+      "delta_porcentual": -51.66666666666666
+    },
+    {
+      "id": "recorrido_total_m",
+      "indicador": "Distancia total recorrida",
+      "unidad": "m",
+      "antes_n1": 1.0,
+      "despues_media_n5": 2.38996,
+      "despues_min": 2.3822,
+      "despues_max": 2.3946,
+      "delta_absoluta": 1.3899599999999999,
+      "delta_porcentual": 138.99599999999998
+    }
+  ],
+  "fuente_C3": "/home/enry/AMR_A2_entrega_local/C3_evaluacion_20261109_021541_UTC/dictamen_C3.json",
+  "manifiesto_C3_verificado_n": 24
+}

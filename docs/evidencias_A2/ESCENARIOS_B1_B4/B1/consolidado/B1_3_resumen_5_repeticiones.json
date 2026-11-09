@@ -1,0 +1,25 @@
+{
+  "escenario": "B1_pasillo_libre_1m",
+  "repeticiones": 5,
+  "carpetas_acreditadas_por_ensayo": {
+    "1": "B1_3_repeticion_01",
+    "2": "B1_3_repeticion_02",
+    "3": "B1_3_repeticion_03_reintento_01",
+    "4": "B1_3_repeticion_04",
+    "5": "B1_3_repeticion_05"
+  },
+  "intentos_no_acreditados_preservados": [
+    "B1_3_repeticion_03"
+  ],
+  "intentos_totales_observados": 6,
+  "tasa_llegadas_por_intento_pct": 83.333,
+  "cinco_rosbags_verificados": true,
+  "llegadas": 5,
+  "tiempo_medio_reloj_real_s": 16.948,
+  "tiempo_medio_simulado_s": 16.939,
+  "desviacion_maxima_total_m": 6e-05,
+  "distancia_minima_robot_obstaculo_m": 0.2,
+  "oscilaciones_omega_total": 0,
+  "contactos_gazebo_verificados_en_las_5": false,
+  "nota": "Colisiones geometricas estimadas; cero contacto observado SOLO si stream Gazebo lo demuestra"
+}

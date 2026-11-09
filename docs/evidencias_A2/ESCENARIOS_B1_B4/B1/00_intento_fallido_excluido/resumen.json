@@ -1,0 +1,38 @@
+{
+  "estado": "NO_APROBADA",
+  "inicio_utc": "2026-11-08T15:48:34.150884+00:00",
+  "fis_v03_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "a3_sha256": "2c820de906497080e84e9ff37c458d8787a290438d6651cf38bdc22e9bcd4e92",
+  "a4_sha256": "5f03cfaea0ee52769e33b32924441ea72761d4c8300f778290b17dc57db5e02d",
+  "gazebo": true,
+  "domain_id": "230",
+  "escenario_oficial": "B1_pasillo_libre_1m",
+  "repeticion": 3,
+  "es_prueba_oficial_4x5": false,
+  "fases": [],
+  "eventos": [
+    {
+      "t_s": 0.164,
+      "estado": "PARADA_DATOS_INVALIDOS_O_CADUCADOS",
+      "progreso_m": 0.0,
+      "desviacion_m": null
+    }
+  ],
+  "cambios_modo": [
+    {
+      "t_s": 0.128,
+      "modo": "CERO"
+    }
+  ],
+  "fallos": [
+    "A3 no reconoce RUTA inicial"
+  ],
+  "comandos": {
+    "RUTA": 0,
+    "DIFUSO": 0,
+    "CERO": 10
+  },
+  "fin_utc": "2026-11-08T15:48:35.249796+00:00",
+  "n_muestras_odom": 1,
+  "n_comandos_registrados": 10
+}

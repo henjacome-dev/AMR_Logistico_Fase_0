@@ -1,0 +1,890 @@
+{
+  "etapa": "C2",
+  "fecha_utc": "2026-11-09T02:10:10.062068+00:00",
+  "dictamen": "LINEA_BASE_OPERACIONAL_DEFINIDA_CON_RESERVAS",
+  "escenario": "B3: obstaculo dinamico a 1 m; v01 vs v02",
+  "n_antes": 1,
+  "n_despues": 5,
+  "horizonte_recorrido_comun_post_spawn_m": 0.6,
+  "barrera_geometrica_m": 0.255,
+  "ventana": "Distancia odometrica de 0.60 m posterior a insercion, con inicio y fin interpolados",
+  "conclusiones": [
+    "B3 v01 detenida por COLISION_PROYECTADA; 0/1 llegadas",
+    "B3 v02 con asistencia geometrica 5/5 llegadas",
+    "Resultados no pareados; no atribuir mejora exclusivamente a Mamdani",
+    "No se midieron contactos fisicos ni reprodujeron los rosbags"
+  ],
+  "filas": [
+    {
+      "fase": "ANTES_V01",
+      "ensayo": "20261108_192430",
+      "estado": "NO_APROBADO",
+      "llegada": 0,
+      "tipo_actuacion": "SIN_ASISTENCIA_GEOMETRICA_V01",
+      "instante_spawn_s": 4.29,
+      "duracion_registro_s": 18.269,
+      "duracion_desde_spawn_s": 13.979,
+      "recorrido_total_m": 1.0,
+      "despeje_min_corrida_m": 0.2601,
+      "margen_sobre_barrera_m": 0.0051,
+      "error_final_meta_m": 1.0112,
+      "eventos_a3_cambios": 12,
+      "eventos_a3_entradas_difuso": 6,
+      "eventos_a3_retorno_ruta": 5,
+      "colision_proyectada": 1,
+      "detenciones_barrera_total": 1,
+      "barreras_json": "{\"COLISION_PROYECTADA\": 1}",
+      "rosbag_db3_validado_presencia": 1,
+      "directorio_origen": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa/20261108_192430",
+      "n_comandos": 182,
+      "cambios_modo_a3_muestras": 13,
+      "muestras_ruta_scan_critico": 4,
+      "muestras_ruta_scan_critico_df_alto": 4,
+      "comandos_asistencia_geom": 0,
+      "ventana_inicio_s": 4.29,
+      "ventana_fin_s": 13.0704,
+      "ventana_duracion_s": 8.7804,
+      "ventana_recorrido_ventana_m": 0.6,
+      "ventana_despeje_min_ventana_m": 0.39753,
+      "ventana_puntos_odom_hasta_ventana": 259,
+      "ventana_error_max_ruta_m_muestras": 0.0239,
+      "ventana_n_comandos_ventana": 89,
+      "ventana_velocidad_abs_media_ponderada_mps": 0.069188,
+      "ventana_giro_abs_medio_ponderado_radps": 0.131452,
+      "ventana_variacion_angular_total_radps": 4.08056,
+      "ventana_variacion_angular_normalizada_por_s": 0.46474,
+      "ventana_inversiones_signo_omega": 2,
+      "ventana_cambios_modo_a3_muestreados": 3,
+      "ventana_tiempo_ruta_s": 7.348,
+      "ventana_tiempo_difuso_s": 1.4324,
+      "ventana_tiempo_cero_s": 0.0,
+      "ventana_porcentaje_tiempo_difuso": 16.314,
+      "ventana_porcentaje_tiempo_v_cero": 3.827,
+      "ventana_comandos_ruta_con_scan_critico": 0,
+      "ventana_comandos_ruta_con_sensor_discrepante": 0,
+      "ventana_comandos_asistencia_geom": 0
+    },
+    {
+      "fase": "DESPUES_V02",
+      "ensayo": "20261108_195247",
+      "estado": "B3_PILOTO_HIBRIDO_ASISTIDO_APROBADO_CONTACTOS_NO_MEDIDOS",
+      "llegada": 1,
+      "tipo_actuacion": "HIBRIDA_ASISTIDA_V02",
+      "instante_spawn_s": 4.347,
+      "duracion_registro_s": 51.14,
+      "duracion_desde_spawn_s": 46.793,
+      "recorrido_total_m": 2.3946,
+      "despeje_min_corrida_m": 0.3153,
+      "margen_sobre_barrera_m": 0.0603,
+      "error_final_meta_m": 0.1424,
+      "eventos_a3_cambios": 5,
+      "eventos_a3_entradas_difuso": 2,
+      "eventos_a3_retorno_ruta": 2,
+      "colision_proyectada": 0,
+      "detenciones_barrera_total": 0,
+      "barreras_json": "{}",
+      "rosbag_db3_validado_presencia": 1,
+      "directorio_origen": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195247",
+      "n_comandos": 511,
+      "cambios_modo_a3_muestras": 6,
+      "muestras_ruta_scan_critico": 0,
+      "muestras_ruta_scan_critico_df_alto": 0,
+      "comandos_asistencia_geom": 389,
+      "ventana_inicio_s": 4.347,
+      "ventana_fin_s": 14.9146,
+      "ventana_duracion_s": 10.5676,
+      "ventana_recorrido_ventana_m": 0.6,
+      "ventana_despeje_min_ventana_m": 0.472,
+      "ventana_puntos_odom_hasta_ventana": 311,
+      "ventana_error_max_ruta_m_muestras": 0.1229,
+      "ventana_n_comandos_ventana": 106,
+      "ventana_velocidad_abs_media_ponderada_mps": 0.056402,
+      "ventana_giro_abs_medio_ponderado_radps": 0.116257,
+      "ventana_variacion_angular_total_radps": 1.7377,
+      "ventana_variacion_angular_normalizada_por_s": 0.16444,
+      "ventana_inversiones_signo_omega": 0,
+      "ventana_cambios_modo_a3_muestreados": 2,
+      "ventana_tiempo_ruta_s": 9.7646,
+      "ventana_tiempo_difuso_s": 0.803,
+      "ventana_tiempo_cero_s": 0.0,
+      "ventana_porcentaje_tiempo_difuso": 7.599,
+      "ventana_porcentaje_tiempo_v_cero": 14.1,
+      "ventana_comandos_ruta_con_scan_critico": 0,
+      "ventana_comandos_ruta_con_sensor_discrepante": 0,
+      "ventana_comandos_asistencia_geom": 41
+    },
+    {
+      "fase": "DESPUES_V02",
+      "ensayo": "20261108_195643",
+      "estado": "B3_PILOTO_HIBRIDO_ASISTIDO_APROBADO_CONTACTOS_NO_MEDIDOS",
+      "llegada": 1,
+      "tipo_actuacion": "HIBRIDA_ASISTIDA_V02",
+      "instante_spawn_s": 4.242,
+      "duracion_registro_s": 50.871,
+      "duracion_desde_spawn_s": 46.629,
+      "recorrido_total_m": 2.3922,
+      "despeje_min_corrida_m": 0.3124,
+      "margen_sobre_barrera_m": 0.0574,
+      "error_final_meta_m": 0.1444,
+      "eventos_a3_cambios": 7,
+      "eventos_a3_entradas_difuso": 3,
+      "eventos_a3_retorno_ruta": 3,
+      "colision_proyectada": 0,
+      "detenciones_barrera_total": 0,
+      "barreras_json": "{}",
+      "rosbag_db3_validado_presencia": 1,
+      "directorio_origen": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195643",
+      "n_comandos": 508,
+      "cambios_modo_a3_muestras": 8,
+      "muestras_ruta_scan_critico": 0,
+      "muestras_ruta_scan_critico_df_alto": 0,
+      "comandos_asistencia_geom": 388,
+      "ventana_inicio_s": 4.242,
+      "ventana_fin_s": 14.6623,
+      "ventana_duracion_s": 10.4203,
+      "ventana_recorrido_ventana_m": 0.6,
+      "ventana_despeje_min_ventana_m": 0.47249,
+      "ventana_puntos_odom_hasta_ventana": 307,
+      "ventana_error_max_ruta_m_muestras": 0.1168,
+      "ventana_n_comandos_ventana": 105,
+      "ventana_velocidad_abs_media_ponderada_mps": 0.057104,
+      "ventana_giro_abs_medio_ponderado_radps": 0.114743,
+      "ventana_variacion_angular_total_radps": 1.62407,
+      "ventana_variacion_angular_normalizada_por_s": 0.15586,
+      "ventana_inversiones_signo_omega": 0,
+      "ventana_cambios_modo_a3_muestreados": 4,
+      "ventana_tiempo_ruta_s": 10.0203,
+      "ventana_tiempo_difuso_s": 0.4,
+      "ventana_tiempo_cero_s": 0.0,
+      "ventana_porcentaje_tiempo_difuso": 3.839,
+      "ventana_porcentaje_tiempo_v_cero": 13.416,
+      "ventana_comandos_ruta_con_scan_critico": 0,
+      "ventana_comandos_ruta_con_sensor_discrepante": 0,
+      "ventana_comandos_asistencia_geom": 40
+    },
+    {
+      "fase": "DESPUES_V02",
+      "ensayo": "20261108_195749",
+      "estado": "B3_PILOTO_HIBRIDO_ASISTIDO_APROBADO_CONTACTOS_NO_MEDIDOS",
+      "llegada": 1,
+      "tipo_actuacion": "HIBRIDA_ASISTIDA_V02",
+      "instante_spawn_s": 4.285,
+      "duracion_registro_s": 51.268,
+      "duracion_desde_spawn_s": 46.983,
+      "recorrido_total_m": 2.3933,
+      "despeje_min_corrida_m": 0.3127,
+      "margen_sobre_barrera_m": 0.0577,
+      "error_final_meta_m": 0.1445,
+      "eventos_a3_cambios": 5,
+      "eventos_a3_entradas_difuso": 2,
+      "eventos_a3_retorno_ruta": 2,
+      "colision_proyectada": 0,
+      "detenciones_barrera_total": 0,
+      "barreras_json": "{}",
+      "rosbag_db3_validado_presencia": 1,
+      "directorio_origen": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195749",
+      "n_comandos": 512,
+      "cambios_modo_a3_muestras": 6,
+      "muestras_ruta_scan_critico": 0,
+      "muestras_ruta_scan_critico_df_alto": 0,
+      "comandos_asistencia_geom": 393,
+      "ventana_inicio_s": 4.285,
+      "ventana_fin_s": 14.6641,
+      "ventana_duracion_s": 10.3791,
+      "ventana_recorrido_ventana_m": 0.6,
+      "ventana_despeje_min_ventana_m": 0.47199,
+      "ventana_puntos_odom_hasta_ventana": 306,
+      "ventana_error_max_ruta_m_muestras": 0.1228,
+      "ventana_n_comandos_ventana": 105,
+      "ventana_velocidad_abs_media_ponderada_mps": 0.057269,
+      "ventana_giro_abs_medio_ponderado_radps": 0.117304,
+      "ventana_variacion_angular_total_radps": 1.57327,
+      "ventana_variacion_angular_normalizada_por_s": 0.15158,
+      "ventana_inversiones_signo_omega": 0,
+      "ventana_cambios_modo_a3_muestreados": 2,
+      "ventana_tiempo_ruta_s": 9.5741,
+      "ventana_tiempo_difuso_s": 0.805,
+      "ventana_tiempo_cero_s": 0.0,
+      "ventana_porcentaje_tiempo_difuso": 7.756,
+      "ventana_porcentaje_tiempo_v_cero": 12.843,
+      "ventana_comandos_ruta_con_scan_critico": 0,
+      "ventana_comandos_ruta_con_sensor_discrepante": 0,
+      "ventana_comandos_asistencia_geom": 41
+    },
+    {
+      "fase": "DESPUES_V02",
+      "ensayo": "20261108_195855",
+      "estado": "B3_PILOTO_HIBRIDO_ASISTIDO_APROBADO_CONTACTOS_NO_MEDIDOS",
+      "llegada": 1,
+      "tipo_actuacion": "HIBRIDA_ASISTIDA_V02",
+      "instante_spawn_s": 4.221,
+      "duracion_registro_s": 50.941,
+      "duracion_desde_spawn_s": 46.72,
+      "recorrido_total_m": 2.3875,
+      "despeje_min_corrida_m": 0.3129,
+      "margen_sobre_barrera_m": 0.0579,
+      "error_final_meta_m": 0.1457,
+      "eventos_a3_cambios": 5,
+      "eventos_a3_entradas_difuso": 2,
+      "eventos_a3_retorno_ruta": 2,
+      "colision_proyectada": 0,
+      "detenciones_barrera_total": 0,
+      "barreras_json": "{}",
+      "rosbag_db3_validado_presencia": 1,
+      "directorio_origen": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195855",
+      "n_comandos": 509,
+      "cambios_modo_a3_muestras": 6,
+      "muestras_ruta_scan_critico": 0,
+      "muestras_ruta_scan_critico_df_alto": 0,
+      "comandos_asistencia_geom": 389,
+      "ventana_inicio_s": 4.221,
+      "ventana_fin_s": 14.6603,
+      "ventana_duracion_s": 10.4393,
+      "ventana_recorrido_ventana_m": 0.6,
+      "ventana_despeje_min_ventana_m": 0.47607,
+      "ventana_puntos_odom_hasta_ventana": 307,
+      "ventana_error_max_ruta_m_muestras": 0.1218,
+      "ventana_n_comandos_ventana": 106,
+      "ventana_velocidad_abs_media_ponderada_mps": 0.057168,
+      "ventana_giro_abs_medio_ponderado_radps": 0.112615,
+      "ventana_variacion_angular_total_radps": 1.53945,
+      "ventana_variacion_angular_normalizada_por_s": 0.14747,
+      "ventana_inversiones_signo_omega": 0,
+      "ventana_cambios_modo_a3_muestreados": 2,
+      "ventana_tiempo_ruta_s": 9.6393,
+      "ventana_tiempo_difuso_s": 0.8,
+      "ventana_tiempo_cero_s": 0.0,
+      "ventana_porcentaje_tiempo_difuso": 7.663,
+      "ventana_porcentaje_tiempo_v_cero": 13.238,
+      "ventana_comandos_ruta_con_scan_critico": 0,
+      "ventana_comandos_ruta_con_sensor_discrepante": 0,
+      "ventana_comandos_asistencia_geom": 41
+    },
+    {
+      "fase": "DESPUES_V02",
+      "ensayo": "20261108_195957",
+      "estado": "B3_PILOTO_HIBRIDO_ASISTIDO_APROBADO_CONTACTOS_NO_MEDIDOS",
+      "llegada": 1,
+      "tipo_actuacion": "HIBRIDA_ASISTIDA_V02",
+      "instante_spawn_s": 4.221,
+      "duracion_registro_s": 50.457,
+      "duracion_desde_spawn_s": 46.236,
+      "recorrido_total_m": 2.3822,
+      "despeje_min_corrida_m": 0.3132,
+      "margen_sobre_barrera_m": 0.0582,
+      "error_final_meta_m": 0.1459,
+      "eventos_a3_cambios": 7,
+      "eventos_a3_entradas_difuso": 3,
+      "eventos_a3_retorno_ruta": 3,
+      "colision_proyectada": 0,
+      "detenciones_barrera_total": 0,
+      "barreras_json": "{}",
+      "rosbag_db3_validado_presencia": 1,
+      "directorio_origen": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195957",
+      "n_comandos": 504,
+      "cambios_modo_a3_muestras": 8,
+      "muestras_ruta_scan_critico": 0,
+      "muestras_ruta_scan_critico_df_alto": 0,
+      "comandos_asistencia_geom": 387,
+      "ventana_inicio_s": 4.221,
+      "ventana_fin_s": 14.6964,
+      "ventana_duracion_s": 10.4754,
+      "ventana_recorrido_ventana_m": 0.6,
+      "ventana_despeje_min_ventana_m": 0.48057,
+      "ventana_puntos_odom_hasta_ventana": 309,
+      "ventana_error_max_ruta_m_muestras": 0.1329,
+      "ventana_n_comandos_ventana": 106,
+      "ventana_velocidad_abs_media_ponderada_mps": 0.056832,
+      "ventana_giro_abs_medio_ponderado_radps": 0.111465,
+      "ventana_variacion_angular_total_radps": 1.54567,
+      "ventana_variacion_angular_normalizada_por_s": 0.14755,
+      "ventana_inversiones_signo_omega": 0,
+      "ventana_cambios_modo_a3_muestreados": 2,
+      "ventana_tiempo_ruta_s": 10.0754,
+      "ventana_tiempo_difuso_s": 0.4,
+      "ventana_tiempo_cero_s": 0.0,
+      "ventana_porcentaje_tiempo_difuso": 3.818,
+      "ventana_porcentaje_tiempo_v_cero": 13.212,
+      "ventana_comandos_ruta_con_scan_critico": 0,
+      "ventana_comandos_ruta_con_sensor_discrepante": 0,
+      "ventana_comandos_asistencia_geom": 43
+    }
+  ],
+  "detalles": {
+    "20261108_192430": {
+      "spawn": {
+        "t_s": 4.29,
+        "pose_robot": [
+          -2.2255435843739657,
+          -2.7749995386757673
+        ],
+        "pose_caja": [
+          -3.32554,
+          -2.775
+        ],
+        "desplazamiento_antes_de_insertar_m": 0.2567,
+        "distancia_centro_robot_a_superficie_caja_m": 1.0,
+        "scan_previo_m": 1.954951286315918,
+        "respuesta_gazebo": "SpawnEntity: Successfully spawned entity [a2_b3_obstaculo_sorpresa]",
+        "pausa_movimiento_durante_spawn": true,
+        "scan_despues_m": 1.0383,
+        "df_despues_m": 1.0589
+      },
+      "barreras": {
+        "COLISION_PROYECTADA": 1
+      },
+      "fallos": [
+        "COLISION_PROYECTADA"
+      ],
+      "politica": null,
+      "mensajes_FIS": 91,
+      "eventos_arbitraje": [],
+      "rosbag_reproducido": false,
+      "contactos_fisicos_gazebo_medido": false
+    },
+    "20261108_195247": {
+      "spawn": {
+        "t_s": 4.347,
+        "pose_robot": [
+          -2.2255406053119335,
+          -2.7749993949007834
+        ],
+        "pose_caja": [
+          -3.32554,
+          -2.775
+        ],
+        "desplazamiento_antes_de_insertar_m": 0.2591,
+        "distancia_centro_robot_a_superficie_caja_m": 1.0,
+        "scan_previo_m": 1.9385349750518799,
+        "respuesta_gazebo": "SpawnEntity: Successfully spawned entity [a2_b3_obstaculo_sorpresa]",
+        "pausa_movimiento_durante_spawn": true,
+        "scan_despues_m": 1.0337,
+        "df_despues_m": 1.0395
+      },
+      "barreras": {},
+      "fallos": [],
+      "politica": "RETENCION_LIDAR_SUBOBJETIVOS_TEMPORALES_Y_FIS_VELOCIDAD",
+      "mensajes_FIS": 255,
+      "eventos_arbitraje": [
+        {
+          "t_s": 10.843,
+          "evento": "RETENCION_EVASION",
+          "modo_a3_inicial": "DIFUSO",
+          "scan_m": 0.5803,
+          "df_m": 0.5743,
+          "pose": [
+            -2.6828285802023544,
+            -2.7749993504420907
+          ],
+          "lado": "SUR",
+          "subobjetivos": [
+            [
+              -2.905540605305913,
+              -3.225
+            ],
+            [
+              -3.765540605305913,
+              -3.225
+            ],
+            [
+              -3.845540605305913,
+              -2.775
+            ]
+          ],
+          "despeje_min_predicho_m": 0.35,
+          "desviacion_max_predicha_m": 0.45
+        },
+        {
+          "t_s": 20.14,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 1,
+          "pose": [
+            -2.8748353391756947,
+            -3.1587991426717323
+          ]
+        },
+        {
+          "t_s": 40.842,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 2,
+          "pose": [
+            -3.687452532851431,
+            -3.219929457892528
+          ]
+        },
+        {
+          "t_s": 49.74,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 3,
+          "pose": [
+            -3.8206196798845626,
+            -2.850852844399016
+          ]
+        },
+        {
+          "t_s": 50.044,
+          "evento": "REINCORPORACION_A4",
+          "pose": [
+            -3.8214482141709687,
+            -2.84833390317795
+          ],
+          "modo_a3": "RUTA",
+          "scan_m": 0.9136,
+          "df_m": 0.9276
+        }
+      ],
+      "rosbag_reproducido": false,
+      "contactos_fisicos_gazebo_medido": false
+    },
+    "20261108_195643": {
+      "spawn": {
+        "t_s": 4.242,
+        "pose_robot": [
+          -2.22553760975306,
+          -2.774999588763912
+        ],
+        "pose_caja": [
+          -3.32554,
+          -2.775
+        ],
+        "desplazamiento_antes_de_insertar_m": 0.2531,
+        "distancia_centro_robot_a_superficie_caja_m": 1.0,
+        "scan_previo_m": 1.9551860094070435,
+        "respuesta_gazebo": "SpawnEntity: Successfully spawned entity [a2_b3_obstaculo_sorpresa]",
+        "pausa_movimiento_durante_spawn": true,
+        "scan_despues_m": 1.0363,
+        "df_despues_m": 1.0569
+      },
+      "barreras": {},
+      "fallos": [],
+      "politica": "RETENCION_LIDAR_SUBOBJETIVOS_TEMPORALES_Y_FIS_VELOCIDAD",
+      "mensajes_FIS": 254,
+      "eventos_arbitraje": [
+        {
+          "t_s": 10.736,
+          "evento": "RETENCION_EVASION",
+          "modo_a3_inicial": "DIFUSO",
+          "scan_m": 0.594,
+          "df_m": 0.5889,
+          "pose": [
+            -2.6877244285624324,
+            -2.774999399356263
+          ],
+          "lado": "SUR",
+          "subobjetivos": [
+            [
+              -2.9055376097483014,
+              -3.225
+            ],
+            [
+              -3.7655376097483013,
+              -3.225
+            ],
+            [
+              -3.8455376097483014,
+              -2.775
+            ]
+          ],
+          "despeje_min_predicho_m": 0.35,
+          "desviacion_max_predicha_m": 0.45
+        },
+        {
+          "t_s": 19.936,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 1,
+          "pose": [
+            -2.873090436213483,
+            -3.1541721214645904
+          ]
+        },
+        {
+          "t_s": 40.536,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 2,
+          "pose": [
+            -3.68709177003146,
+            -3.219552085463185
+          ]
+        },
+        {
+          "t_s": 49.536,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 3,
+          "pose": [
+            -3.821778718185719,
+            -2.8474559185069577
+          ]
+        },
+        {
+          "t_s": 49.846,
+          "evento": "REINCORPORACION_A4",
+          "pose": [
+            -3.822580532534518,
+            -2.8450052209780727
+          ],
+          "modo_a3": "RUTA",
+          "scan_m": 0.9103,
+          "df_m": 0.9488
+        }
+      ],
+      "rosbag_reproducido": false,
+      "contactos_fisicos_gazebo_medido": false
+    },
+    "20261108_195749": {
+      "spawn": {
+        "t_s": 4.285,
+        "pose_robot": [
+          -2.2255564437520015,
+          -2.774999517693765
+        ],
+        "pose_caja": [
+          -3.32556,
+          -2.775
+        ],
+        "desplazamiento_antes_de_insertar_m": 0.258,
+        "distancia_centro_robot_a_superficie_caja_m": 1.0,
+        "scan_previo_m": 1.9427937269210815,
+        "respuesta_gazebo": "SpawnEntity: Successfully spawned entity [a2_b3_obstaculo_sorpresa]",
+        "pausa_movimiento_durante_spawn": true,
+        "scan_despues_m": 1.0341,
+        "df_despues_m": 1.0388
+      },
+      "barreras": {},
+      "fallos": [],
+      "politica": "RETENCION_LIDAR_SUBOBJETIVOS_TEMPORALES_Y_FIS_VELOCIDAD",
+      "mensajes_FIS": 256,
+      "eventos_arbitraje": [
+        {
+          "t_s": 10.636,
+          "evento": "RETENCION_EVASION",
+          "modo_a3_inicial": "DIFUSO",
+          "scan_m": 0.5995,
+          "df_m": 0.5842,
+          "pose": [
+            -2.6828508053800553,
+            -2.7749993873991285
+          ],
+          "lado": "SUR",
+          "subobjetivos": [
+            [
+              -2.905556443745909,
+              -3.225
+            ],
+            [
+              -3.765556443745909,
+              -3.225
+            ],
+            [
+              -3.845556443745909,
+              -2.775
+            ]
+          ],
+          "despeje_min_predicho_m": 0.35,
+          "desviacion_max_predicha_m": 0.45
+        },
+        {
+          "t_s": 19.838,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 1,
+          "pose": [
+            -2.8721777491091762,
+            -3.152939071772962
+          ]
+        },
+        {
+          "t_s": 40.927,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 2,
+          "pose": [
+            -3.6905893501935054,
+            -3.2198773469315793
+          ]
+        },
+        {
+          "t_s": 49.927,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 3,
+          "pose": [
+            -3.8224682582928144,
+            -2.846983085210982
+          ]
+        },
+        {
+          "t_s": 50.237,
+          "evento": "REINCORPORACION_A4",
+          "pose": [
+            -3.82323966533557,
+            -2.844576613551358
+          ],
+          "modo_a3": "RUTA",
+          "scan_m": 0.9185,
+          "df_m": 0.9295
+        }
+      ],
+      "rosbag_reproducido": false,
+      "contactos_fisicos_gazebo_medido": false
+    },
+    "20261108_195855": {
+      "spawn": {
+        "t_s": 4.221,
+        "pose_robot": [
+          -2.225554504301575,
+          -2.774999556271441
+        ],
+        "pose_caja": [
+          -3.32555,
+          -2.775
+        ],
+        "desplazamiento_antes_de_insertar_m": 0.2531,
+        "distancia_centro_robot_a_superficie_caja_m": 1.0,
+        "scan_previo_m": 1.9456521272659302,
+        "respuesta_gazebo": "SpawnEntity: Successfully spawned entity [a2_b3_obstaculo_sorpresa]",
+        "pausa_movimiento_durante_spawn": true,
+        "scan_despues_m": 1.0518,
+        "df_despues_m": 1.0565
+      },
+      "barreras": {},
+      "fallos": [],
+      "politica": "RETENCION_LIDAR_SUBOBJETIVOS_TEMPORALES_Y_FIS_VELOCIDAD",
+      "mensajes_FIS": 254,
+      "eventos_arbitraje": [
+        {
+          "t_s": 10.646,
+          "evento": "RETENCION_EVASION",
+          "modo_a3_inicial": "DIFUSO",
+          "scan_m": 0.6042,
+          "df_m": 0.589,
+          "pose": [
+            -2.680400686071356,
+            -2.774999433435558
+          ],
+          "lado": "SUR",
+          "subobjetivos": [
+            [
+              -2.90555450429595,
+              -3.225
+            ],
+            [
+              -3.7655545042959497,
+              -3.225
+            ],
+            [
+              -3.84555450429595,
+              -2.775
+            ]
+          ],
+          "despeje_min_predicho_m": 0.35,
+          "desviacion_max_predicha_m": 0.45
+        },
+        {
+          "t_s": 19.847,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 1,
+          "pose": [
+            -2.871256685598489,
+            -3.1528218976727795
+          ]
+        },
+        {
+          "t_s": 40.537,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 2,
+          "pose": [
+            -3.688109111709305,
+            -3.219600092310385
+          ]
+        },
+        {
+          "t_s": 49.537,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 3,
+          "pose": [
+            -3.821955289882083,
+            -2.8470080093265353
+          ]
+        },
+        {
+          "t_s": 49.855,
+          "evento": "REINCORPORACION_A4",
+          "pose": [
+            -3.8227639393757067,
+            -2.8445374946534336
+          ],
+          "modo_a3": "RUTA",
+          "scan_m": 0.916,
+          "df_m": 0.94
+        }
+      ],
+      "rosbag_reproducido": false,
+      "contactos_fisicos_gazebo_medido": false
+    },
+    "20261108_195957": {
+      "spawn": {
+        "t_s": 4.221,
+        "pose_robot": [
+          -2.2255551592226226,
+          -2.7749995038559585
+        ],
+        "pose_caja": [
+          -3.32556,
+          -2.775
+        ],
+        "desplazamiento_antes_de_insertar_m": 0.2531,
+        "distancia_centro_robot_a_superficie_caja_m": 1.0,
+        "scan_previo_m": 1.9532365798950195,
+        "respuesta_gazebo": "SpawnEntity: Successfully spawned entity [a2_b3_obstaculo_sorpresa]",
+        "pausa_movimiento_durante_spawn": true,
+        "scan_despues_m": 1.0461,
+        "df_despues_m": 1.0508
+      },
+      "barreras": {},
+      "fallos": [],
+      "politica": "RETENCION_LIDAR_SUBOBJETIVOS_TEMPORALES_Y_FIS_VELOCIDAD",
+      "mensajes_FIS": 252,
+      "eventos_arbitraje": [
+        {
+          "t_s": 10.442,
+          "evento": "RETENCION_EVASION",
+          "modo_a3_inicial": "DIFUSO",
+          "scan_m": 0.6101,
+          "df_m": 0.5992,
+          "pose": [
+            -2.6657200735593265,
+            -2.7749994183741467
+          ],
+          "lado": "SUR",
+          "subobjetivos": [
+            [
+              -2.905555159217103,
+              -3.225
+            ],
+            [
+              -3.765555159217103,
+              -3.225
+            ],
+            [
+              -3.845555159217103,
+              -2.775
+            ]
+          ],
+          "despeje_min_predicho_m": 0.35,
+          "desviacion_max_predicha_m": 0.45
+        },
+        {
+          "t_s": 19.733,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 1,
+          "pose": [
+            -2.870111245948679,
+            -3.154481008742394
+          ]
+        },
+        {
+          "t_s": 40.239,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 2,
+          "pose": [
+            -3.690258511850088,
+            -3.219863150164142
+          ]
+        },
+        {
+          "t_s": 49.133,
+          "evento": "SUBOBJETIVO_ALCANZADO",
+          "indice": 3,
+          "pose": [
+            -3.821139310880168,
+            -2.850840014148757
+          ]
+        },
+        {
+          "t_s": 49.46,
+          "evento": "REINCORPORACION_A4",
+          "pose": [
+            -3.821926705639939,
+            -2.848396764288012
+          ],
+          "modo_a3": "RUTA",
+          "scan_m": 0.9166,
+          "df_m": 0.9468
+        }
+      ],
+      "rosbag_reproducido": false,
+      "contactos_fisicos_gazebo_medido": false
+    }
+  },
+  "fuentes": [
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa/20261108_192430/resumen.json",
+      "sha256": "b4fb89529e04daf3bc3b2ec1492f948f47b6f0b492a3de900de2f98ee6151753"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa/20261108_192430/control.csv",
+      "sha256": "7c2748e66b65bbad99d29706127b6d0b3ab87ecabfacaeea8a3f29e2b7c93142"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa/20261108_192430/odometria.csv",
+      "sha256": "41f4201e7797c1070bb5c5d47fcf0284d0cb0246f8d4af0a042a74ca7edbe883"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195247/resumen.json",
+      "sha256": "adcd0d6e933cb7c6f3a12648d0a2b53dc1b509ae33d78c331b83a3a6cf371f8f"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195247/control.csv",
+      "sha256": "2092ab141c99578a6ed17e5821517b788ca584f037ab054d4887cff9cac1f54c"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195247/odometria.csv",
+      "sha256": "11245c46f34b370de1d4b26f70d92b3936c7630a1232c68d11ff927771b23560"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195643/resumen.json",
+      "sha256": "09005ff8ec130a581bd8ddb6c06298fa0fc62d39f008fe544621631510daabc9"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195643/control.csv",
+      "sha256": "86f5fc78a75b467fb460e1f1d384fb503d1ea4e10e22a106f94175720505b5f6"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195643/odometria.csv",
+      "sha256": "3691d64a9dbac9445de5780b082500cf26cd322ef6c53b2616ec9c13aebf5e86"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195749/resumen.json",
+      "sha256": "1c9ee7ff68fd9eed7e08489295f86ae647653b21e9c3c8b134691a2a1f73163e"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195749/control.csv",
+      "sha256": "8dc01cf4669e0bed938bbfa7ab2b9eb32da3801033719e66db32f105c5463479"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195749/odometria.csv",
+      "sha256": "e71d927e3b00d617f02c1137c889d897b38594f5d20c5d36d9cb96a95697ee6f"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195855/resumen.json",
+      "sha256": "b2143795d5a9c8257778bec15d15411d29725978ac882ea04beadea0dd9ff700"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195855/control.csv",
+      "sha256": "255ff1d3b36252368ef9409b79e904107e88cb8a27a94d8d10a74cdf898d6ba1"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195855/odometria.csv",
+      "sha256": "85e556c1a85fe2f6c981c2905d43b59b93b58163bdc9ce85540ffc38ec5af207"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195957/resumen.json",
+      "sha256": "45140beabea08562883712ef5ffac68ec5fde880e897ed7bf43be6f0832a728d"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195957/control.csv",
+      "sha256": "9358f66e829c730d529ef1a1dbc418acb526622d74b97c91c7a5022c2f7a9aff"
+    },
+    {
+      "archivo": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261108_195957/odometria.csv",
+      "sha256": "d7a837fdfdc154a9440d782283d745bfbbfcfa0565babbe15ef10e15c434e960"
+    }
+  ]
+}

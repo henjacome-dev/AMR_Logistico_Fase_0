@@ -1,0 +1,9 @@
+id,indicador,unidad,antes_n1,despues_media_n5,despues_min,despues_max,delta_absoluta,delta_porcentual
+despeje_min_corrida_m,Despeje minimo por corrida,m,0.2601,0.3133,0.3124,0.3153,0.053200000000000025,20.453671664744345
+ventana_duracion_s,Duracion ventana odometrica comun de 0.60 m,s,8.7804,10.456339999999999,10.3791,10.5676,1.6759399999999989,19.0872853172976
+ventana_giro_abs_medio_ponderado_radps,Giro absoluto medio en ventana comun,rad/s,0.131452,0.1144768,0.111465,0.117304,-0.01697520000000001,-12.913611051942919
+ventana_variacion_angular_normalizada_por_s,Variacion angular por tiempo en ventana,indice,0.46474,0.15338,0.14747,0.16444,-0.31135999999999997,-66.99660024960193
+ventana_porcentaje_tiempo_difuso,Tiempo A3 DIFUSO en ventana,%,16.314,6.135,3.818,7.756,-10.179,-62.39426259654285
+ventana_cambios_modo_a3_muestreados,Cambios muestreados A3 en ventana,eventos,3.0,2.4,2.0,4.0,-0.6000000000000001,-20.000000000000007
+eventos_a3_cambios,Conmutaciones A3 por corrida completa,eventos,12.0,5.8,5.0,7.0,-6.2,-51.66666666666666
+recorrido_total_m,Distancia total recorrida,m,1.0,2.38996,2.3822,2.3946,1.3899599999999999,138.99599999999998
