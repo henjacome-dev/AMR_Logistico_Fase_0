@@ -1,0 +1,6 @@
+intento,estado,aprobado,parada,error_meta_m,trayectoria_m,cobertura,contactos_pares,contactos_episodios,gzserver_identity,carpeta_fuente,bloqueo
+1,APROBADO,True,META_B1_VERIFICADA,0.073027,0.90874,VALIDA,0,0,479:251026,/home/enry/AMR_A2_entrega_local/A12_B1_piloto_gazebo_20261109_181144_493068_UTC,
+2,APROBADO,True,META_B1_VERIFICADA,0.073543,0.908662,VALIDA,0,0,1212:254809,/home/enry/AMR_A2_entrega_local/A12_B1_piloto_gazebo_20261109_181219_860079_UTC,
+3,APROBADO,True,META_B1_VERIFICADA,0.074423,0.907099,VALIDA,0,0,1906:258299,/home/enry/AMR_A2_entrega_local/A12_B1_piloto_gazebo_20261109_181254_469867_UTC,
+4,APROBADO,True,META_B1_VERIFICADA,0.07479,0.906708,VALIDA,0,0,2588:261666,/home/enry/AMR_A2_entrega_local/A12_B1_piloto_gazebo_20261109_181329_433682_UTC,
+5,APROBADO,True,META_B1_VERIFICADA,0.077409,0.906245,VALIDA,0,0,3252:265124,/home/enry/AMR_A2_entrega_local/A12_B1_piloto_gazebo_20261109_181405_347740_UTC,

@@ -1,0 +1,6 @@
+intento,estado,aprobado,error_meta_m,trayectoria_m,contactos_pares,contactos_episodios,cobertura,actuacion_DIFUSO_observada,comandos_reales_modo_DIFUSO,rosbag_valido,fuente_original,bloqueo
+1,APROBADO,True,0.1452,2.214,0,0,VALIDA,False,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B2_rescate_integrado/20261109_033603,
+2,APROBADO,True,0.146,2.2133,0,0,VALIDA,False,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B2_rescate_integrado/20261109_033705,
+3,APROBADO,True,0.1448,2.2146,0,0,VALIDA,False,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B2_rescate_integrado/20261109_033805,
+4,APROBADO,True,0.1446,2.2148,0,0,VALIDA,False,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B2_rescate_integrado/20261109_033905,
+5,APROBADO,True,0.147,2.2132,0,0,VALIDA,False,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B2_rescate_integrado/20261109_034003,

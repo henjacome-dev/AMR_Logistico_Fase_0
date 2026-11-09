@@ -1,0 +1,6 @@
+intento,estado,aprobado,error_meta_m,cobertura,contactos_pares,contactos_episodios,obstaculo_insertado,desvio_hibrido,comandos_evasion_asistida,comandos_reales_modo_DIFUSO,actuacion_DIFUSO_observada,scan_caducidades,rosbag_valido,fuente_original,bloqueo
+1,APROBADO,True,0.1424,VALIDA,0,0,True,True,389,36,True,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261109_111811,
+2,APROBADO,True,0.146,VALIDA,0,0,True,True,393,32,True,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261109_111916,
+3,APROBADO,True,0.1462,VALIDA,0,0,True,True,388,32,True,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261109_112020,
+4,APROBADO,True,0.1441,VALIDA,0,0,True,True,388,30,True,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261109_112123,
+5,APROBADO,True,0.1432,VALIDA,0,0,True,True,390,32,True,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B3_obstaculo_sorpresa_v02/20261109_112225,

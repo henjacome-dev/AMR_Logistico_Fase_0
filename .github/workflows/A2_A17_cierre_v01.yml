@@ -1,0 +1,19 @@
+name: Cierre Avance 2 A17
+on:
+  push:
+    branches: [cierre-avance2-v2]
+  pull_request:
+    branches: [desarrollo-avance2]
+permissions:
+  contents: read
+jobs:
+  a17-cierre:
+    name: validar-A17-evidencias-y-FIS-v03
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout completo para auditar tag original
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verificar artefactos publicados A12–A16 y FIS v03
+        run: python3 tools/a2_cierre/A2_A17_validar_publicacion_v01.py

@@ -1,0 +1,100 @@
+{
+  "dataset_origen": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_R22_R23_CNN_integral_v6_contexto/20261108_004923",
+  "dictamen": "A15_DATOS_600_ORIGINALES_Y_600_DERIVADOS_VALIDOS_MODELO_REEVALUADO",
+  "dimensiones_derivado": [
+    224,
+    224
+  ],
+  "dimensiones_fuente": [
+    640,
+    360
+  ],
+  "limitaciones": [
+    "Solo imagenes sinteticas Gazebo",
+    "Las poses de un mismo grupo no cruzan particiones, pero hay riesgo de sesgos por mundo/camara",
+    "Requiere validacion visual humana del mosaico",
+    "Sin comprobacion en camara real ni otros mundos",
+    "La derivada PNG es cuantizacion uint8 de resize float32"
+  ],
+  "modelo": {
+    "exactitud_test_recalculada": 1.0,
+    "loss_test_recalculada": 0.08191064450892974,
+    "matriz_confusion": [
+      [
+        18,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        24,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        24,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        24
+      ]
+    ],
+    "n_parametros": 28004,
+    "sha256": "9e0ff8e9b350e0538b755e68559f05039096e15de8d037febf6f8c1cd90f8add",
+    "tensorflow": "2.15.1",
+    "test_n": 90,
+    "tipo": "CNN ligera preliminar (NO MobileNetV2 final)"
+  },
+  "preprocesamiento": "tf.image.resize_with_pad; exportacion PNG con round+clip a uint8; evaluación del modelo usa tensor float32 original /255",
+  "qcs": {
+    "brightness_range_0_255": [
+      84.71,
+      143.63
+    ],
+    "class_counts": {
+      "ALMACENAMIENTO": 150,
+      "DESPACHO": 150,
+      "EMPAQUE": 150,
+      "RECEPCION": 150
+    },
+    "exact_duplicate_count": 0,
+    "groups": 100,
+    "model_sha256": "9e0ff8e9b350e0538b755e68559f05039096e15de8d037febf6f8c1cd90f8add",
+    "mosaic_original_sha256": "22dd4d52f86dcc2f36f4538881e6b860eb14c79f3801701576b98186b9c6b92b",
+    "perceptual_hash_buckets_multisplit": 0,
+    "source_manifest_sha256": "7b4e57c9e165dd249780046300fd7103ad9e7356c82643ade80035cbbebce84a",
+    "split_counts": {
+      "test": 90,
+      "train": 420,
+      "val": 90
+    },
+    "split_per_class": {
+      "ALMACENAMIENTO": {
+        "test": 24,
+        "train": 102,
+        "val": 24
+      },
+      "DESPACHO": {
+        "test": 24,
+        "train": 108,
+        "val": 18
+      },
+      "EMPAQUE": {
+        "test": 24,
+        "train": 102,
+        "val": 24
+      },
+      "RECEPCION": {
+        "test": 18,
+        "train": 108,
+        "val": 24
+      }
+    }
+  }
+}

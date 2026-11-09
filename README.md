@@ -1,15 +1,27 @@
 # AMR logístico para almacén — Autómatas y Expertos (MEC451)
 
 <!-- INICIO ESTADO VIGENTE AVANCE 2 2026-11-09 -->
-> **Estado vigente — Avance 2 (9 de noviembre de 2026):** B1–B4: **20/20 llegadas registradas**
-> (5 por escenario, un intento B1 fallido excluido). B2: A* con desvio preplanificado;
-> B3: evasion **hibrida asistida** con subobjetivos; B4: centrado geometrico asistido,
-> A3/A4/Mamdani en sombra. C1–C4: cierre descriptivo **con reservas**; NO existe prueba
-> A/B pareada de una mejora aislada del FIS. CNN: 600 imagenes, entrenamiento inicial
-> completado, ZIP completo distribuido por separado. Contactos Gazebo sin medicion directa;
-> rosbags conservados localmente sin replay. Ver [estado y fuentes auditadas](docs/A2_estado_vigente_20261109.md).
-> Los estados cronologicos anteriores que aparecen debajo describen cortes historicos,
-> **no** el avance vigente. El proyecto completo y MobileNetV2 final siguen pendientes.
+> **Estado documentado de cierre A12–A16 (9 de noviembre de 2026):**
+> 20/20 recorridos nuevos B1–B4 acreditados (5 por escenario), con medición
+> válida de contactos robot–obstáculo igual a cero. **B2:** A* sin actuación
+> difusa efectiva registrada. **B3:** navegación **híbrida asistida**, con
+> actuación difusa medida, pero no Mamdani puro. **B4:** centrado geométrico
+> asistido y FIS en sombra. B1 se grabó además en cinco recorridos
+> complementarios para obtener rosbags reales; no se reconstruyeron las
+> grabaciones históricas. A14 verificó 30 rosbags actuales (B1–B4 y A13)
+> y reprodujo seis en dominio ROS aislado, sin actuación original.
+> A13 comparó v03 frente a v04 en 5 pares (10/10), resultado descriptivo:
+> v04 no demostró superioridad global. **v03 es el FIS oficial**, también
+> para el **Avance 3**; v04 solo es experimento archivado.
+> CNN preliminar sintética: 600 imágenes originales + 600 derivadas,
+> 420/90/90; 90/90 en test simulado, sin afirmar generalización real.
+> Dos ZIP de CNN fueron exportados con SHA256 coincidente y acceso de
+> descarga confirmado por el usuario, sin revalidación independiente del
+> permiso externo. Evidencias ligeras y sus SHA256: [cierre A17](docs/evidencias_A2/A17_cierre_20261109/acta_cierre.md).
+> **Reserva:** las modalidades asistidas no equivalen a evasión Mamdani pura
+> ni a cumplimiento integral de toda la rúbrica. El lanzamiento operacional
+> unificado y la demostración final siguen sujetos a revisión.
+> Los apartados inferiores conservan su contexto histórico.
 <!-- FIN ESTADO VIGENTE AVANCE 2 2026-11-09 -->
 
 

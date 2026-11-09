@@ -1,9 +1,9 @@
 name: Validacion Avance 2
 on:
   push:
-    branches: [desarrollo-avance2]
+    branches: [desarrollo-avance2, cierre-avance2-v2]
   pull_request:
-    branches: [main, desarrollo-avance2]
+    branches: [main, desarrollo-avance2, cierre-avance2-v2]
 permissions:
   contents: read
 jobs:

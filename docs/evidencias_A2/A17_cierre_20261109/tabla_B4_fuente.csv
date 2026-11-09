@@ -1,0 +1,6 @@
+intento,estado,aprobado,error_meta_m,min_despeje_sdf_m,max_desviacion_m,cobertura,contactos_pares,contactos_episodios,modo_control,ordenes_activas,scan_caducidades,rosbag_valido,fuente_original,bloqueo
+1,APROBADO,True,0.1476,0.3,0.0001,VALIDA,0,0,CENTRADO_GEOMETRICO_ASISTIDO_FIS_EN_SOMBRA,310,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B4_pasillo_angosto_A12_v01/20261109_113404,
+2,APROBADO,True,0.1467,0.3,0.0,VALIDA,0,0,CENTRADO_GEOMETRICO_ASISTIDO_FIS_EN_SOMBRA,310,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B4_pasillo_angosto_A12_v01/20261109_113501,
+3,APROBADO,True,0.1467,0.3,0.0,VALIDA,0,0,CENTRADO_GEOMETRICO_ASISTIDO_FIS_EN_SOMBRA,310,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B4_pasillo_angosto_A12_v01/20261109_113558,
+4,APROBADO,True,0.1467,0.3,0.0,VALIDA,0,0,CENTRADO_GEOMETRICO_ASISTIDO_FIS_EN_SOMBRA,310,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B4_pasillo_angosto_A12_v01/20261109_113654,
+5,APROBADO,True,0.1476,0.3,0.0,VALIDA,0,0,CENTRADO_GEOMETRICO_ASISTIDO_FIS_EN_SOMBRA,310,0,True,/home/enry/AMR_Logistico_Fase_0/resultados/A2_B2_rescate_geometria_astar/20261108_171723/B4_pasillo_angosto_A12_v01/20261109_113750,

@@ -1,3 +1,18 @@
+# Avance 2 MEC451 — Estado vigente tras A12–A16 (09/11/2026)
+
+**Controlador oficial: Mamdani FIS v03 para todo el trabajo restante y Avance 3.**
+La variante v04 es exclusivamente resultado experimental A13.
+
+**Resultados medidos:** A12 20/20, A13 10/10 pareados, A14 30/30 rosbags y 6/6 replays seguros, A15 600+600 imágenes y 90/90 test sintético, A16 dos paquetes íntegros con permiso de descarga confirmado por el usuario.
+
+**Reserva metodológica:** B2 navega con A* sin actuación difusa efectiva; B3 emplea asistencia geométrica e intervención de Mamdani; B4 usa centrado geométrico y FIS en sombra. No se alega evasión Mamdani pura. CNN no es MobileNetV2 final. La publicación no acredita por sí sola el lanzamiento permanente ni la demostración ante docente.
+
+Evidencia, CSV originales ligeros, hashes y decisión del FIS: [acta A17](evidencias_A2/A17_cierre_20261109/acta_cierre.md).
+
+---
+
+## Estado anterior (archivo histórico, no vigente)
+
 # Avance 2 MEC451 — Estado vigente y alcance (09/11/2026)
 
 **Rama:** `desarrollo-avance2`. **Tag de congelacion:** `avance2` (verificar en GitHub tras publicacion).
