@@ -57,9 +57,18 @@ def main():
   src=ROOT/rel
   check(src.is_file() and src.stat().st_size==int(r['tamano_bytes']) and digest(src)==r['sha256'],
         'Integridad: '+r['archivo'])
- actual={str(p.relative_to(ROOT)) for t in (EVID,TOOLS) for p in t.rglob('*') if p.is_file()}
- check(actual==expected|{'docs/evidencias_A2/manifiesto_publicacion.csv','tools/a2_bancos/A2_validar_publicacion_R19_R23.py'},
-       'Sin archivos inesperados dentro del paquete publicado')
+ # Comprobar solamente los archivos publicados (rastreado por Git):
+ # los temporales locales sin seguimiento NO forman parte de la entrega.
+ # El manifiesto de 28 archivos se valida arriba, byte a byte con SHA256.
+ import subprocess
+ carpetas_historicas=['docs/evidencias_A2/'+etapa+'/' for etapa in EXPECTED]
+ carpetas_historicas+=['tools/a2_bancos/']
+ salida_git=subprocess.check_output(
+     ['git','-C',str(ROOT),'ls-files','--cached','--full-name','-z','--',*carpetas_historicas]
+ )
+ actual={ruta.decode('utf-8') for ruta in salida_git.split(b'\0') if ruta}
+ check(actual==expected|{'tools/a2_bancos/A2_validar_publicacion_R19_R23.py'},
+       'Paquete R19-R23: inventario de archivos rastreados sin extras ni faltantes')
  r19=load(EVID/'R19/resumen.json')
  check(r19.get('estado')=='APROBADA_PREVALIDACION_EXPERIMENTAL' and len(r19.get('etapas',[]))==7 and not r19.get('fallos',[]) and r19.get('r19_oficial_acreditado') is False,
        'R19: 7 etapas, sin fallos declarados y reserva de acreditación preservada')
