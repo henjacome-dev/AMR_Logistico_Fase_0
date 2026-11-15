@@ -1,16 +1,5 @@
 #!/usr/bin/env python3
-"""U3S7: Supervisor integrado con arbitraje seguro y reconocimiento CNN.
-
-Mantiene todas las garantias de supervisor_f13.py:
-- Unico publicador en /cmd_vel.
-- Parada estricta si LiDAR < 0.35 m o sensores caducados.
-- Limites VMAX = 0.12 m/s, WMAX = 0.70 rad/s.
-- Integra /estacion_detectada y /estacion_cnn_info.
-
-Uso:
-  python3 tools/supervisor_u3s7_cnn.py --ros-args -p use_sim_time:=true
-  python3 tools/supervisor_u3s7_cnn.py --ros-args -p use_sim_time:=true -p estacion_objetivo:=DESPACHO
-"""
+"""U3S7: Supervisor integrado con arbitraje seguro y reconocimiento CNN."""
 from collections import deque
 import json
 import math
@@ -46,19 +35,13 @@ class SupervisorU3S7(Node):
             automatically_declare_parameters_from_overrides=True,
         )
         self.estacion_objetivo = str(
-            self.get_parameter_or('estacion_objetivo', '').value
+            self._param('estacion_objetivo', '')
         ).strip().upper()
-        self.votos_req = int(
-            self.get_parameter_or('confirmaciones_requeridas', 3).value
-        )
+        self.votos_req = int(self._param('confirmaciones_requeridas', 3))
 
-        # Publicadores
         self.pub = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.pub_estado = self.create_publisher(
-            String, '/estado_supervisor', 10
-        )
+        self.pub_estado = self.create_publisher(String, '/estado_supervisor', 10)
 
-        # Suscripciones base (F1.3)
         self.sub_prop = self.create_subscription(
             Twist, '/cmd_vel_ruta', self.cb_prop_ruta, 10
         )
@@ -69,7 +52,6 @@ class SupervisorU3S7(Node):
             Odometry, '/odom', self.cb_odom, qos_profile_sensor_data
         )
 
-        # Suscripciones opcionales Avance 2 (Difuso + Rangos)
         self.sub_difuso = self.create_subscription(
             Twist, '/cmd_vel_difuso', self.cb_prop_difuso, 10
         )
@@ -87,7 +69,6 @@ class SupervisorU3S7(Node):
                 qos_profile_sensor_data,
             )
 
-        # Suscripciones U3S7 (CNN)
         self.sub_cnn = self.create_subscription(
             String, '/estacion_detectada', self.cb_estacion, 10
         )
@@ -95,7 +76,6 @@ class SupervisorU3S7(Node):
             String, '/estacion_cnn_info', self.cb_estacion_info, 10
         )
 
-        # Estado interno
         self.t_prop_ruta = self.t_prop_difuso = None
         self.prop_ruta = self.prop_difuso = None
         self.t_scan = self.t_odom = None
@@ -108,11 +88,14 @@ class SupervisorU3S7(Node):
         self.objetivo_cumplido = False
 
         self.warn_t = 0.0
-        self.ultimo_estado_log = ''
         self.timer = self.create_timer(0.1, self.control)
         self.get_logger().info(
             f'Supervisor U3S7 activo | Objetivo: {self.estacion_objetivo or "MONITOREO_CONTINUO"}'
         )
+
+    def _param(self, nombre: str, default):
+        p = self.get_parameter_or(nombre, None)
+        return default if p is None else p.value
 
     def cb_prop_ruta(self, msg: Twist):
         self.prop_ruta = msg
@@ -232,7 +215,6 @@ class SupervisorU3S7(Node):
             self._detener(ahora, 'LiDAR invalido u obstaculo frontal (<0.35m)')
             return
 
-        # Verificar si el controlador difuso y los rangos estan activos
         rangos_frescos = all(
             self.t_rangos[k] is not None
             and (ahora - self.t_rangos[k] <= EDAD_SENSORES)
@@ -264,7 +246,6 @@ class SupervisorU3S7(Node):
             self._publicar_estado('DIFUSO', 'EVASION_ACTIVA', cmd.linear.x, cmd.angular.z)
             return
 
-        # Modo RUTA (igual que supervisor_f13.py)
         if self.t_prop_ruta is None or ahora - self.t_prop_ruta > EDAD_COMANDO:
             self._detener(ahora, 'no hay propuesta reciente de ruta')
             return
