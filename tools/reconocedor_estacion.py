@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """U3S7: Nodo clasificador de estaciones logisticas mediante MobileNetV2."""
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -13,8 +14,9 @@ from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import Image
 from std_msgs.msg import String
 
-REPO = Path.home() / 'AMR_Logistico_Fase_0'
-DEFAULT_MODEL = REPO / 'modelos' / 'modelo_estaciones_mobilenetv2.keras'
+REPO = Path(__file__).resolve().parent.parent
+DEFAULT_MODEL = REPO / 'modelos' / 'modelo_estaciones_mobilenetv2_compat.keras'
+DEFAULT_WORKER_PYTHON = Path.home() / '.venvs' / 'amr-cnn' / 'bin' / 'python'
 DEFAULT_CLASSES = REPO / 'modelos' / 'clases_estaciones.json'
 CLASES_FALLBACK = ['ALMACENAMIENTO', 'DESPACHO', 'EMPAQUE', 'RECEPCION']
 
@@ -70,10 +72,24 @@ class ReconocedorEstacion(Node):
             self.clases = CLASES_FALLBACK
 
         self.get_logger().info(f'Iniciando motor CNN con {model_path}...')
+        worker_python = Path(self._param('worker_python', str(DEFAULT_WORKER_PYTHON)))
+        if not worker_python.is_file():
+            raise FileNotFoundError(f'Python CNN no encontrado: {worker_python}')
+        worker_env = os.environ.copy()
+        worker_env.pop('PYTHONPATH', None)
+        worker_env.pop('PYTHONHOME', None)
+        worker_env.update({
+            'PYTHONNOUSERSITE': '1',
+            'TF_CPP_MIN_LOG_LEVEL': '2',
+            'CUDA_VISIBLE_DEVICES': '-1',
+            'OPENBLAS_NUM_THREADS': '1',
+            'OMP_NUM_THREADS': '1',
+        })
         self.worker = subprocess.Popen(
-            [sys.executable, '-u', '-c', WORKER_CODE, str(model_path)],
+            [str(worker_python), '-u', '-c', WORKER_CODE, str(model_path)],
             stdin=subprocess.PIPE,
             stdout=subprocess.PIPE,
+            env=worker_env,
         )
         listo = self.worker.stdout.readline()
         if listo.strip() != b'OK':
@@ -88,9 +104,9 @@ class ReconocedorEstacion(Node):
         self._conectar_camara()
         self.timer_discovery = self.create_timer(2.0, self._verificar_camara)
 
-def _param(self, nombre: str, default):
-    p = self.get_parameter_or(nombre, None)
-    return default if (p is None or p.value is None) else p.value
+    def _param(self, nombre: str, default):
+        p = self.get_parameter_or(nombre, None)
+        return default if (p is None or p.value is None) else p.value
 
 
     def _conectar_camara(self):

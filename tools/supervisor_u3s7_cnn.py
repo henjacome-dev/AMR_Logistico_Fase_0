@@ -93,9 +93,9 @@ class SupervisorU3S7(Node):
             f'Supervisor U3S7 activo | Objetivo: {self.estacion_objetivo or "MONITOREO_CONTINUO"}'
         )
 
-   def _param(self, nombre: str, default):
-    p = self.get_parameter_or(nombre, None)
-    return default if (p is None or p.value is None) else p.value
+    def _param(self, nombre: str, default):
+        p = self.get_parameter_or(nombre, None)
+        return default if (p is None or p.value is None) else p.value
 
     def cb_prop_ruta(self, msg: Twist):
         self.prop_ruta = msg
