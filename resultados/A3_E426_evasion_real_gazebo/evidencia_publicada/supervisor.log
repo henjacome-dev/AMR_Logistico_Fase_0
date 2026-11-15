@@ -1,0 +1,3 @@
+[INFO] [1794764000.411501135] [supervisor_u3s7_cnn]: Supervisor U3S7 activo | Objetivo: MONITOREO_CONTINUO
+[WARN] [1794764000.412728778] [supervisor_u3s7_cnn]: Parada segura: esperando sensores
+[INFO] [1794764003.070301437] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (89.8%)

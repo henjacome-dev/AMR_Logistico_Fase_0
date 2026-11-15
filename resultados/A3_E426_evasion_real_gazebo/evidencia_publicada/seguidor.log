@@ -1,0 +1,15 @@
+[RUTA] resultados/A3_E426_evasion_real_gazebo/20261115_123317_590609/F12_ruta_2_E426_20261115_123317_590609.csv | 113 puntos | 5.600 m
+[INICIO] (-3.975, -2.775) | [META] (-3.975, 2.825)
+[INFO] [1794764003.089598731] [seguidor_ruta_f13]: Esperando /odom, /scan y supervisor suscrito a /cmd_vel_ruta.
+[INFO] [1794764003.209950797] [seguidor_ruta_f13]: Inicio aceptado; error: 0.104 m
+[PARADA] Cancelado con Ctrl+C
+Traceback (most recent call last):
+  File "/home/enry/AMR_Logistico_Integracion_Final/tools/seguidor_ruta_f13.py", line 226, in <module>
+    main()
+  File "/home/enry/AMR_Logistico_Integracion_Final/tools/seguidor_ruta_f13.py", line 214, in main
+    nodo.parar()
+  File "/home/enry/AMR_Logistico_Integracion_Final/tools/seguidor_ruta_f13.py", line 130, in parar
+    self.pub.publish(Twist())
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 70, in publish
+    self.__publisher.publish(msg)
+rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389

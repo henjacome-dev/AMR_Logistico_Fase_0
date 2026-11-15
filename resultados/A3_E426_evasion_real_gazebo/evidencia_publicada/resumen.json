@@ -1,0 +1,41 @@
+{
+  "aprobado": true,
+  "escenario": "obstaculo_fisico_temporal_gazebo",
+  "ruta": "resultados/F12_ruta_2.csv",
+  "obstaculo": [
+    -3.975,
+    -1.7
+  ],
+  "obstaculo_nombre": "amr_e426_obstaculo_123317588975",
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "transicion": "RUTA->DIFUSO",
+  "movimiento_acumulado_m": 0.4788,
+  "modo_ruta_ticks": 76,
+  "modo_difuso_ticks": 3,
+  "muestras_modo_difuso_posteriores_ruta": 3,
+  "comandos_activos_difuso": 3,
+  "cnn_inferencias": 31,
+  "propuestas_ruta": 81,
+  "propuestas_mamdani_v03": 53,
+  "max_v_m_s": 0.08755,
+  "max_w_rad_s": 0.7,
+  "rango_al_activar_difuso": {
+    "posicion": [
+      -3.9746397902359525,
+      -2.389359475020022
+    ],
+    "v": 0.0876,
+    "w": 0.4565,
+    "frontal_range": 0.5886478424072266,
+    "izq_range": 1.1167638301849365,
+    "der_range": 1.114080548286438,
+    "lidar_frontal": 0.5983311533927917
+  },
+  "posicion_final_ensayo": [
+    -3.975108572296151,
+    -2.373111182215105
+  ],
+  "nota": "Ensayo termina al comprobar cambio modal; no equivale a ruta completa ni valida colisiones por contacto.",
+  "obstaculo_eliminado": true,
+  "error": null
+}
