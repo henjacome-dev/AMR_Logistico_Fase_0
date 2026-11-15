@@ -25,6 +25,16 @@ EDAD_SENSORES = 1.5
 EDAD_COMANDO = 0.4
 EDAD_CNN = 2.0
 ANGULO_FRONTAL = math.radians(25)
+RADIO_LLEGADA = 0.40
+CONFIANZA_CNN_MINIMA = 0.80
+
+# Destinos de resultados/F12_ruta_1.csv a F12_ruta_4.csv
+POSICIONES_ESTACIONES = {
+    'RECEPCION': (-3.975, -2.775),
+    'ALMACENAMIENTO': (-3.975, 2.825),
+    'EMPAQUE': (4.025, 2.825),
+    'DESPACHO': (4.025, -2.775),
+}
 
 
 class SupervisorU3S7(Node):
@@ -80,11 +90,14 @@ class SupervisorU3S7(Node):
         self.prop_ruta = self.prop_difuso = None
         self.t_scan = self.t_odom = None
         self.dist_frente = None
+        self.pose_xy = None
 
         self.historial_cnn = deque(maxlen=self.votos_req)
         self.t_cnn = None
         self.estacion_confirmada = 'NINGUNA'
         self.ultima_info_cnn = {}
+        self.t_cnn_info = None
+        self.ultimo_frame_cnn = None
         self.objetivo_cumplido = False
 
         self.warn_t = 0.0
@@ -114,6 +127,7 @@ class SupervisorU3S7(Node):
     def cb_odom(self, msg: Odometry):
         pose = msg.pose.pose.position
         if all(math.isfinite(v) for v in [pose.x, pose.y, pose.z]):
+            self.pose_xy = (float(pose.x), float(pose.y))
             self.t_odom = time.monotonic()
 
     def cb_scan(self, msg: LaserScan):
@@ -133,36 +147,108 @@ class SupervisorU3S7(Node):
         self.t_scan = time.monotonic()
 
     def cb_estacion(self, msg: String):
-        etiqueta = msg.data.strip().upper()
-        self.t_cnn = time.monotonic()
+        # Topico informativo: no genera votos de confirmacion.
+        self.ultima_etiqueta_cnn = msg.data.strip().upper()
+
+    def cb_estacion_info(self, msg: String):
+        ahora = time.monotonic()
+        ahora_ns = time.monotonic_ns()
+
+        try:
+            info = json.loads(msg.data)
+            if not isinstance(info, dict):
+                raise ValueError('JSON no es un objeto')
+
+            frame_id = info.get('frame_id')
+            etiqueta = str(info.get('estacion', '')).strip().upper()
+            clase = str(info.get('clase_top1', '')).strip().upper()
+            confianza = float(info.get('confianza', 0.0))
+        except (ValueError, TypeError, AttributeError, OverflowError):
+            self.historial_cnn.clear()
+            return
+
+        # Rechazar identificadores ausentes, repetidos o antiguos.
+        if not isinstance(frame_id, int) or isinstance(frame_id, bool):
+            self.historial_cnn.clear()
+            return
+
+        if self.ultimo_frame_cnn is not None:
+            if frame_id <= self.ultimo_frame_cnn:
+                return
+
+        antiguedad_ns = ahora_ns - frame_id
+        if not 0 <= antiguedad_ns <= int(EDAD_CNN * 1e9):
+            self.historial_cnn.clear()
+            return
+
+        self.ultimo_frame_cnn = frame_id
+        self.ultima_info_cnn = info
+        self.t_cnn_info = ahora
+
+        if self.t_cnn is not None and ahora - self.t_cnn > EDAD_CNN:
+            self.historial_cnn.clear()
+
+        self.t_cnn = ahora
+
+        valido = (
+            etiqueta in POSICIONES_ESTACIONES
+            and clase == etiqueta
+            and math.isfinite(confianza)
+            and CONFIANZA_CNN_MINIMA <= confianza <= 1.0
+        )
+
+        if not valido:
+            self.historial_cnn.clear()
+            return
+
         self.historial_cnn.append(etiqueta)
 
         if (
-            len(self.historial_cnn) == self.votos_req
-            and len(set(self.historial_cnn)) == 1
-            and etiqueta not in ('', 'INCIERTO')
+            len(self.historial_cnn) != self.votos_req
+            or len(set(self.historial_cnn)) != 1
         ):
-            if self.estacion_confirmada != etiqueta:
-                self.estacion_confirmada = etiqueta
-                conf = self.ultima_info_cnn.get('confianza', 0.0)
-                self.get_logger().info(
-                    f'[CNN CONFIRMADA] Estacion: {etiqueta} (confianza={conf*100:.1f}%)'
-                )
-            if (
-                self.estacion_objetivo
-                and etiqueta == self.estacion_objetivo
-                and not self.objetivo_cumplido
-            ):
-                self.objetivo_cumplido = True
-                self.get_logger().info(
-                    f'[MISION COMPLETADA] Robot detenido en estacion objetivo: {etiqueta}'
-                )
+            return
 
-    def cb_estacion_info(self, msg: String):
-        try:
-            self.ultima_info_cnn = json.loads(msg.data)
-        except Exception:
-            pass
+        if self.estacion_confirmada != etiqueta:
+            self.estacion_confirmada = etiqueta
+            self.get_logger().info(
+                f'[CNN CONFIRMADA] {etiqueta} '
+                f'({confianza*100:.1f}%)'
+            )
+
+        if (
+            not self.estacion_objetivo
+            or etiqueta != self.estacion_objetivo
+            or self.objetivo_cumplido
+        ):
+            return
+
+        if (
+            self.pose_xy is None
+            or self.t_odom is None
+            or ahora - self.t_odom > EDAD_SENSORES
+        ):
+            self.get_logger().warning(
+                'Objetivo detectado sin odometria reciente'
+            )
+            return
+
+        distancia = math.dist(
+            self.pose_xy, POSICIONES_ESTACIONES[etiqueta]
+        )
+
+        if distancia > RADIO_LLEGADA:
+            self.get_logger().warning(
+                f'Objetivo fuera del destino A*: '
+                f'{distancia:.2f} m'
+            )
+            return
+
+        self.objetivo_cumplido = True
+        self.get_logger().info(
+            f'[MISION COMPLETADA] {etiqueta} | '
+            f'distancia A*: {distancia:.2f} m'
+        )
 
     def _twist_valido(self, p: Twist) -> bool:
         valores = [
@@ -220,14 +306,30 @@ class SupervisorU3S7(Node):
             and (ahora - self.t_rangos[k] <= EDAD_SENSORES)
             for k in ('df', 'di', 'dd')
         )
-        usar_difuso = False
-        if rangos_frescos:
-            if (
-                self.rangos['df'] <= FRONTAL_DIFUSO
-                or self.rangos['di'] <= LATERAL_DIFUSO
-                or self.rangos['dd'] <= LATERAL_DIFUSO
-            ):
-                usar_difuso = True
+        # Los tres sensores Range son obligatorios.
+        if not rangos_frescos:
+            self._detener(ahora, 'sensores Range ausentes o caducados')
+            return
+
+        if any(self.rangos[k] is None for k in ('df', 'di', 'dd')):
+            self._detener(ahora, 'distancia Range no disponible')
+            return
+
+        # Barreras preventivas independientes del modo de navegacion.
+        if self.rangos['df'] <= 0.30:
+            self._detener(ahora, 'obstaculo frontal Range')
+            return
+
+        if self.rangos['di'] <= 0.16 or self.rangos['dd'] <= 0.16:
+            self._detener(ahora, 'obstaculo lateral Range')
+            return
+
+        # Tolerancia para valores float32 publicados por ROS 2.
+        usar_difuso = (
+            self.rangos['df'] <= FRONTAL_DIFUSO + 1e-6
+            or self.rangos['di'] <= LATERAL_DIFUSO + 1e-6
+            or self.rangos['dd'] <= LATERAL_DIFUSO + 1e-6
+        )
 
         if usar_difuso:
             if (

@@ -222,6 +222,7 @@ class ReconocedorEstacion(Node):
         self.pub_estacion.publish(msg_str)
 
         detalle = {
+            'frame_id': time.monotonic_ns(),
             'estacion': etiqueta,
             'clase_top1': self.clases[idx],
             'confianza': round(confianza, 4),
