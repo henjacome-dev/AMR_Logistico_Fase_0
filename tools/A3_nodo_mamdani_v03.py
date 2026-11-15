@@ -291,7 +291,17 @@ def ejecutar_ros(argumentos_ros):
                 String(data=estado)
             )
 
-    rclpy.init(args=argumentos_ros)
+    from rclpy.signals import SignalHandlerOptions
+    import signal
+
+    rclpy.init(
+        args=argumentos_ros,
+        signal_handler_options=SignalHandlerOptions.NO
+    )
+
+    signal.signal(signal.SIGINT, signal.default_int_handler)
+    signal.signal(signal.SIGTERM, signal.default_int_handler)
+
     nodo = None
 
     try:
@@ -303,12 +313,13 @@ def ejecutar_ros(argumentos_ros):
 
     finally:
         if nodo is not None:
-            for _ in range(3):
-                nodo.pub.publish(Twist())
-                nodo.pub_estado.publish(
-                    String(data="DETENIDO")
-                )
-                time.sleep(0.05)
+            if rclpy.ok():
+                for _ in range(3):
+                    nodo.pub.publish(Twist())
+                    nodo.pub_estado.publish(
+                        String(data="DETENIDO")
+                    )
+                    time.sleep(0.05)
 
             nodo.destroy_node()
 

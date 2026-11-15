@@ -1,0 +1,12 @@
+[OK] FIS: 3 entradas, 2 salidas, 27 reglas AND=min; operadores Mamdani verificados.
+[INFO] [1794763061.065230834] [controlador_mamdani_v03]: Mamdani v03 oficial activo. Solo publica propuestas difusas.
+Traceback (most recent call last):
+  File "/home/enry/AMR_Logistico_Integracion_Final/tools/A3_nodo_mamdani_v03.py", line 340, in <module>
+    main()
+  File "/home/enry/AMR_Logistico_Integracion_Final/tools/A3_nodo_mamdani_v03.py", line 336, in main
+    ejecutar_ros(resto)
+  File "/home/enry/AMR_Logistico_Integracion_Final/tools/A3_nodo_mamdani_v03.py", line 307, in ejecutar_ros
+    nodo.pub.publish(Twist())
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 70, in publish
+    self.__publisher.publish(msg)
+rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389

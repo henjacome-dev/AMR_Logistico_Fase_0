@@ -1,0 +1,6 @@
+[RUTA] resultados/A3_E42_gazebo_integral/20261115_121740_058538/F12_ruta_1_E42_20261115_121740_058538.csv | 21 puntos | 1.000 m
+[INICIO] (-2.975, -2.775) | [META] (-3.975, -2.775)
+[INFO] [1794763067.107714534] [seguidor_ruta_f13]: Esperando /odom, /scan y supervisor suscrito a /cmd_vel_ruta.
+[INFO] [1794763067.226948844] [seguidor_ruta_f13]: Inicio aceptado; error: 0.103 m
+[INFO] [1794763083.651658444] [seguidor_ruta_f13]: Meta alcanzada; error final 0.080 m
+[LOG] resultados/F13_ruta_1_E42_20261115_121740_058538_log.csv | 164 muestras

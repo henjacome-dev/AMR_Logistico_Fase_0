@@ -1,0 +1,11 @@
+[INFO] [1794763061.188077921] [reconocedor_estacion]: Iniciando motor CNN con /home/enry/AMR_Logistico_Integracion_Final/modelos/modelo_estaciones_mobilenetv2_compat.keras...
+[INFO] [1794763066.386673558] [reconocedor_estacion]: Reconocedor CNN listo. Escuchando camara en: /camera/image_raw | Clases: ['ALMACENAMIENTO', 'DESPACHO', 'EMPAQUE', 'RECEPCION']
+[INFO] [1794763066.535366984] [reconocedor_estacion]: CNN -> INCIERTO (75.1%, 92.2 ms)
+[INFO] [1794763068.689554132] [reconocedor_estacion]: CNN -> INCIERTO (77.4%, 92.7 ms)
+[INFO] [1794763070.995402150] [reconocedor_estacion]: CNN -> INCIERTO (51.3%, 96.5 ms)
+[INFO] [1794763073.229271221] [reconocedor_estacion]: CNN -> INCIERTO (70.8%, 93.8 ms)
+[INFO] [1794763075.433556325] [reconocedor_estacion]: CNN -> INCIERTO (75.7%, 95.0 ms)
+[INFO] [1794763077.634520647] [reconocedor_estacion]: CNN -> INCIERTO (77.2%, 92.7 ms)
+[INFO] [1794763079.669831741] [reconocedor_estacion]: CNN -> RECEPCION (84.1%, 93.2 ms)
+[INFO] [1794763081.874872333] [reconocedor_estacion]: CNN -> RECEPCION (95.2%, 95.2 ms)
+[INFO] [1794763084.122136098] [reconocedor_estacion]: CNN -> INCIERTO (76.2%, 101.2 ms)

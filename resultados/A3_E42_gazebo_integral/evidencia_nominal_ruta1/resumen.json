@@ -1,0 +1,39 @@
+{
+  "aprobado_nominal": true,
+  "evasion_observada": false,
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "ruta": "resultados/F12_ruta_1.csv",
+  "error": null,
+  "inicio": [
+    -3.0742996522526442,
+    -2.8000698406529114
+  ],
+  "meta": [
+    -3.975,
+    -2.775
+  ],
+  "codigo_seguidor": 0,
+  "posicion_final": [
+    -3.901083063374011,
+    -2.7752980567452425
+  ],
+  "error_final_m": 0.0739,
+  "duracion_observada_s": 17.459,
+  "inferencias_cnn": 62,
+  "propuestas_ruta": 175,
+  "propuestas_mamdani": 117,
+  "propuestas_mamdani_positivas": 116,
+  "estados_mamdani_activo": 115,
+  "comandos_a_gazebo": 234,
+  "max_v_m_s": 0.075,
+  "max_w_rad_s": 0.7,
+  "modos": {
+    "DETENIDO": 63,
+    "RUTA": 171
+  },
+  "motivos": {
+    "sensores Range ausentes o caducados": 7,
+    "no hay propuesta reciente de ruta": 56,
+    "NAVEGACION_NOMINAL": 171
+  }
+}

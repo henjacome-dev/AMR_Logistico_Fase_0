@@ -1,0 +1,3 @@
+[INFO] [1794763060.889354482] [emulador_sensores]: B3 activo: /scan -> /rango_frontal, /rango_izq, /rango_der (sectores 15 deg; centros 0/+45/-45; max 2 m; sigma 0.01 m)
+[INFO] [1794763070.789137386] [emulador_sensores]: Rangos: frente=2.000, izq=1.869, der=1.199 m
+[INFO] [1794763080.799456801] [emulador_sensores]: Rangos: frente=1.198, izq=1.339, der=1.550 m

@@ -1,0 +1,6 @@
+[INFO] [1794763060.882805138] [supervisor_u3s7_cnn]: Supervisor U3S7 activo | Objetivo: MONITOREO_CONTINUO
+[WARN] [1794763060.929016351] [supervisor_u3s7_cnn]: Parada segura: sensores Range ausentes o caducados
+[WARN] [1794763066.007788084] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794763069.598037563] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] DESPACHO (97.8%)
+[INFO] [1794763080.772864620] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (91.1%)
+[WARN] [1794763084.451587935] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
