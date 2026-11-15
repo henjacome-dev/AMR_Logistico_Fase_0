@@ -1,0 +1,44 @@
+[
+  {
+    "frame_id": 10678756433398,
+    "estacion": "EMPAQUE",
+    "clase_top1": "EMPAQUE",
+    "confianza": 0.9987,
+    "latencia_ms": 96.01,
+    "probs": {
+      "ALMACENAMIENTO": 0.0001,
+      "DESPACHO": 0.0002,
+      "EMPAQUE": 0.9987,
+      "RECEPCION": 0.001
+    },
+    "distancia_meta_m": 0.1173084667671449
+  },
+  {
+    "frame_id": 10679132891089,
+    "estacion": "EMPAQUE",
+    "clase_top1": "EMPAQUE",
+    "confianza": 0.9976,
+    "latencia_ms": 97.89,
+    "probs": {
+      "ALMACENAMIENTO": 0.0002,
+      "DESPACHO": 0.0002,
+      "EMPAQUE": 0.9976,
+      "RECEPCION": 0.002
+    },
+    "distancia_meta_m": 0.11731840300589574
+  },
+  {
+    "frame_id": 10679407544486,
+    "estacion": "EMPAQUE",
+    "clase_top1": "EMPAQUE",
+    "confianza": 0.9964,
+    "latencia_ms": 121.93,
+    "probs": {
+      "ALMACENAMIENTO": 0.0003,
+      "DESPACHO": 0.0003,
+      "EMPAQUE": 0.9964,
+      "RECEPCION": 0.003
+    },
+    "distancia_meta_m": 0.11732577063230622
+  }
+]

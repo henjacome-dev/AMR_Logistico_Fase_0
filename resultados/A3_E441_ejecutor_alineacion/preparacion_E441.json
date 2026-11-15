@@ -1,0 +1,10 @@
+{
+  "origen": "tools/A3_E432_ejecutor_misiones_ros.py",
+  "origen_sha256": "124c8b19f588d3bab964a03abd0cc0ebfc43a6acd613d27d511bad961ea7de1e",
+  "alineador": "tools/A3_E438_alineacion_visual_gazebo.py",
+  "alineador_sha256": "2c083e2d37adce85a8bf71c6332ca6243ee40f1af743f5e4902adf629dab5e37",
+  "nuevo": "tools/A3_E441_ejecutor_misiones_alineacion.py",
+  "nuevo_sha256": "ee8a1179f7b38f8d5d1f4d5af2161044ed2a1b5bafdf648078b599a67e47b80c",
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "nota": "Solo preparacion de nueva herramienta. Ningun proceso ROS iniciado."
+}

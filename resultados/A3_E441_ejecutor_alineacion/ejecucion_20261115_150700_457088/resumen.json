@@ -1,0 +1,79 @@
+{
+  "aprobado": true,
+  "origen": "ROBOT",
+  "destinos": [
+    "RECEPCION",
+    "ALMACENAMIENTO",
+    "EMPAQUE",
+    "DESPACHO"
+  ],
+  "etapas": [
+    {
+      "numero": 1,
+      "origen": "ROBOT",
+      "destino": "RECEPCION",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0741,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 16.91
+    },
+    {
+      "numero": 2,
+      "origen": "RECEPCION",
+      "destino": "ALMACENAMIENTO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0729,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 77.62
+    },
+    {
+      "numero": 3,
+      "origen": "ALMACENAMIENTO",
+      "destino": "EMPAQUE",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0728,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": true,
+        "yaw_inicial_deg": -44.892,
+        "error_angular_inicial_deg": 39.148,
+        "yaw_final_deg": -11.736,
+        "error_angular_final_deg": 5.967,
+        "max_lineal_giro_m_s": 0.0,
+        "max_angular_giro_rad_s": 0.35,
+        "registro_giro": "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/alineacion_03_empaque.csv"
+      },
+      "duracion_s": 119.85
+    },
+    {
+      "numero": 4,
+      "origen": "EMPAQUE",
+      "destino": "DESPACHO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0727,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 77.23
+    }
+  ],
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "error": null,
+  "pose_final": [
+    4.024976975367789,
+    -2.7022722565299477
+  ],
+  "modos": {
+    "DETENIDO": 129,
+    "RUTA": 2874
+  },
+  "cnn_total": 822,
+  "fis_sha256_final": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+}

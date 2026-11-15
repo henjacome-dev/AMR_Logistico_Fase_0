@@ -1,0 +1,17 @@
+[INFO] [1794773221.081508733] [supervisor_u3s7_cnn]: Supervisor U3S7 activo | Objetivo: MONITOREO_CONTINUO
+[WARN] [1794773221.254432461] [supervisor_u3s7_cnn]: Parada segura: esperando sensores
+[INFO] [1794773227.920209664] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (99.3%)
+[WARN] [1794773241.349004540] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794773247.562164287] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] ALMACENAMIENTO (89.7%)
+[WARN] [1794773320.660246426] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794773343.860699290] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (91.2%)
+[INFO] [1794773418.436052369] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] EMPAQUE (96.6%)
+[INFO] [1794773432.776063029] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (95.1%)
+[WARN] [1794773436.259903677] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794773442.285806214] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] EMPAQUE (97.9%)
+[WARN] [1794773443.267002226] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794773451.702165176] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (97.1%)
+[INFO] [1794773472.675545632] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] DESPACHO (82.6%)
+[INFO] [1794773495.516605884] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (88.1%)
+[INFO] [1794773504.899980534] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] DESPACHO (90.2%)
+[WARN] [1794773526.590140093] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta

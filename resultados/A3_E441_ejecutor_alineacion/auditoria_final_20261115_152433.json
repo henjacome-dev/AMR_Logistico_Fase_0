@@ -1,0 +1,36 @@
+{
+  "fecha_auditoria": "2026-11-15T15:24:33.222199",
+  "ejecucion": "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088",
+  "aprobado": true,
+  "misiones": 4,
+  "errores_finales_m": [
+    0.0741,
+    0.0729,
+    0.0728,
+    0.0727
+  ],
+  "alineacion_empaque": {
+    "aplicada": true,
+    "yaw_inicial_deg": -44.892,
+    "error_angular_inicial_deg": 39.148,
+    "yaw_final_deg": -11.736,
+    "error_angular_final_deg": 5.967,
+    "max_lineal_giro_m_s": 0.0,
+    "max_angular_giro_rad_s": 0.35,
+    "registro_giro": "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/alineacion_03_empaque.csv"
+  },
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "modelo_sha256": "58b7b072b0e98361a908ca5bc07acb767ed7ab8ed6b28ade2e97c42b4b47800d",
+  "evidencias_sha256": {
+    "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/resumen.json": "9064b2b45c3e95794478000c9856b42a743a72be20efc80cd6347d8eb189b204",
+    "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/alineacion_03_empaque.csv": "dcaacbb7c871b2d9daca0b31a7cbace12cc84d5b8e3e57050b1f63bbe22c8919",
+    "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/seguidor_01.log": "2ca2fef0ba5aebd2d69b3a32376db26aa81b5fbac0e93d3ddf2cdb7d4bf60753",
+    "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/seguidor_02.log": "cce82f8d6aece49af94b6268fce5a0665e32ba82e3cbf75f6df0e1521edfe994",
+    "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/seguidor_03.log": "28684a8e82820de1a468c4edab2d092b3b269e5016df4edf2889fa9e334ac035",
+    "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/seguidor_04.log": "50af5284cfce623fb523e768de388ebe884a82c0f0ae78dc1fd252069de546d9",
+    "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/supervisor.log": "3f6ffe2b6e0bcb90dd708658986b62029bcec647584c95738bee36403b66852e",
+    "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/cnn.log": "669906caccb1e998c6b9be8d231744bd23828ee5f303899685a9f78bb2e9c013",
+    "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/emulador.log": "10f2e0fb09aa376f62dfcdbb0e0b38ef18a71d0d4b41453f2c28b7ec8ac13a2c",
+    "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/mamdani.log": "4098be4348da46b61c06800cf509c4497e5067d4c3c290a60f04cfd692f09382"
+  }
+}

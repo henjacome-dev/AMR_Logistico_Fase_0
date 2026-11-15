@@ -1,0 +1,14 @@
+{
+  "estacion": "EMPAQUE",
+  "optica": "v6",
+  "aprobado": true,
+  "fotogramas": 3,
+  "distribucion": {
+    "EMPAQUE": 3
+  },
+  "error": null,
+  "pose_final": [
+    3.938166700471749,
+    2.9039006625289137
+  ]
+}

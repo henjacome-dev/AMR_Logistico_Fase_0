@@ -1,0 +1,6 @@
+[RUTA] resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088/F12_E432_ejecucion_20261115_150700_457088_mision_04_despacho.csv | 113 puntos | 5.600 m
+[INICIO] (4.025, 2.825) | [META] (4.025, -2.775)
+[INFO] [1794773447.082388942] [seguidor_ruta_f13]: Esperando /odom, /scan y supervisor suscrito a /cmd_vel_ruta.
+[INFO] [1794773448.202203737] [seguidor_ruta_f13]: Inicio aceptado; error: 0.074 m
+[INFO] [1794773525.789753332] [seguidor_ruta_f13]: Meta alcanzada; error final 0.078 m
+[LOG] resultados/F13_E432_ejecucion_20261115_150700_457088_mision_04_despacho_log.csv | 758 muestras

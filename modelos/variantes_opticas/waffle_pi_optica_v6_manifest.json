@@ -1,0 +1,23 @@
+{
+  "variante": "Optica operacional v6 HFOV 145°, pitch +12°, RGB 640x360",
+  "origen_optica": "A2_R22_R23_bateria_integral_CNN_v6_camara_contextual.py",
+  "hfov_deg": 145.0,
+  "cam_pitch_deg": 12.0,
+  "resolucion": [
+    640,
+    360
+  ],
+  "fuentes_sha256": {
+    "/home/enry/turtlebot3_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/models/turtlebot3_waffle_pi/model.sdf": "6dc0dcf0dae0393ffa7c2ffe518ff3002cb1aea6fdbf98458c84e18dca44ea3a",
+    "/home/enry/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle_pi.urdf": "33c201d21492246e9eba8ecd7f1ca9ae4bd7c88a1da5bc360584002ba61ab9ce",
+    "/home/enry/AMR_Logistico_Integracion_Final/launch/almacen_f1.launch.py": "ae52316a4547eb0e55fe823871a1b9624ca8c024b56b5110948ccdaf2dd86c44"
+  },
+  "archivos_variante_sha256": {
+    "modelos/variantes_opticas/waffle_pi_optica_v6.sdf": "90ca41e6623481fcafbcba3a46f6ca1f183da2fc650464b6e0835514ea19c1e8",
+    "modelos/variantes_opticas/waffle_pi_optica_v6.urdf": "d81eb7b0c47f3268f54de9f01db732081e73acc1f789f06e8f8a342e1d037438",
+    "launch/almacen_f1_optica_v6.launch.py": "58b6641abf25d6706bfa559e402fb7c6ec9c8d6d00fe14b1c7093c4c13fe9e96",
+    "launch/almacen_f1_optica_v6_empaque_diag.launch.py": "4ccf0395067a09c5f3139a060130a0404d4bfb5b33e8d112a4cb1aaec0eae655"
+  },
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "nota": "Variante experimental, no valida mision ni R25 por si sola. Originales y CNN no modificados."
+}
