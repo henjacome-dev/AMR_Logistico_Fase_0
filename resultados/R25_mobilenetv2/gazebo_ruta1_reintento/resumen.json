@@ -1,0 +1,22 @@
+{
+  "codigo_seguidor": 0,
+  "posicion_final": [
+    -3.904687468866686,
+    -2.7750894324414532
+  ],
+  "error_final_m": 0.0703,
+  "inferencias_cnn": 59,
+  "comandos": 168,
+  "max_v_m_s": 0.075,
+  "max_w_rad_s": 0.7,
+  "modos": {
+    "DETENIDO": 6,
+    "RUTA": 162
+  },
+  "motivos": {
+    "esperando sensores": 1,
+    "no hay propuesta reciente de ruta": 5,
+    "NAVEGACION_NOMINAL": 162
+  },
+  "error": null
+}

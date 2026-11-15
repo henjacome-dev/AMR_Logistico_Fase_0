@@ -1,0 +1,6 @@
+[RUTA] resultados/F12_ruta_1.csv | 21 puntos | 1.000 m
+[INICIO] (-2.975, -2.775) | [META] (-3.975, -2.775)
+[INFO] [1794728474.629823198] [seguidor_ruta_f13]: Esperando /odom, /scan y supervisor suscrito a /cmd_vel_ruta.
+[INFO] [1794728474.761014144] [seguidor_ruta_f13]: Inicio aceptado; error: 0.043 m
+[INFO] [1794728492.594280244] [seguidor_ruta_f13]: Meta alcanzada; error final 0.077 m
+[LOG] resultados/F13_ruta_1_log.csv | 160 muestras
