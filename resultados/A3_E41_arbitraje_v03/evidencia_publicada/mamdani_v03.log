@@ -1,0 +1,29 @@
+[OK] FIS: 3 entradas, 2 salidas, 27 reglas AND=min; operadores Mamdani verificados.
+[INFO] [1794762215.086866947] [controlador_mamdani_v03]: Mamdani v03 oficial activo. Solo publica propuestas difusas.
+Traceback (most recent call last):
+  File "/home/enry/AMR_Logistico_Integracion_Final/tools/A3_nodo_mamdani_v03.py", line 299, in ejecutar_ros
+    rclpy.spin(nodo)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/enry/AMR_Logistico_Integracion_Final/tools/A3_nodo_mamdani_v03.py", line 340, in <module>
+    main()
+  File "/home/enry/AMR_Logistico_Integracion_Final/tools/A3_nodo_mamdani_v03.py", line 336, in main
+    ejecutar_ros(resto)
+  File "/home/enry/AMR_Logistico_Integracion_Final/tools/A3_nodo_mamdani_v03.py", line 307, in ejecutar_ros
+    nodo.pub.publish(Twist())
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 70, in publish
+    self.__publisher.publish(msg)
+rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389

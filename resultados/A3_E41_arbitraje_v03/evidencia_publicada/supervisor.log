@@ -1,0 +1,17 @@
+[INFO] [1794762214.686360963] [supervisor_u3s7_cnn]: Supervisor U3S7 activo | Objetivo: MONITOREO_CONTINUO
+[WARN] [1794762214.771634648] [supervisor_u3s7_cnn]: Parada segura: esperando sensores
+[WARN] [1794762221.371616073] [supervisor_u3s7_cnn]: Parada segura: LiDAR invalido u obstaculo frontal (<0.35m)
+[WARN] [1794762227.571589438] [supervisor_u3s7_cnn]: Parada segura: datos de sensores caducados
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

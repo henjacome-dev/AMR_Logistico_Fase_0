@@ -1,0 +1,57 @@
+{
+  "aprobado": true,
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "domain": 174,
+  "pruebas": {
+    "SIN_RANGE": {
+      "modo": "DETENIDO",
+      "motivo": "sensores Range ausentes o caducados",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    "RUTA_NOMINAL": {
+      "modo": "RUTA",
+      "motivo": "NAVEGACION_NOMINAL",
+      "v": 0.08,
+      "omega": 0.1
+    },
+    "DIFUSO_FRONTAL": {
+      "modo": "DIFUSO",
+      "motivo": "EVASION_ACTIVA",
+      "v": 0.0618,
+      "omega": 0.7
+    },
+    "DIFUSO_LATERAL_IZQ": {
+      "modo": "DIFUSO",
+      "motivo": "EVASION_ACTIVA",
+      "v": 0.0263,
+      "omega": -0.5167
+    },
+    "PARADA_CRITICA": {
+      "modo": "DETENIDO",
+      "motivo": "LiDAR invalido u obstaculo frontal (<0.35m)",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    "RECUPERACION": {
+      "modo": "RUTA",
+      "motivo": "NAVEGACION_NOMINAL",
+      "v": 0.08,
+      "omega": 0.1
+    },
+    "PROPUESTA_RUTA_AUSENTE": {
+      "modo": "DETENIDO",
+      "motivo": "no hay propuesta reciente de ruta",
+      "v": 0.0,
+      "omega": 0.0
+    },
+    "SENSORES_CADUCADOS": {
+      "modo": "DETENIDO",
+      "motivo": "datos de sensores caducados",
+      "v": 0.0,
+      "omega": 0.0
+    }
+  },
+  "error": null,
+  "nota": "Prueba con sensores sinteticos; no acredita navegacion ni colisiones en Gazebo"
+}
