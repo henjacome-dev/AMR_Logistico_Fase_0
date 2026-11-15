@@ -7,6 +7,7 @@ import subprocess
 import sys
 import time
 
+import cv2
 import numpy as np
 import rclpy
 from rclpy.node import Node
@@ -163,9 +164,22 @@ class ReconocedorEstacion(Node):
         else:
             return None
 
-        y_idx = (np.arange(224) * h / 224).astype(np.int32)
-        x_idx = (np.arange(224) * w / 224).astype(np.int32)
-        return np.ascontiguousarray(rgb[np.ix_(y_idx, x_idx)], dtype=np.uint8)
+        # Redimensionar sin deformar la relacion de aspecto.
+        escala = min(224.0 / w, 224.0 / h)
+        nuevo_w = max(1, min(224, int(round(w * escala))))
+        nuevo_h = max(1, min(224, int(round(h * escala))))
+
+        redimensionada = cv2.resize(
+            np.ascontiguousarray(rgb),
+            (nuevo_w, nuevo_h),
+            interpolation=cv2.INTER_LINEAR,
+        )
+
+        salida = np.zeros((224, 224, 3), dtype=np.uint8)
+        x0 = (224 - nuevo_w) // 2
+        y0 = (224 - nuevo_h) // 2
+        salida[y0:y0+nuevo_h, x0:x0+nuevo_w] = redimensionada
+        return salida
 
     def _leer_exacto(self, n_bytes: int) -> bytes:
         buf = bytearray()

@@ -1,0 +1,70 @@
+{
+  "requisito": "R25",
+  "fecha_registro_utc": "2026-11-15T06:59:08.910198+00:00",
+  "origen": "Transcripcion de la prueba de produccion validada en terminal",
+  "modelo": "modelos/modelo_estaciones_mobilenetv2_compat.keras",
+  "modelo_sha256": "58b7b072b0e98361a908ca5bc07acb767ed7ab8ed6b28ade2e97c42b4b47800d",
+  "manifiesto_origen": "/home/enry/AMR_Logistico_Fase_0/resultados/A2_R22_R23_CNN_integral_v6_contexto/20261108_004923/manifiesto.csv",
+  "manifiesto_sha256": "7b4e57c9e165dd249780046300fd7103ad9e7356c82643ade80035cbbebce84a",
+  "particion": "test",
+  "imagenes": 90,
+  "correctas": 88,
+  "incorrectas": 2,
+  "exactitud": 0.9777777777777777,
+  "umbral_requerido": 0.9,
+  "umbral_superado": true,
+  "latencia_media_inferencia_ms": 72.82,
+  "clases": [
+    "ALMACENAMIENTO",
+    "DESPACHO",
+    "EMPAQUE",
+    "RECEPCION"
+  ],
+  "matriz_confusion": [
+    [
+      24,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      24,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      22,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      18
+    ]
+  ],
+  "errores": [
+    {
+      "archivo": "imagenes/test/EMPAQUE/S03_D01_A03_C01.png",
+      "real": "EMPAQUE",
+      "predicho": "RECEPCION",
+      "confianza": 0.5565
+    },
+    {
+      "archivo": "imagenes/test/EMPAQUE/S03_D05_A01_C06.png",
+      "real": "EMPAQUE",
+      "predicho": "RECEPCION",
+      "confianza": 0.4915
+    }
+  ],
+  "preprocesamiento": "RGB uint8, resize proporcional con padding 224x224; normalizacion interna x/127.5-1",
+  "limitaciones": [
+    "Dataset sintetico de Gazebo",
+    "Independencia respecto al entrenamiento final pendiente de verificar",
+    "No se ha medido precision con umbral de confianza 0.80",
+    "Dataset fuente almacenado localmente, no incluido en esta evidencia"
+  ]
+}
