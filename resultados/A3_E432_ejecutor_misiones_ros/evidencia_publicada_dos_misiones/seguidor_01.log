@@ -1,0 +1,6 @@
+[RUTA] resultados/A3_E432_ejecutor_misiones_ros/ejecucion_20261115_130140_576213/F12_E432_ejecucion_20261115_130140_576213_mision_01_recepcion.csv | 21 puntos | 1.000 m
+[INICIO] (-2.975, -2.775) | [META] (-3.975, -2.775)
+[INFO] [1794765704.060756285] [seguidor_ruta_f13]: Esperando /odom, /scan y supervisor suscrito a /cmd_vel_ruta.
+[INFO] [1794765704.151180227] [seguidor_ruta_f13]: Inicio aceptado; error: 0.059 m
+[INFO] [1794765719.865076158] [seguidor_ruta_f13]: Meta alcanzada; error final 0.080 m
+[LOG] resultados/F13_E432_ejecucion_20261115_130140_576213_mision_01_recepcion_log.csv | 157 muestras

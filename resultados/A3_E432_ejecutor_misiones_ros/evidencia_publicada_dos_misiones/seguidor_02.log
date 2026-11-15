@@ -1,0 +1,6 @@
+[RUTA] resultados/A3_E432_ejecutor_misiones_ros/ejecucion_20261115_130140_576213/F12_E432_ejecucion_20261115_130140_576213_mision_02_almacenamiento.csv | 113 puntos | 5.600 m
+[INICIO] (-3.975, -2.775) | [META] (-3.975, 2.825)
+[INFO] [1794765721.262282252] [seguidor_ruta_f13]: Esperando /odom, /scan y supervisor suscrito a /cmd_vel_ruta.
+[INFO] [1794765721.980839665] [seguidor_ruta_f13]: Inicio aceptado; error: 0.075 m
+[INFO] [1794765797.971365072] [seguidor_ruta_f13]: Meta alcanzada; error final 0.078 m
+[LOG] resultados/F13_E432_ejecucion_20261115_130140_576213_mision_02_almacenamiento_log.csv | 760 muestras
