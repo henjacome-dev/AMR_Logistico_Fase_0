@@ -1,0 +1,83 @@
+{
+  "origen": "ROBOT",
+  "destinos": [
+    "RECEPCION",
+    "ALMACENAMIENTO",
+    "EMPAQUE",
+    "DESPACHO"
+  ],
+  "longitud_total_m": 20.44853,
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "modo": "PLANIFICACION_ESTATICA_SIN_MOVIMIENTO",
+  "nota": "La ejecucion ROS requiere validacion de pose actual, obstaculos, seguimiento y confirmacion CNN; este plan no acredita misiones ejecutadas.",
+  "etapas": [
+    {
+      "numero": 1,
+      "origen": "ROBOT",
+      "destino": "RECEPCION",
+      "longitud_m": 1.0,
+      "num_waypoints": 21,
+      "sin_desplazamiento": false,
+      "segmentos": [
+        {
+          "desde": "ROBOT",
+          "hasta": "RECEPCION",
+          "f12": "F12_ruta_1.csv",
+          "sentido_inverso": false,
+          "longitud_m": 1.0
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "origen": "RECEPCION",
+      "destino": "ALMACENAMIENTO",
+      "longitud_m": 5.6,
+      "num_waypoints": 113,
+      "sin_desplazamiento": false,
+      "segmentos": [
+        {
+          "desde": "RECEPCION",
+          "hasta": "ALMACENAMIENTO",
+          "f12": "F12_ruta_2.csv",
+          "sentido_inverso": false,
+          "longitud_m": 5.599999999999991
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "origen": "ALMACENAMIENTO",
+      "destino": "EMPAQUE",
+      "longitud_m": 8.24853,
+      "num_waypoints": 161,
+      "sin_desplazamiento": false,
+      "segmentos": [
+        {
+          "desde": "ALMACENAMIENTO",
+          "hasta": "EMPAQUE",
+          "f12": "F12_ruta_3.csv",
+          "sentido_inverso": false,
+          "longitud_m": 8.248528137423843
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "origen": "EMPAQUE",
+      "destino": "DESPACHO",
+      "longitud_m": 5.6,
+      "num_waypoints": 113,
+      "sin_desplazamiento": false,
+      "segmentos": [
+        {
+          "desde": "EMPAQUE",
+          "hasta": "DESPACHO",
+          "f12": "F12_ruta_4.csv",
+          "sentido_inverso": false,
+          "longitud_m": 5.59999999999999
+        }
+      ]
+    }
+  ]
+}
