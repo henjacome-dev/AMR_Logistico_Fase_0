@@ -1,0 +1,87 @@
+{
+  "requisito": "R27",
+  "criterio_docente": "Tiempo de movimiento entre nodos; excluye validacion CNN y alineacion posterior",
+  "formula": "T_navegacion <= 1.30*(L_A_estrella/0.20)",
+  "referencia_funcional": "73793ac",
+  "ensayos": [
+    {
+      "origen": "ROBOT",
+      "destino": "ALMACENAMIENTO",
+      "identificador": "20261115_162412_634751",
+      "longitud_A_estrella_m": 6.6,
+      "tiempo_navegacion_s": 39.748,
+      "limite_R27_s": 42.9,
+      "margen_s": 3.152,
+      "velocidad_maxima_propuesta_m_s": 0.185,
+      "velocidad_mediana_positiva_m_s": 0.185,
+      "error_final_m": 0.0602,
+      "cnn_confirmada": true,
+      "cumple_R27": true,
+      "sha256": {
+        "resultados/A3_E6_R27_pilotos/ejecucion_20261115_162412_634751/resumen.json": "9c3a0f6aa28e6dab0f184befd9c17b7d73b9e51012de1ad5a37820c330122607",
+        "resultados/A3_E6_R27_pilotos/ejecucion_20261115_162412_634751/seguidor_01.log": "48da93fc1e5c23b44a0ee3a8fd365c19fd5c603f370f1c461da6e09dd63e17c4",
+        "resultados/F13_E432_ejecucion_20261115_162412_634751_mision_01_almacenamiento_log.csv": "40a4daeafdc5d15fa03ce98978c27f59bafa28f50075556500863bb9f0942cac"
+      }
+    },
+    {
+      "origen": "ALMACENAMIENTO",
+      "destino": "EMPAQUE",
+      "identificador": "20261115_163057_920291",
+      "longitud_A_estrella_m": 8.249,
+      "tiempo_navegacion_s": 48.237,
+      "limite_R27_s": 53.619,
+      "margen_s": 5.382,
+      "velocidad_maxima_propuesta_m_s": 0.185,
+      "velocidad_mediana_positiva_m_s": 0.185,
+      "error_final_m": 0.0634,
+      "cnn_confirmada": true,
+      "cumple_R27": true,
+      "sha256": {
+        "resultados/A3_E6_R27_pilotos/ejecucion_20261115_163057_920291/resumen.json": "cdbd689631af86d2f8f948a1a61722593d261c7a7aad0248542d49c44edd90d4",
+        "resultados/A3_E6_R27_pilotos/ejecucion_20261115_163057_920291/seguidor_01.log": "0746902eef2e8c0d8e1a754f594da3d97d60a0cbddc508db8599d0b853cc7b63",
+        "resultados/F13_E432_ejecucion_20261115_163057_920291_mision_01_empaque_log.csv": "34a9b4d4ebfcc7f1b696bcafee7f80d279d73c788482ebbc3be4e0640db43dc5"
+      }
+    },
+    {
+      "origen": "EMPAQUE",
+      "destino": "DESPACHO",
+      "identificador": "20261115_164006_502674",
+      "longitud_A_estrella_m": 5.6,
+      "tiempo_navegacion_s": 31.545,
+      "limite_R27_s": 36.4,
+      "margen_s": 4.855,
+      "velocidad_maxima_propuesta_m_s": 0.185,
+      "velocidad_mediana_positiva_m_s": 0.185,
+      "error_final_m": 0.0571,
+      "cnn_confirmada": true,
+      "cumple_R27": true,
+      "sha256": {
+        "resultados/A3_E6_R27_pilotos/ejecucion_20261115_164006_502674/resumen.json": "8d7b40a667d0e1d039e9f33527ddd0ed5f8f4ccc1f9903e1446815086f7e84d9",
+        "resultados/A3_E6_R27_pilotos/ejecucion_20261115_164006_502674/seguidor_01.log": "8a309f3366732c9e5a99091b428d66cb80d331695a658f4efef3754a21e652a7",
+        "resultados/F13_E432_ejecucion_20261115_164006_502674_mision_01_despacho_log.csv": "e3de533e103af54d486fe7f0f526b3e658c3ecedbe26f9a34243f74c78a8b14f"
+      }
+    },
+    {
+      "origen": "DESPACHO",
+      "destino": "RECEPCION",
+      "identificador": "20261115_164353_530447",
+      "longitud_A_estrella_m": 19.449,
+      "tiempo_navegacion_s": 112.416,
+      "limite_R27_s": 126.419,
+      "margen_s": 14.003,
+      "velocidad_maxima_propuesta_m_s": 0.185,
+      "velocidad_mediana_positiva_m_s": 0.185,
+      "error_final_m": 0.0538,
+      "cnn_confirmada": true,
+      "cumple_R27": true,
+      "sha256": {
+        "resultados/A3_E6_R27_pilotos/ejecucion_20261115_164353_530447/resumen.json": "20d59ab2937cbb29a3c0985fbc095c1d408a1ab773e9ac40a3bdcbbcb4a77b66",
+        "resultados/A3_E6_R27_pilotos/ejecucion_20261115_164353_530447/seguidor_01.log": "42d88af813df5092a92921a4a8bfea912b5c4b51e586f29037cb0632ad3609c2",
+        "resultados/F13_E432_ejecucion_20261115_164353_530447_mision_01_recepcion_log.csv": "518c70c0bd201737fad6b8a2dfa80ee26efe011de6463a953615c461407fcb3d"
+      }
+    }
+  ],
+  "aprobadas": 4,
+  "total": 4,
+  "cumplimiento_cuatro_ensayos": true
+}

@@ -1,0 +1,33 @@
+{
+  "aprobado": true,
+  "origen": "EMPAQUE",
+  "destinos": [
+    "DESPACHO"
+  ],
+  "etapas": [
+    {
+      "numero": 1,
+      "origen": "EMPAQUE",
+      "destino": "DESPACHO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0571,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 33.84
+    }
+  ],
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "error": null,
+  "pose_final": [
+    4.025057566266139,
+    -2.7177916025219084
+  ],
+  "modos": {
+    "DETENIDO": 39,
+    "RUTA": 338
+  },
+  "cnn_total": 95,
+  "fis_sha256_final": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+}

@@ -1,0 +1,25 @@
+{
+  "fecha": "2026-11-15T16:17:11.256219",
+  "base_commit": "73793ac",
+  "tipo": "CANDIDATO_EXPERIMENTAL_NO_VALIDADO",
+  "parametros": {
+    "vmax_ruta_m_s": 0.19,
+    "wmax_rad_s": 1.0,
+    "aceleracion_max_m_s2": 0.45,
+    "v_min_intermedia_m_s": 0.185,
+    "v_max_difuso_m_s": 0.1
+  },
+  "originales": {
+    "tools/seguidor_ruta_f13.py": "52b59720110922f9820b43c30b66dcb7f421446f02fb40061f6bc5d6bc7c6dbf",
+    "tools/supervisor_u3s7_cnn.py": "29edfd56efa28dbe3a3c87b84086e1dac27ffaefce5443782dc770a4e029dcfd",
+    "tools/A3_E441_ejecutor_misiones_alineacion.py": "ee8a1179f7b38f8d5d1f4d5af2161044ed2a1b5bafdf648078b599a67e47b80c"
+  },
+  "variantes": {
+    "tools/A3_E6_R27_seguidor.py": "b17489cb465d0af97a6d4daa1dae9210f3bd8f545ab54c9fdabee876db008c0e",
+    "tools/A3_E6_R27_supervisor.py": "e13008c0000d5ba249aefa468523dfaea89b3b5070767a5c5843c78e408a7c21",
+    "tools/A3_E6_R27_ejecutor.py": "2f7fc0afd0bb24156cdb3961f17047b1d8aed9158848d4d951f0fec5386622fb"
+  },
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "modelo_sha256": "58b7b072b0e98361a908ca5bc07acb767ed7ab8ed6b28ade2e97c42b4b47800d",
+  "advertencia": "Preparacion offline; no equivale a certificacion R27 ni autoriza movimiento."
+}

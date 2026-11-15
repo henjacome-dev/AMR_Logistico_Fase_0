@@ -1,0 +1,68 @@
+{
+  "requisito": "R27",
+  "criterio": "T <= 1.30*(L_A_estrella/0.20)",
+  "commit_base": "73793ac",
+  "fuente": "resultados/A3_E441_ejecutor_alineacion/ejecucion_20261115_150700_457088",
+  "velocidad_referencia_m_s": 0.2,
+  "margen_temporal": 1.3,
+  "misiones": [
+    {
+      "mision": 1,
+      "destino": "RECEPCION",
+      "longitud_A_estrella_m": 1.0,
+      "limite_R27_s": 6.5,
+      "tiempo_ruta_registrado_s": 15.629,
+      "duracion_mision_E441_s": 16.91,
+      "tiempo_adicional_aprox_s": 1.281,
+      "velocidad_media_efectiva_m_s": 0.0591,
+      "mediana_propuesta_v_positiva_m_s": 0.075,
+      "fraccion_muestras_propuesta_cero": 0.225,
+      "cumple_R27_mision": false,
+      "cumple_R27_solo_ruta": false
+    },
+    {
+      "mision": 2,
+      "destino": "ALMACENAMIENTO",
+      "longitud_A_estrella_m": 5.6,
+      "limite_R27_s": 36.4,
+      "tiempo_ruta_registrado_s": 75.309,
+      "duracion_mision_E441_s": 77.62,
+      "tiempo_adicional_aprox_s": 2.311,
+      "velocidad_media_efectiva_m_s": 0.0721,
+      "mediana_propuesta_v_positiva_m_s": 0.075,
+      "fraccion_muestras_propuesta_cero": 0.0171,
+      "cumple_R27_mision": false,
+      "cumple_R27_solo_ruta": false
+    },
+    {
+      "mision": 3,
+      "destino": "EMPAQUE",
+      "longitud_A_estrella_m": 8.249,
+      "limite_R27_s": 53.618,
+      "tiempo_ruta_registrado_s": 110.987,
+      "duracion_mision_E441_s": 119.85,
+      "tiempo_adicional_aprox_s": 8.863,
+      "velocidad_media_efectiva_m_s": 0.0688,
+      "mediana_propuesta_v_positiva_m_s": 0.075,
+      "fraccion_muestras_propuesta_cero": 0.0205,
+      "cumple_R27_mision": false,
+      "cumple_R27_solo_ruta": false
+    },
+    {
+      "mision": 4,
+      "destino": "DESPACHO",
+      "longitud_A_estrella_m": 5.6,
+      "limite_R27_s": 36.4,
+      "tiempo_ruta_registrado_s": 74.92,
+      "duracion_mision_E441_s": 77.23,
+      "tiempo_adicional_aprox_s": 2.31,
+      "velocidad_media_efectiva_m_s": 0.0725,
+      "mediana_propuesta_v_positiva_m_s": 0.075,
+      "fraccion_muestras_propuesta_cero": 0.0106,
+      "cumple_R27_mision": false,
+      "cumple_R27_solo_ruta": false
+    }
+  ],
+  "aprobadas_tiempo_total": 0,
+  "aprobadas_solo_ruta": 0
+}

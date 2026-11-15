@@ -1,0 +1,79 @@
+{
+  "aprobado": true,
+  "origen": "RECEPCION",
+  "destinos": [
+    "ALMACENAMIENTO",
+    "EMPAQUE",
+    "DESPACHO",
+    "RECEPCION"
+  ],
+  "etapas": [
+    {
+      "numero": 1,
+      "origen": "RECEPCION",
+      "destino": "ALMACENAMIENTO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0525,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 34.37
+    },
+    {
+      "numero": 2,
+      "origen": "ALMACENAMIENTO",
+      "destino": "EMPAQUE",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0609,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": true,
+        "yaw_inicial_deg": -44.408,
+        "error_angular_inicial_deg": 39.424,
+        "yaw_final_deg": -11.085,
+        "error_angular_final_deg": 6.075,
+        "max_lineal_giro_m_s": 0.0,
+        "max_angular_giro_rad_s": 0.35,
+        "registro_giro": "resultados/A3_E6_R27_pilotos/ejecucion_20261115_165037_389637/alineacion_02_empaque.csv"
+      },
+      "duracion_s": 57.42
+    },
+    {
+      "numero": 3,
+      "origen": "EMPAQUE",
+      "destino": "DESPACHO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0596,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 34.03
+    },
+    {
+      "numero": 4,
+      "origen": "DESPACHO",
+      "destino": "RECEPCION",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0557,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 112.67
+    }
+  ],
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "error": null,
+  "pose_final": [
+    -3.9750064538432657,
+    -2.719182259703593
+  ],
+  "modos": {
+    "DETENIDO": 126,
+    "RUTA": 2326
+  },
+  "cnn_total": 642,
+  "fis_sha256_final": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+}

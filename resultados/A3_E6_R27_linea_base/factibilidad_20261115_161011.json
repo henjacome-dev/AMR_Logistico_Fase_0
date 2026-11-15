@@ -1,0 +1,51 @@
+{
+  "tipo": "estimacion_cinematica",
+  "nota": "Estimacion basada en tiempos observados; no predice el comportamiento de una ley de control nueva.",
+  "velocidad_maxima_m_s": 0.2,
+  "misiones": [
+    {
+      "destino": "RECEPCION",
+      "longitud_A_estrella_m": 1.0,
+      "recorrido_observado_m": 0.9011,
+      "limite_R27_s": 6.5,
+      "demora_hasta_movimiento_s": 3.316,
+      "sobrecoste_posterior_ruta_s": 1.281,
+      "presupuesto_tras_descontar_demoras_s": 1.903,
+      "velocidad_media_necesaria_m_s": 0.4735,
+      "factible_con_demoras_actuales": false
+    },
+    {
+      "destino": "ALMACENAMIENTO",
+      "longitud_A_estrella_m": 5.6,
+      "recorrido_observado_m": 5.5657,
+      "limite_R27_s": 36.4,
+      "demora_hasta_movimiento_s": 0.0,
+      "sobrecoste_posterior_ruta_s": 2.311,
+      "presupuesto_tras_descontar_demoras_s": 34.089,
+      "velocidad_media_necesaria_m_s": 0.1633,
+      "factible_con_demoras_actuales": true
+    },
+    {
+      "destino": "EMPAQUE",
+      "longitud_A_estrella_m": 8.249,
+      "recorrido_observado_m": 8.1987,
+      "limite_R27_s": 53.619,
+      "demora_hasta_movimiento_s": 0.0,
+      "sobrecoste_posterior_ruta_s": 8.863,
+      "presupuesto_tras_descontar_demoras_s": 44.756,
+      "velocidad_media_necesaria_m_s": 0.1832,
+      "factible_con_demoras_actuales": true
+    },
+    {
+      "destino": "DESPACHO",
+      "longitud_A_estrella_m": 5.6,
+      "recorrido_observado_m": 5.5898,
+      "limite_R27_s": 36.4,
+      "demora_hasta_movimiento_s": 0.399,
+      "sobrecoste_posterior_ruta_s": 2.31,
+      "presupuesto_tras_descontar_demoras_s": 33.691,
+      "velocidad_media_necesaria_m_s": 0.1659,
+      "factible_con_demoras_actuales": true
+    }
+  ]
+}

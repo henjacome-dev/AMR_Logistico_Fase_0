@@ -1,0 +1,64 @@
+{
+  "requisito": "R27",
+  "tipo_ensayo": "cuatro_misiones_consecutivas",
+  "criterio_docente": "Solo navegacion entre nodos; excluye CNN y alineacion angular posterior",
+  "identificador": "20261115_165037_389637",
+  "misiones": [
+    {
+      "mision": 1,
+      "origen": "RECEPCION",
+      "destino": "ALMACENAMIENTO",
+      "longitud_A_estrella_m": 5.6,
+      "tiempo_navegacion_s": 33.022,
+      "limite_R27_s": 36.4,
+      "margen_s": 3.378,
+      "velocidad_maxima_propuesta_m_s": 0.18499999999999206,
+      "error_final_m": 0.0525,
+      "cnn_confirmada": true,
+      "cumple_R27": true
+    },
+    {
+      "mision": 2,
+      "origen": "ALMACENAMIENTO",
+      "destino": "EMPAQUE",
+      "longitud_A_estrella_m": 8.249,
+      "tiempo_navegacion_s": 48.334,
+      "limite_R27_s": 53.618,
+      "margen_s": 5.284,
+      "velocidad_maxima_propuesta_m_s": 0.1849999999999997,
+      "error_final_m": 0.0609,
+      "cnn_confirmada": true,
+      "cumple_R27": true
+    },
+    {
+      "mision": 3,
+      "origen": "EMPAQUE",
+      "destino": "DESPACHO",
+      "longitud_A_estrella_m": 5.6,
+      "tiempo_navegacion_s": 31.519,
+      "limite_R27_s": 36.4,
+      "margen_s": 4.881,
+      "velocidad_maxima_propuesta_m_s": 0.18499999999999997,
+      "error_final_m": 0.0596,
+      "cnn_confirmada": true,
+      "cumple_R27": true
+    },
+    {
+      "mision": 4,
+      "origen": "DESPACHO",
+      "destino": "RECEPCION",
+      "longitud_A_estrella_m": 19.449,
+      "tiempo_navegacion_s": 111.46,
+      "limite_R27_s": 126.419,
+      "margen_s": 14.959,
+      "velocidad_maxima_propuesta_m_s": 0.1849999999999999,
+      "error_final_m": 0.0557,
+      "cnn_confirmada": true,
+      "cumple_R27": true
+    }
+  ],
+  "aprobadas": 4,
+  "total": 4,
+  "cumplimiento_R27": true,
+  "continuidad_funcional": true
+}

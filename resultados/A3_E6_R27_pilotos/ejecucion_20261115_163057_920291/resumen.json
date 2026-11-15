@@ -1,0 +1,40 @@
+{
+  "aprobado": true,
+  "origen": "ALMACENAMIENTO",
+  "destinos": [
+    "EMPAQUE"
+  ],
+  "etapas": [
+    {
+      "numero": 1,
+      "origen": "ALMACENAMIENTO",
+      "destino": "EMPAQUE",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0634,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": true,
+        "yaw_inicial_deg": -45.5,
+        "error_angular_inicial_deg": 40.381,
+        "yaw_final_deg": -10.824,
+        "error_angular_final_deg": 5.68,
+        "max_lineal_giro_m_s": 0.0,
+        "max_angular_giro_rad_s": 0.35,
+        "registro_giro": "resultados/A3_E6_R27_pilotos/ejecucion_20261115_163057_920291/alineacion_01_empaque.csv"
+      },
+      "duracion_s": 59.63
+    }
+  ],
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "error": null,
+  "pose_final": [
+    3.9765123310779473,
+    2.8678434620607414
+  ],
+  "modos": {
+    "DETENIDO": 114,
+    "RUTA": 520
+  },
+  "cnn_total": 160,
+  "fis_sha256_final": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+}

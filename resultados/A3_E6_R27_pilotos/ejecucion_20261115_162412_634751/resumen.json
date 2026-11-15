@@ -1,0 +1,33 @@
+{
+  "aprobado": true,
+  "origen": "ROBOT",
+  "destinos": [
+    "ALMACENAMIENTO"
+  ],
+  "etapas": [
+    {
+      "numero": 1,
+      "origen": "ROBOT",
+      "destino": "ALMACENAMIENTO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0602,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 41.44
+    }
+  ],
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "error": null,
+  "pose_final": [
+    -3.9750212188960825,
+    2.7647030422056016
+  ],
+  "modos": {
+    "DETENIDO": 86,
+    "RUTA": 410
+  },
+  "cnn_total": 115,
+  "fis_sha256_final": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+}

@@ -1,0 +1,33 @@
+{
+  "aprobado": true,
+  "origen": "DESPACHO",
+  "destinos": [
+    "RECEPCION"
+  ],
+  "etapas": [
+    {
+      "numero": 1,
+      "origen": "DESPACHO",
+      "destino": "RECEPCION",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0538,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 113.72
+    }
+  ],
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "error": null,
+  "pose_final": [
+    -3.975043853157648,
+    -2.7210873979712837
+  ],
+  "modos": {
+    "DETENIDO": 43,
+    "RUTA": 1135
+  },
+  "cnn_total": 307,
+  "fis_sha256_final": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+}
