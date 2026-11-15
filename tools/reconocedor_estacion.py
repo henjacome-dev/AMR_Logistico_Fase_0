@@ -88,9 +88,10 @@ class ReconocedorEstacion(Node):
         self._conectar_camara()
         self.timer_discovery = self.create_timer(2.0, self._verificar_camara)
 
-    def _param(self, nombre: str, default):
-        p = self.get_parameter_or(nombre, None)
-        return default if p is None else p.value
+def _param(self, nombre: str, default):
+    p = self.get_parameter_or(nombre, None)
+    return default if (p is None or p.value is None) else p.value
+        
 
     def _conectar_camara(self):
         if self.count_publishers(self.image_topic) == 0:
