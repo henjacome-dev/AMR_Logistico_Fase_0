@@ -1,0 +1,63 @@
+{
+  "fis": "AMR_Mamdani_A2_v03_rubrica.fis",
+  "dominio_ros": 172,
+  "pruebas_aprobadas": 9,
+  "pruebas_previstas": 9,
+  "checks": {
+    "Sin sensores": {
+      "estado": "SIN_DATO_df",
+      "v": 0.0,
+      "omega": 0.0,
+      "aprobado": true
+    },
+    "Pasillo libre": {
+      "estado": "ACTIVO",
+      "v": 0.173667,
+      "omega": 0.0,
+      "aprobado": true
+    },
+    "Obstaculo izquierdo": {
+      "estado": "ACTIVO",
+      "v": 0.026333,
+      "omega": -0.516667,
+      "aprobado": true
+    },
+    "Obstaculo derecho": {
+      "estado": "ACTIVO",
+      "v": 0.026333,
+      "omega": 0.516667,
+      "aprobado": true
+    },
+    "Obstaculo frontal": {
+      "estado": "ACTIVO",
+      "v": 0.026333,
+      "omega": 1.164742,
+      "aprobado": true
+    },
+    "Sensor frontal NaN": {
+      "estado": "INVALIDO_df",
+      "v": 0.0,
+      "omega": 0.0,
+      "aprobado": true
+    },
+    "Recuperacion de sensores": {
+      "estado": "ACTIVO",
+      "v": 0.173667,
+      "omega": 0.0,
+      "aprobado": true
+    },
+    "Range derecho caducado": {
+      "estado": "CADUCADO_dd",
+      "v": 0.0,
+      "omega": 0.0,
+      "aprobado": true
+    },
+    "Recuperacion final": {
+      "estado": "ACTIVO",
+      "v": 0.173667,
+      "omega": 0.0,
+      "aprobado": true
+    }
+  },
+  "error": null
+}
