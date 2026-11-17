@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 570" role="img" aria-label="A1 original · Tiempo de cálculo registrado">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="95" y="42" font-size="26" fill="#19283c" font-family="Arial" font-weight="bold">A1 original · Tiempo de cálculo registrado</text>
+<text x="95" y="66" font-size="14" fill="#56687a" font-family="Arial">Tiempos históricos sin condiciones de benchmark homologadas (ms)</text>
+<line x1="95" x2="1070" y1="425.0" y2="425.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="430.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">0.0</text>
+<line x1="95" x2="1070" y1="363.0" y2="363.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="368.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">24.6</text>
+<line x1="95" x2="1070" y1="301.0" y2="301.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="306.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">49.3</text>
+<line x1="95" x2="1070" y1="239.0" y2="239.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="244.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">73.9</text>
+<line x1="95" x2="1070" y1="177.0" y2="177.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="182.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">98.5</text>
+<line x1="95" x2="1070" y1="115.0" y2="115.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="120.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">123.2</text>
+<rect x="194.50" y="407.89" width="56.00" height="17.11" rx="4" fill="#295B95"/>
+<text x="222.50" y="400.89" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">6.799 ms</text>
+<rect x="264.50" y="415.04" width="56.00" height="9.96" rx="4" fill="#DB8844"/>
+<text x="292.50" y="408.04" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">3.956 ms</text>
+<text x="257.50" y="454" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#28394b">Orden A</text>
+<rect x="519.50" y="164.50" width="56.00" height="260.50" rx="4" fill="#295B95"/>
+<text x="547.50" y="157.50" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">103.504 ms</text>
+<rect x="589.50" y="388.87" width="56.00" height="36.13" rx="4" fill="#DB8844"/>
+<text x="617.50" y="381.87" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">14.354 ms</text>
+<text x="582.50" y="454" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#28394b">Orden B</text>
+<rect x="844.50" y="400.47" width="56.00" height="24.53" rx="4" fill="#295B95"/>
+<text x="872.50" y="393.47" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">9.745 ms</text>
+<rect x="914.50" y="415.04" width="56.00" height="9.96" rx="4" fill="#DB8844"/>
+<text x="942.50" y="408.04" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">3.959 ms</text>
+<text x="907.50" y="454" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#28394b">Orden C</text>
+<rect x="103" y="477" width="14" height="14" fill="#295B95"/>
+<text x="125" y="490" font-size="14" font-family="Arial" fill="#324559">Python (A1 original)</text>
+<rect x="348" y="477" width="14" height="14" fill="#DB8844"/>
+<text x="370" y="490" font-size="14" font-family="Arial" fill="#324559">MATLAB (A1 original)</text>
+<text x="95" y="533" font-size="13" font-family="Arial" fill="#56687a">Estos tiempos NO son tiempos de navegación del robot ni permiten afirmar ventaja de un lenguaje.</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 570" role="img" aria-label="A1 original · Longitud A* por orden">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="95" y="42" font-size="26" fill="#19283c" font-family="Arial" font-weight="bold">A1 original · Longitud A* por orden</text>
+<text x="95" y="66" font-size="14" fill="#56687a" font-family="Arial">Tres órdenes, mismo ZIP entregado el 4 de noviembre</text>
+<line x1="95" x2="1070" y1="425.0" y2="425.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="430.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">0.0</text>
+<line x1="95" x2="1070" y1="363.0" y2="363.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="368.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">7.8</text>
+<line x1="95" x2="1070" y1="301.0" y2="301.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="306.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">15.6</text>
+<line x1="95" x2="1070" y1="239.0" y2="239.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="244.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">23.4</text>
+<line x1="95" x2="1070" y1="177.0" y2="177.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="182.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">31.2</text>
+<line x1="95" x2="1070" y1="115.0" y2="115.0" stroke="#e8edf1" stroke-width="1"/>
+<text x="81" y="120.0" text-anchor="end" fill="#657484" font-size="13" font-family="Arial">39.1</text>
+<rect x="194.50" y="262.67" width="56.00" height="162.33" rx="4" fill="#295B95"/>
+<text x="222.50" y="255.67" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">20.449 m</text>
+<rect x="264.50" y="263.14" width="56.00" height="161.86" rx="4" fill="#DB8844"/>
+<text x="292.50" y="256.14" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">20.39 m</text>
+<text x="257.50" y="454" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#28394b">Orden A</text>
+<rect x="519.50" y="164.50" width="56.00" height="260.50" rx="4" fill="#295B95"/>
+<text x="547.50" y="157.50" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">32.817 m</text>
+<rect x="589.50" y="165.89" width="56.00" height="259.11" rx="4" fill="#DB8844"/>
+<text x="617.50" y="158.89" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">32.641 m</text>
+<text x="582.50" y="454" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#28394b">Orden B</text>
+<rect x="844.50" y="215.05" width="56.00" height="209.95" rx="4" fill="#295B95"/>
+<text x="872.50" y="208.05" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">26.449 m</text>
+<rect x="914.50" y="215.51" width="56.00" height="209.49" rx="4" fill="#DB8844"/>
+<text x="942.50" y="208.51" text-anchor="middle" font-size="12" font-family="Arial" fill="#273748">26.39 m</text>
+<text x="907.50" y="454" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial" fill="#28394b">Orden C</text>
+<rect x="103" y="477" width="14" height="14" fill="#295B95"/>
+<text x="125" y="490" font-size="14" font-family="Arial" fill="#324559">Python (A1 original)</text>
+<rect x="348" y="477" width="14" height="14" fill="#DB8844"/>
+<text x="370" y="490" font-size="14" font-family="Arial" fill="#324559">MATLAB (A1 original)</text>
+<text x="95" y="533" font-size="13" font-family="Arial" fill="#56687a">Fuente: CSV de A1 original; diferencias menores a 0,54 % (respecto a Python).</text>
+</svg>

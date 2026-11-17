@@ -1,0 +1,5 @@
+origen,destino,python_puntos,matlab_puntos,matlab_nodos_explorados_segmento,python_longitud_m,matlab_longitud_m,diferencia_m_matlab_menos_python,python_tiempo_ms_registrado,matlab_tiempo_ms_registrado
+ROBOT,RECEPCION,21,21,66,1.000000,1.000000,0.000000,0.161,2.993
+RECEPCION,ALMACENAMIENTO,113,112,339,5.600000,5.550000,-0.050000,0.721,1.139
+ALMACENAMIENTO,EMPAQUE,161,161,2613,8.249000,8.289949,0.040949,5.457,1.981
+EMPAQUE,DESPACHO,113,112,339,5.600000,5.550000,-0.050000,0.814,0.802

@@ -1,0 +1,10 @@
+corte,implementacion,orden,puntos_trayectoria,longitud_m,tiempo_ms_registrado,fuente
+R04_PY,"Python, mapa R04 corregido",A,405,20.200000,2.731,resultados/R04_astar_mapa_corregido/resultados/F12_comparacion_ordenes.csv
+R04_PY,"Python, mapa R04 corregido",B,601,32.568000,104.535,resultados/R04_astar_mapa_corregido/resultados/F12_comparacion_ordenes.csv
+R04_PY,"Python, mapa R04 corregido",C,525,26.200000,3.458,resultados/R04_astar_mapa_corregido/resultados/F12_comparacion_ordenes.csv
+F1_D_PY,"Python, cierre F1_D 2026-11-06",A,405,20.200000,2.681,resultados/F1_D_cierre_20261106/resultados/F12_comparacion_ordenes.csv
+F1_D_PY,"Python, cierre F1_D 2026-11-06",B,613,32.920000,105.874,resultados/F1_D_cierre_20261106/resultados/F12_comparacion_ordenes.csv
+F1_D_PY,"Python, cierre F1_D 2026-11-06",C,525,26.200000,3.488,resultados/F1_D_cierre_20261106/resultados/F12_comparacion_ordenes.csv
+R11_MAT,"MATLAB, revisión R11 posterior",A,403,20.100000,23.599,matlab/R11_MATLAB/resultados/R11_resumen_ordenes.csv
+R11_MAT,"MATLAB, revisión R11 posterior",B,607,32.702439,10.650,matlab/R11_MATLAB/resultados/R11_resumen_ordenes.csv
+R11_MAT,"MATLAB, revisión R11 posterior",C,523,26.100000,1.981,matlab/R11_MATLAB/resultados/R11_resumen_ordenes.csv

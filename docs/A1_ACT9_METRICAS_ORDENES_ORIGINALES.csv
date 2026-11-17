@@ -1,0 +1,4 @@
+orden,secuencia,python_puntos,matlab_puntos,diferencia_puntos_matlab_menos_python,python_longitud_m,matlab_longitud_m,diferencia_m_matlab_menos_python,diferencia_absoluta_m,diferencia_pct_sobre_python,python_tiempo_ms_registrado,matlab_tiempo_ms_registrado
+A,RECEPCION-ALMACENAMIENTO-EMPAQUE-DESPACHO,405,403,-2,20.449000,20.389949,-0.059051,0.059051,0.288770,6.799,3.956
+B,RECEPCION-EMPAQUE-ALMACENAMIENTO-DESPACHO,601,595,-6,32.817000,32.640916,-0.176084,0.176084,0.536562,103.504,14.354
+C,DESPACHO-EMPAQUE-ALMACENAMIENTO-RECEPCION,525,523,-2,26.449000,26.389949,-0.059051,0.059051,0.223262,9.745,3.959
