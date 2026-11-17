@@ -1,0 +1,30 @@
+[INFO] [1794870803.802774790] [reconocedor_estacion]: Iniciando motor CNN con /mnt/c/Users/panch/OneDrive/Documentos/ChatGPT/AUTONOMASYEXPERTOS/AMR_ramas_editables/integracion-final/resultados/cnn_u3s7_20261116/modelo.keras...
+2026-11-16 18:13:24.296771: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-11-16 18:13:24.321618: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-11-16 18:13:24.322492: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-11-16 18:13:26.340752: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:282] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+[INFO] [1794870808.699248033] [reconocedor_estacion]: Reconocedor CNN listo. Escuchando camara en: /camera/image_raw | Clases: ['ALMACENAMIENTO', 'DESPACHO', 'EMPAQUE', 'RECEPCION']
+[INFO] [1794870809.135164992] [reconocedor_estacion]: CNN -> INCIERTO (50.2%, 268.1 ms)
+[INFO] [1794870811.287953997] [reconocedor_estacion]: CNN -> INCIERTO (47.5%, 277.3 ms)
+[INFO] [1794870813.474378618] [reconocedor_estacion]: CNN -> INCIERTO (60.6%, 208.1 ms)
+[INFO] [1794870815.617880077] [reconocedor_estacion]: CNN -> RECEPCION (100.0%, 260.0 ms)
+[INFO] [1794870817.831148898] [reconocedor_estacion]: CNN -> RECEPCION (100.0%, 175.8 ms)
+[INFO] [1794870819.981986413] [reconocedor_estacion]: CNN -> RECEPCION (99.8%, 193.7 ms)
+[INFO] [1794870822.211307495] [reconocedor_estacion]: CNN -> RECEPCION (99.9%, 173.4 ms)
+[INFO] [1794870824.681803542] [reconocedor_estacion]: CNN -> RECEPCION (99.9%, 255.5 ms)
+[INFO] [1794870826.825817575] [reconocedor_estacion]: CNN -> RECEPCION (99.9%, 142.0 ms)
+[INFO] [1794870828.996055736] [reconocedor_estacion]: CNN -> INCIERTO (54.1%, 253.4 ms)
+[INFO] [1794870831.087982161] [reconocedor_estacion]: CNN -> INCIERTO (78.5%, 209.9 ms)
+[INFO] [1794870833.246363791] [reconocedor_estacion]: CNN -> INCIERTO (64.6%, 158.4 ms)
+[INFO] [1794870835.381922310] [reconocedor_estacion]: CNN -> INCIERTO (46.2%, 170.3 ms)
+[INFO] [1794870837.648744394] [reconocedor_estacion]: CNN -> ALMACENAMIENTO (90.5%, 181.1 ms)
+[INFO] [1794870839.723557421] [reconocedor_estacion]: CNN -> ALMACENAMIENTO (86.5%, 241.8 ms)
+[INFO] [1794870841.680992504] [reconocedor_estacion]: CNN -> ALMACENAMIENTO (84.2%, 180.8 ms)
+[INFO] [1794870843.818329859] [reconocedor_estacion]: CNN -> INCIERTO (58.9%, 314.9 ms)
+[INFO] [1794870845.903253422] [reconocedor_estacion]: CNN -> ALMACENAMIENTO (87.9%, 259.6 ms)
+[INFO] [1794870847.996762552] [reconocedor_estacion]: CNN -> ALMACENAMIENTO (93.2%, 223.1 ms)
+[INFO] [1794870850.130149030] [reconocedor_estacion]: CNN -> ALMACENAMIENTO (99.9%, 217.1 ms)
+[INFO] [1794870852.089107236] [reconocedor_estacion]: CNN -> ALMACENAMIENTO (100.0%, 175.0 ms)
+[INFO] [1794870854.361617602] [reconocedor_estacion]: CNN -> ALMACENAMIENTO (100.0%, 245.3 ms)
+[INFO] [1794870856.535296327] [reconocedor_estacion]: CNN -> ALMACENAMIENTO (100.0%, 267.4 ms)
+[INFO] [1794870858.581496415] [reconocedor_estacion]: CNN -> ALMACENAMIENTO (99.9%, 267.5 ms)

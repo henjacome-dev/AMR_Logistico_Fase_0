@@ -1,0 +1,6 @@
+[RUTA] resultados/A3_E6_R27_pilotos/ejecucion_20261116_181122_668225/F12_E432_ejecucion_20261116_181122_668225_mision_05_almacenamiento.csv | 161 puntos | 8.249 m
+[INICIO] (4.025, 2.825) | [META] (-3.975, 2.825)
+[INFO] [1794870871.950826674] [seguidor_ruta_f13]: Esperando /odom, /scan y supervisor suscrito a /cmd_vel_ruta.
+[INFO] [1794870872.897512720] [seguidor_ruta_f13]: Inicio aceptado; error: 0.054 m
+[INFO] [1794870922.120931593] [seguidor_ruta_f13]: Meta alcanzada; error final 0.073 m
+[LOG] resultados/F13_E432_ejecucion_20261116_181122_668225_mision_05_almacenamiento_log.csv | 492 muestras

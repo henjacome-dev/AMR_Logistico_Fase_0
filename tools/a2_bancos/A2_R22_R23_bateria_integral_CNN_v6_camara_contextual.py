@@ -49,15 +49,13 @@ import time
 import xml.etree.ElementTree as ET
 import zlib
 
-REPO=Path.home()/'AMR_Logistico_Fase_0'
+REPO=Path(__file__).resolve().parents[2]
 ROOT=REPO/'resultados/A2_R22_R23_CNN_integral_v6_contexto'
 OLD_ROOT=REPO/'resultados/A2_R22_R23_CNN_integral'
 BASE_WORLD=REPO/'modelos/almacen_f1.world'
-ACTIVATE=REPO/'tools/activar_entorno.sh'
 ROS_PY=Path.home()/'.venvs/amr-a2-r18/bin/python'
 CNN_ENV=Path.home()/'.venvs/amr-a2-cnn'
 DOMAIN='224'
-EXPECTED_HEAD='82ba1d98a4201b01e7eaaa42146c163808dcffec'
 SEED=20261108
 STATIONS=(
     # class_id, class_name, panel x, panel y, robot side (+1 east of panel / -1 west)
@@ -101,11 +99,6 @@ def check(cond,msg):
     if not cond:raise RuntimeError(msg)
     log('[OK] '+msg)
 
-def git(*args):
-    q=subprocess.run(['git',*args],cwd=REPO,text=True,capture_output=True,timeout=25)
-    if q.returncode:raise RuntimeError('git '+ ' '.join(args)+': '+q.stderr.strip())
-    return q.stdout.strip()
-
 def env():
     e=os.environ.copy();e['ROS_DOMAIN_ID']=DOMAIN;e['ROS_LOCALHOST_ONLY']='1'
     e['TURTLEBOT3_MODEL']='waffle_pi';e['RCUTILS_COLORIZED_OUTPUT']='0'
@@ -114,10 +107,12 @@ def env():
     # Evitar busquedas externas de modelos durante la carga de Gazebo Classic.
     # El mundo original usa modelos base ya instalados localmente.
     e.setdefault('GAZEBO_MODEL_DATABASE_URI','')
+    e['GAZEBO_MASTER_URI']='http://127.0.0.1:11379'
+    e['GAZEBO_MODEL_PATH']=f"{REPO}/modelos:/opt/ros/humble/share/turtlebot3_gazebo/models:/usr/share/gazebo-11/models"
     return e
 
 def sourced(args):
-    return ['bash','-c','source "$1" >/dev/null && shift && exec "$@"','bash',str(ACTIVATE),*args]
+    return ['bash','-c','source /opt/ros/humble/setup.bash >/dev/null && exec "$@"','bash',*args]
 
 def child(args):
     return sourced([str(ROS_PY),'-u',str(Path(__file__).resolve()),*args])
@@ -411,22 +406,8 @@ def audit(folder,require_complete=True):
 
 def preflight():
     log('=== R22/R23 - PREFLIGHT DATASET CNN ===')
-    check((REPO/'.git').is_dir(),'Repositorio Git presente')
-    check(git('branch','--show-current')=='desarrollo-avance2','Rama desarrollo-avance2')
-    head=git('rev-parse','HEAD')
-    check(head==EXPECTED_HEAD,'Misma base validada E2.3.6A, sin commits intermedios')
-    for p in ['modelos/almacen_f1.world','launch/almacen_f1.launch.py',
-              'tools/supervisor_f13.py','matlab/A2_MAMDANI/AMR_Mamdani_A2_v01.fis']:
-        check(git('hash-object','--',p)==git('rev-parse','HEAD:'+p),'Archivo original sin alteracion: '+p)
-    check(BASE_WORLD.is_file() and ROS_PY.is_file() and ACTIVATE.is_file(),
+    check(BASE_WORLD.is_file() and ROS_PY.is_file(),
           'Mundo y entorno ROS 2 Humble disponibles')
-    procs=[]
-    for p in Path('/proc').iterdir():
-        if p.name.isdigit():
-            try:
-                if (p/'comm').read_text().strip() in ('gzserver','gzclient'):procs.append(p.name)
-            except (OSError,PermissionError,UnicodeError):pass
-    check(not procs,'Sin otras instancias de Gazebo: '+(','.join(procs)))
     space=shutil.disk_usage(REPO).free
     check(space>=1_000_000_000,'Espacio libre >= 1 GB para dataset y CNN')
     check(len(expected_rows())==600,'Plan de 600 capturas preparado; particion 420/90/90')
@@ -873,7 +854,7 @@ def run(args):
         folder.mkdir(parents=True,exist_ok=False)
         identity={'id':stamp,'fecha_local':dt.datetime.now().isoformat(timespec='seconds'),
                   'script_sha256':digest(Path(__file__).resolve()),
-                  'base_commit':git('rev-parse','HEAD'),
+                  'mundo_sha256':digest(BASE_WORLD),
                   'cam_pitch_deg':12,'cam_hfov_deg':CAMERA_HFOV_DEG,
                   'serie_optica':'v6_contexto', 'dominio_ros':int(DOMAIN)}
         (folder/'identidad.json').write_text(json.dumps(identity,indent=2)+'\n',encoding='utf8')

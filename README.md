@@ -1,5 +1,8 @@
 # AMR logístico para almacén — Autómatas y Expertos (MEC451)
 
+**Entrega U3S7:** [modelo, evidencias y reproducción](docs/ENTREGA_U3S7.md).
+Las secciones de Avance 1 y Avance 2 que siguen documentan sus cortes históricos.
+
 <!-- INICIO ESTADO VIGENTE AVANCE 2 2026-11-09 -->
 > **Estado documentado de cierre A12–A16 (9 de noviembre de 2026):**
 > 20/20 recorridos nuevos B1–B4 acreditados (5 por escenario), con medición

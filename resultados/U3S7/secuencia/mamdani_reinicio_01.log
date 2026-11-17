@@ -1,0 +1,4 @@
+[OK] FIS: 3 entradas, 2 salidas, 27 reglas AND=min; operadores Mamdani verificados.
+/home/francisco/.venvs/amr-a2-r18/lib/python3.10/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+[INFO] [1794870787.469506370] [controlador_mamdani_v03]: Mamdani v03 oficial activo. Solo publica propuestas difusas.

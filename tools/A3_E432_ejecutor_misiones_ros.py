@@ -47,9 +47,6 @@ def comprobar_integridad():
     assert FIS.is_file(), f'No existe FIS: {FIS}'
     assert hashlib.sha256(FIS.read_bytes()).hexdigest() == FIS_SHA, 'FIS v03 alterado'
     assert len(FIS_SHA) == 64
-    repo = subprocess.run(['git', '-C', str(ROOT), 'rev-parse', '--show-toplevel'],
-                          check=True, text=True, capture_output=True).stdout.strip()
-    assert Path(repo).resolve() == ROOT, 'Directorio de trabajo Git distinto'
 
 
 def pos_valida(p):

@@ -1,0 +1,44 @@
+[
+  {
+    "condicion": "oclusion",
+    "aciertos": 39,
+    "n": 90,
+    "caso": {
+      "ruta": "imagenes/test/ALMACENAMIENTO/S02_D04_A04_C06.png",
+      "real": "ALMACENAMIENTO",
+      "predicha": "RECEPCION",
+      "confianza": 0.9962288737297058,
+      "hipotesis": "Una caja opaca cubre la región central donde puede quedar el panel.",
+      "original": "fallo_oclusion_original.jpg",
+      "perturbada": "fallo_oclusion.jpg"
+    }
+  },
+  {
+    "condicion": "oscuridad",
+    "aciertos": 42,
+    "n": 90,
+    "caso": {
+      "ruta": "imagenes/test/ALMACENAMIENTO/S02_D01_A01_C02.png",
+      "real": "ALMACENAMIENTO",
+      "predicha": "DESPACHO",
+      "confianza": 0.9621337056159973,
+      "hipotesis": "El brillo queda al 12 % del original y se reduce el contraste del marcador.",
+      "original": "fallo_oscuridad_original.jpg",
+      "perturbada": "fallo_oscuridad.jpg"
+    }
+  },
+  {
+    "condicion": "desenfoque",
+    "aciertos": 36,
+    "n": 90,
+    "caso": {
+      "ruta": "imagenes/test/EMPAQUE/S03_D05_A01_C01.png",
+      "real": "EMPAQUE",
+      "predicha": "DESPACHO",
+      "confianza": 0.9848319888114929,
+      "hipotesis": "El desenfoque elimina bordes del marcador y mezcla su color con el fondo.",
+      "original": "fallo_desenfoque_original.jpg",
+      "perturbada": "fallo_desenfoque.jpg"
+    }
+  }
+]

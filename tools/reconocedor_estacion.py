@@ -16,7 +16,9 @@ from sensor_msgs.msg import Image
 from std_msgs.msg import String
 
 REPO = Path(__file__).resolve().parent.parent
-DEFAULT_MODEL = REPO / 'modelos' / 'modelo_estaciones_mobilenetv2_compat.keras'
+MODELO_FINAL = REPO / 'modelos' / 'modelo_u3s7.keras'
+DEFAULT_MODEL = (MODELO_FINAL if MODELO_FINAL.is_file() else
+                 REPO / 'modelos' / 'modelo_estaciones_mobilenetv2_compat.keras')
 DEFAULT_WORKER_PYTHON = Path.home() / '.venvs' / 'amr-cnn' / 'bin' / 'python'
 DEFAULT_CLASSES = REPO / 'modelos' / 'clases_estaciones.json'
 CLASES_FALLBACK = ['ALMACENAMIENTO', 'DESPACHO', 'EMPAQUE', 'RECEPCION']

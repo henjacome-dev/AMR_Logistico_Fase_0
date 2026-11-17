@@ -1,0 +1,10 @@
+{
+  "id": "20261116_175935",
+  "fecha_local": "2026-11-16T17:59:35",
+  "script_sha256": "7323da04eb1cdc71c0263927e7495b1086ba1e86950f6d9c2bc9e60e78fe4651",
+  "mundo_sha256": "4e56b45a639c2eabcfd51960bf53e32c7ebeab854b4cf55ecb30c3fac86eab36",
+  "cam_pitch_deg": 12,
+  "cam_hfov_deg": 145.0,
+  "serie_optica": "v6_contexto",
+  "dominio_ros": 224
+}

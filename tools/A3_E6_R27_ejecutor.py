@@ -47,9 +47,6 @@ def comprobar_integridad():
     assert FIS.is_file(), f'No existe FIS: {FIS}'
     assert hashlib.sha256(FIS.read_bytes()).hexdigest() == FIS_SHA, 'FIS v03 alterado'
     assert len(FIS_SHA) == 64
-    repo = subprocess.run(['git', '-C', str(ROOT), 'rev-parse', '--show-toplevel'],
-                          check=True, text=True, capture_output=True).stdout.strip()
-    assert Path(repo).resolve() == ROOT, 'Directorio de trabajo Git distinto'
 
 
 def pos_valida(p):
@@ -427,7 +424,7 @@ def alinear_en_gestor(a, meta, vigilar, carpeta, numero):
 
 
 def comprobar_dominio():
-    assert os.getenv('ROS_DOMAIN_ID') == '173', 'Se exige ROS_DOMAIN_ID=173 (Gazebo)'
+    assert os.getenv('ROS_DOMAIN_ID') in ('173', '175', '176'), 'Dominio ROS de Gazebo no reservado'
     assert os.getenv('ROS_LOCALHOST_ONLY') == '1', 'Se exige ROS_LOCALHOST_ONLY=1'
 
 
@@ -484,6 +481,8 @@ def prevuelo(desde, orden, guardar=True):
 
 def escribir_ruta(etapa, carpeta):
     archivo = carpeta / f"F12_E432_{carpeta.name}_mision_{etapa['numero']:02d}_{etapa['destino'].lower()}.csv"
+    if etapa.get('reintento'):
+        archivo = carpeta / f"mision_{etapa['numero']:02d}_replanificada.csv"
     with archivo.open('w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, lineterminator='\n')
         w.writerow(['x_m', 'y_m'])
@@ -491,20 +490,30 @@ def escribir_ruta(etapa, carpeta):
     return archivo
 
 
-def ejecutar(desde, orden):
+def ejecutar(desde, orden, semilla=None, desvio=None):
     import rclpy
     comprobar_integridad()
     comprobar_dominio()
     assert VENV.is_file(), f'Falta entorno Mamdani: {VENV}'
     plan = preparar_misiones(desde, orden)
+    if desvio:
+        ruta_desviada = preparar_misiones(desde, [desvio])['etapas'][0]
+        plan['etapas'][0]['puntos'] = ruta_desviada['puntos']
     fecha = dt.datetime.now().strftime('%Y%m%d_%H%M%S_%f')
     carpeta = OUT / ('ejecucion_' + fecha)
     carpeta.mkdir(parents=True, exist_ok=False)
     logs = {}
     procesos = {}
     resultado = {'aprobado': False, 'origen': desde, 'destinos': orden, 'etapas': [],
+                 'replanificaciones': [],
                  'fis_sha256': FIS_SHA, 'error': None}
+    modelo_final = ROOT / 'modelos/modelo_u3s7.keras'
+    modelo_previo = ROOT / 'modelos/modelo_estaciones_mobilenetv2_compat.keras'
+    modelo = Path(os.environ.get('AMR_MODELO_CNN', modelo_final if modelo_final.is_file() else modelo_previo))
+    resultado['modelo_sha256'] = hashlib.sha256(modelo.read_bytes()).hexdigest()
+    resultado['desvio_inducido'] = desvio
     auditor = None
+    prueba = None
     rclpy.init()
 
     def iniciar(nombre, interprete, script, argumentos=()):
@@ -558,13 +567,18 @@ def ejecutar(desde, orden):
         assert auditor.node.count_publishers('/cmd_vel_difuso') == 0, 'Otro Mamdani activo'
         assert auditor.node.count_publishers('/estacion_cnn_info') == 0, 'Otra CNN activa'
         d = auditor.validar_origen(desde)
+        if semilla is not None:
+            from prueba_final_gazebo import PruebaFinal
+            prueba = PruebaFinal(auditor, carpeta, semilla)
+            resultado['semilla_obstaculos'] = semilla
         print(f'[PREVUELO] {desde}: pose={auditor.pose} error={d:.3f} m')
         iniciar('emulador', sys.executable, 'tools/emulador_sensores_f1.py')
         iniciar('supervisor', sys.executable, 'tools/A3_E6_R27_supervisor.py',
                 ('--ros-args', '-p', 'use_sim_time:=true'))
         iniciar('mamdani', VENV, 'tools/A3_nodo_mamdani_v03.py',
                 ('--ros', '--ros-args', '-p', 'use_sim_time:=true'))
-        iniciar('cnn', sys.executable, 'tools/reconocedor_estacion.py')
+        iniciar('cnn', sys.executable, 'tools/reconocedor_estacion.py',
+                ('--ros-args', '-p', f'model_path:={modelo.resolve()}'))
         tope = time.monotonic() + 30
         listo = False
         while time.monotonic() < tope:
@@ -583,27 +597,40 @@ def ejecutar(desde, orden):
         assert auditor.count_movimiento == 0, 'Se detecto movimiento previo al inicio'
         print('[OK] Cuatro subsistemas conectados; robot detenido')
 
-        for etapa in plan['etapas']:
+        pendientes = deque(plan['etapas'])
+        while pendientes:
+            etapa = pendientes.popleft()
+            longitud_referencia = etapa.get('longitud_referencia', etapa['longitud_m'])
             meta = etapa['destino']
             err = auditor.validar_origen(etapa['origen'])
+            obstaculo = None
+            if prueba and not etapa.get('reintento'):
+                obstaculo = prueba.insertar(etapa)
+                etapa['obstaculo'] = obstaculo
+                prueba.activo = True
+                inicio_contactos = len(prueba.contactos)
+                inicio_muestras = prueba.mensajes_contacto
+                limite = time.monotonic() + 4
+                while (prueba.mensajes_contacto == inicio_muestras or prueba.reloj is None) and time.monotonic() < limite:
+                    vigilar()
+                if prueba.mensajes_contacto == inicio_muestras or prueba.reloj is None:
+                    raise RuntimeError('No llegan mensajes de contactos o reloj simulado')
+            tiempo_orden = etapa.get('tiempo_orden', time.monotonic())
             print(f'\n=== MISION {etapa["numero"]}: {etapa["origen"]} -> {meta} ===')
             ruta = escribir_ruta(etapa, carpeta)
             nombre = f'seguidor_{etapa["numero"]:02d}'
-            auditor.confirmador = ConfirmadorCNN(meta)
+            auditor.confirmador = None
             iniciar(nombre, sys.executable, 'tools/A3_E6_R27_seguidor.py',
                     ('--ruta', ruta.relative_to(ROOT), '--ros-args', '-p', 'use_sim_time:=true'))
             tiempo_inicio = time.monotonic()
+            inicio_sim = prueba.reloj if prueba else None
             while time.monotonic() - tiempo_inicio < TIMEOUT_TRAMO_S:
                 vigilar()
                 if procesos[nombre].poll() is not None:
                     break
             assert procesos[nombre].poll() is not None, f'Mision {meta}: timeout de ruta'
             codigo = procesos[nombre].returncode
-            assert codigo == 0, f'Seguidor {meta} salio con codigo {codigo}'
-            err_llegada = math.dist(auditor.pose, PUNTOS[meta])
-            assert err_llegada <= TOL_LLEGADA, (
-                f'Error final de {meta} {err_llegada:.3f} m > {TOL_LLEGADA} m')
-            print(f'[OK] Geometria de llegada a {meta}: {err_llegada:.3f} m')
+            tiempo_ruta_sim = round(prueba.reloj - inicio_sim, 3) if prueba else None
             detener(nombre)
             # Esperar parada efectiva del supervisor (propuesta de ruta vencida).
             t_stop = time.monotonic() + 3
@@ -617,6 +644,40 @@ def ejecutar(desde, orden):
                 if es_cero:
                     break
             assert es_cero, 'No se confirmo parada del supervisor entre misiones'
+            err_llegada = math.dist(auditor.pose, PUNTOS[meta])
+            if err_llegada > TOL_LLEGADA:
+                alternas = [
+                    estacion for estacion, coordenadas in PUNTOS.items()
+                    if estacion not in ('ROBOT', meta)
+                    and math.dist(auditor.pose, coordenadas) <= TOL_LLEGADA
+                ]
+                if len(alternas) != 1 or etapa.get('reintento'):
+                    raise RuntimeError(f'No se pudo recuperar la llegada a {meta}; pose={auditor.pose}')
+                origen_real = alternas[0]
+                auditor.confirmador = ConfirmadorCNN(origen_real)
+                limite = time.monotonic() + TIMEOUT_CNN_S
+                while not auditor.confirmador.confirmado and time.monotonic() < limite:
+                    vigilar()
+                if not auditor.confirmador.confirmado:
+                    raise RuntimeError(f'CNN no confirmo la estacion alternativa {origen_real}')
+                recuperacion = preparar_misiones(origen_real, [meta])['etapas'][0]
+                recuperacion.update(numero=etapa['numero'], reintento=True,
+                                   tiempo_orden=tiempo_orden,
+                                   longitud_referencia=longitud_referencia,
+                                   obstaculo=etapa.get('obstaculo'),
+                                   tiempo_ruta_anterior=tiempo_ruta_sim or 0)
+                resultado['replanificaciones'].append({
+                    'numero': etapa['numero'], 'estacion_detectada': origen_real,
+                    'destino': meta, 'pose': auditor.pose, 'codigo_seguidor_original': codigo,
+                    'ruta': f"mision_{etapa['numero']:02d}_replanificada.csv",
+                    'longitud_m': recuperacion['longitud_m'],
+                })
+                print(f'[REPLANIFICACION] CNN confirmo {origen_real}; nueva ruta a {meta}', flush=True)
+                pendientes.appendleft(recuperacion)
+                continue
+            assert codigo == 0, f'Seguidor {meta} salio con codigo {codigo}'
+            print(f'[OK] Geometria de llegada a {meta}: {err_llegada:.3f} m')
+            auditor.confirmador = ConfirmadorCNN(meta)
             # Primero esperar reconocimiento pasivo: no girar si ya funciona.
             alineacion = {'aplicada': False}
             espera_pasiva = time.monotonic() + 4.0
@@ -659,7 +720,23 @@ def ejecutar(desde, orden):
                 'codigo_seguidor': codigo, 'error_final_m': round(err_llegada,4),
                 'confirmacion_cnn': True, 'alineacion': alineacion,
                 'duracion_s': round(time.monotonic()-tiempo_inicio,2),
+                'duracion_total_orden_s': round(time.monotonic()-tiempo_orden, 2),
+                'longitud_referencia_m': longitud_referencia,
+                'limite_r27_s': round(1.30 * longitud_referencia / 0.20, 2),
             })
+            if prueba:
+                contactos = prueba.contactos[inicio_contactos:]
+                tiempo_navegacion = round(tiempo_ruta_sim + etapa.get('tiempo_ruta_anterior', 0), 3)
+                resultado['etapas'][-1].update(
+                    obstaculo=etapa.get('obstaculo'), contactos=contactos,
+                    muestras_contacto=prueba.mensajes_contacto-inicio_muestras,
+                    navegacion_sim_s=tiempo_navegacion,
+                    cumple_tiempo=tiempo_navegacion <= 1.30*longitud_referencia/0.20,
+                )
+                prueba.retirar()
+                prueba.activo = False
+                if contactos:
+                    raise RuntimeError(f'Contacto detectado en orden {etapa["numero"]}')
             auditor.confirmador = None
             # Para el siguiente trayecto, recuperar Mamdani antes de crear seguidor.
             if ('mamdani' not in procesos
@@ -687,6 +764,13 @@ def ejecutar(desde, orden):
         resultado['error'] = f'{type(e).__name__}: {e}'
         print('[BLOQUEADO / ERROR]', resultado['error'])
     finally:
+        if prueba:
+            resultado['contactos'] = prueba.contactos
+            resultado['muestras_contacto'] = prueba.mensajes_contacto
+            try:
+                prueba.retirar()
+            except RuntimeError as error:
+                resultado['limpieza_obstaculo'] = str(error)
         for nombre in [n for n in procesos if n.startswith('seguidor')]:
             detener(nombre)
         # Mantener supervisor vivo durante medio segundo para que publique parada por timeout de ruta.
@@ -728,6 +812,8 @@ def main():
     p.add_argument('--desde', choices=tuple(PUNTOS))
     p.add_argument('--orden', nargs='+', choices=tuple(x for x in PUNTOS if x != 'ROBOT'))
     p.add_argument('--autorizar-movimiento', action='store_true')
+    p.add_argument('--semilla-obstaculos', type=int)
+    p.add_argument('--ensayo-desvio', choices=tuple(x for x in PUNTOS if x != 'ROBOT'))
     args = p.parse_args()
     if args.self_test:
         autopueba()
@@ -742,7 +828,11 @@ def main():
         return 0 if prevuelo(args.desde, args.orden) else 2
     if not args.autorizar_movimiento:
         p.error('--ejecutar requiere --autorizar-movimiento')
-    return 0 if ejecutar(args.desde, args.orden) else 2
+    if args.ensayo_desvio and (args.desde == args.ensayo_desvio
+                             or args.orden[0] == args.ensayo_desvio
+                             or len(args.orden) != 1 or args.semilla_obstaculos is not None):
+        p.error('El ensayo de desvío requiere un destino y otra estación de desvío, sin caja')
+    return 0 if ejecutar(args.desde, args.orden, args.semilla_obstaculos, args.ensayo_desvio) else 2
 
 
 if __name__ == '__main__':

@@ -1,0 +1,43 @@
+[INFO] [1794870684.145755848] [supervisor_u3s7_cnn]: Supervisor U3S7 activo | Objetivo: MONITOREO_CONTINUO
+[WARN] [1794870684.548016112] [supervisor_u3s7_cnn]: Parada segura: esperando sensores
+[WARN] [1794870689.552496369] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794870690.553767557] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (99.9%)
+[INFO] [1794870706.274465291] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] ALMACENAMIENTO (83.5%)
+[WARN] [1794870724.577144064] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794870738.370449684] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (87.9%)
+[INFO] [1794870770.320275421] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] EMPAQUE (98.9%)
+[WARN] [1794870777.960686115] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[WARN] [1794870784.899498323] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[WARN] [1794870789.979901771] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794870796.518882723] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (85.2%)
+[INFO] [1794870814.059818109] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] DESPACHO (94.7%)
+[WARN] [1794870822.776042909] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794870836.083111414] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (87.8%)
+[INFO] [1794870852.609504339] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] EMPAQUE (97.2%)
+[WARN] [1794870859.174841948] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794870860.093543725] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (94.0%)
+[INFO] [1794870864.860225357] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] EMPAQUE (97.9%)
+[WARN] [1794870868.621724609] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794870875.758618198] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (91.5%)
+[INFO] [1794870879.640773370] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] ALMACENAMIENTO (87.6%)
+[WARN] [1794870922.920758936] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794870942.988712108] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (89.2%)
+[WARN] [1794870957.986503387] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794870983.912298039] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] ALMACENAMIENTO (86.5%)
+[WARN] [1794870994.918514984] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794871003.125179433] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (96.3%)
+[INFO] [1794871039.125414701] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] EMPAQUE (98.7%)
+[WARN] [1794871046.697278749] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794871048.611724761] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (85.4%)
+[INFO] [1794871052.778185865] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] EMPAQUE (99.4%)
+[WARN] [1794871053.927332489] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[WARN] [1794871059.000422041] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794871079.344534421] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (94.5%)
+[INFO] [1794871082.913544766] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] DESPACHO (95.0%)
+[WARN] [1794871091.802249291] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794871112.720239428] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (97.8%)
+[INFO] [1794871123.137105012] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] EMPAQUE (88.6%)
+[INFO] [1794871129.184981400] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (83.1%)
+[WARN] [1794871129.217615906] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794871138.131510786] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] EMPAQUE (97.2%)
+[WARN] [1794871138.547172162] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta

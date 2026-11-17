@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from pathlib import Path
+import os
 import subprocess
 import yaml
 
@@ -35,9 +36,8 @@ def generate_launch_description():
         get_package_share_directory("turtlebot3_description")
     )
 
-    modelo = (
-        raiz / "modelos/variantes_opticas/waffle_pi_optica_v6.sdf"
-    )
+    modelo = Path(os.environ.get("AMR_MODELO_GAZEBO",
+                  raiz / "modelos/variantes_opticas/waffle_pi_optica_v6.sdf"))
     urdf = (
         raiz / "modelos/variantes_opticas/waffle_pi_optica_v6.urdf"
     )

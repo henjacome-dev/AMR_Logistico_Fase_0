@@ -1,0 +1,7 @@
+[INFO] [1794870803.544650843] [supervisor_u3s7_cnn]: Supervisor U3S7 activo | Objetivo: MONITOREO_CONTINUO
+[WARN] [1794870803.752180370] [supervisor_u3s7_cnn]: Parada segura: esperando sensores
+[WARN] [1794870808.772194304] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794870815.358696171] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] RECEPCION (100.0%)
+[WARN] [1794870821.319140411] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta
+[INFO] [1794870828.749820509] [supervisor_u3s7_cnn]: [CNN CONFIRMADA] ALMACENAMIENTO (83.2%)
+[WARN] [1794870857.792092748] [supervisor_u3s7_cnn]: Parada segura: no hay propuesta reciente de ruta

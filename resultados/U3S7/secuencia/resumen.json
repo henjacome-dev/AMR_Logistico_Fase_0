@@ -1,0 +1,314 @@
+{
+  "aprobado": true,
+  "origen": "RECEPCION",
+  "destinos": [
+    "ALMACENAMIENTO",
+    "EMPAQUE",
+    "DESPACHO",
+    "EMPAQUE",
+    "ALMACENAMIENTO",
+    "RECEPCION",
+    "ALMACENAMIENTO",
+    "EMPAQUE",
+    "DESPACHO",
+    "EMPAQUE"
+  ],
+  "etapas": [
+    {
+      "numero": 1,
+      "origen": "RECEPCION",
+      "destino": "ALMACENAMIENTO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0534,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 35.09,
+      "duracion_total_orden_s": 35.1,
+      "longitud_referencia_m": 5.6,
+      "limite_r27_s": 36.4,
+      "obstaculo": {
+        "nombre": "amr_final_caja_01",
+        "x_m": -3.445,
+        "y_m": -1.375,
+        "lado_m": 0.2
+      },
+      "contactos": [],
+      "muestras_contacto": 20846,
+      "navegacion_sim_s": 33.9,
+      "cumple_tiempo": true
+    },
+    {
+      "numero": 2,
+      "origen": "ALMACENAMIENTO",
+      "destino": "EMPAQUE",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0655,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": true,
+        "yaw_inicial_deg": -45.171,
+        "error_angular_inicial_deg": 39.963,
+        "yaw_final_deg": -11.431,
+        "error_angular_final_deg": 6.197,
+        "max_lineal_giro_m_s": 0.0,
+        "max_angular_giro_rad_s": 0.35,
+        "registro_giro": "resultados/A3_E6_R27_pilotos/ejecucion_20261116_181122_668225/alineacion_02_empaque.csv"
+      },
+      "duracion_s": 59.64,
+      "duracion_total_orden_s": 59.65,
+      "longitud_referencia_m": 8.24853,
+      "limite_r27_s": 53.62,
+      "obstaculo": {
+        "nombre": "amr_final_caja_02",
+        "x_m": 1.225,
+        "y_m": 2.595,
+        "lado_m": 0.2
+      },
+      "contactos": [],
+      "muestras_contacto": 34986,
+      "navegacion_sim_s": 51.5,
+      "cumple_tiempo": true
+    },
+    {
+      "numero": 3,
+      "origen": "EMPAQUE",
+      "destino": "DESPACHO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0566,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 34.8,
+      "duracion_total_orden_s": 34.82,
+      "longitud_referencia_m": 5.6,
+      "limite_r27_s": 36.4,
+      "obstaculo": {
+        "nombre": "amr_final_caja_03",
+        "x_m": 3.495,
+        "y_m": 0.825,
+        "lado_m": 0.2
+      },
+      "contactos": [],
+      "muestras_contacto": 20511,
+      "navegacion_sim_s": 33.8,
+      "cumple_tiempo": true
+    },
+    {
+      "numero": 4,
+      "origen": "DESPACHO",
+      "destino": "EMPAQUE",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0553,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": true,
+        "yaw_inicial_deg": 89.721,
+        "error_angular_inicial_deg": -87.244,
+        "yaw_final_deg": 8.561,
+        "error_angular_final_deg": -6.22,
+        "max_lineal_giro_m_s": 0.0,
+        "max_angular_giro_rad_s": 0.35,
+        "registro_giro": "resultados/A3_E6_R27_pilotos/ejecucion_20261116_181122_668225/alineacion_04_empaque.csv"
+      },
+      "duracion_s": 45.38,
+      "duracion_total_orden_s": 45.39,
+      "longitud_referencia_m": 5.6,
+      "limite_r27_s": 36.4,
+      "obstaculo": {
+        "nombre": "amr_final_caja_04",
+        "x_m": 3.495,
+        "y_m": 1.425,
+        "lado_m": 0.2
+      },
+      "contactos": [],
+      "muestras_contacto": 26426,
+      "navegacion_sim_s": 34.9,
+      "cumple_tiempo": true
+    },
+    {
+      "numero": 5,
+      "origen": "EMPAQUE",
+      "destino": "ALMACENAMIENTO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0528,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 52.64,
+      "duracion_total_orden_s": 52.65,
+      "longitud_referencia_m": 8.24853,
+      "limite_r27_s": 53.62,
+      "obstaculo": {
+        "nombre": "amr_final_caja_05",
+        "x_m": -2.575,
+        "y_m": 3.355,
+        "lado_m": 0.2
+      },
+      "contactos": [],
+      "muestras_contacto": 31300,
+      "navegacion_sim_s": 51.2,
+      "cumple_tiempo": true
+    },
+    {
+      "numero": 6,
+      "origen": "ALMACENAMIENTO",
+      "destino": "RECEPCION",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0547,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 34.49,
+      "duracion_total_orden_s": 34.5,
+      "longitud_referencia_m": 5.6,
+      "limite_r27_s": 36.4,
+      "obstaculo": {
+        "nombre": "amr_final_caja_06",
+        "x_m": -3.445,
+        "y_m": -0.575,
+        "lado_m": 0.2
+      },
+      "contactos": [],
+      "muestras_contacto": 20428,
+      "navegacion_sim_s": 33.0,
+      "cumple_tiempo": true
+    },
+    {
+      "numero": 7,
+      "origen": "RECEPCION",
+      "destino": "ALMACENAMIENTO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0529,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 36.17,
+      "duracion_total_orden_s": 36.18,
+      "longitud_referencia_m": 5.6,
+      "limite_r27_s": 36.4,
+      "obstaculo": {
+        "nombre": "amr_final_caja_07",
+        "x_m": -3.445,
+        "y_m": -1.375,
+        "lado_m": 0.2
+      },
+      "contactos": [],
+      "muestras_contacto": 21496,
+      "navegacion_sim_s": 34.8,
+      "cumple_tiempo": true
+    },
+    {
+      "numero": 8,
+      "origen": "ALMACENAMIENTO",
+      "destino": "EMPAQUE",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0674,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": true,
+        "yaw_inicial_deg": -47.389,
+        "error_angular_inicial_deg": 42.059,
+        "yaw_final_deg": -10.885,
+        "error_angular_final_deg": 5.526,
+        "max_lineal_giro_m_s": 0.0,
+        "max_angular_giro_rad_s": 0.35,
+        "registro_giro": "resultados/A3_E6_R27_pilotos/ejecucion_20261116_181122_668225/alineacion_08_empaque.csv"
+      },
+      "duracion_s": 58.19,
+      "duracion_total_orden_s": 58.2,
+      "longitud_referencia_m": 8.24853,
+      "limite_r27_s": 53.62,
+      "obstaculo": {
+        "nombre": "amr_final_caja_08",
+        "x_m": -2.575,
+        "y_m": 2.295,
+        "lado_m": 0.2
+      },
+      "contactos": [],
+      "muestras_contacto": 34084,
+      "navegacion_sim_s": 49.8,
+      "cumple_tiempo": true
+    },
+    {
+      "numero": 9,
+      "origen": "EMPAQUE",
+      "destino": "DESPACHO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0552,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 35.58,
+      "duracion_total_orden_s": 35.59,
+      "longitud_referencia_m": 5.6,
+      "limite_r27_s": 36.4,
+      "obstaculo": {
+        "nombre": "amr_final_caja_09",
+        "x_m": 3.495,
+        "y_m": 1.025,
+        "lado_m": 0.2
+      },
+      "contactos": [],
+      "muestras_contacto": 21064,
+      "navegacion_sim_s": 33.9,
+      "cumple_tiempo": true
+    },
+    {
+      "numero": 10,
+      "origen": "DESPACHO",
+      "destino": "EMPAQUE",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0624,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": true,
+        "yaw_inicial_deg": 90.063,
+        "error_angular_inicial_deg": -87.013,
+        "yaw_final_deg": 8.997,
+        "error_angular_final_deg": -6.102,
+        "max_lineal_giro_m_s": 0.0,
+        "max_angular_giro_rad_s": 0.35,
+        "registro_giro": "resultados/A3_E6_R27_pilotos/ejecucion_20261116_181122_668225/alineacion_10_empaque.csv"
+      },
+      "duracion_s": 45.88,
+      "duracion_total_orden_s": 45.89,
+      "longitud_referencia_m": 5.6,
+      "limite_r27_s": 36.4,
+      "obstaculo": {
+        "nombre": "amr_final_caja_10",
+        "x_m": 3.495,
+        "y_m": 0.425,
+        "lado_m": 0.2
+      },
+      "contactos": [],
+      "muestras_contacto": 26728,
+      "navegacion_sim_s": 35.2,
+      "cumple_tiempo": true
+    }
+  ],
+  "replanificaciones": [],
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "error": null,
+  "modelo_sha256": "d453893854502bb8079805000a3decdbd49e710f7d0a3f435725901e6af25c33",
+  "desvio_inducido": null,
+  "semilla_obstaculos": 451,
+  "contactos": [],
+  "muestras_contacto": 268368,
+  "pose_final": [
+    4.026087556532631,
+    2.764387479202905
+  ],
+  "modos": {
+    "DETENIDO": 588,
+    "RUTA": 3954
+  },
+  "cnn_total": 1177,
+  "fis_sha256_final": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+}

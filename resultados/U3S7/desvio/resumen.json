@@ -1,0 +1,52 @@
+{
+  "aprobado": true,
+  "origen": "ROBOT",
+  "destinos": [
+    "ALMACENAMIENTO"
+  ],
+  "etapas": [
+    {
+      "numero": 1,
+      "origen": "RECEPCION",
+      "destino": "ALMACENAMIENTO",
+      "codigo_seguidor": 0,
+      "error_final_m": 0.0559,
+      "confirmacion_cnn": true,
+      "alineacion": {
+        "aplicada": false
+      },
+      "duracion_s": 36.33,
+      "duracion_total_orden_s": 49.16,
+      "longitud_referencia_m": 6.6,
+      "limite_r27_s": 42.9
+    }
+  ],
+  "replanificaciones": [
+    {
+      "numero": 1,
+      "estacion_detectada": "RECEPCION",
+      "destino": "ALMACENAMIENTO",
+      "pose": [
+        -3.915091714522313,
+        -2.777408172484065
+      ],
+      "codigo_seguidor_original": 0,
+      "ruta": "mision_01_replanificada.csv",
+      "longitud_m": 5.6
+    }
+  ],
+  "fis_sha256": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903",
+  "error": null,
+  "modelo_sha256": "d453893854502bb8079805000a3decdbd49e710f7d0a3f435725901e6af25c33",
+  "desvio_inducido": "RECEPCION",
+  "pose_final": [
+    -3.9749818029047095,
+    2.7690005854690782
+  ],
+  "modos": {
+    "DETENIDO": 122,
+    "RUTA": 434
+  },
+  "cnn_total": 151,
+  "fis_sha256_final": "67dc69177a8e227f84e333977b9366fc57d07c79a37af2d0ae2d5dad56a41903"
+}

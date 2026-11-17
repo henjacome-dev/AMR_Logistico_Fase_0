@@ -1,0 +1,32 @@
+{
+  "estado": "R22_CAPTURA_APROBADA_R23_ENTRENAMIENTO_PENDIENTE",
+  "total": 600,
+  "clases": {
+    "RECEPCION": 150,
+    "ALMACENAMIENTO": 150,
+    "EMPAQUE": 150,
+    "DESPACHO": 150
+  },
+  "particiones": {
+    "train": 420,
+    "val": 90,
+    "test": 90
+  },
+  "grupos": 100,
+  "politica_split": "6 capturas de cada pose pertenecen a una unica particion",
+  "dimensiones_fuente": [
+    640,
+    360
+  ],
+  "dimensiones_entrenamiento": [
+    224,
+    224
+  ],
+  "camara_inclinacion_temporal_deg": 12,
+  "camara_hfov_temporal_deg": 145.0,
+  "max_color_permitido_fraccion": 0.975,
+  "configuracion_optica_sha256": "c97603491647ea744ca65533dac040ca64015b5c549e8db96099ce0b52508a45",
+  "origen": "camara simulada Waffle Pi, modelo SDF temporal; world oficial intacto",
+  "advertencia": "No equivale a validacion de camara fisica o dominio real",
+  "sha256_manifiesto": "c0a8c5fcb2bfb97fbbf90800d3b45e3a30bd43eb742400b158effca0752b7d09"
+}
