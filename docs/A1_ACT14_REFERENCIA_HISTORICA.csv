@@ -1,0 +1,2 @@
+fuente,fecha,tipo,orden,longitud_astar_m,puntos_ruta,distancia_odometrica_m,duracion_registrada_s,estaciones_visitadas,error_final_reportado_m,colisiones_sensadas
+resultados/F1_A_cierre_20261106/,2026-11-06,cierre posterior a A1,A,20.200,405,20.022,275.03,4,0.0711,no existe medicion independiente
