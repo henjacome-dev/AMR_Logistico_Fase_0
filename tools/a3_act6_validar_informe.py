@@ -54,10 +54,12 @@ print(f'[OK] {len(newm)} recursos gráficos originales sin modificación')
 # Insertadas [3] y [4] inmediatamente antes del antiguo párrafo de Sandler.
 new_without_inserts=newp[:101]+newp[103:]
 if len(new_without_inserts)!=len(oldp):error('Número inesperado tras normalización de referencias')
-authorized={9,12,13,14,31,35,74,*range(99,107)}
+# A3-ACT8 autorizó únicamente cuatro párrafos de discusión (sin tablas ni cifras originales).
+# La autenticidad de los nuevos valores se comprueba además en a3_act8_validar_evidencias.py.
+authorized={9,12,13,14,31,35,50,68,74,83,87,*range(99,107)}
 unexpected=[i for i,(a,b) in enumerate(zip(oldp,new_without_inserts)) if a!=b and i not in authorized]
 if unexpected:error('Se modificaron párrafos fuera de los autorizados: '+str(unexpected))
-print('[OK] Se modificaron únicamente citas, referencias y contexto bibliográfico')
+print('[OK] Cambios permitidos: bibliografía y cuatro párrafos justificativos de A3-ACT8')
 i=next(i for i,p in enumerate(newp) if p.strip()=='Referencias')
 body=' '.join(newp[:i])
 refs=[p for p in newp[i+1:] if re.match(r'^\[\d+\]',p)]
