@@ -1,56 +1,56 @@
-# Control de evidencias y entrega — Avance 1 (A1)
+# Control de evidencias — Avance 1 (A1)
 
-**Proyecto:** AMR logístico · Autómatas y Expertos (MEC451).
-**Fecha de entrega académica:** 4 de noviembre de 2026.
-**Objeto:** separar la constancia de presentación del cumplimiento técnico documentado al cierre de A1.
+**Proyecto:** AMR logístico, MEC451, Grupo 1.
+**Corte histórico evaluado:** entrega de Blackboard de 4 de noviembre de 2026, 20:37 UTC−5.
+**Estado documental:** entrega acreditada por captura de la actividad y correo de recepción. La calificación docente no se ha comprobado.
 
-## 1. Acreditación administrativa
+## Archivos realmente entregados
 
-| Requisito | Evidencia revisada | Estado |
-|---|---|---|
-| Actividad A1 enviada | Acuse automatizado de Blackboard «Proyecto Avance 1» | Confirmado |
-| Fecha/hora | 2026-11-04, 20:37 (Ecuador, UTC−5), según correo | Confirmado |
-| Informe de 2 páginas | `Avance1_AMR_Grupo_1.docx.pdf`, facilitado para esta revisión | Confirmado: PDF de 2 páginas A4 |
-| Original idéntico al adjunto de Blackboard | Falta captura con nombres de adjuntos o descarga desde el intento de A1 | No comprobado |
-| Repositorio o archivo del intento | Acuse solo muestra tamaño total del envío, no nombres de adjuntos | No comprobado desde el acuse |
-| Calificación del docente | No aportada | Pendiente |
+- Informe: `Avance1_AMR_Grupo_1.docx.pdf` — dos páginas, recibido e inspeccionado.
+- Código: `AMR_Logistico_Fase_1-main.zip` — ZIP comprobado sin error CRC; 93 entradas (incluye 23 directorios/entradas vacías); carpeta raíz interna `AMR_Logistico_Fase_0-main/`.
+- El acuse de Blackboard confirma presentación, pero las capturas y el correo deben permanecer **fuera del repositorio público**.
+- La etiqueta Git `avance1` existe; fue creada el 5 de noviembre de 2026, posteriormente a la presentación del 4 de noviembre. No debe sustituirse retroactivamente el ZIP entregado por el estado de dicho tag.
 
-**Privacidad:** conservar capturas de Blackboard y correo, junto con identificadores de confirmación, fuera del repositorio público.
+## Matriz de comprobación de requisitos A1
 
-## 2. Informe A1: contenido efectivamente presentado
+| ID | Requisito | Evidencia del ZIP entregado | Veredicto |
+|---|---|---|---|
+| R03 | Mundo >=4 × 4 m | `modelos/almacen_f1.world`, configuración 10 × 8 m | Cumple en archivo |
+| R04 | >=3 pasillos, ancho >=1 m | Dos estantes horizontales con tres corredores nominales libres; ancho aproximado 2,1–2,2 m según geometría | Cumple geométricamente, falta medición dinámica |
+| R05 | 4 estaciones con marcadores diferenciados | Cuatro cilindros de 0,3 m de radio y 0,01 m de altura con colores distintos, **no paneles verticales** | Parcial |
+| R06 | 3 sensores emulados como `sensor_msgs/Range` | Código del emulador no incluido; `/scan` LiDAR nativo sí aparece en diagnóstico F0 | No acreditado |
+| R07 | Sectorización 15° a 0° y ±45° | Parámetros especificados en README, pero no código ni registros de emulador | No acreditado |
+| R08 | Alcance 2 m y ruido gaussiano sigma 0,01 m | Especificación declarada, sin implementación comprobable | No acreditado |
+| R09 | Odometría y cámara disponibles | `resultados/F0_ros_topics.txt` y `resultados/F0_gazebo_waffle_pi.png` | Evidencia archivada |
+| R10 | Mapa manual sin SLAM | `mapas/almacen_f1.pgm`, YAML, scripts de generación y MATLAB | Cumple |
+| R11 | Resolución <=0,05 m e inflado 0,21 m | Mapas y scripts; `config/escenario_f1.yaml` | Cumple en configuración |
+| R12 | Tres órdenes A* distintas | CSV de órdenes A, B, C en Python y MATLAB; tablas de tiempos y longitudes | Cumple documentalmente |
+| R13 | Seguidor completa al menos una orden sin obstáculos | Código `tools/seguidor_ruta_f13.py` y tres logs F13 con aproximaciones a metas. No hay registro explícito de una orden logística completa (con todos sus tramos) | Parcial, requiere calificar alcance de «orden» |
+| R14 | Reporte 2 páginas, repositorio y tag | Informe de 2 páginas y ZIP en Blackboard; tag `avance1` existe pero es posterior | Parcial temporal |
 
-| Tarea de enunciado | Contenido del PDF | Diagnóstico documental |
-|---|---|---|
-| 1.1 Análisis técnico | Sensores, odometría, cámara, límites de velocidad, geometría, incertidumbres | Descrito |
-| 1.2 Comparación de IA | Tabla simbólica / difusa / conexionista y fundamento de enfoque híbrido | Descrito |
-| 1.3 Almacén Gazebo | Plano **propuesto** de 6 × 6 m, cuatro estaciones y pasillos; la figura señala que no es una captura de Gazebo | No demostrado por el PDF |
-| 1.4 Emulador de tres sensores | Interfaces y especificaciones; sección 6 indica ejecutar el nodo y verificar tópicos todavía pendiente | No demostrado por el PDF |
-| 1.5 A* con MATLAB | Tres rutas y CSV de un algoritmo de **referencia en Python**; nota explícita aclara que no son medidas en MATLAB | No acreditado por el PDF |
-| 1.6 Seguimiento de ruta | Diagrama de ROS 2; sección 6 indica pendiente ejecutar una orden completa | No demostrado por el PDF |
-| 1.7 Arquitectura y plan de datos | Diagrama de nodos, captura prevista de 150 imágenes por estación | Descrito |
-| Formato de informe | Objetivo, figuras, tablas, pendientes y próximos pasos | Cumple extensión y estructura |
+## Datos A* presentes en el ZIP original
 
-**Observación:** la evaluación técnica del avance presentado no debe sustentarse únicamente en desarrollos posteriores. El informe es explícito acerca de las validaciones aún pendientes al momento de redactarse.
+| Orden | Secuencia | Python (m) | MATLAB (m) |
+|---|---|---:|---:|
+| A | Recepción–Almacenamiento–Empaque–Despacho | 20,449 | 20,38995 |
+| B | Recepción–Empaque–Almacenamiento–Despacho | 32,817 | 32,64092 |
+| C | Despacho–Empaque–Almacenamiento–Recepción | 26,449 | 26,38995 |
 
-## 3. Versionado Git y evidencia posterior
+Fuente interna: `resultados/F12_comparacion_ordenes.csv` y `matlab/F124_MATLAB/resultados/F124_comparacion_final.csv`.
 
-- Se constató la existencia del tag anotado `avance1` en `henjacome-dev/AMR_Logistico_Fase_0`.
-- El tag fue creado **2026-11-05 21:25:59 UTC** (16:25:59 en Ecuador), **después** de la entrega Blackboard del 4/11 a las 20:37.
-- El árbol etiquetado incluye un mundo `.world`, herramientas MATLAB y documentos de validación de Gazebo, sensores y seguimiento.
-- Esas evidencias posteriores demuestran el progreso del proyecto, pero no acreditan automáticamente que esas mismas versiones se adjuntaran al intento Blackboard del 4/11.
-- Para verificar el corte exacto, cotejar el archivo ZIP adjuntado en Blackboard, su contenido y, cuando sea posible, hashes/fecha de creación con el historial de Git.
+## Divergencias entre el informe y el ZIP
 
-## 4. Próximas comprobaciones
+- El informe describe un esquema preliminar de **6 × 6 m**, mientras que el ZIP contiene un mundo **10 × 8 m**.
+- El informe muestra tres rutas de referencia ejecutadas en **Python** y declara MATLAB pendiente; el ZIP incorpora scripts y CSV de resultados **MATLAB** para el mapa ampliado.
+- El informe señala como pendientes mundo, sensores y seguimiento; el ZIP sí contiene el mundo y tres registros F13, pero no el código del emulador de tres `Range`.
+- Los registros F13 son de tres **tramos individuales** (Robot–Recepción, Recepción–Almacenamiento y Almacenamiento–Empaque); no permiten concluir por sí solos la ejecución de la orden A completa hasta Despacho.
 
-- [ ] Abrir **Blackboard > Proyecto Avance 1 > detalles del intento** y registrar únicamente los **nombres** de los archivos adjuntos.
-- [ ] Descargar el reporte **desde Blackboard** y comparar tamaño y SHA-256 con `Avance1_AMR_Grupo_1.docx.pdf`, evitando asumir identidad por el título.
-- [ ] Si se adjuntó un ZIP, inspeccionar su árbol y comparar el código de ese corte contra los requisitos 1.3–1.6.
-- [ ] Recuperar la calificación/rúbrica aplicada por el docente, si está disponible.
-- [ ] Conservar el correo y captura original en una carpeta privada local; no subir al repositorio público.
+## Cierre y próximos pasos
 
-## 5. Dictamen provisional
+1. **No reemplazar retrospectivamente** los archivos históricos entregados. Conservar el PDF y ZIP originales como referencia de corte académico.
+2. **No publicar** capturas privadas, acuses con identificadores ni correo de Blackboard en GitHub.
+3. Verificar, si el docente lo requiere, la calificación y la evaluación de la demostración de A1 en la hoja de rúbrica.
+4. Conservar en ramas posteriores las mejoras técnicas realmente ejecutadas después del 4 de noviembre (marcadores, emulador, validaciones y seguimiento completo).
+5. Comparar el ZIP histórico con Git solo para trazabilidad; no alterar `main` ni tags anteriores.
 
-**Entrega administrativa de A1: confirmada.**
-**Informe de dos páginas: disponible y conforme en extensión.**
-**Demostración de las tareas 1.3 a 1.6 al momento de entrega: no acreditada por el PDF proporcionado.**
-**Nota A1: no estimable de forma suficientemente rigurosa sin cotejar el código realmente enviado o la rúbrica calificada.**
+**Dictamen:** la entrega formal de A1 está acreditada. Su cumplimiento técnico histórico es **parcial**, aunque el ZIP demuestra más avance que el informe de dos páginas por sí solo. No asignar una nota oficial sin la rúbrica calificada del docente.
