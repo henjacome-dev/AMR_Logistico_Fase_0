@@ -1,0 +1,5 @@
+escenario,ensayos,duracion_media_s,metodo_tiempo,recorrido_m_media,despeje_geom_min_m,desviacion_max_m,variacion_omega_media,inversiones_omega_media,contacto_directo,serie
+B1,5,16.948,tiempo_llegada_s_reloj_real en resumen B1_3,N/D,0.2000,0.0001,0.0001,,NO MEDIDO,Histórica independiente de A17
+B2,5,31.769,duración entre primer y último registro control.csv t_s,2.2141,0.3447,0.0313,2.7379,1.00,NO MEDIDO,Histórica independiente de A17
+B3,5,50.785,duración entre primer y último registro control.csv t_s,2.3900,0.3124,0.4453,6.6013,2.00,NO MEDIDO,Histórica independiente de A17
+B4,5,31.488,duración entre primer y último registro control.csv t_s,1.8534,0.3000,0.0001,0.0000,0.00,NO MEDIDO,Histórica independiente de A17

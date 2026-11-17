@@ -1,0 +1,5 @@
+escenario,ensayos,llegadas,contactos_episodios,error_final_m_media,recorrido_m_media,despeje_sdf_m_min,desviacion_max_m_mayor,tiempos_A17,oscilaciones_A17,comandos_DIFUSO_total,modo_real
+B1,5,5,0,0.074638,0.907491,N/D,N/D,NO_PUBLICADOS,NO_PUBLICADAS,,RUTA A* (sin evidencia de mando DIFUSO en A17)
+B2,5,5,0,0.145520,2.213980,N/D,N/D,NO_PUBLICADOS,NO_PUBLICADAS,0,A* y desvío geométrico (DIFUSO no actuó)
+B3,5,5,0,0.144380,,N/D,N/D,NO_PUBLICADOS,NO_PUBLICADAS,162,HÍBRIDO ASISTIDO (Mamdani activo; no puro)
+B4,5,5,0,0.147060,,0.300000,0.000100,NO_PUBLICADOS,NO_PUBLICADAS,,CENTRADO GEOMÉTRICO (FIS en sombra)
