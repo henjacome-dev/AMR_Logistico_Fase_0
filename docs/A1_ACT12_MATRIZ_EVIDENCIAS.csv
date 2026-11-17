@@ -1,0 +1,14 @@
+tarea,componente,criterio,fuente_original_A1,fuente_posterior,alcance_comprobado,dictamen_temporal
+1.3,MUNDO,World 10 × 8 m,modelos/almacen_f1.world,modelos/almacen_f1.world,Original con 4 estaciones en suelo; posterior mundo con paneles,Parcial en A1; evidencia posterior
+1.3,MUNDO,3 pasillos de ≥1 m,config/escenario_f1.yaml,docs/F1_R04_correccion_geometrica.md,R04 ajusta dos cajas; EX01 valida geometría estática,Parcial histórico; validación posterior
+1.3,MUNDO,Panel vertical con textura por estación,No presente,modelos/senales_almacen/materials/scripts/estaciones.material,"R05 añade 4 paneles y 4 texturas, con capturas en Gazebo",No acreditado en ZIP A1; posterior
+1.3,MUNDO,/odom y cámara visualizados,resultados/F0_ros_topics.txt,resultados/F1_C_rviz_20261106/F1_C_RViz2_Camara.png,Resultados y capturas RViz2 de 6/11; validar momento original,Evidencia mixta
+1.4,SENSORES,Tres Range a partir de /scan,Solo especificación: config/interfaces.yaml,tools/emulador_sensores_f1.py,"Nodo añadido después del ZIP A1; /rango_frontal, /rango_izq, /rango_der",No implementado en ZIP A1; posterior
+1.4,SENSORES,"Sectores 15°, centros 0/+45/−45, 2 m",config/interfaces.yaml,docs/F1_R0708_validacion_emulador.md,R07 sintético verifica límites de sectores y saturación,Posterior
+1.4,SENSORES,"Ruido gaussiano σ = 0,01 m",config/interfaces.yaml,resultados/R0708_validacion/resumen.csv,"R08 registra 600 muestras por sensor; sigma 0,010029–0,010117 m","Posterior sintético, no físico"
+1.4,SENSORES,Respuesta al acercamiento a pared,No documentado en ZIP A1,resultados/F1_A_cierre_20261106/actividad_B_pared_oeste.txt,"Range frontal disminuyó 0,842 m durante acercamiento de 0,852 m",Posterior en simulación
+1.7,ARQUITECTURA,Diagrama y nodos/tópicos,docs/F0_arquitectura.md,docs/F1_B5_integracion_navegacion.md,A1: diseño propuesto; B5: emulador/seguidor/supervisor integrados,"Diseño original, integración posterior"
+1.7,ARQUITECTURA,Marcos world/map/odom/base_footprint,config/interfaces.yaml,docs/F1_R35_marcos_tf.md,R35 comprueba TF estático map→odom en robot detenido,Posterior con limitaciones
+1.7,DATASET,Plan ≥150 imágenes × 4 clases,"Informe PDF A1, no archivo CSV",docs/F1_plan_captura_CNN.md,Matriz 5 distancias × 5 ángulos × 6 tomas = 150 por clase,Plan original; CSV posterior
+1.7,DATASET,Matriz y separación planificada 70/15/15,Informe PDF A1,datos/cnn/plan_adquisicion.csv,600 filas estado PLANIFICADA; ninguna acredita captura,"Plan posterior, no fotos"
+A2/A3,DATASET,Captura efectiva de imágenes Gazebo,No existe,datos/u3s7/manifiesto.csv,"600 PNG; SHA-256 por imagen, 100 grupos; 420/90/90",Evidencia posterior A2/A3
